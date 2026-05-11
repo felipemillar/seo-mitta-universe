@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitta SEO - Portal de Entregables (Abril 2026)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a; /* Deep corporate blue */
+            --primary-light: #eff6ff;
+            --accent: #2563eb;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .header-brand h1 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .header-meta {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            background: var(--primary-light);
+            padding: 0.5rem 1rem;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tab-btn {
+            padding: 1rem 0;
+            background: none;
+            border: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            position: relative;
+            transition: color 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-main);
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        /* Tab Content */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards & Grids */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-title {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--primary);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Stats Component */
+        .stat-box {
+            padding: 1.5rem;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--text-main);
+            letter-spacing: -1px;
+        }
+
+        .stat-change {
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-top: 0.5rem;
+        }
+        .stat-change.positive { color: var(--success); }
+        .stat-change.negative { color: var(--danger); }
+
+        /* Progress Bar */
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background-color: var(--border);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background-color: var(--primary);
+            width: 85%; /* Static for prototype */
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+
+        .data-table th, .data-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .data-table th {
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.75rem;
+            background: var(--bg-body);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table tbody tr:hover {
+            background: var(--primary-light);
+        }
+
+        /* Status Tags */
+        .status-tag {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border: 1px solid;
+        }
+
+        .status-done { color: var(--success); border-color: var(--success); background: #f0fdf4; }
+        .status-progress { color: var(--accent); border-color: var(--accent); background: #eff6ff; }
+        .status-todo { color: var(--text-muted); border-color: var(--border); background: var(--bg-body); }
+        .status-blocked { color: var(--danger); border-color: var(--danger); background: #fef2f2; }
+
+        /* Priority Tags */
+        .priority-high { color: var(--danger); font-weight: 600; }
+        .priority-med { color: var(--warning); font-weight: 600; }
+        .priority-low { color: var(--text-muted); }
+
+        /* Credits Tag */
+        .credits-tag {
+            background: var(--text-main);
+            color: white;
+            padding: 0.15rem 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        /* File links */
+        .file-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            background: var(--bg-body);
+            border: 1px solid var(--border);
+            text-decoration: none;
+            color: var(--text-main);
+            margin-bottom: 0.75rem;
+            transition: border-color 0.2s ease;
+        }
+
+        .file-link:hover {
+            border-color: var(--primary);
+        }
+
+        .btn-text {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-brand">
+            <h1>MITTA ECOSYSTEM | PORTAL SEO</h1>
+        </div>
+        <div class="header-meta">
+            PERIODO: ABRIL 2026
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab('nivel1')">Resumen Ejecutivo</button>
+            <button class="tab-btn" onclick="openTab('nivel2')">Evaluación de Métricas</button>
+            <button class="tab-btn" onclick="openTab('nivel3')">Backlog & Créditos</button>
+            <button class="tab-btn" onclick="openTab('nivel4')">Anexo Técnico</button>
+        </div>
+
+        <!-- NIVEL 1: RESUMEN EJECUTIVO -->
+        <div id="nivel1" class="tab-content active">
+            <div class="grid-3">
+                <div class="stat-box">
+                    <div class="stat-label">Tráfico Orgánico Global</div>
+                    <div class="stat-value">124,500</div>
+                    <div class="stat-change negative">-15% vs Mes Anterior</div>
+                </div>
+                <div class="stat-box" style="border-top: 3px solid var(--accent);">
+                    <div class="stat-label">Control Presupuesto (Fee Integral)</div>
+                    <div class="stat-value">85 / 100</div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill"></div>
+                    </div>
+                    <div class="stat-change" style="color: var(--text-muted);">Créditos Consumidos (Equivale a 21.2 Hrs)</div>
+                </div>
+                <div class="stat-box" style="border-top: 3px solid var(--success);">
+                    <div class="stat-label">Errores 404 Resueltos</div>
+                    <div class="stat-value">6,682</div>
+                    <div class="stat-change positive">Solo restan 318 críticos</div>
+                </div>
+            </div>
+
+            <div class="card" style="border-left: 4px solid var(--danger);">
+                <div class="card-header">
+                    <div class="card-title">Diagnóstico Integral: Mitta, MittaGO y First</div>
+                </div>
+                <p style="margin-bottom: 1.5rem; font-size: 1rem;">
+                    Existe una caída en el posicionamiento debido a deficiencias en la velocidad de carga estructural (Core Web Vitals). El esfuerzo de abril limpió la estructura del sitio, preparando el terreno para la recuperación. Todo el trabajo se rige bajo la política operativa de 100 créditos mensuales (25 Horas).
+                </p>
+                <div style="background: var(--bg-body); padding: 1.5rem; border: 1px solid var(--border);">
+                    <h4 style="margin-bottom: 1rem; font-size: 0.875rem; text-transform: uppercase; color: var(--primary);">Prioridades Estratégicas y Roles (Mayo):</h4>
+                    <ul style="margin-left: 1.5rem; font-size: 0.875rem;">
+                        <li style="margin-bottom: 0.5rem;"><strong>[Valeria C. - Gestión]:</strong> Migración total a SharePoint y control de flujos de aprobación.</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>[Hugo C. - Técnica]:</strong> Auditoría de Velocidad LCP en Homepages y revisión de Landings Cyber en Staging.</li>
+                        <li><strong>[Hugo C. - GEO/AEO]:</strong> Creación de Topic Clusters sobre Electromovilidad adaptados para motores IA.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- NIVEL 2: EVALUACIÓN DE MÉTRICAS -->
+        <div id="nivel2" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Rendimiento Trimestral SEO (Mitta + MittaGo)</div>
+                </div>
+                <div style="overflow-x: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Métrica Principal</th>
+                                <th>Febrero 2026</th>
+                                <th>Marzo 2026</th>
+                                <th>Abril 2026</th>
+                                <th>Variación (Abr vs Mar)</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tráfico Orgánico (Sesiones)</td>
+                                <td>150,200</td>
+                                <td>146,500</td>
+                                <td>124,500</td>
+                                <td class="negative">-15.0%</td>
+                                <td style="color: var(--danger); font-weight: 600;">CRÍTICO</td>
+                            </tr>
+                            <tr>
+                                <td>Domain Rating (Ahrefs)</td>
+                                <td>44</td>
+                                <td>44</td>
+                                <td>42</td>
+                                <td class="negative">-4.5%</td>
+                                <td style="color: var(--warning); font-weight: 600;">ALERTA</td>
+                            </tr>
+                            <tr>
+                                <td>Core Web Vitals (LCP Promedio)</td>
+                                <td>3.8s</td>
+                                <td>4.1s</td>
+                                <td>4.5s</td>
+                                <td class="negative">+0.4s (Más Lento)</td>
+                                <td style="color: var(--danger); font-weight: 600;">CRÍTICO</td>
+                            </tr>
+                            <tr>
+                                <td>Páginas con Errores 404</td>
+                                <td>7,120</td>
+                                <td>7,000</td>
+                                <td>318</td>
+                                <td class="positive">-95.4%</td>
+                                <td style="color: var(--success); font-weight: 600;">ÓPTIMO</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- NIVEL 3: BACKLOG & CRÉDITOS -->
+        <div id="nivel3" class="tab-content">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Backlog Operativo e Inversión de Créditos</div>
+                    <div style="font-size: 0.875rem; font-weight: 600; color: var(--text-muted);">
+                        PRESUPUESTO MES: 100 CRÉDITOS
+                    </div>
+                </div>
+                <div style="overflow-x: auto;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 35%;">Tarea / Ticket</th>
+                                <th>Responsable</th>
+                                <th>Inversión</th>
+                                <th>Prioridad</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Optimización LCP Imágenes Portada</strong><br><span style="font-size: 0.75rem; color: var(--text-muted);">Auditoría técnica estructural.</span></td>
+                                <td>Hugo C. (Técnica)</td>
+                                <td><span class="credits-tag">12 CR</span></td>
+                                <td class="priority-high">ALTA</td>
+                                <td><span class="status-tag status-progress">EN PROCESO</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Migración Planificación a SharePoint</strong><br><span style="font-size: 0.75rem; color: var(--text-muted);">Estandarización de flujos.</span></td>
+                                <td>Valeria C. (Gestión)</td>
+                                <td><span class="credits-tag">8 CR</span></td>
+                                <td class="priority-high">ALTA</td>
+                                <td><span class="status-tag status-done">FINALIZADO</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Validación Landings Cyber (Staging)</strong><br><span style="font-size: 0.75rem; color: var(--text-muted);">Revisión de etiquetas Canonical.</span></td>
+                                <td>Hugo C. (Técnica)</td>
+                                <td><span class="credits-tag">10 CR</span></td>
+                                <td class="priority-med">MEDIA</td>
+                                <td><span class="status-tag status-todo">PENDIENTE</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Topic Cluster Electromovilidad (Q2)</strong><br><span style="font-size: 0.75rem; color: var(--text-muted);">Generación AEO/GEO.</span></td>
+                                <td>Hugo C. (Técnica)</td>
+                                <td><span class="credits-tag">25 CR</span></td>
+                                <td class="priority-med">MEDIA</td>
+                                <td><span class="status-tag status-done">ENTREGADO</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reunión de Coordinación y Reporting</strong><br><span style="font-size: 0.75rem; color: var(--text-muted);">Dashboard y minutas HH.</span></td>
+                                <td>Valeria C. (Gestión)</td>
+                                <td><span class="credits-tag">10 CR</span></td>
+                                <td class="priority-high">ALTA</td>
+                                <td><span class="status-tag status-progress">EN PROCESO</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Limpieza Errores 404 (318 Restantes)</strong><br><span style="font-size: 0.75rem; color: var(--text-muted);">Redirecciones 301.</span></td>
+                                <td>Hugo C. / Valeria C.</td>
+                                <td><span class="credits-tag">20 CR</span></td>
+                                <td class="priority-low">BAJA</td>
+                                <td><span class="status-tag status-progress">EN PROCESO</span></td>
+                            </tr>
+                            <tr style="background-color: var(--primary-light);">
+                                <td colspan="2" style="text-align: right; font-weight: 700; color: var(--primary);">TOTAL CRÉDITOS ASIGNADOS HASTA LA FECHA:</td>
+                                <td colspan="3" style="font-weight: 700; font-size: 1rem; color: var(--primary);">85 CRÉDITOS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- NIVEL 4: ANEXO TÉCNICO -->
+        <div id="nivel4" class="tab-content">
+            <div class="card" style="background: var(--bg-body); border-style: dashed;">
+                <p style="text-align: center; color: var(--text-muted); font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.5px;">
+                    Repositorio exclusivo para analistas e implementación técnica
+                </p>
+            </div>
+
+            <div class="grid-2">
+                <div>
+                    <h3 style="margin-bottom: 1rem; font-size: 0.875rem; text-transform: uppercase; color: var(--primary);">Documentos Estratégicos</h3>
+                    <a href="#" class="file-link">
+                        <div>
+                            <div style="font-weight: 600; font-size: 0.875rem;">Keywords & Estructura SEO - Mitta 2026.xlsx</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">173 KB • Modificado: 15 Abr 2026</div>
+                        </div>
+                        <span class="btn-text">DESCARGAR CSV</span>
+                    </a>
+                    <a href="#" class="file-link">
+                        <div>
+                            <div style="font-weight: 600; font-size: 0.875rem;">Lineamientos SEO Mar/Abr 2026.xlsx</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">21 KB • Modificado: 10 Abr 2026</div>
+                        </div>
+                        <span class="btn-text">DESCARGAR CSV</span>
+                    </a>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 1rem; font-size: 0.875rem; text-transform: uppercase; color: var(--primary);">Carpetas en la Nube</h3>
+                    <a href="#" class="file-link">
+                        <div>
+                            <div style="font-weight: 600; font-size: 0.875rem;">Historial SEO Gabriel (Drive)</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">Contiene 32 elementos y minutas HH.</div>
+                        </div>
+                        <span class="btn-text">ABRIR DRIVE</span>
+                    </a>
+                    <a href="#" class="file-link">
+                        <div>
+                            <div style="font-weight: 600; font-size: 0.875rem;">Flujo Staging Karen (Drive)</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">Tickets técnicos y Gantt SEO Enero.</div>
+                        </div>
+                        <span class="btn-text">ABRIR DRIVE</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

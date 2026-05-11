@@ -1,0 +1,279 @@
+
+GEO-SEO PDF Report Generator
+Generates professional, client-ready PDF reports from GEO audit data.
+
+Usage:
+    python generate_pdf_report.py <json_data_file> [output_file.pdf]
+
+The JSON data file should contain the audit results structured as:
+{
+    "url": "https://example.com",
+    "brand_name": "Example Co",
+    "date": "2026-02-18",
+    "geo_score": 62,
+    "scores": { ... },
+    "findings": { ... },
+    ...
+}
+
+Or pipe JSON data from stdin:
+    cat audit_data.json | python generate_pdf_report.py - output.pdf
+
+ analizando 
+ — <i>
+#00b894
+#0984e3
+#0f3460
+#16213e
+#1a1a2e
+#2d3436
+#636e72
+#d63031
+#e94560
+#e9ecef
+#f8f9fa
+#fdcb6e
+%B %d, %Y
+%Y-%m-%d
+%d-%m-%Y
+). El análisis evaluó la preparación del sitio web para motores de búsqueda impulsados por IA, incluyendo Google AI Overviews, ChatGPT, Perplexity, Gemini, y Bing Copilot. La puntuación global de Preparación GEO es <b>
+. El análisis evaluó el sitio web en seis dimensiones: Citabilidad y Visibilidad IA (25%), Señales de Autoridad de Marca (20%), Calidad de Contenido y E-E-A-T (20%), Bases Técnicas (15%), Datos Estructurados (10%), y Optimización de Plataforma (10%).
+.</b> 
+/100</b>, posicionando al sitio en la categoría <b>
+</b>
+</b> (
+</b>.
+</font>
+</i>
+<b>Estándares de referencia:</b> Google Search Quality Rater Guidelines (Dic 2025), Especificación de Schema.org, Core Web Vitals (umbrales 2026), estándar emergente llms.txt, marco de licenciamiento RSL 1.0
+<b>Plataformas evaluadas:</b> Google AI Overviews, ChatGPT Web Search, Perplexity AI, Google Gemini, Bing Copilot
+<font color="
+<i>Ejecute /geo crawlers para poblar esta sección con datos de acceso de rastreadores IA.</i>
+<i>Ejecute una auditoría /geo completa para poblar los hallazgos.</i>
+ALIGN
+ALLOW
+Add author bylines with credentials to blog posts and articles
+Add header and footer to each page.
+Add publication and last-updated dates to all content pages
+Add sameAs properties to Organization schema linking to all platform profiles
+Agregar esquema Article + Person a todas las entradas del blog
+Agregar fechas de publicación a todas las páginas de contenido
+Agregar firmas de autor con credenciales
+Allow all Tier 1 AI crawlers in robots.txt (GPTBot, ClaudeBot, PerplexityBot)
+Alto impacto, bajo esfuerzo — puede implementarse inmediatamente.
+Anexo: Metodología
+Archivo estándar propuesto para guiar a los sistemas de IA sobre el contenido del sitio
+Auditoría de Optimización para Motores Generativos de <b>
+BACKGROUND
+BLOCK
+BOTTOMPADDING
+Bases Técnicas
+Bing Copilot
+Bingbot
+Bloqueado
+Bloquear los rastreadores de IA impide que las plataformas IA citen su contenido. La tabla a continuación muestra qué rastreadores pueden acceder a su sitio actualmente.
+BodyText_Custom
+Bueno
+Build Wikipedia/Wikidata entity presence through press coverage and notability
+Build topical authority through comprehensive content clusters
+CRITICAL
+Calidad de Contenido y E-E-A-T
+ChatGPT
+Citabilidad
+Citabilidad y Visibilidad IA
+Claude
+ClaudeBot
+Componente
+Confidencial
+Construir clústeres de contenido completos para autoridad temática
+Construir presencia de entidad en Wikipedia/Wikidata
+Contenido
+Contenido No Optimizado para Citabilidad
+Core Web Vitals — métricas de experiencia de página de Google (LCP, INP, CLS)
+Corregir meta descripciones en las 10 páginas principales
+CrawlerCell
+CrawlerHeaderCell
+Crear archivo llms.txt con referencias clave de páginas
+Crear contenido de YouTube alineado con consultas de búsqueda de IA
+Create YouTube content strategy aligned with AI-searched queries
+Create a chart showing platform readiness scores.
+Create a consistent table style.
+Create a horizontal bar chart for scores.
+Create a visual score gauge.
+Create an llms.txt file to guide AI systems to your key content
+Create custom paragraph styles.
+CriticalFinding
+Datos Estructurados
+Deficiente
+Definición
+Desarrollar estrategia de participación en comunidades de Reddit
+Desbloquear para mayor visibilidad
+Desconocido
+Desglose de Puntuación GEO
+Develop active Reddit community engagement strategy in relevant subreddits
+Disponibilidad en Plataformas IA
+E-E-A-T
+ERROR: Required packages not installed. Run: pip install -r requirements.txt
+ERROR: la entrada stdin excede el límite de 10 MB
+El sitio no tiene datos estructurados JSON-LD, lo que dificulta que los modelos de IA entiendan las relaciones de la entidad.
+Empresa de Ejemplo
+Ensure server-side rendering for all public content pages
+Esta auditoría GEO se realizó el 
+Establecer programa de publicación de investigación original
+Establish original research/data publication program for unique citability
+Estado de Acceso de Rastreadores IA
+Este informe fue generado por el Motor de Análisis GEO-SEO de InMedios. Las puntuaciones y recomendaciones se basan en análisis automatizados y puntos de referencia de la industria. Los resultados deben validarse con pruebas específicas de la plataforma.
+Este informe presenta los hallazgos de una auditoría GEO exhaustiva realizada a Empresa de Ejemplo (https://example.com). El sitio obtuvo una puntuación general de Preparación GEO de 58/100, ubicándolo en la categoría Moderado. El área más fuerte es Calidad de Contenido (70/100), mientras que Datos Estructurados (30/100) representa la mayor oportunidad de mejora. Implementar el marcado schema, permitir rastreadores de IA y optimizar la estructura del contenido podría aumentar el puntaje a aproximadamente 78/100 dentro de 90 días.
+Este reporte presenta los hallazgos de una auditoría integral de Optimización para Motores Generativos (GEO) realizada a <b>
+Estos puntajes reflejan la probabilidad de que su contenido sea citado por cada plataforma de IA. Un puntaje por debajo de 50 indica barreras significativas para la citación en esa plataforma.
+Excelente
+Experiencia, Especialización, Autoridad, Confiabilidad
+FONTNAME
+FONTSIZE
+Falta archivo llms.txt
+Fecha de Análisis
+Footer
+GEO-REPORT-sample.pdf
+GEO-REPORT.pdf
+GEO-SEO Analysis Report
+GLOBAL
+GPTBot
+GRID
+Gemini
+Generado el 
+Generate the full PDF report from audit data.
+Glosario
+Google AI Overviews
+Google-Extended
+HIGH
+Hallazgos Clave
+Helvetica
+Helvetica-Bold
+HighlightBox
+Impacto significativo, esfuerzo moderado — requiere cambios de contenido o técnicos.
+Implement IndexNow protocol for Bing/Copilot indexing speed
+Implement comprehensive Organization + Article + Person schema markup
+Implementar esquema Organization con enlaces sameAs
+Implementar renderizado del lado del servidor para páginas de contenido
+IndexNow
+Iniciativas Estratégicas (Este Trimestre)
+Interacción hasta el Siguiente Pintado — métrica de respuesta (reemplazó FID en marzo de 2024)
+JSON-LD
+LEFT
+LEFTPADDING
+LINEBELOW
+La marca no está presente en Wikipedia o Wikidata, limitando el reconocimiento de la entidad por parte de los modelos de IA.
+La mayoría de los bloques de contenido son demasiado cortos o demasiado largos para una citación óptima de IA (objetivo: 134-167 palabras).
+Las páginas de contenido clave utilizan renderizado del lado del cliente, haciéndolas invisibles para los rastreadores de IA que no ejecutan JavaScript.
+MEDIUM
+MIDDLE
+Mantener permitido
+Marca
+Mejoras a Mediano Plazo (Este Mes)
+Moderado
+No existe un archivo llms.txt para guiar a los sistemas de IA al contenido más importante.
+No se Detectó Marcado Schema
+Notación de Objetos de JavaScript para Datos Enlazados — formato de datos estructurados preferido
+Optimización de Plataforma
+Optimización para Motores Generativos — optimizar contenido para la citación de búsqueda IA
+Optimizar bloques de contenido para citabilidad de 134-167 palabras
+Optimize content blocks for AI citability (134-167 word self-contained passages)
+Permitido
+Permitir todos los rastreadores de IA de Nivel 1 en robots.txt
+Perplexity
+PerplexityBot
+Peso
+Plan de Acción Priorizado
+Plataforma
+Plataforma IA
+Platform
+Ponderado
+Presencia de Entidad de Marca Débil
+Propiedad de Schema.org que vincula una entidad a sus perfiles en otras plataformas
+Protocolo para notificar instantáneamente a los motores de búsqueda sobre cambios de contenido
+Puntaje
+Puntuación GEO
+Página 
+RESTRICT
+RIGHTPADDING
+ROWBACKGROUNDS
+Rastreador
+Recomendación
+Recommendation
+Reestructurar contenido con encabezados H2 basados en preguntas
+Renderizado Exclusivo con JavaScript
+Renderizado del lado del servidor — generar HTML en el servidor para el acceso de los rastreadores
+ReportSubtitle
+ReportTitle
+Reporte de Análisis GEO
+Reporte generado: 
+Requiere Atención
+Restructure top 10 pages with question-based headings and direct answer blocks
+Resumen Ejecutivo
+Return color based on score value.
+Return label based on score value.
+Schema
+Score
+ScoreLabel
+ScoreLabelColored
+SectionHeader
+Señales de Autoridad de Marca
+Sitio Web
+SmallText
+Status
+StatusAllowed
+StatusBlocked
+StatusDefault
+StatusRestricted
+SubHeader
+TEXTCOLOR
+TOPPADDING
+Técnico
+Término
+VALIGN
+Ventaja competitiva a largo plazo — requiere inversión continua.
+Victorias Rápidas (Esta Semana)
+Vistas Generales de IA — cajas de respuesta generadas por IA de Google en los resultados
+]</font> <b>
+__main__
+action
+ai_citability
+brand_authority
+brand_findings
+brand_name
+content_eeat
+content_findings
+crawler_access
+crawlers
+critical
+date
+description
+executive_summary
+findings
+geo_score
+high
+http://
+https://
+https://example.com
+impact
+info
+llms.txt
+medium
+medium_term
+middle
+platform
+platform_optimization
+platforms
+quick_wins
+recommendation
+sameAs
+schema
+schema_findings
+scores
+severity
+start
+status
+strategic
+technical
+technical_findings
+title

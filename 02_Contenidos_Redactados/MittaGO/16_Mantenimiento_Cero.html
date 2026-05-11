@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mantenimiento Preventivo Auto Incluido | MittaGO</title>
+    <meta name="description" content="Olvídate de buscar talleres y pagar facturas sorpresa. Descubre cómo la suscripción automotriz te libera del estrés del mantenimiento preventivo.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 24px;
+            font-size: 1.05rem;
+        }
+        
+        ul li {
+            margin-bottom: 12px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Pilar:</strong> Educación</div>
+        <div><strong>Formato Signature:</strong> Glosario</div>
+        <div><strong>Keyword Principal:</strong> mantenimiento preventivo auto</div>
+        <div><strong>Score de Calidad:</strong> 18/18 (Publicable)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">renting con mantencion incluida</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Mantenimiento Cero: El Glosario de la Tranquilidad Automotriz</h1>
+
+        <div class="answer-block">
+            <strong>El "Mantenimiento Cero" es, quizás, el beneficio más emocional del modelo de suscripción.</strong> Significa que el conductor se libera por completo de la carga mental y económica de recordar cuándo cambiar el aceite, revisar las pastillas de freno o tener que coordinar tediosas citas en el taller. Con un renting como MittaGO, el 100% del <strong>mantenimiento preventivo del auto</strong> está incluido dentro de tu tarifa plana mensual.
+        </div>
+
+        <p>Para los dueños tradicionales de un vehículo, el mantenimiento es sinónimo de estrés. Implica perder tiempo buscando talleres confiables, lidiar con presupuestos técnicos incomprensibles y, finalmente, enfrentar cobros inesperados que rompen cualquier presupuesto familiar.</p> 
+
+        <p>Para desmitificar qué incluye realmente la promesa de "Mantenimiento Cero" bajo un esquema de suscripción, hemos preparado este glosario técnico traducido a un lenguaje cotidiano.</p>
+
+        <h2>Glosario del Mantenimiento Incluido</h2>
+
+        <h3>1. Mantenimiento Preventivo (Por Kilometraje)</h3>
+        <p>Es el chequeo de rutina que todo vehículo exige para no perder su garantía (típicamente a los 10.000, 20.000 y 30.000 kilómetros).</p> 
+        <ul>
+            <li><strong>Qué significa para un dueño:</strong> Pagar entre $150.000 y $300.000 por visita en la concesionaria oficial.</li>
+            <li><strong>Bajo Suscripción:</strong> Costo $0. MittaGO coordina la revisión en talleres certificados y absorbe el costo de fluidos, filtros y mano de obra.</li>
+        </ul>
+
+        <h3>2. Mantenimiento Correctivo (Por Desgaste)</h3>
+        <p>Se refiere al reemplazo de piezas mecánicas que sufren fatiga de material por el simple acto de conducir, como las pastillas de freno, discos, escobillas limpiaparabrisas o ampolletas quemadas.</p>
+        <ul>
+            <li><strong>Qué significa para un dueño:</strong> Un gasto imprevisto que suele llegar en el peor momento económico del mes.</li>
+            <li><strong>Bajo Suscripción:</strong> Costo $0. Si las pastillas de freno suenan, el reemplazo está cubierto en tu plan, garantizando siempre tu seguridad activa sin costo adicional.</li>
+        </ul>
+
+        <h3>3. Sincronización de Flota (El factor tiempo)</h3>
+        <p>Es la logística de llevar y traer el vehículo del taller, lo que comúnmente implica pedir permisos en el trabajo o perder toda una mañana de sábado.</p>
+        <ul>
+            <li><strong>Bajo Suscripción:</strong> Contamos con canales de agendamiento digital prioritario. Nuestro objetivo como administradores de flota es que pases la menor cantidad de tiempo posible sin tu vehículo.</li>
+        </ul>
+
+        <h3>4. Chequeo de Pre-Renting (Reacondicionamiento)</h3>
+        <p>Antes de que se te entregue un vehículo bajo el modelo MittaGO (incluso si es un Seminuevo), este pasa por un exhaustivo chequeo de 100 puntos críticos, abarcando frenos, motor, transmisión y suspensión.</p>
+        <ul>
+            <li><strong>El beneficio:</strong> Te aseguras de recibir un vehículo mecánicamente impecable. Si compraras un auto usado por tu cuenta, tendrías que pagarle a un mecánico privado para realizar este escáner previo.</li>
+        </ul>
+
+        <h3>5. Asistencia en Ruta 24/7</h3>
+        <p>Es el soporte de emergencia (grúas y técnicos) frente a panas de motor o pinchazos.</p>
+        <ul>
+            <li><strong>El beneficio:</strong> A diferencia de la cobertura básica que ofrecen algunas aseguradoras, nuestra asistencia está integrada directamente en tu tarifa plana. Estás respaldado en todo momento a lo largo del país.</li>
+        </ul>
+
+        <h2>El valor de la "Carga Mental"</h2>
+
+        <p>Si sumas los costos de los mantenimientos a lo largo de 3 años, el monto superará fácilmente el millón de pesos. Sin embargo, lo que realmente ahorras con el renting no es solo dinero, sino <strong>tiempo y paz mental</strong>.</p>
+
+        <p>El concepto de "Mantenimiento Cero" transforma una máquina compleja y demandante (un automóvil) en un servicio transparente, donde tu única responsabilidad es echarle bencina y disfrutar el viaje.</p>
+
+        <div class="cta-container">
+            <p><em>¿Listo para dejar de pelear con los presupuestos del taller mecánico?</em></p>
+            <a href="#" class="cta-button">Cámbiate a una suscripción con MittaGO y nosotros nos ensuciamos las manos por ti</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿El cambio de neumáticos está incluido en el mantenimiento?</div>
+                <div class="faq-answer">Depende de tu contrato específico y de si el desgaste es producto del kilometraje natural (que suele estar incluido si superas el umbral de desgaste seguro) o si es producto de un mal uso (como un reventón contra la solera), el cual no entraría como mantenimiento preventivo, sino como un imprevisto bajo deducible.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Si el auto de suscripción entra al taller, ¿me pasan otro?</div>
+                <div class="faq-answer">Sí. A diferencia de un auto propio donde te quedas a pie durante los días de reparación, nuestro servicio de suscripción estipula la entrega de un auto de reemplazo si el tiempo en el taller preventivo supera lo establecido contractualmente, garantizando tu continuidad de movimiento.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Dónde debo llevar el vehículo suscrito a sus mantenciones?</div>
+                <div class="faq-answer">Contamos con una red extensa de sucursales Mitta y talleres certificados a lo largo de todo Chile. A través de nuestra plataforma, se te asignará el taller oficial más cercano y conveniente para validar la garantía y asegurar la calidad del servicio.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

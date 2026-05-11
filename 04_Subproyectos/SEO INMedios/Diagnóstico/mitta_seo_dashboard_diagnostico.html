@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico y Evolución Estratégica SEO - Mitta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #F8FAFC; color: #334155; }
+        .chart-container { 
+            position: relative; 
+            width: 100%; 
+            max-width: 100%; 
+            margin-left: auto; 
+            margin-right: auto; 
+            height: 300px; 
+            max-height: 400px; 
+        }
+        @media (min-width: 768px) { .chart-container { height: 350px; } }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.8); }
+        .gradient-text { background: linear-gradient(to right, #0284C7, #0EA5E9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hover-lift { transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; }
+        .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1); }
+        .tab-content { display: none; animation: fadeIn 0.3s ease-in-out; }
+        .tab-content.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="antialiased pb-20">
+
+    <nav class="fixed w-full z-50 glass-card border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-xl text-slate-800">
+                    INMedios <span class="text-sky-600 font-black">| Mitta</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
+                    <a href="#diagnostico" class="hover:text-sky-600 transition">1. Diagnóstico</a>
+                    <a href="#rendimiento" class="hover:text-sky-600 transition">2. Rendimiento</a>
+                    <a href="#equipo" class="hover:text-sky-600 transition">3. Nuevo Modelo</a>
+                    <a href="#roadmap" class="hover:text-sky-600 transition">4. Plan de Acción</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
+            Evolución del Servicio SEO: <br /> <span class="gradient-text">Hacia un Enfoque Integral e Inteligente</span>
+        </h1>
+        <p class="mt-4 text-xl text-slate-600 max-w-3xl mx-auto">
+            Hemos analizado en profundidad el feedback del equipo y las oportunidades de mejora detectadas. Esta presentación resume nuestro diagnóstico operativo y la <strong>reestructuración de nuestro equipo</strong> para elevar la estrategia de Mitta, MittaGO y First hacia los nuevos estándares de búsqueda (SEO + GEO + AEO).
+        </p>
+    </header>
+
+    <section id="diagnostico" class="py-12 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-10 text-center">
+                <h2 class="text-3xl font-bold text-slate-900">Diagnóstico: Lo que observamos</h2>
+                <p class="mt-2 text-slate-600">Puntos críticos detectados en la operación y en la estrategia actual que requieren acción inmediata.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">📋</span>
+                        <h3 class="text-xl font-bold text-slate-800">Dolores Operativos (Gestión)</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start"><span class="text-sky-500 mr-2 font-bold">&#8226;</span> <strong>Descentralización:</strong> Exceso de correos y WhatsApp. Necesidad de usar SharePoint como única fuente de verdad.</li>
+                        <li class="flex items-start"><span class="text-sky-500 mr-2 font-bold">&#8226;</span> <strong>Desfase de Contenidos:</strong> Artículos de renting desfasados. Urgencia de alinear la planificación editorial con las prioridades actuales del negocio.</li>
+                        <li class="flex items-start"><span class="text-sky-500 mr-2 font-bold">&#8226;</span> <strong>Falta de Visibilidad:</strong> Se requiere una aprobación previa más estructurada y una mejor coordinación con los distintos actores involucrados.</li>
+                    </ul>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 hover-lift">
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl mr-3">🚀</span>
+                        <h3 class="text-xl font-bold text-slate-800">Desafíos Estratégicos (Técnica & IA)</h3>
+                    </div>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-start"><span class="text-sky-500 mr-2 font-bold">&#8226;</span> <strong>Visión Integral:</strong> Salir de los blogs genéricos hacia Topic Clusters con mayor profundidad temática y enfoque de negocio.</li>
+                        <li class="flex items-start"><span class="text-sky-500 mr-2 font-bold">&#8226;</span> <strong>Auditorías Accionables:</strong> Reportes técnicos con priorización, responsables y Carta Gantt clara.</li>
+                        <li class="flex items-start"><span class="text-sky-500 mr-2 font-bold">&#8226;</span> <strong>Adaptación IA (GEO/AEO):</strong> Estructurar el sitio para motores generativos, Featured Snippets y FAQs.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rendimiento" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+            <h2 class="text-3xl font-bold text-slate-900">El Contexto: Resultados Sólidos</h2>
+            <p class="mt-2 text-slate-600 max-w-2xl mx-auto">A pesar de los desafíos de gestión, el rendimiento base es fuerte. La estrategia de contenidos ha capturado tráfico de calidad, lo que nos da una base excelente para implementar la nueva estrategia estructural.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Comportamiento del Tráfico (Ene-Feb)</h3>
+                <p class="text-sm text-slate-500 mb-4">Mitta presenta una caída estacional lógica post-verano, mientras MittaGO desafía la tendencia creciendo un 6.6% en sesiones impulsado por "Renting".</p>
+                <div class="chart-container">
+                    <canvas id="trafficChart"></canvas>
+                </div>
+            </div>
+            <div class="glass-card p-6 rounded-2xl">
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Madurez Long Tail (MittaGO)</h3>
+                <p class="text-sm text-slate-500 mb-4">El SEO está madurando. Vemos un aumento en clics genéricos ("renting", "rent a car") frente a búsquedas de marca exacta ("mittago").</p>
+                <div class="chart-container">
+                    <canvas id="keywordChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipo" class="py-16 bg-slate-900 text-white border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-white">La Solución: Especialización de Roles</h2>
+                <p class="mt-3 text-slate-300 max-w-2xl mx-auto">
+                    Para responder a las necesidades de orden operativo, visibilidad y mayor profundidad técnica, separamos la operación en dos capas lideradas por especialistas dedicados, enmarcado en nuestras 25 horas mensuales.
+                </p>
+            </div>
+
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex bg-slate-800 rounded-xl p-1">
+                    <button onclick="switchTab('valeria')" id="btn-valeria" class="px-6 py-3 rounded-lg text-sm font-bold transition-all bg-sky-600 text-white shadow-lg">
+                        👩‍💼 Valeria Cárdenas (Gestión)
+                    </button>
+                    <button onclick="switchTab('hugo')" id="btn-hugo" class="px-6 py-3 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white">
+                        👨‍💻 Hugo Castro (Técnica & Ejecución)
+                    </button>
+                </div>
+            </div>
+
+            <div id="tab-valeria" class="tab-content active max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-1 text-center bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                        <div class="w-24 h-24 mx-auto bg-sky-900 rounded-full flex items-center justify-center text-5xl mb-4 shadow-inner">
+                            📈
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Valeria C.</h3>
+                        <p class="text-sky-400 text-sm font-semibold">Ejecutiva de Cuentas SEO</p>
+                    </div>
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-sky-400 flex items-center mb-2"><span class="mr-2">&#10003;</span> Control Operativo y Visibilidad</h4>
+                            <p class="text-sm text-slate-300">Centralización absoluta en <strong>SharePoint</strong>. Valeria será la encargada de que cada contenido, imagen y reporte esté en la planilla oficial antes de su publicación, fortaleciendo el orden y la visibilidad del proceso.</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-sky-400 flex items-center mb-2"><span class="mr-2">&#10003;</span> Reporting Accionable y Transparencia</h4>
+                            <p class="text-sm text-slate-300">Entregará el reporte mensual con un formato más estratégico: Tráfico vs Competencia, Visibilidad en IA, y control de los <strong>100 Créditos mensuales</strong> para asegurar el ROI.</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-sky-400 flex items-center mb-2"><span class="mr-2">&#10003;</span> Coordinación Transversal</h4>
+                            <p class="text-sm text-slate-300">Será el puente de comunicación entre los distintos equipos para asegurar que las temáticas SEO se integren sin fricción en el plan general.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-hugo" class="tab-content max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                    <div class="md:col-span-1 text-center bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                        <div class="w-24 h-24 mx-auto bg-emerald-900 rounded-full flex items-center justify-center text-5xl mb-4 shadow-inner">
+                            ⚙️
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Hugo Castro</h3>
+                        <p class="text-emerald-400 text-sm font-semibold">Especialista SEO Sr.</p>
+                    </div>
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-emerald-400 flex items-center mb-2"><span class="mr-2">&#10003;</span> Auditorías Técnicas Priorizadas</h4>
+                            <p class="text-sm text-slate-300">Foco en la estructura del sitio. Generará auditorías técnicas acompañadas de un plan de acción, Carta Gantt y tickets detallados para el equipo de desarrollo.</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-emerald-400 flex items-center mb-2"><span class="mr-2">&#10003;</span> Estrategia GEO & AEO</h4>
+                            <p class="text-sm text-slate-300">Adaptación a motores de IA. Hugo optimizará el sitio para <em>Featured Snippets</em>, estructuración de FAQs y optimización semántica avanzada.</p>
+                        </div>
+                        <div class="bg-slate-800 p-5 rounded-xl border border-slate-700">
+                            <h4 class="font-bold text-emerald-400 flex items-center mb-2"><span class="mr-2">&#10003;</span> Topic Clusters & Contenido de Autoridad</h4>
+                            <p class="text-sm text-slate-300">Dejará los blogs genéricos para crear clústeres temáticos de alto valor para el negocio y con mayor profundidad estratégica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="roadmap" class="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold text-slate-900">Plan de Acción Inmediato (Q2 2026)</h2>
+            <p class="mt-2 text-slate-600">Pasos concretos para implementar el nuevo modelo operativo y estratégico, asegurando visibilidad y control.</p>
+        </div>
+
+        <div class="relative border-l-4 border-sky-200 ml-3 md:ml-6 space-y-10 pb-4">
+            <div class="relative pl-8 md:pl-10">
+                <div class="absolute w-8 h-8 bg-sky-500 rounded-full left-[-18px] top-0 flex items-center justify-center text-white font-bold border-4 border-white shadow-sm">1</div>
+                <h3 class="text-xl font-bold text-slate-800">Setup Operativo</h3>
+                <p class="text-sm text-slate-500 mb-2">Semana 1, Abril</p>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="text-slate-600 text-sm">Migración total de la planificación de contenidos a <strong>SharePoint</strong>. Reunión de coordinación para establecer el flujo de aprobación de imágenes y textos. Ajuste del calendario editorial a las prioridades actuales.</p>
+                </div>
+            </div>
+
+            <div class="relative pl-8 md:pl-10">
+                <div class="absolute w-8 h-8 bg-emerald-500 rounded-full left-[-18px] top-0 flex items-center justify-center text-white font-bold border-4 border-white shadow-sm">2</div>
+                <h3 class="text-xl font-bold text-slate-800">Auditoría Técnica Base</h3>
+                <p class="text-sm text-slate-500 mb-2">Semana 2, Abril</p>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="text-slate-600 text-sm">Ejecución de auditoría técnica estructural del sitio. Entrega de documento con priorización (Quick Wins vs Estructurales), responsables definidos y Carta Gantt para el equipo de desarrollo.</p>
+                </div>
+            </div>
+
+            <div class="relative pl-8 md:pl-10">
+                <div class="absolute w-8 h-8 bg-indigo-500 rounded-full left-[-18px] top-0 flex items-center justify-center text-white font-bold border-4 border-white shadow-sm">3</div>
+                <h3 class="text-xl font-bold text-slate-800">Pivot Estratégico de Contenidos (GEO/AEO)</h3>
+                <p class="text-sm text-slate-500 mb-2">Semana 3-4, Abril</p>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="text-slate-600 text-sm">Transición de blogs genéricos a la creación del primer <strong>Topic Cluster</strong>. Implementación de estructura de FAQs y marcado de entidades para responder a motores generativos impulsados por IA.</p>
+                </div>
+            </div>
+
+            <div class="relative pl-8 md:pl-10">
+                <div class="absolute w-8 h-8 bg-amber-500 rounded-full left-[-18px] top-0 flex items-center justify-center text-white font-bold border-4 border-white shadow-sm">4</div>
+                <h3 class="text-xl font-bold text-slate-800">Nuevo Formato de Reporting</h3>
+                <p class="text-sm text-slate-500 mb-2">Cierre de Mes</p>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <p class="text-slate-600 text-sm">Entrega del primer reporte bajo el nuevo formato, incluyendo panel de control de <strong>Créditos Consumidos vs Asignados</strong>, crecimiento de keywords vs competencia y estado de implementaciones técnicas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+<section id="glosario" class="py-16 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10 text-center">
+            <h2 class="text-3xl font-bold text-slate-900">Glosario de Términos Clave</h2>
+            <p class="mt-2 text-slate-600">Definiciones simples de los conceptos técnicos utilizados en la estrategia.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-600">
+            <div><strong>SEO:</strong> Optimización para aparecer en buscadores como Google.</div>
+            <div><strong>GEO:</strong> Optimización para motores de IA que generan respuestas.</div>
+            <div><strong>AEO:</strong> Optimización para responder directamente preguntas del usuario.</div>
+            <div><strong>Topic Cluster:</strong> Conjunto de contenidos conectados sobre un mismo tema.</div>
+            <div><strong>FAQs:</strong> Preguntas frecuentes que responden dudas del usuario.</div>
+            <div><strong>Featured Snippet:</strong> Respuesta destacada que aparece en Google.</div>
+            <div><strong>Keywords:</strong> Palabras que las personas buscan en internet.</div>
+            <div><strong>Long Tail:</strong> Búsquedas más específicas y de menor volumen.</div>
+            <div><strong>SharePoint:</strong> Plataforma para centralizar información y gestión.</div>
+            <div><strong>Auditoría Técnica:</strong> Análisis del estado del sitio web a nivel estructural.</div>
+            <div><strong>Créditos SEO:</strong> Unidad interna para medir horas de trabajo asignadas.</div>
+            <div><strong>ROI:</strong> Retorno sobre la inversión.</div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-white border-t border-slate-200 py-8 text-center">
+        <p class="text-sm text-slate-500 font-medium">INMedios | Partner Funcional SEO para Grupo Mitta</p>
+        <p class="text-xs text-slate-400 mt-1">Garantizando transparencia, orden operativo y excelencia técnica.</p>
+    </footer>
+
+    <script>
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.getElementById('btn-valeria').className = "px-6 py-3 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white";
+            document.getElementById('btn-hugo').className = "px-6 py-3 rounded-lg text-sm font-bold transition-all text-slate-400 hover:text-white";
+            document.getElementById('tab-' + tabId).classList.add('active');
+            if(tabId === 'valeria') {
+                document.getElementById('btn-valeria').className = "px-6 py-3 rounded-lg text-sm font-bold transition-all bg-sky-600 text-white shadow-lg";
+            } else {
+                document.getElementById('btn-hugo').className = "px-6 py-3 rounded-lg text-sm font-bold transition-all bg-emerald-600 text-white shadow-lg";
+            }
+        }
+
+        const wrapLabel = (label) => {
+            const maxLength = 16;
+            if (typeof label !== 'string' || label.length <= maxLength) return label;
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).length > maxLength && currentLine.length > 0) {
+                    lines.push(currentLine);
+                    currentLine = word;
+                } else {
+                    currentLine = currentLine ? currentLine + ' ' + word : word;
+                }
+            });
+            if (currentLine) lines.push(currentLine);
+            return lines;
+        };
+
+        const commonTooltipConfig = {
+            callbacks: {
+                title: function(tooltipItems) {
+                    const item = tooltipItems[0];
+                    let label = item.chart.data.labels[item.dataIndex];
+                    if (Array.isArray(label)) {
+                        return label.join(' ');
+                    }
+                    return label;
+                }
+            },
+            titleFont: { family: "'Plus Jakarta Sans', sans-serif" },
+            bodyFont: { family: "'Plus Jakarta Sans', sans-serif" }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctxTraffic = document.getElementById('trafficChart').getContext('2d');
+            new Chart(ctxTraffic, {
+                type: 'line',
+                data: {
+                    labels: ['Enero 2026', 'Febrero 2026'],
+                    datasets: [
+                        {
+                            label: 'Mitta (Sesiones)',
+                            data: [36308, 31079],
+                            borderColor: '#0284C7',
+                            backgroundColor: 'rgba(2, 132, 199, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: true,
+                            pointRadius: 6,
+                            pointBackgroundColor: '#0284C7'
+                        },
+                        {
+                            label: 'MittaGO (Sesiones)',
+                            data: [1204, 1284],
+                            borderColor: '#F59E0B',
+                            backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.3,
+                            fill: true,
+                            pointRadius: 6,
+                            pointBackgroundColor: '#F59E0B'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { usePointStyle: true, font: {family: "'Plus Jakarta Sans'"} } },
+                        tooltip: commonTooltipConfig
+                    },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: '#F1F5F9' }, ticks: { font: {family: "'Plus Jakarta Sans'"} } },
+                        x: { grid: { display: false }, ticks: { font: {family: "'Plus Jakarta Sans'"} } }
+                    }
+                }
+            });
+
+            const ctxKeyword = document.getElementById('keywordChart').getContext('2d');
+            new Chart(ctxKeyword, {
+                type: 'bar',
+                data: {
+                    labels: [wrapLabel('mitta go (Marca)'), wrapLabel('mittago (Marca)'), wrapLabel('renting chile (Genérico)'), wrapLabel('renting (Genérico)')],
+                    datasets: [
+                        {
+                            label: 'Clics Enero',
+                            data: [157, 98, 39, 16],
+                            backgroundColor: '#94A3B8',
+                            borderRadius: 4
+                        },
+                        {
+                            label: 'Clics Febrero',
+                            data: [147, 94, 42, 28],
+                            backgroundColor: '#0EA5E9',
+                            borderRadius: 4
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { usePointStyle: true, font: {family: "'Plus Jakarta Sans'"} } },
+                        tooltip: commonTooltipConfig
+                    },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: '#F1F5F9' }, ticks: { font: {family: "'Plus Jakarta Sans'"} } },
+                        x: { grid: { display: false }, ticks: { font: {family: "'Plus Jakarta Sans'"} } }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

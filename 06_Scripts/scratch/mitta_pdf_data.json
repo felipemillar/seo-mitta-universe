@@ -1,0 +1,49 @@
+{
+  "url": "https://mitta.cl",
+  "brand_name": "Mitta",
+  "date": "2026-05-04",
+  "geo_score": 28,
+  "scores": {
+      "ai_citability": 15,
+      "brand_authority": 30,
+      "content_eeat": 40,
+      "technical": 65,
+      "schema": 0,
+      "platform_optimization": 20
+  },
+  "platforms": {
+      "Google AI Overviews": 0,
+      "ChatGPT": 0,
+      "Perplexity": 0,
+      "Gemini": 0,
+      "Bing Copilot": 15
+  },
+  "executive_summary": "La auditoría masiva de GEO-SEO sobre Mitta detectó que la marca es virtualmente invisible para la Inteligencia Artificial. El sitio web bloquea explícitamente el rastreo de ChatGPT y Claude, carece de marcado Schema 'Organization', y su nivel de lectura (Flesch 8.5) es demasiado complejo para una citación eficiente. A pesar de una buena base técnica clásica, el GEO Score es Deficiente.",
+  "findings": [
+      {"severity": "critical", "title": "Rastreadores IA Bloqueados en Robots.txt", "description": "GPTBot, ClaudeBot y Google-Extended están prohibidos, eliminando la posibilidad de ser indexados por LLMs."},
+      {"severity": "critical", "title": "Ausencia de Schema Organization y sameAs", "description": "Falta el código JSON-LD para establecer la entidad corporativa y vincularla con Wikipedia y Wikidata."},
+      {"severity": "high", "title": "Legibilidad Compleja (Flesch 8.5)", "description": "Oraciones muy largas (promedio 31 palabras). Los LLMs prefieren sentencias concisas y bloques 'Answer-ready'."},
+      {"severity": "medium", "title": "Páginas Huérfanas y Redirecciones", "description": "19 páginas del blog sin enlaces internos, y una doble redirección 307->308 en el dominio principal."}
+  ],
+  "quick_wins": [
+      "Permitir rastreo (Allow) a GPTBot y ClaudeBot en robots.txt",
+      "Subir el archivo llms.txt entregado por InMedios",
+      "Implementar el JSON-LD de Organization generado",
+      "Arreglar cadena de redirección en Home"
+  ],
+  "medium_term": [
+      "Aplicar Siloing SEO para reconectar las 19 páginas huérfanas",
+      "Asignar atributos title y alt a los 33 botones ciegos",
+      "Reducir oraciones del blog a 15 palabras máximo"
+  ],
+  "strategic": [
+      "Crear canal de YouTube estructurado sobre Renting",
+      "Fomentar engagement en Reddit y comunidades de movilidad"
+  ],
+  "crawler_access": {
+      "GPTBot": {"platform": "ChatGPT", "status": "Blocked", "recommendation": "Allow en robots.txt"},
+      "ClaudeBot": {"platform": "Claude", "status": "Blocked", "recommendation": "Allow en robots.txt"},
+      "Google-Extended": {"platform": "Gemini", "status": "Blocked", "recommendation": "Allow en robots.txt"},
+      "PerplexityBot": {"platform": "Perplexity", "status": "Blocked", "recommendation": "Allow en robots.txt"}
+  }
+}

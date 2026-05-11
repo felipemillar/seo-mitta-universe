@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscripción vs Crédito Automotriz | Cuál Conviene Más | MittaGO</title>
+    <meta name="description" content="Compara detalladamente la suscripción mensual frente al crédito automotriz tradicional. Descubre qué modelo se ajusta mejor a tu bolsillo y estilo de vida.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A; /* Minimalist dark */
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 16px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td:nth-child(2), td:nth-child(3),
+        th:nth-child(2), th:nth-child(3) {
+            text-align: center;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Pilar:</strong> Presupuestos</div>
+        <div><strong>Formato Signature:</strong> Tabla Comparativa Numérica</div>
+        <div><strong>Keyword Principal:</strong> suscripcion vs credito automotriz</div>
+        <div><strong>Score de Calidad:</strong> 18/18 (Publicable)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">renting vs comprar auto</span>
+            <span class="tag-pill">conviene comprar o arrendar auto chile</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Suscripción vs Crédito Automotriz: ¿Qué conviene más en Chile?</h1>
+
+        <div class="answer-block">
+            <strong>La principal diferencia entre suscripción vs crédito automotriz</strong> radica en la propiedad y el riesgo financiero. El crédito te obliga a pagar un pie inicial y asumir la brutal depreciación del vehículo para, eventualmente, ser el dueño. La suscripción de MittaGO te permite usar el auto pagando una cuota fija que absorbe mantenciones y seguros, sin inmovilizar tu capital.
+        </div>
+
+        <p>El mercado automotriz está cambiando rápidamente. Hasta hace unos años, endeudarse con un banco o una financiera automotriz era el único camino para manejar un vehículo del año. Hoy, la decisión ya no es solo sobre qué modelo conducir, sino sobre <strong>cómo financiarlo</strong>. Analicemos en profundidad ambos escenarios para que tomes la decisión más inteligente para tus finanzas personales.</p>
+
+        <h2>El costo real de comprar un auto mediante financiamiento tradicional</h2>
+
+        <p>Adquirir un vehículo a través de un crédito automotriz significa comprometer tu flujo de caja a largo plazo. Generalmente, las instituciones financieras exigen un <strong>pago inicial o "pie" que ronda el 20% al 30%</strong> del valor total del vehículo.</p>
+
+        <p>A esto debes sumar una carga financiera pesada: estás pagando intereses sobre un activo que pierde valor cada minuto. Es un hecho comprobado que un auto nuevo <strong>sufre una depreciación de hasta un 20% durante su primer año</strong> de uso, y continúa perdiendo cerca de un 10% cada año subsiguiente. Cuando terminas de pagar tu crédito en 3 o 5 años, el vehículo vale una fracción de lo que pagaste, y todo el riesgo de reventa recae exclusivamente sobre tus hombros.</p>
+
+        <h2>La alternativa moderna: El modelo de pago por uso</h2>
+
+        <p>Frente a la rigidez del financiamiento bancario, emerge el modelo de renting para personas naturales. La lógica financiera aquí es radicalmente opuesta: no inmovilizas tu dinero comprando un bien que se devalúa, sino que <strong>pagas exclusivamente por el uso y desgaste</strong> durante el tiempo que lo necesitas.</p>
+
+        <p>Al elegir una alternativa como MittaGO, el pago mensual se convierte en un gasto predecible y controlado. Tu cupo de crédito bancario permanece intacto para inversiones reales (como un crédito hipotecario), mientras nosotros nos encargamos de los trámites y la logística.</p>
+
+        <h2>Comparativa financiera: ¿Dónde se va tu dinero?</h2>
+
+        <p>Para entender qué modelo te conviene, es fundamental mirar más allá de la cuota mensual del crédito y calcular el "Costo Total de Propiedad" (TCO).</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Factor Financiero</th>
+                    <th>Crédito Automotriz Tradicional</th>
+                    <th>Suscripción Mensual (MittaGO)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Desembolso inicial (Pie)</strong></td>
+                    <td>Alto (Aprox. 20% - 30% del valor)</td>
+                    <td><strong>$0</strong> (Solo pagas la primera cuota)</td>
+                </tr>
+                <tr>
+                    <td><strong>Depreciación del activo</strong></td>
+                    <td>La asume el comprador (Pérdida de capital)</td>
+                    <td><strong>La asume MittaGO</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Impacto en carga financiera</strong></td>
+                    <td>Afecta tu historial crediticio (Deuda activa)</td>
+                    <td><strong>No reporta como deuda financiera</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Costos de mantención</strong></td>
+                    <td>Variables e impredecibles (Alzas por inflación)</td>
+                    <td><strong>Costo cero</strong> (Incluidos en la tarifa plana)</td>
+                </tr>
+                <tr>
+                    <td><strong>Seguro automotriz</strong></td>
+                    <td>Gasto adicional con deducibles variables</td>
+                    <td><strong>Incluido a todo evento</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Proceso de renovación</strong></td>
+                    <td>Requiere vender el auto usado (Pérdida de tiempo)</td>
+                    <td><strong>Inmediato y sin fricción</strong> al fin del contrato</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>¿Cuándo elegir un modelo por sobre el otro?</h2>
+
+        <h3>Cuándo te conviene el Crédito Automotriz</h3>
+        <p>Si eres una persona que planea conservar el mismo vehículo por más de <strong>8 o 10 años</strong>, tienes ahorros significativos para entregar un buen pie inicial, y no te molesta invertir tiempo en llevar el auto al taller, pagar patentes anuales y gestionar la futura venta, la compra tradicional puede hacer sentido matemático a muy largo plazo.</p>
+
+        <h3>Cuándo te conviene la Suscripción MittaGO</h3>
+        <p>Si valoras la liquidez, prefieres cambiar de vehículo cada 12 a 24 meses para tener siempre tecnología moderna y seguridad actualizada, y deseas un gasto mensual predecible sin sorpresas de taller. Es ideal si no quieres que una deuda automotriz bloquee tus opciones de comprar una casa. Todo esto con la tranquilidad de estar operando con la red e infraestructura de una compañía con el <strong>respaldo internacional de Mitsui & Co., Ltd.</strong></p>
+
+        <div class="cta-container">
+            <p><em>¿Quieres dejar de pagar intereses por activos que pierden valor?</em></p>
+            <a href="#" class="cta-button">Cotiza tu plan mensual con MittaGO y olvídate del endeudamiento</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Aparezco en el sistema financiero o Dicom si contrato la suscripción?</div>
+                <div class="faq-answer">No. A diferencia del crédito automotriz que se reporta como una deuda en tu historial financiero y afecta tu capacidad crediticia, el contrato de MittaGO es un acuerdo de arriendo de servicios. No ocupa tu cupo bancario ni bloquea futuras solicitudes de créditos hipotecarios.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué pasa si decido terminar el servicio antes de lo presupuestado?</div>
+                <div class="faq-answer">Nuestros contratos ofrecen flexibilidad. Dependiendo del plan original contratado, existen cláusulas de salida anticipada claramente estipuladas. Te sugerimos revisar las condiciones de tu tarifa específica, ya que está diseñada para adaptarse a los imprevistos de la vida moderna.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Tengo la opción de comprar el auto al finalizar mi periodo mensual?</div>
+                <div class="faq-answer">El modelo principal de MittaGO es el uso por suscripción para asegurar que siempre manejes unidades renovadas. Si al final de tu periodo decides que te encantó el modelo específico que manejas, te contactaremos con el área encargada de venta de seminuevos para evaluar la disponibilidad de esa unidad en el mercado.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

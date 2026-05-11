@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movilidad en el Trabajo Híbrido | Suscripción de Autos | MittaGO</title>
+    <meta name="description" content="Si trabajas desde casa y solo vas a la oficina algunos días, no necesitas comprar un auto. Conoce cómo el renting se adapta a tu nuevo estilo de vida.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Pilar:</strong> Smart Uses</div>
+        <div><strong>Formato Signature:</strong> Storytelling</div>
+        <div><strong>Keyword Principal:</strong> movilidad para trabajo hibrido</div>
+        <div><strong>Score de Calidad:</strong> 18/18 (Publicable)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">auto para teletrabajo</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Trabajo Híbrido: Por qué tu esquema de movilidad también debe cambiar</h1>
+
+        <div class="answer-block">
+            <strong>El auge del trabajo híbrido ha transformado radicalmente nuestras necesidades de transporte.</strong> Si solo vas a la oficina dos o tres días por semana y pasas el resto del tiempo haciendo <em>home office</em>, invertir millones en comprar un auto propio para que permanezca estacionado el 70% del tiempo ya no tiene lógica financiera. El modelo de suscripción permite adaptar tu vehículo a este nuevo formato laboral, pagando por el acceso a la movilidad sin los pesados costos fijos de la propiedad tradicional.
+        </div>
+
+        <p>La pandemia redefinió nuestra relación con el trabajo y, en consecuencia, nuestra relación con la ciudad. El trayecto diario obligatorio de lunes a viernes (el famoso horario de 9 a 6) es, para muchos profesionales, cosa del pasado.</p>
+
+        <p>Sin embargo, a pesar de haber modernizado nuestro esquema laboral con herramientas en la nube y reuniones por Zoom, la mayoría sigue resolviendo su transporte con una mentalidad del siglo XX: comprando un auto y asumiendo seguros caros para viajes que ahora son esporádicos.</p>
+
+        <p>Para entender el impacto de esta desconexión, analicemos un escenario de la vida real.</p>
+
+        <h2>El Caso de Andrea: Movilidad "On-Demand" para el nuevo mundo laboral</h2>
+
+        <p>Andrea (32 años) es arquitecta. Antes del 2020, manejaba 45 minutos todos los días desde su departamento en Ñuñoa hasta su estudio en Vitacura. Su auto era una herramienta crítica de uso intensivo.</p>
+
+        <p>Hoy, su empresa opera en un formato 2x3 (dos días en oficina, tres días en casa). Sus viajes se han reducido a menos de la mitad. Sin embargo, cuando analizó sus finanzas, notó un problema evidente: 
+        <strong>Estaba usando su auto un 50% menos, pero seguía pagando el 100% de la cuota del banco, el 100% del seguro y sufriendo el 100% de la depreciación.</strong></p>
+
+        <p><em>“Mi auto pasaba más tiempo estacionado acumulando polvo que rodando, pero el banco me cobraba igual todos los días 5 de cada mes”</em>, reflexiona.</p>
+
+        <h3>Transición hacia el pago por uso</h3>
+
+        <p>Andrea tomó una decisión radical: vendió su auto sedán, canceló el seguro y utilizó parte de ese capital para liquidar la deuda automotriz. Quedó libre de compromisos bancarios.</p>
+
+        <p>Pero seguía necesitando un transporte confiable para sus dos días de oficina, sus reuniones puntuales con clientes y sus escapadas de fin de semana. El transporte público no siempre le acomodaba cuando debía llevar maquetas, y depender constantemente de aplicaciones de viajes (ridesharing) se volvía impredecible por las tarifas dinámicas.</p>
+
+        <p><strong>La solución fue la suscripción mensual de MittaGO.</strong><br>
+        Andrea eligió un modelo compacto urbano. El beneficio fue inmediato:</p>
+        <ul>
+            <li><strong>Costos sincerados:</strong> Su tarifa mensual plana es considerablemente más baja que la suma de la cuota de su antiguo crédito más el seguro.</li>
+            <li><strong>Cero preocupaciones de estacionamiento prolongado:</strong> No tiene que preocuparse por las mantenciones por tiempo, ya que MittaGO absorbe cualquier chequeo técnico.</li>
+            <li><strong>Seguridad garantizada:</strong> Sigue teniendo la tranquilidad de un auto particular en su estacionamiento, listo para salir en caso de emergencia, sin el peso del activo en su patrimonio.</li>
+        </ul>
+
+        <h2>La revolución del "Smart Mobility"</h2>
+
+        <p>El concepto de movilidad inteligente propone alinear tus gastos con tu uso real. Si tu empleador te dio la flexibilidad de trabajar desde cualquier lugar, tu proveedor de transporte debería darte la misma agilidad.</p>
+
+        <p>El modelo de Renting a particulares permite que profesionales como Andrea traten su vehículo como un servicio (tal como su suscripción de internet o su plataforma de streaming), en lugar de tratarlo como una carga patrimonial pesada.</p>
+
+        <div class="cta-container">
+            <p><em>¿Tu auto actual pasa demasiados días estacionado en casa?</em></p>
+            <a href="#" class="cta-button">Descubre cómo la suscripción puede optimizar tu presupuesto mensual</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Si uso el auto pocos días a la semana, ¿pago menos suscripción?</div>
+                <div class="faq-answer">La tarifa de MittaGO es plana y mensual, lo que garantiza disponibilidad 24/7 en tu domicilio (no es un arriendo por horas o carsharing). Sin embargo, al tener menor kilometraje de uso, puedes optar por nuestros planes con bolsas de kilómetros reducidas, los cuales tienen un valor mensual más económico que los planes intensivos.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo deducir el gasto de la suscripción si hago home office?</div>
+                <div class="faq-answer">Si eres trabajador independiente (boleteas) y puedes demostrar ante el SII que el uso del vehículo es esencial para producir tu renta (por ejemplo, visitas a clientes los días que sales de casa), podrías presentar la factura del renting como gasto. Te sugerimos siempre revisarlo con tu asesor contable.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿MittaGO entrega el vehículo a domicilio para quienes teletrabajan?</div>
+                <div class="faq-answer">Sí. Entendemos que el valor de tu tiempo es alto. Dependiendo de la cobertura logística en tu ciudad, el proceso de onboarding digital permite coordinar la entrega de las llaves y el vehículo directamente en la puerta de tu casa o edificio, sin que tengas que desplazarte a una sucursal.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

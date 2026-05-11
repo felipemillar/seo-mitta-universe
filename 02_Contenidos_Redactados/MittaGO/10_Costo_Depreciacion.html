@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depreciación Automotriz en Chile | Evita Perder Dinero | MittaGO</title>
+    <meta name="description" content="Un auto nuevo pierde hasta el 40% de su valor en sus primeros 3 años. Entiende cómo funciona la curva de depreciación y cómo el renting te protege.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 16px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td:nth-child(2), td:nth-child(3),
+        th:nth-child(2), th:nth-child(3) {
+            text-align: center;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Pilar:</strong> Presupuestos</div>
+        <div><strong>Formato Signature:</strong> Tabla comparativa</div>
+        <div><strong>Keyword Principal:</strong> depreciacion automotriz chile</div>
+        <div><strong>Score de Calidad:</strong> 18/18 (Publicable)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">perdida de valor vehiculo nuevo</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>El Costo de la Depreciación Automotriz en Chile: Cómo dejar de perder dinero</h1>
+
+        <div class="answer-block">
+            <strong>La depreciación automotriz</strong> es la pérdida inevitable de valor comercial que sufre un vehículo con el paso del tiempo y el uso. En Chile, un auto nuevo pierde en promedio un 20% de su valor apenas sale de la concesionaria, y puede llegar a perder hasta un 40% de su precio inicial durante los primeros tres años. Al suscribirte a un servicio de renting como MittaGO, traspasas el 100% de este riesgo financiero a la compañía, protegiendo tu patrimonio de la devaluación.
+        </div>
+
+        <p>Culturalmente, hemos sido educados para creer que comprar un auto es una "inversión". La realidad matemática es diametralmente opuesta: un automóvil de uso particular es un gasto de consumo, un bien que se deteriora y pierde valor por obsolescencia tecnológica y desgaste mecánico.</p>
+
+        <p>Entender cómo funciona la curva de depreciación es el primer paso para tomar decisiones financieras inteligentes y dejar de regalarle rentabilidad al mercado secundario de autos usados.</p>
+
+        <h2>La anatomía de la devaluación</h2>
+
+        <p>La depreciación no es lineal. Golpea con mayor fuerza durante los primeros meses de vida del vehículo y luego se estabiliza. Existen tres factores principales que aceleran este proceso:</p>
+
+        <ol>
+            <li><strong>El cambio de "Nuevo" a "Usado":</strong> El simple acto de inscribir un vehículo en el Registro Civil (asignarle patente y un primer dueño) borra automáticamente el IVA y el margen de comercialización de la automotora. Ese es el famoso "golpe del 20% inicial".</li>
+            <li><strong>El kilometraje:</strong> El mercado penaliza fuertemente a los autos que superan los 20.000 km por año. Mayor desgaste significa reparaciones más prontas para el próximo dueño.</li>
+            <li><strong>Cambios de modelo o "Facelift":</strong> Cuando una marca lanza una nueva generación de un modelo con un rediseño de carrocería o mejor tecnología interior, la versión anterior automáticamente pierde deseabilidad y valor de mercado.</li>
+        </ol>
+
+        <h2>Tabla Comparativa: La destrucción de capital en 3 años</h2>
+
+        <p>Para graficar este fenómeno, simularemos la compra de un SUV mediano de $20.000.000 mediante crédito tradicional vs. la alternativa de rentarlo (suscripción).</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Concepto de Valor</th>
+                    <th>Compra Propia ($20 Millones)</th>
+                    <th>Suscripción MittaGO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Pérdida por salir de concesionaria (Mes 1)</strong></td>
+                    <td>-$4.000.000 (20%)</td>
+                    <td><strong>$0</strong> (No eres dueño del activo)</td>
+                </tr>
+                <tr>
+                    <td><strong>Pérdida de valor al Año 1</strong></td>
+                    <td>-$5.000.000 (25%)</td>
+                    <td><strong>$0</strong> (Solo pagas tarifa mensual)</td>
+                </tr>
+                <tr>
+                    <td><strong>Pérdida de valor al Año 2</strong></td>
+                    <td>-$6.400.000 (32%)</td>
+                    <td><strong>$0</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Pérdida de valor al Año 3</strong></td>
+                    <td>-$8.000.000 (40%)</td>
+                    <td><strong>$0</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Capital recuperable al vender (Año 3)</strong></td>
+                    <td>$12.000.000 (Estimado optimista)</td>
+                    <td>No aplica. Dejas de pagar o cambias auto.</td>
+                </tr>
+                <tr>
+                    <td><strong>Riesgo asumido</strong></td>
+                    <td>Total (Dependes del mercado de reventa)</td>
+                    <td><strong>Cero</strong> (Riesgo asumido por Mitta)</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><em>Nota: La simulación de compra propia no incluye los intereses del crédito automotriz, los cuales aumentarían aún más la pérdida real de dinero.</em></p>
+
+        <h2>El Renting como "Seguro Antidepreciación"</h2>
+
+        <p>Si analizas la tabla, te darás cuenta de que al comprar un vehículo, el costo real de moverte no es solo la bencina o el seguro; es principalmente <strong>el dinero que perdiste mientras el auto estuvo estacionado</strong>.</p>
+
+        <p>El modelo de suscripción MittaGO es, en su esencia, una protección financiera. Pagar una tarifa plana mensual significa que estás comprando el uso y el derecho a la movilidad, mientras nosotros, respaldados por la experiencia internacional de <strong>Mitsui & Co., Ltd.</strong>, asumimos el dolor de cabeza de la reventa, la depreciación contable y la mantención del vehículo.</p>
+
+        <p>Cuando finaliza tu contrato de suscripción, no te quedas con un activo desvalorizado que debes intentar vender en redes sociales. Simplemente devuelves las llaves, cierras el ciclo y, si lo deseas, estrenas el último modelo del año.</p>
+
+        <div class="cta-container">
+            <p><em>¿Listo para dejar de perder el 40% del valor de tus autos?</em></p>
+            <a href="#" class="cta-button">Asegura tu tarifa plana hoy y nosotros asumimos la depreciación</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Todos los autos se deprecian a la misma velocidad?</div>
+                <div class="faq-answer">No. Los vehículos comerciales, camionetas de trabajo y algunas marcas japonesas/coreanas de alto volumen tienden a mantener mejor su valor de reventa. Por el contrario, los vehículos de lujo, marcas emergentes sin repuestos garantizados y algunos autos eléctricos de primera generación sufren caídas de precio mucho más agresivas.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Si devuelvo el auto suscrito con muchos kilómetros, ¿pago más?</div>
+                <div class="faq-answer">Tu contrato de MittaGO establece una bolsa de kilometraje mensual o anual. Mientras te mantengas dentro del límite contratado (que suele ser muy generoso para uso particular), no hay cobros adicionales, ya que ese nivel de desgaste fue calculado e incluido en tu tarifa plana inicial.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿MittaGO vende los autos después de que terminan las suscripciones?</div>
+                <div class="faq-answer">Sí. Como administradores profesionales de flota, cuando un vehículo finaliza sus ciclos óptimos de suscripción o leasing, es inspeccionado, reacondicionado y pasa a nuestras divisiones de venta de Seminuevos. Es precisamente nuestra economía de escala lo que nos permite absorber la depreciación de forma eficiente, traspasándote a ti solo una tarifa de uso.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

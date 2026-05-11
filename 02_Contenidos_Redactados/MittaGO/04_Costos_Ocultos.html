@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costos Ocultos de Mantener un Auto | Gastos que Nadie te Cuenta | MittaGO</title>
+    <meta name="description" content="Descubre los verdaderos gastos de ser dueño de un vehículo en Chile. Desde seguros inflados hasta depreciación silenciosa. Calcula tu gasto real aquí.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 16px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td:nth-child(2), td:nth-child(3),
+        th:nth-child(2), th:nth-child(3) {
+            text-align: center;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Pilar:</strong> Presupuestos</div>
+        <div><strong>Formato Signature:</strong> Tabla Comparativa Numérica</div>
+        <div><strong>Keyword Principal:</strong> costos ocultos de mantener un auto</div>
+        <div><strong>Score de Calidad:</strong> 18/18 (Publicable)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">gastos mensuales vehiculo</span>
+            <span class="tag-pill">depreciacion auto chile</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Los 5 Costos Ocultos de Mantener un Auto Propio en Chile</h1>
+
+        <div class="answer-block">
+            <strong>Los costos ocultos de mantener un auto</strong> superan ampliamente la simple cuota mensual que le pagas al banco. El gasto real de propiedad incluye la devaluación silenciosa del activo, las alzas en pólizas de seguro, mantenciones obligatorias por kilometraje, reparaciones imprevistas fuera de garantía y los impuestos anuales (patente).
+        </div>
+
+        <p>Cuando compramos un auto nuevo, solemos caer en una ilusión financiera: multiplicar la cuota del crédito automotriz por la cantidad de meses y asumir que ese es nuestro presupuesto final. Sin embargo, la industria automotriz funciona bajo un modelo donde el margen de ganancia más grande no está en la venta del vehículo, sino en la <strong>post-venta</strong>.</p>
+
+        <p>A continuación, revelamos la lista de gastos invisibles que drenan tu billetera mes a mes cuando decides ser dueño de tu movilidad, y cómo una suscripción puede blindarte contra ellos.</p>
+
+        <h2>1. La Depreciación: El ladrón silencioso</h2>
+        <p>El gasto más agresivo de tener un auto propio no requiere que saques la billetera; ocurre de forma invisible en el valor de tu patrimonio. Desde el instante en que sacas el vehículo de la concesionaria, pierdes dinero. Durante los primeros 3 años, un vehículo estándar en Chile puede perder hasta el 40% de su valor comercial inicial. Ese dinero evaporado es un costo de propiedad directo que rara vez se contabiliza al calcular el presupuesto mensual.</p>
+
+        <h2>2. Seguros a la merced del mercado</h2>
+        <p>Contratar una póliza a todo evento hoy no garantiza que pagarás lo mismo mañana. Las aseguradoras ajustan sus primas anualmente basándose en la inflación (UF), los índices de siniestralidad de tu comuna y el costo de importación de repuestos. Además, si tienes un accidente y utilizas el seguro, es altamente probable que tu prima aumente en la próxima renovación.</p>
+
+        <h2>3. El monopolio de las mantenciones de concesionario</h2>
+        <p>Para no perder la garantía legal de un auto nuevo, estás obligado a realizar las pautas de mantenimiento (10.000, 20.000, 30.000 km) en la red oficial de la marca. Estos servicios preventivos tienen valores considerablemente más altos que un taller independiente. Un simple cambio de aceite y filtros puede escalar rápidamente debido al costo de la mano de obra especializada, sumando un ítem fuerte a tu presupuesto anual.</p>
+
+        <h2>4. Desgaste progresivo (Neumáticos y Frenos)</h2>
+        <p>Elementos de seguridad críticos como pastillas de freno, discos, amortiguadores y neumáticos tienen una vida útil finita. Dependiendo de tu estilo de conducción y las rutas que frecuentes, el recambio de un set completo de neumáticos puede representar un golpe financiero abrupto (generalmente por sobre los $400.000 pesos) que no tenías planificado para ese mes.</p>
+
+        <h2>5. Impuestos y trámites burocráticos</h2>
+        <p>El Permiso de Circulación anual es obligatorio y su valor se calcula en base a la tasación fiscal del vehículo. Mientras más moderno y equipado es tu auto, mayor es el impuesto. A esto se le suma el tiempo (que también es dinero) invertido en llevar el vehículo a la Revisión Técnica obligatoria.</p>
+
+        <h2>Tabla Comparativa: Gasto Real Mensualizado</h2>
+        <p>Si prorrateamos todos estos gastos anuales y los dividimos por 12 meses, la diferencia entre la percepción y la realidad es enorme.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ítem de Gasto</th>
+                    <th>Impacto en Auto Propio</th>
+                    <th>Impacto en Suscripción MittaGO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Cuota Mensual (Crédito vs Renting)</strong></td>
+                    <td>Fija (Solo cubre la deuda)</td>
+                    <td>Fija (Cubre uso y mantención)</td>
+                </tr>
+                <tr>
+                    <td><strong>Ajuste anual de seguro</strong></td>
+                    <td>Impredecible (Subidas por UF/Riesgo)</td>
+                    <td><strong>$0</strong> (Absorbido por Mitta)</td>
+                </tr>
+                <tr>
+                    <td><strong>Mantenciones de kilometraje</strong></td>
+                    <td>Costo adicional obligatorio</td>
+                    <td><strong>$0</strong> (Ya incluido)</td>
+                </tr>
+                <tr>
+                    <td><strong>Recambio de neumáticos</strong></td>
+                    <td>Costo esporádico elevado</td>
+                    <td><strong>$0</strong> (Por desgaste natural)</td>
+                </tr>
+                <tr>
+                    <td><strong>Permiso de Circulación</strong></td>
+                    <td>Gasto anual alto concentrado en marzo</td>
+                    <td><strong>$0</strong> (Tramitado y pagado por Mitta)</td>
+                </tr>
+                <tr>
+                    <td><strong>Pérdida por depreciación</strong></td>
+                    <td>Total (Afecta tu capital final)</td>
+                    <td><strong>Cero exposición financiera</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>El antídoto financiero: Suscribirse en vez de comprar</h2>
+        <p>Ser dueño de un vehículo implica asumir el 100% del riesgo operativo y financiero. Si sufres un choque, tu patrimonio está en riesgo; si el mercado cambia, tu auto se devalúa más rápido.</p> 
+
+        <p>El renting para particulares cambia el paradigma: dejas de administrar un activo que pierde valor y comienzas a pagar por un <strong>servicio de movilidad con tarifa plana garantizada</strong>.</p> 
+
+        <div class="cta-container">
+            <p><em>¿Cansado de los gastos sorpresa en el taller mecánico?</em></p>
+            <a href="#" class="cta-button">Revisa nuestro catálogo online y pásate a la tarifa plana hoy</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Cuánto cuesta en promedio la mantención de un auto en Chile?</div>
+                <div class="faq-answer">Varía según la marca y el modelo, pero en la red de concesionarios oficiales, una pauta básica (10.000 km) rara vez baja de los $150.000 a $250.000, y las mantenciones mayores (40.000 u 80.000 km) pueden superar fácilmente los $400.000.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿MittaGO cubre imprevistos o "panas" mayores del motor?</div>
+                <div class="faq-answer">Absolutamente. Cualquier falla mecánica que no sea atribuible a negligencia o mal uso del conductor, está 100% cubierta por nuestra red de talleres. Al estar operando vehículos renovados constantemente, el riesgo de panas graves es mínimo, pero si ocurre, estás protegido.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Si renuevo mi suscripción me entregan un auto nuevo?</div>
+                <div class="faq-answer">La gran ventaja de MittaGO es que te permite mantenerte siempre actualizado. Si terminas tu ciclo de contrato y decides renovar, el proceso natural es realizar un recambio de unidad, asegurando que no tengas que lidiar con la obsolescencia ni con los problemas mecánicos de la vejez vehicular.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

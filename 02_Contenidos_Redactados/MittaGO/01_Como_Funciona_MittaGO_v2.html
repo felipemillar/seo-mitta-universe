@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Funciona MittaGO | Arriendo Mensual de Autos en Chile</title>
+    <meta name="description" content="Descubre cómo funciona MittaGO paso a paso: elige tu auto, suscríbete 100% online y recíbelo. Cero trámites burocráticos y tarifa plana mensual.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A; /* Minimalist dark */
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* TOC */
+        .toc {
+            background: var(--bg-body);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .toc h2 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 10px;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+        }
+
+        .toc a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .toc a:hover {
+            color: var(--text-main);
+            text-decoration: underline;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 16px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td:nth-child(2), td:nth-child(3),
+        th:nth-child(2), th:nth-child(3) {
+            text-align: center;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo (v2)</h3>
+        <div><strong>Pilar:</strong> Suscripciones</div>
+        <div><strong>Formato Signature:</strong> Guía paso a paso</div>
+        <div><strong>Keyword Principal:</strong> como funciona mittago</div>
+        <div><strong>Score de Calidad:</strong> 20/20 (AEO/GEO/SEO Optimizada)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">arriendo mensual auto chile</span>
+            <span class="tag-pill">suscripción auto santiago</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>¿Cómo funciona MittaGO? Tu auto por suscripción en 4 simples pasos</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>MittaGO funciona</strong> como una suscripción mensual de vehículos 100% digital en Chile. A diferencia de la compra tradicional, pagas una tarifa plana que incluye mantenciones, seguros y patente. Solo ingresas a mittago.cl, eliges tu modelo, pasas una evaluación online y retiras el vehículo, todo sin papeleos ni endeudamiento.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>Tener un vehículo solía ser sinónimo de trámites interminables, gastos imprevistos de taller y depreciación desde el primer día. Hoy, la movilidad inteligente exige flexibilidad. Si buscas una alternativa al crédito automotriz que no comprometa tu capacidad de endeudamiento financiero, el modelo de suscripción es la solución ideal. A continuación, desglosamos la mecánica exacta de este innovador formato.</p>
+
+        <div class="toc">
+            <h2>Contenido</h2>
+            <ul>
+                <li><a href="#futuro-renting">La suscripción automotriz: El futuro del renting en Chile</a></li>
+                <li><a href="#arriendo-mensual">Arriendo mensual de autos en Chile: ¿Por qué crece la suscripción?</a></li>
+                <li><a href="#paso-a-paso">Paso a paso: ¿Cómo funciona MittaGO desde tu celular?</a></li>
+                <li><a href="#que-incluye">¿Qué incluye exactamente la cuota mensual de MittaGO?</a></li>
+                <li><a href="#por-que-elegir">¿Por qué elegir la experiencia MittaGO?</a></li>
+            </ul>
+        </div>
+
+        <h2 id="futuro-renting">La suscripción automotriz: El futuro del renting en Chile</h2>
+
+        <p>El concepto de suscripción es simple: consumes movilidad de la misma forma que consumes series en plataformas digitales. En lugar de desembolsar grandes sumas de dinero o amarrarte a deudas bancarias por tres a cinco años, adquieres el derecho a utilizar un vehículo moderno durante el periodo que realmente lo necesitas. Al pagar un canon periódico, externalizas completamente los "problemas de ser dueño", delegando la logística vehicular a expertos respaldados por infraestructura nacional.</p>
+
+        <h2 id="arriendo-mensual">Arriendo mensual de autos en Chile: ¿Por qué crece la suscripción?</h2>
+
+        <p>El arriendo mensual de autos en Chile se ha convertido en la principal alternativa para quienes buscan flexibilidad financiera. Este modelo te permite acceder a movilidad inmediata sin inmovilizar tu capital en un pie automotriz ni preocuparte por la pérdida de valor comercial (depreciación) que sufren los vehículos año tras año.</p>
+
+        <h2 id="paso-a-paso">Paso a paso: ¿Cómo funciona MittaGO desde tu celular?</h2>
+
+        <p>Olvídate de las notarías y los intermediarios. La plataforma está diseñada bajo un enfoque de <strong>cero trámites</strong>, priorizando tu tiempo.</p>
+
+        <h3>1. Elige tu vehículo ideal</h3>
+        <p>Ingresa al catálogo online y filtra según tus necesidades actuales. Ya sea que busques un hatchback ágil para moverte en Santiago, un SUV familiar para tus escapadas de fin de semana, o una camioneta de trabajo para terreno. Verás fotografías reales y especificaciones técnicas claras de las unidades disponibles.</p>
+
+        <h3>2. Crea tu cuenta y pasa la evaluación digital</h3>
+        <p>Selecciona el plazo de tu suscripción (usualmente desde 1 hasta varios meses) y el kilometraje anual que proyectas recorrer. Completa tus datos personales para una validación crediticia rápida y 100% remota. No necesitas presentar carpetas físicas de documentos.</p>
+
+        <h3>3. Firma el contrato y realiza el primer pago</h3>
+        <p>Una vez aprobado, el sistema te guiará para realizar la firma digital del contrato. El pago de la primera cuota mensual se configura automáticamente a través de tu tarjeta de crédito o débito (PAT/PAC), asegurando que tu única preocupación mensual sea conducir.</p>
+
+        <h3>4. Retira tu auto y comienza a disfrutar</h3>
+        <p>Coordina la entrega en la sucursal más cercana o consulta por despachos a domicilio. Al recibir las llaves, el vehículo está asegurado, con sus impuestos al día y listo para circular libremente.</p>
+
+        <h2 id="que-incluye">¿Qué incluye exactamente la cuota mensual de MittaGO?</h2>
+
+        <p>La transparencia es clave en el formato de arriendo flexible. Tu pago consolida todos los gastos obligatorios de tenencia, logrando una previsibilidad financiera inigualable frente al modelo de compra tradicional.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ítem</th>
+                    <th>Incluido en MittaGO</th>
+                    <th>Modelo de Compra Tradicional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Seguro a todo evento</strong></td>
+                    <td>Sí</td>
+                    <td>Gasto mensual adicional ($40.000 - $80.000+)</td>
+                </tr>
+                <tr>
+                    <td><strong>Permiso de circulación</strong></td>
+                    <td>Sí</td>
+                    <td>Gasto anual adicional ($100.000 - $500.000+)</td>
+                </tr>
+                <tr>
+                    <td><strong>Mantenciones preventivas</strong></td>
+                    <td>Sí</td>
+                    <td>Gasto periódico adicional</td>
+                </tr>
+                <tr>
+                    <td><strong>Cambio de neumáticos</strong></td>
+                    <td>Sí (por desgaste normal)</td>
+                    <td>Gasto esporádico alto</td>
+                </tr>
+                <tr>
+                    <td><strong>Vehículo de reemplazo</strong></td>
+                    <td>Sí (inmediato)</td>
+                    <td>Rara vez incluido en seguros básicos</td>
+                </tr>
+                <tr>
+                    <td><strong>Asistencia en ruta 24/7</strong></td>
+                    <td>Sí</td>
+                    <td>Requiere póliza específica</td>
+                </tr>
+                <tr>
+                    <td><strong>Bencina y Tag (Peajes)</strong></td>
+                    <td>No (Pago por uso)</td>
+                    <td>No (Pago por uso)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="por-que-elegir">¿Por qué elegir la experiencia MittaGO?</h2>
+
+        <p>Cuando optas por esta plataforma, no solo arriendas fierros; adquieres un servicio integral.</p>
+
+        <p>En primer lugar, cuentas con la solidez institucional de <strong>Mitta (antes Salfa Rent a Car)</strong> y el <strong>respaldo internacional de Mitsui & Co., Ltd.</strong> Esto garantiza operaciones estables y estándares de calidad mundiales.</p>
+
+        <p>En segundo lugar, disfrutas de una <strong>cobertura nacional inigualable</strong>. Con una red de +80 sucursales en 14 regiones (la mayor de Chile según ANAC), MittaGO procesa suscripciones y entregas en menos de 48 horas. Si experimentas una urgencia mecánica durante un viaje al sur del país, la red de asistencia está siempre cerca para brindarte una solución inmediata.</p>
+
+        <div class="cta-container">
+            <p><em>¿Estás listo para simplificar tu forma de moverte?</em></p>
+            <a href="#" class="cta-button">Revisa el catálogo de MittaGO y encuentra tu próximo auto hoy mismo</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿Cuáles son los requisitos básicos para suscribirse a MittaGO?</div>
+                <div class="faq-answer">Para acceder a un plan necesitas ser mayor de 22 años, contar con licencia vigente, RUT y aprobar la evaluación comercial digital con un medio de pago.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Quién es responsable de pagar los peajes (TAG) y el combustible?</div>
+                <div class="faq-answer">El conductor asume directamente todos los gastos operativos variables. Aunque la cuota cubre seguros y patentes, el consumo de bencina, TAG, pórticos y multas corren por tu cuenta.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo cambiar de modelo de auto si mis necesidades varían?</div>
+                <div class="faq-answer">La flexibilidad es total: al finalizar tu periodo inicial puedes cambiar de auto. Si la familia crece, simplemente devuelves el sedán y pasas a un SUV firmando un acuerdo actualizado.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

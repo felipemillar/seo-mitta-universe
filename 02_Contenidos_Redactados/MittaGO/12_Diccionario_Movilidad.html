@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renting vs Leasing vs Compra Automotriz | MittaGO Chile</title>
+    <meta name="description" content="Entiende las diferencias reales entre renting (suscripción), leasing operativo, leasing financiero y la compra tradicional de un auto.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+        
+        /* Glossary List */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--text-secondary);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Pilar:</strong> Educación</div>
+        <div><strong>Formato Signature:</strong> Glosario</div>
+        <div><strong>Keyword Principal:</strong> diferencia entre renting leasing y compra</div>
+        <div><strong>Score de Calidad:</strong> 18/18 (Publicable)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">renting vs leasing chile</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Diccionario de Movilidad: Renting, Leasing y Compra explicados</h1>
+
+        <p>Al buscar un auto nuevo en Chile, es común encontrarse con términos financieros que las automotoras e instituciones financieras utilizan indistintamente, generando confusión. Conceptos como "Renting", "Leasing Operativo" o "Compra Inteligente" no son lo mismo y tienen impactos fiscales y financieros completamente distintos.</p>
+
+        <div class="answer-block">
+            <strong>En resumen:</strong> El <strong>Renting</strong> (o suscripción) incluye todos los gastos operativos (seguro, patentes, mantenciones) en una sola cuota plana mensual sin exigirte la compra final del auto. El <strong>Leasing</strong> es principalmente un arriendo financiero (con beneficios tributarios para empresas) diseñado para que adquieras el vehículo al final del contrato. La <strong>Compra</strong> tradicional te convierte en dueño inmediato del activo, asumiendo en solitario el 100% de la depreciación.
+        </div>
+
+        <p>Para ayudarte a tomar una decisión informada, hemos preparado este glosario definitivo con los términos clave que debes dominar antes de firmar cualquier contrato.</p>
+
+        <h2>Glosario de Financiamiento y Acceso Automotriz</h2>
+
+        <h3>1. Renting (o Suscripción de Autos)</h3>
+        <p>Es un modelo de "pago por uso". A cambio de una tarifa fija mensual, adquieres el derecho a utilizar un vehículo durante un periodo determinado (generalmente de 1 a 24 meses).</p>
+        <ul>
+            <li><strong>Qué incluye:</strong> La gran ventaja del renting (como <strong>MittaGO</strong>) es que la cuota incluye todos los gastos asociados a la propiedad: seguro a todo evento, patente, permisos de circulación, revisiones técnicas, mantenciones preventivas e incluso auto de reemplazo.</li>
+            <li><strong>A quién le sirve:</strong> A personas naturales o profesionales independientes que buscan predictibilidad financiera, cero preocupaciones administrativas y la flexibilidad de cambiar de vehículo constantemente.</li>
+            <li><strong>Propiedad:</strong> El vehículo nunca es tuyo, por lo que no asumes su pérdida de valor (depreciación).</li>
+        </ul>
+
+        <h3>2. Leasing Financiero</h3>
+        <p>Es un mecanismo de financiamiento estructurado como un contrato de arriendo con opción de compra obligatoria o altamente incentivada al final del periodo.</p>
+        <ul>
+            <li><strong>Qué incluye:</strong> Solo el financiamiento del activo. Los seguros, patentes, mantenciones y reparaciones corren por cuenta exclusiva de quien arrienda el auto.</li>
+            <li><strong>A quién le sirve:</strong> Principalmente a empresas (personas jurídicas) que buscan aprovechar el beneficio tributario de descontar la cuota del leasing como gasto y recuperar el IVA, con el objetivo final de quedarse con la flota de vehículos a un valor residual.</li>
+            <li><strong>Propiedad:</strong> Legalmente el auto pertenece a la institución financiera hasta que pagues la cuota final (valor residual), momento en el cual se transfiere a tu nombre.</li>
+        </ul>
+
+        <h3>3. Leasing Operativo</h3>
+        <p>Una mezcla entre renting y leasing. Está enfocado estrictamente en flotas corporativas (por ejemplo, camionetas mineras). Incluye la administración y mantenimiento de los vehículos (como el renting), pero se firma a largo plazo (3 a 5 años) y suele ser un producto B2B cerrado, no disponible para el usuario de a pie.</p>
+
+        <h3>4. Compra con Crédito Tradicional (o Automotriz)</h3>
+        <p>El método más clásico. El banco o financiera te presta dinero para comprar el auto, el cual queda "en prenda" (garantía) hasta que termines de pagar.</p>
+        <ul>
+            <li><strong>Qué incluye:</strong> Solo el préstamo del dinero más intereses. Todos los gastos periféricos (bencina, seguro, taller, impuestos) son tu responsabilidad.</li>
+            <li><strong>A quién le sirve:</strong> A personas que desean mantener un mismo vehículo por más de 5 a 8 años y no les importa lidiar con la reventa futura.</li>
+            <li><strong>Propiedad:</strong> El auto es tuyo (sujeto a la prenda), pero también asumes el 100% de la depreciación, que puede alcanzar un 40% en los primeros 3 años.</li>
+        </ul>
+
+        <h3>5. Compra Inteligente</h3>
+        <p>Un producto de marketing de las automotoras. Es un crédito automotriz dividido en tres partes: un pie (enganche), cuotas mensuales bajas durante 24 a 36 meses, y un "Coutón" final gigantesco (VFG - Valor Futuro Garantizado) que suele equivaler al 40% o 50% del valor del auto. Al llegar al final, debes pagar el Cuotón, refinanciarlo, o devolver el auto como pie para otro crédito (manteniéndote endeudado permanentemente).</p>
+
+        <h2>La evolución hacia el pago por uso</h2>
+
+        <p>Si analizas el diccionario, notarás que la <strong>compra</strong> y el <strong>leasing</strong> están diseñados para <em>amarrarte</em> a un activo financiero, obligándote a asumir el riesgo del mercado.</p> 
+
+        <p>El <strong>Renting / Suscripción</strong>, en cambio, está diseñado para liberarte. Convierte un gasto de capital altísimo (y de alto riesgo) en un gasto operativo mensual, transparente y predecible.</p>
+
+        <div class="cta-container">
+            <p><em>¿Cansado de la letra chica de los créditos automotrices?</em></p>
+            <a href="#" class="cta-button">Conoce los planes transparentes de MittaGO y paga solo por lo que usas</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿El Renting exige un pie inicial como la Compra Inteligente?</div>
+                <div class="faq-answer">No. A diferencia de la Compra Inteligente que exige entregar millones de pesos como pie inicial, el modelo de suscripción MittaGO no requiere de este desembolso (pie 0%). Solo pagas tu mes de uso por adelantado y una garantía retornable menor.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué pasa si quiero comprar el auto suscrito después de usarlo?</div>
+                <div class="faq-answer">El modelo de suscripción MittaGO está diseñado estrictamente como un servicio de movilidad y no como una herramienta de financiamiento para compra. Sin embargo, los vehículos que terminan su ciclo de renting son derivados a nuestra división de Seminuevos, donde pueden ser adquiridos por el público general bajo formatos de venta tradicional.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Un particular puede tomar un Leasing?</div>
+                <div class="faq-answer">Sí, técnicamente un particular puede solicitar un leasing financiero, pero rara vez conviene. Sin un "giro comercial" que permita aprovechar los beneficios tributarios para descontar impuestos o IVA, el leasing financiero para una persona natural termina siendo simplemente un crédito automotriz más enredado. Para un particular, el Renting es superior.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>

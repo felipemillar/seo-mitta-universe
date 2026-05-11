@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto Real para Comprar y Mantener un Auto | MittaGO</title>
+    <meta name="description" content="Calcula el costo total de propiedad (TCO) de un vehículo. Descubre por qué la cuota del crédito es solo la punta del iceberg en tus gastos.">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+        
+        /* List formatting */
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        ul li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--text-secondary);
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 16px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+
+        tr:last-child td {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        td:nth-child(2), td:nth-child(3),
+        th:nth-child(2), th:nth-child(3) {
+            text-align: center;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <div class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Pilar:</strong> Presupuestos</div>
+        <div><strong>Formato Signature:</strong> Tabla comparativa</div>
+        <div><strong>Keyword Principal:</strong> presupuesto para comprar auto</div>
+        <div><strong>Score de Calidad:</strong> 18/18 (Publicable)</div>
+        <div class="meta-tags">
+            <span class="tag-pill">B2C</span>
+            <span class="tag-pill">MittaGO</span>
+            <span class="tag-pill">costo total de propiedad auto</span>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>El verdadero costo de un auto: Guía para armar tu presupuesto de movilidad</h1>
+
+        <div class="answer-block">
+            <strong>El verdadero costo de un auto</strong> va mucho más allá de la cuota del crédito. Un presupuesto de movilidad realista debe incluir bencina/carga, tags y peajes, seguro a todo evento, mantenciones preventivas, revisiones técnicas, imprevistos (neumáticos) y la depreciación anual. Agrupar todo esto en una sola suscripción mensual elimina la incertidumbre de tus finanzas.
+        </div>
+
+        <p>Cuando la mayoría de los chilenos busca armar un <strong>presupuesto para comprar un auto</strong>, cometen un error financiero clásico: igualan el "costo del auto" a la "cuota del banco". Sin embargo, la cuota del crédito es apenas la punta del iceberg. El Costo Total de Propiedad (TCO, por sus siglas en inglés) es el único indicador real para evaluar si puedes o no mantener un vehículo a largo plazo.</p>
+
+        <p>Si no planificas tus gastos periféricos, corres el riesgo de comprar un vehículo que mes a mes ahogará tu flujo de caja.</p>
+
+        <p>En el modelo de renting o suscripción (como <strong>MittaGO</strong>), agrupamos todos estos costos dispersos en una sola tarifa predecible. Para ayudarte a entender esta diferencia, desglosaremos a continuación cómo se estructura un presupuesto de movilidad honesto.</p>
+
+        <h2>Los 4 pilares de un presupuesto automotriz</h2>
+
+        <h3>1. Costos de Adquisición (La punta del iceberg)</h3>
+        <p>Es el dinero que entregas para que te pasen las llaves. En el modelo tradicional incluye el Pie (o enganche), los impuestos de inscripción en el Registro Civil, la primera patente y los gastos operacionales del crédito.</p>
+
+        <h3>2. Costos Fijos de Operación (Los gastos invisibles)</h3>
+        <p>Independiente de si el auto está rodando o estacionado en tu casa, estos costos llegarán mes a mes:</p>
+        <ul>
+            <li><strong>Seguro a todo evento:</strong> Que varía fuertemente según tu edad, comuna y modelo del auto.</li>
+            <li><strong>Permiso de circulación (Patente):</strong> Un pago fuerte en marzo de cada año.</li>
+            <li><strong>Revisión técnica:</strong> Costo anual obligatorio.</li>
+            <li><strong>Intereses del crédito:</strong> El costo del dinero prestado.</li>
+        </ul>
+
+        <h3>3. Costos Variables (Los gastos de rodado)</h3>
+        <p>Mientras más uses el vehículo, más suben estos ítems:</p>
+        <ul>
+            <li><strong>Combustible o energía:</strong> Bencina, diésel o carga eléctrica.</li>
+            <li><strong>Tags y peajes urbanos:</strong> Un gasto silencioso pero continuo.</li>
+            <li><strong>Mantenciones preventivas:</strong> Cambios de aceite, filtros y pastillas por kilometraje.</li>
+            <li><strong>Lavados y estética.</strong></li>
+        </ul>
+
+        <h3>4. Costos de Riesgo (Imprevistos y pérdida)</h3>
+        <ul>
+            <li><strong>Deducibles:</strong> En caso de choques.</li>
+            <li><strong>Fallas fuera de garantía:</strong> Problemas de motor, batería, caja de cambios o pinchazos de neumáticos.</li>
+            <li><strong>Depreciación:</strong> El valor que pierde el vehículo año a año (la pérdida de capital más grande y silenciosa).</li>
+        </ul>
+
+        <h2>Tabla Comparativa: Presupuesto Mensual Desglosado</h2>
+
+        <p>Para hacer el ejercicio, comparemos el presupuesto mensual real de mantener un SUV de $18.000.000 (comprado a crédito) versus el presupuesto de suscribirlo bajo una tarifa plana.</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ítem de Gasto Mensual</th>
+                    <th>Compra Propia (Estimado)</th>
+                    <th>Suscripción MittaGO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Cuota del vehículo</strong></td>
+                    <td>$450.000 (Crédito)</td>
+                    <td><strong>$550.000</strong> (Tarifa Única)</td>
+                </tr>
+                <tr>
+                    <td><strong>Seguro a todo evento</strong></td>
+                    <td>$60.000</td>
+                    <td><strong>$0</strong> (Incluido)</td>
+                </tr>
+                <tr>
+                    <td><strong>Prorrateo Permiso de Circulación</strong></td>
+                    <td>$30.000</td>
+                    <td><strong>$0</strong> (Incluido)</td>
+                </tr>
+                <tr>
+                    <td><strong>Prorrateo Mantenciones Anuales</strong></td>
+                    <td>$25.000</td>
+                    <td><strong>$0</strong> (Incluidas)</td>
+                </tr>
+                <tr>
+                    <td><strong>Prorrateo de Depreciación (Pérdida)</strong></td>
+                    <td>$150.000</td>
+                    <td><strong>$0</strong> (No asumes pérdida)</td>
+                </tr>
+                <tr>
+                    <td><strong>Fondo para Imprevistos (Fallas)</strong></td>
+                    <td>$20.000</td>
+                    <td><strong>$0</strong> (Cobertura Mitta)</td>
+                </tr>
+                <tr>
+                    <td><strong>Bencina / Tags</strong></td>
+                    <td>Variable según tu uso</td>
+                    <td>Variable según tu uso</td>
+                </tr>
+                <tr>
+                    <td><strong>COSTO MENSUAL REAL (Sin uso)</strong></td>
+                    <td><strong>$735.000</strong></td>
+                    <td><strong>$550.000</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Predictibilidad: La ventaja de la tarifa plana</h2>
+
+        <p>Como muestra la tabla, comprar el auto parece "más barato" si solo miras la cuota del banco ($450.000). Pero cuando sumas la realidad operativa y la desvalorización, el costo mensual de ser dueño ($735.000) supera ampliamente la tarifa integral de una suscripción.</p>
+
+        <p>Armar tu presupuesto con MittaGO es extremadamente simple: tomas tu tarifa mensual, le sumas tu gasto de bencina y Tags, y terminaste. No hay facturas sorpresa de taller, no hay alzas de seguros por siniestralidad de marca, y no hay estrés en marzo para pagar patentes astronómicas.</p> 
+
+        <p>El renting no solo te entrega un auto; te entrega <strong>tranquilidad y control total sobre tus finanzas personales</strong>.</p>
+
+        <div class="cta-container">
+            <p><em>¿Quieres tener un presupuesto sin sorpresas a fin de mes?</em></p>
+            <a href="#" class="cta-button">Calcula tu tarifa plana en MittaGO y simplifica tu vida</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">¿El pago de Tags y peajes está incluido en la cuota?</div>
+                <div class="faq-answer">No. El consumo de Autopistas (Tags), peajes y combustible/carga eléctrica siempre depende del uso individual de cada cliente. MittaGO consolida el cobro de tus consumos de Tag para facilitarte el pago mensual, pero no es un monto fijo incluido en la tarifa base.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Si el auto se avería, el arreglo rompe mi presupuesto?</div>
+                <div class="faq-answer">Si la avería es producto de una falla mecánica normal o un desgaste cubierto, el costo es 100% de MittaGO (y te proveemos un auto de reemplazo si el taller tarda más de lo estipulado). Si es un siniestro (choque), solo debes cubrir el valor del deducible fijado en tu contrato, protegiendo tu flujo de caja de gastos millonarios repentinos.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Conviene pagar un pie alto en crédito para bajar la cuota mensual?</div>
+                <div class="faq-answer">Descapitalizarte pagando un pie de $5.000.000 bajará la cuota mensual del banco, pero inmoviliza tu efectivo en un activo que pierde valor. Al suscribir con MittaGO (sin pagar pie inicial), puedes tomar esos mismos $5 millones e invertirlos en instrumentos financieros (depósitos a plazo, fondos mutuos) que te generen rentabilidad mensual, mejorando aún más tu presupuesto global.</div>
+            </div>
+        </div>
+
+    </article>
+</div>
+
+</body>
+</html>
