@@ -1,0 +1,565 @@
+const fs = require('fs');
+const path = require('path');
+
+const DIR_RAC = "/Users/fmillar/Proyectos_Desarrollo/INMedios_Mitta/InMedios_Mitta/02_Contenidos_Redactados/Mitta_Rent_a_Car";
+const DIR_MGO = "/Users/fmillar/Proyectos_Desarrollo/INMedios_Mitta/InMedios_Mitta/02_Contenidos_Redactados/MittaGO";
+const OUTPUT_FILE = "/Users/fmillar/Proyectos_Desarrollo/INMedios_Mitta/InMedios_Mitta/Portal_Feedback_Mitta.html";
+
+function parseFrontmatter(content) {
+    const yamlMatch = content.match(/^---\n([\s\S]*?)\n---/);
+    if (!yamlMatch) return { title: "Sin Título", desc: "Sin descripción" };
+    
+    let title = "";
+    let desc = "";
+    const lines = yamlMatch[1].split('\n');
+    for (const line of lines) {
+        if (line.startsWith('titulo:') || line.startsWith('meta_title:')) {
+            if (!title) title = line.substring(line.indexOf(':') + 1).trim().replace(/^["']|["']$/g, '');
+        }
+        if (line.startsWith('meta_description:')) {
+            desc = line.substring(line.indexOf(':') + 1).trim().replace(/^["']|["']$/g, '');
+        }
+    }
+    return { title, desc };
+}function getArticles(dir, pilarName) {
+    const articles = [];
+    if (!fs.existsSync(dir)) return articles;
+    const files = fs.readdirSync(dir);
+    
+    files.forEach((file, index) => {
+        if (!file.endsWith('_v2.md')) return;
+        const content = fs.readFileSync(path.join(dir, file), 'utf8');
+        const meta = parseFrontmatter(content);
+        
+        const safeTitle = (meta.title || file.replace('_v2.md', '').replace(/_/g, ' ')).replace(/"/g, '&quot;').replace(/'/g, "\\'");
+        const safeDesc = (meta.desc || "Descripción pendiente.").replace(/"/g, '&quot;').replace(/'/g, "\\'");
+        const keyword = (meta.keyword || "este tema").replace(/"/g, '&quot;').replace(/'/g, "\\'");
+
+        articles.push({
+            id: `${pilarName.replace(/\s+/g, '').toLowerCase()}-${index}`,
+            pilar: pilarName,
+            file: file,
+            title: safeTitle,
+            description: safeDesc,
+            keyword: keyword
+        });
+    });
+    return articles;
+}
+
+const racArticles = getArticles(DIR_RAC, "Rent a Car");
+const mgoArticles = getArticles(DIR_MGO, "MittaGO");
+const allArticles = [...racArticles, ...mgoArticles];
+
+// Generate dynamic questions dictionary
+let questionsJsObj = "const articleQuestions = {\n";
+allArticles.forEach(art => {
+    questionsJsObj += `  '${art.id}': {
+        q1: "¿Al leer la introducción sobre '${art.keyword}', sientes que atrapa rápidamente la atención de tu cliente ideal?",
+        q2: "Para un tema como '${art.title}', ¿sientes que el tono de voz es el correcto o preferirías algo distinto?",
+        q3: "Al explicar los beneficios de este servicio, ¿crees que la información es clara y fácil de digerir para alguien que no sabe nada del tema?",
+        q4: "Pensando en nuestro objetivo comercial para el pilar de '${art.pilar}', ¿sientes que este texto logra convencer y motivar la reserva?",
+        q5: "Pensando en la próxima etapa (el diseño visual), ¿qué tipo de imagen o foto te imaginas acompañando a este texto en particular?"
+    },\n`;
+});
+questionsJsObj += "};";
+
+const htmlTemplate = `<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Feedback de Contenidos | Mitta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #10b981;
+            --accent-hover: #059669;
+            --brand-rac: #3b82f6;
+            --brand-mgo: #8b5cf6;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to bottom, rgba(16,185,129,0.1), transparent);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #10b981, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: -2rem auto 3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .tab-btn {
+            padding: 1rem 3rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            background: var(--bg-card);
+            color: var(--text-muted);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .tab-btn.active[data-target="rac"] {
+            background: var(--brand-rac);
+            color: white;
+            border-color: var(--brand-rac);
+        }
+
+        .tab-btn.active[data-target="mgo"] {
+            background: var(--brand-mgo);
+            color: white;
+            border-color: var(--brand-mgo);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 4rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .grid-view {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .view-section {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .view-section.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 4px; height: 100%;
+        }
+
+        .card.rac::before { background: var(--brand-rac); }
+        .card.mgo::before { background: var(--brand-mgo); }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255,255,255,0.2);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            z-index: 100;
+            padding: 2rem;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .modal-content {
+            background: var(--bg-dark);
+            width: 100%;
+            max-width: 800px;
+            max-height: 90vh;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            padding: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            position: sticky;
+            top: 0;
+            background: rgba(15,23,42,0.95);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+        }
+
+        .modal-header h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 0.5rem; }
+        .modal-header p { color: var(--text-muted); font-size: 0.9rem; }
+        
+        .close-btn {
+            position: absolute;
+            top: 2rem; right: 2rem;
+            background: none; border: none;
+            color: var(--text-muted);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .close-btn:hover { color: white; }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            color: #cbd5e1;
+            font-size: 1.05rem;
+        }
+        
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(0,0,0,0.2);
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            resize: vertical;
+            min-height: 100px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 400;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 6px;
+            transition: background 0.2s;
+            margin-bottom: 0;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+        }
+
+        .radio-group label:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .radio-group input[type="radio"] {
+            accent-color: var(--accent);
+            transform: scale(1.2);
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 1.2rem;
+            background: var(--accent);
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background: rgba(16,185,129,0.2);
+            color: #34d399;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Portal de Feedback de Contenidos</h1>
+        <p>Selecciona un artículo para darnos tu opinión sobre el enfoque, tono de voz y expectativas visuales. Tu feedback guía nuestra creatividad.</p>
+    </header>
+
+    <div class="tabs">
+        <button class="tab-btn active" data-target="rac">Mitta Rent a Car (20)</button>
+        <button class="tab-btn" data-target="mgo">MittaGO (20)</button>
+    </div>
+
+    <div class="container">
+        <!-- VISTA RENT A CAR -->
+        <div id="rac" class="view-section active">
+            <div class="grid-view">
+                <!-- CARDS_RAC -->
+            </div>
+        </div>
+
+        <!-- VISTA MITTAGO -->
+        <div id="mgo" class="view-section">
+            <div class="grid-view">
+                <!-- CARDS_MGO -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FEEDBACK -->
+    <div class="modal-overlay" id="feedbackModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <span class="status-badge" id="modalPilar">Pilar</span>
+                <h2 id="modalTitle">Título del Artículo</h2>
+                <p id="modalDesc">Descripción</p>
+            </div>
+            <div class="modal-body">
+                <form id="feedbackForm" onsubmit="submitFeedback(event)">
+                    
+                    <div class="form-group">
+                        <label id="label-q1">1. Impacto Inicial</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="q1" value="A" required> A) Sí, es muy atractivo y directo.</label>
+                            <label><input type="radio" name="q1" value="B"> B) Me gusta, pero cambiaría un par de palabras.</label>
+                            <label><input type="radio" name="q1" value="C"> C) Lo siento un poco plano, me gustaría más energía.</label>
+                            <label><input type="radio" name="q1" value="D"> D) No me gusta, preferiría otro enfoque totalmente distinto.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-q2">2. Tono y Personalidad</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="q2" value="A" required> A) Sí, suena exactamente como nos gusta comunicar.</label>
+                            <label><input type="radio" name="q2" value="B"> B) Está bien, pero lo preferiría un poco más formal/serio.</label>
+                            <label><input type="radio" name="q2" value="C"> C) Está bien, pero lo preferiría más relajado y cercano.</label>
+                            <label><input type="radio" name="q2" value="D"> D) No me convence el tono, suena muy ajeno a nosotros.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-q3">3. Claridad del Mensaje</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="q3" value="A" required> A) Sí, está clarísimo y es súper fácil de leer.</label>
+                            <label><input type="radio" name="q3" value="B"> B) Se entiende, pero creo que yo lo resumiría un poco más.</label>
+                            <label><input type="radio" name="q3" value="C"> C) Hay partes que me resultan confusas o demasiado detalladas.</label>
+                            <label><input type="radio" name="q3" value="D"> D) No, creo que nuestro cliente final se perdería leyendo esto.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-q4">4. Enfoque Comercial</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="q4" value="A" required> A) Sí, destaca nuestros beneficios clave perfectamente.</label>
+                            <label><input type="radio" name="q4" value="B"> B) Sí, aunque me gustaría agregarle una oferta o gancho más directo.</label>
+                            <label><input type="radio" name="q4" value="C"> C) Siento que le falta un poco de fuerza persuasiva para vender.</label>
+                            <label><input type="radio" name="q4" value="D"> D) Lo veo demasiado informativo, no invita a la acción.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-q5">5. Acompañamiento Visual</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="q5" value="A" required> A) Fotografías reales de personas usando el servicio.</label>
+                            <label><input type="radio" name="q5" value="B"> B) Fotos espectaculares de los vehículos / flota.</label>
+                            <label><input type="radio" name="q5" value="C"> C) Infografías, íconos o gráficos explicativos simples.</label>
+                            <label><input type="radio" name="q5" value="D"> D) Algo más abstracto, limpio y corporativo.</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Comentarios Adicionales (Opcional):</label>
+                        <textarea placeholder="Ingresa aquí cualquier comentario sobre el texto o ideas de diseño..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Enviar Mis Preferencias</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DYNAMIC_QUESTIONS
+
+        // Tab switching logic
+        const tabs = document.querySelectorAll('.tab-btn');
+        const sections = document.querySelectorAll('.view-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+                
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.target).classList.add('active');
+            });
+        });
+
+        // Modal logic
+        const modal = document.getElementById('feedbackModal');
+        const mTitle = document.getElementById('modalTitle');
+        const mDesc = document.getElementById('modalDesc');
+        const mPilar = document.getElementById('modalPilar');
+        const form = document.getElementById('feedbackForm');
+
+        function openModal(id, title, desc, pilar) {
+            mTitle.innerHTML = title; // using innerHTML since quotes are escaped
+            mDesc.innerHTML = desc;
+            mPilar.textContent = pilar;
+            
+            // Inject dynamic questions for this specific article
+            const qs = articleQuestions[id];
+            if(qs) {
+                document.getElementById('label-q1').textContent = "1. Impacto Inicial: " + qs.q1;
+                document.getElementById('label-q2').textContent = "2. Tono y Personalidad: " + qs.q2;
+                document.getElementById('label-q3').textContent = "3. Claridad del Mensaje: " + qs.q3;
+                document.getElementById('label-q4').textContent = "4. Enfoque Comercial: " + qs.q4;
+                document.getElementById('label-q5').textContent = "5. Acompañamiento Visual: " + qs.q5;
+            }
+
+            form.reset();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        modal.addEventListener('click', (e) => {
+            if(e.target === modal) closeModal();
+        });
+
+        function submitFeedback(e) {
+            e.preventDefault();
+            alert("¡Tus preferencias han sido guardadas! Usaremos este feedback para afinar el contenido y diseño.");
+            closeModal();
+        }
+    </script>
+</body>
+</html>`;
+
+function generateCards(articles, classPrefix) {
+    return articles.map(art => {
+        return `
+        <div class="card ${classPrefix}" onclick="openModal('${art.id}', '${art.title}', '${art.description}', '${art.pilar}')">
+            <h3>${art.title.replace(/\\'/g, "'").replace(/&quot;/g, '"')}</h3>
+            <p>${art.description.replace(/\\'/g, "'").replace(/&quot;/g, '"')}</p>
+        </div>`;
+    }).join('');
+}
+
+const finalHtml = htmlTemplate.replace("<!-- CARDS_RAC -->", generateCards(racArticles, 'rac'))
+                              .replace("<!-- CARDS_MGO -->", generateCards(mgoArticles, 'mgo'))
+                              .replace("// DYNAMIC_QUESTIONS", questionsJsObj);
+
+fs.writeFileSync(OUTPUT_FILE, finalHtml, 'utf8');
+console.log("Portal generated with dynamic questions at: " + OUTPUT_FILE);

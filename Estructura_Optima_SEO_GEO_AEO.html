@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomía de un Documento Óptimo: SEO + GEO + AEO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --accent-primary: #3b82f6; /* Blue */
+            --accent-secondary: #10b981; /* Green */
+            --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            --card-bg: rgba(30, 41, 59, 0.5);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --code-bg: #020617;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 24px;
+            background: var(--accent-gradient);
+            border-radius: 4px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--accent-primary);
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .didactic-note {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid var(--accent-secondary);
+            padding: 1rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+            color: #d1fae5;
+        }
+
+        .didactic-note strong {
+            color: var(--accent-secondary);
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--card-border);
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        code {
+            font-family: 'Fira Code', monospace;
+            font-size: 0.9rem;
+            color: #a5b4fc;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            color: #fbbf24; /* Amber */
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Anatomía de un Documento Óptimo</h1>
+        <p class="subtitle">Guía definitiva y didáctica para estructurar contenidos orientados a <strong>SEO</strong> (Buscadores), <strong>GEO</strong> (Motores Generativos) y <strong>AEO</strong> (Respuesta Directa de IA).</p>
+    </header>
+
+    <!-- SECTION 1: Frontmatter -->
+    <section>
+        <h2>1. Frontmatter (El Cerebro del Documento)</h2>
+        <p>El "Frontmatter" es el bloque de metadatos oculto al principio de un archivo Markdown. Es el puente de comunicación directo entre tu redacción y el CMS (WordPress, Hugo, Astro).</p>
+        
+        <div class="didactic-note">
+            <strong>¿Por qué es vital?</strong><br>
+            Google no lee el frontmatter directamente, pero tu CMS lo utiliza para inyectar dinámicamente las etiquetas <code>&lt;title&gt;</code> y <code>&lt;meta description&gt;</code> en el HTML final. Si este bloque está mal formateado (por ejemplo, con comillas rotas o saltos de línea incorrectos), la página se indexará con errores graves.
+        </div>
+
+        <h3>Ejemplo Óptimo:</h3>
+        <pre><code>---
+titulo: "Título Atractivo para el Usuario (Se convierte en H1)"
+slug: /url-amigable-y-corta/
+meta_title: "Título SEO exacto (Max 60 chars)"
+meta_description: "Resumen persuasivo con keyword principal que invita al clic (Max 155 chars)."
+keywords: [rent a car, arriendo autos, santiago]
+categoria: "Rent a Car"
+---</code></pre>
+        <p><strong>Consejo Didáctico:</strong> Nunca superes los 60 caracteres en el <code>meta_title</code> ni los 155 en <code>meta_description</code>. Si lo haces, Google truncará tu texto con puntos suspensivos (...), reduciendo drásticamente el CTR (Click-Through Rate).</p>
+    </section>
+
+    <!-- SECTION 2: AEO -->
+    <section>
+        <h2>2. Bloque AEO (La Carnada para IAs)</h2>
+        <p>El AEO (Answer Engine Optimization) es la técnica para ser citado por ChatGPT, Perplexity o los "Google AI Overviews" (los resúmenes de IA que aparecen arriba de las búsquedas).</p>
+
+        <div class="didactic-note">
+            <strong>El Secreto de la IA:</strong><br>
+            A los Modelos de Lenguaje (LLMs) <strong>no les gusta el lenguaje comercial o persuasivo</strong>. Están entrenados para extraer "Hechos". Si tu párrafo introductorio dice <em>"¡Descubre la magia de viajar con nosotros al mejor precio!"</em>, la IA te ignorará. Si dices <em>"El servicio cuesta $45.000 e incluye seguro."</em>, la IA te citará como fuente de verdad.
+        </div>
+
+        <h3>La Estructura Correcta:</h3>
+        <p>Coloca este bloque inmediatamente después del título. Responde directamente al <strong>Qué, Quién, Cómo, Cuándo o Cuánto</strong>.</p>
+        <pre><code>&lt;!-- AEO-SUMMARY-START --&gt;
+> El servicio Drop-Off permite retirar un vehículo en una ciudad y devolverlo en otra. Tiene un costo adicional que depende de la distancia en kilómetros entre sucursales.
+&lt;!-- AEO-SUMMARY-END --&gt;</code></pre>
+    </section>
+
+    <!-- SECTION 3: Navegación Interna -->
+    <section>
+        <h2>3. Navegación Interna (TOC)</h2>
+        <p>La Tabla de Contenidos (TOC) no es solo para ayudar al usuario a leer; es un mapa jerárquico que los bots utilizan para entender qué tan profundo y completo es tu artículo.</p>
+
+        <div class="didactic-note">
+            <strong>GEO e Indexación:</strong><br>
+            Google suele generar "Sitelinks" (links adicionales debajo de tu resultado de búsqueda) apuntando directamente a las secciones de tu TOC. Para que esto funcione, cada enlace debe tener un <code>&lt;a href="#id-del-h2"&gt;</code> que coincida exactamente con el <code>id</code> del subtítulo.
+        </div>
+
+        <pre><code>### Tabla de Contenidos
+1. &lt;a href="#que-es-el-drop-off"&gt;¿Qué es el servicio Drop-Off?&lt;/a&gt;
+2. &lt;a href="#rutas-populares"&gt;Rutas más populares&lt;/a&gt;</code></pre>
+    </section>
+
+    <!-- SECTION 4: Encabezados -->
+    <section>
+        <h2>4. Encabezados y Semántica (H2, H3)</h2>
+        <p>Los encabezados dictan la estructura. Nunca uses un encabezado (H2 o H3) solo porque "quieres que la letra se vea más grande". El tamaño es diseño (CSS); el H2 es estructura semántica.</p>
+
+        <div class="didactic-note">
+            <strong>Conexión con el TOC:</strong><br>
+            Fíjate cómo el atributo <code>id="que-es-el-drop-off"</code> conecta perfectamente con el enlace de la tabla de contenidos que vimos arriba.
+        </div>
+
+        <pre><code>&lt;h2 id="que-es-el-drop-off"&gt;¿Qué es el servicio Drop-Off?&lt;/h2&gt;</code></pre>
+    </section>
+
+    <!-- SECTION 5: Formateo GEO -->
+    <section>
+        <h2>5. Formateo Nativos GEO (Rompiendo Muros)</h2>
+        <p>A las IAs les cuesta procesar "muros de texto" enormes y densos. Extraen información con mucha más facilidad y precisión cuando los datos están pre-formateados y estructurados visualmente.</p>
+
+        <ul>
+            <li><span class="highlight">Tablas:</span> Úsalas para precios, distancias, comparativas (SUV vs Sedán).</li>
+            <li><span class="highlight">Listas Numeradas:</span> Úsalas para "Paso a paso" o guías de instrucción.</li>
+            <li><span class="highlight">Listas con Viñetas:</span> Úsalas para características, checklists o requisitos.</li>
+        </ul>
+
+        <div class="didactic-note">
+            <strong>Impacto en Perplexity/ChatGPT:</strong><br>
+            Cuando un usuario pide a Perplexity: "Compárame tarifas de arriendo". Perplexity buscará sitios web que tengan tablas HTML/Markdown. Si tienes la información en una tabla, la IA literalmente "copiará" tu tabla y pondrá tu sitio como la referencia [1].
+        </div>
+    </section>
+
+    <!-- SECTION 6: Cross-Linking -->
+    <section>
+        <h2>6. Cross-Linking (El Flujo del Link Juice)</h2>
+        <p>Los enlaces internos son como "venas" por las que fluye la autoridad de tu dominio. Si una página no tiene enlaces hacia otras, ni recibe enlaces, se convierte en una "Página Huérfana" (invisible para Google).</p>
+
+        <div class="didactic-note">
+            <strong>El Anchor Text:</strong><br>
+            El texto donde haces clic es clave. Jamás uses "haz clic aquí". Si el link va a la página de seguros, el texto debe decir "Seguros y coberturas para tu arriendo". Esto le da contexto semántico al bot.
+        </div>
+
+        <pre><code>[LINK INTERNO SUGERIDO: "Revisa nuestra guía de precios actualizados" -&gt; /precio-arriendo-2026/]</code></pre>
+    </section>
+
+    <!-- SECTION 7: Schema JSON-LD -->
+    <section>
+        <h2>7. Schema JSON-LD (El "Cheat Code" SEO)</h2>
+        <p>El Schema Markup es un código invisible para el usuario, pero es el idioma nativo de Google. En lugar de hacer que Google lea el texto e "intente adivinar" de qué trata tu página, el Schema le entrega los datos en bandeja de plata.</p>
+
+        <div class="didactic-note">
+            <strong>El secreto del @graph:</strong><br>
+            Muchas páginas tienen múltiples schemas (Artículo, FAQs, Breadcrumbs) esparcidos por el HTML, lo que confunde a Google. La mejor práctica absoluta es envolverlos todos dentro de un único array llamado <code>@graph</code>. Esto le dice a Google: "Todo esto pertenece a una misma entidad estructurada".
+        </div>
+
+        <h3>Plantilla Maestra @graph:</h3>
+        <pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Título del Artículo",
+      "inLanguage": "es-CL",
+      "image": "https://mitta.cl/imagen.jpg"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Pregunta frecuente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Respuesta clara."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://mitta.cl/"
+        }
+      ]
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+    </section>
+
+</div>
+
+</body>
+</html>
