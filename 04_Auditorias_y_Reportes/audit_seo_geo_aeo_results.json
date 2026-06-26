@@ -10,15 +10,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 85,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 77.5,
+        "average": 90.0,
         "issues": [
           "2 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 900 (ideal: 1200-3000)"
         ],
@@ -46,26 +45,22 @@
         "scores": {
           "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 100,
           "citability": 100
         },
-        "average": 80.0,
-        "issues": [
-          "❌ FALTA Schema FAQPage JSON-LD"
-        ],
+        "average": 100.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 76.0,
+      "composite_score": 87.0,
       "all_issues": [
         "2 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 900 (ideal: 1200-3000)",
-        "⚠️ Sin listas en contenido",
-        "❌ FALTA Schema FAQPage JSON-LD"
+        "⚠️ Sin listas en contenido"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "02_Suscripcion_vs_Credito.html",
@@ -77,16 +72,15 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 69.4,
+        "average": 81.9,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "5 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 836 (ideal: 1200-3000)"
         ],
@@ -112,31 +106,25 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 100,
           "citability": 100
         },
-        "average": 72.0,
-        "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD"
-        ],
+        "average": 100.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 68.6,
+      "composite_score": 82.0,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "5 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 836 (ideal: 1200-3000)",
-        "⚠️ Sin listas en contenido",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD"
+        "⚠️ Sin listas en contenido"
       ],
-      "grade": "B"
+      "grade": "A"
     },
     {
       "file": "03_Que_Incluye_Cuota.html",
@@ -148,16 +136,15 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 66.2,
+        "average": 78.8,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 767"
         ],
@@ -185,33 +172,27 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 65,
           "citability": 70
         },
-        "average": 59.0,
-        "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD"
-        ],
+        "average": 87.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 60.7,
+      "composite_score": 74.1,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 767",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (5 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD"
+        "Baja densidad de datos (5 puntos)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "04_Costos_Ocultos.html",
@@ -223,16 +204,15 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 64.4,
+        "average": 76.9,
         "issues": [
           "Title length 73 chars (fuera de rango)",
           "8 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 866 (ideal: 1200-3000)"
         ],
@@ -258,33 +238,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 61.5,
+      "composite_score": 74.9,
       "all_issues": [
         "Title length 73 chars (fuera de rango)",
         "8 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 866 (ideal: 1200-3000)",
         "⚠️ Sin listas en contenido",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "05_MittaGO_vs_Rent_a_Car.html",
@@ -296,16 +271,15 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 66.2,
+        "average": 78.8,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 798"
         ],
@@ -333,35 +307,30 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 56.0,
+        "average": 84.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 57.8,
+      "composite_score": 71.2,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 798",
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Sin listas en contenido",
         "Baja densidad de datos (6 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B+"
     },
     {
       "file": "06_Expatriados_Extranjeros.html",
@@ -373,15 +342,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.1,
+        "average": 85.6,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 808 (ideal: 1200-3000)"
         ],
@@ -409,32 +377,26 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 65,
           "citability": 70
         },
-        "average": 59.0,
-        "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD"
-        ],
+        "average": 87.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 63.4,
+      "composite_score": 76.8,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 808 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (5 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD"
+        "Baja densidad de datos (5 puntos)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "07_Pymes_Emprendedores.html",
@@ -446,15 +408,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.1,
+        "average": 85.6,
         "issues": [
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 833 (ideal: 1200-3000)"
         ],
@@ -480,32 +441,27 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 63.5,
+      "composite_score": 76.9,
       "all_issues": [
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 833 (ideal: 1200-3000)",
         "⚠️ Sin listas en contenido",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "08_Suscripcion_Temporada.html",
@@ -517,15 +473,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 70.0,
+        "average": 82.5,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 781"
         ],
@@ -552,33 +507,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 62.3,
+      "composite_score": 75.7,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 781",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "09_Cambiar_de_Auto.html",
@@ -590,15 +540,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 70.0,
+        "average": 82.5,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 771"
         ],
@@ -626,34 +575,29 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 59.5,
+      "composite_score": 72.9,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 771",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (6 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B+"
     },
     {
       "file": "10_Costo_Depreciacion.html",
@@ -665,16 +609,15 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 66.2,
+        "average": 78.8,
         "issues": [
           "Title length 64 chars (ideal: 30-60)",
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 790"
         ],
@@ -700,33 +643,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 45.0,
+        "average": 73.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 62.7,
+      "composite_score": 76.2,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 790",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "11_Trabajo_Hibrido.html",
@@ -738,16 +676,15 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 66.2,
+        "average": 78.8,
         "issues": [
           "Title length 64 chars (ideal: 30-60)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 790"
         ],
@@ -774,34 +711,29 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 59.2,
+      "composite_score": 72.7,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 790",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B+"
     },
     {
       "file": "12_Diccionario_Movilidad.html",
@@ -813,15 +745,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.1,
+        "average": 85.6,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 902 (ideal: 1200-3000)"
         ],
@@ -847,32 +778,27 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 64.0,
+      "composite_score": 77.4,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 902 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "13_Guia_Presupuesto.html",
@@ -884,15 +810,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.1,
+        "average": 85.6,
         "issues": [
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 850 (ideal: 1200-3000)"
         ],
@@ -916,31 +841,26 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 69.0,
+      "composite_score": 82.4,
       "all_issues": [
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 850 (ideal: 1200-3000)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "A"
     },
     {
       "file": "14_Smart_Mobility.html",
@@ -952,16 +872,15 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 69.4,
+        "average": 81.9,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 876 (ideal: 1200-3000)"
         ],
@@ -989,35 +908,30 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 56.0,
+        "average": 84.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 61.1,
+      "composite_score": 74.5,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 876 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (4 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "15_Autos_Hibridos.html",
@@ -1029,16 +943,15 @@
           "meta_description": 75,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 70.0,
+        "average": 82.5,
         "issues": [
           "Meta description 159 chars (ideal: 120-155)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 854 (ideal: 1200-3000)"
         ],
@@ -1064,33 +977,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 56.0,
+        "average": 84.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 64.5,
+      "composite_score": 77.9,
       "all_issues": [
         "Meta description 159 chars (ideal: 120-155)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 854 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "16_Mantenimiento_Cero.html",
@@ -1102,15 +1010,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 70.0,
+        "average": 82.5,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 737"
         ],
@@ -1136,32 +1043,27 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 45.0,
+        "average": 73.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 61.2,
+      "composite_score": 74.6,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 737",
         "❌ Sin tablas de datos (crítico para GEO)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "17_Siniestros_Sin_Estres.html",
@@ -1173,15 +1075,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.1,
+        "average": 85.6,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 859 (ideal: 1200-3000)"
         ],
@@ -1208,33 +1109,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 45.0,
+        "average": 73.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 61.2,
+      "composite_score": 74.7,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 859 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (3 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "18_Auto_Reemplazo.html",
@@ -1246,15 +1142,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 70.0,
+        "average": 82.5,
         "issues": [
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 761"
         ],
@@ -1281,31 +1176,25 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 65,
           "citability": 45
         },
-        "average": 54.0,
-        "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD"
-        ],
+        "average": 82.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 62.0,
+      "composite_score": 75.4,
       "all_issues": [
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 761",
         "❌ Sin tablas de datos (crítico para GEO)",
-        "Solo 1 listas en contenido (recomendado: 3+)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD"
+        "Solo 1 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "19_Economia_Circular.html",
@@ -1317,15 +1206,14 @@
           "meta_description": 100,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 70.0,
+        "average": 82.5,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count bajo: 773"
         ],
@@ -1352,33 +1240,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 50.0,
+        "average": 78.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 61.5,
+      "composite_score": 74.9,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count bajo: 773",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (6 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "20_Sistemas_ADAS.html",
@@ -1390,17 +1273,16 @@
           "meta_description": 75,
           "h1_tag": 100,
           "heading_hierarchy": 50,
-          "schema_jsonld": 0,
+          "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 66.2,
+        "average": 78.8,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 160 chars (ideal: 120-155)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "❌ SIN Schema JSON-LD (crítico)",
           "Solo 1 internal links (recomendado: 3+)",
           "Word count: 880 (ideal: 1200-3000)"
         ],
@@ -1427,59 +1309,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 60,
+          "aeo_summary": 100,
           "faq_section": 100,
-          "faq_schema": 0,
+          "faq_schema": 100,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 45.0,
+        "average": 73.0,
         "issues": [
-          "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-          "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 3
       },
-      "composite_score": 58.5,
+      "composite_score": 71.9,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 160 chars (ideal: 120-155)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "❌ SIN Schema JSON-LD (crítico)",
         "Solo 1 internal links (recomendado: 3+)",
         "Word count: 880 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (6 puntos)",
-        "Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END",
-        "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B+"
     },
     {
       "file": "01_Guia_Arriendo_Aeropuertos.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "01_Guia_Arriendo_Aeropuertos",
+      "title": "Rent a Car Aeropuerto Santiago y Chile | Guía Paso a Paso Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 100,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 77.5,
+        "average": 90.0,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "Meta description 157 chars (ideal: 120-155)",
-          "❌ FALTA H1",
-          "Word count: 886 (ideal: 1200-3000)"
+          "Word count: 899 (ideal: 1200-3000)"
         ],
-        "word_count": 886,
+        "word_count": 899,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -1502,54 +1378,50 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 67.2,
+      "composite_score": 78.2,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 157 chars (ideal: 120-155)",
-        "❌ FALTA H1",
-        "Word count: 886 (ideal: 1200-3000)",
+        "Word count: 899 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (4 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "02_Requisitos_Extranjeros.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "02_Requisitos_Extranjeros",
+      "title": "Requisitos para arrendar un auto en Chile siendo extranjero | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 100,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 80.6,
+        "average": 93.1,
         "issues": [
           "Title length 67 chars (ideal: 30-60)",
-          "❌ FALTA H1",
-          "Word count: 924 (ideal: 1200-3000)"
+          "Word count: 935 (ideal: 1200-3000)"
         ],
-        "word_count": 924,
+        "word_count": 935,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -1572,54 +1444,50 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 100,
           "citability": 70
         },
-        "average": 54.0,
+        "average": 74.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 72.2,
+      "composite_score": 83.2,
       "all_issues": [
         "Title length 67 chars (ideal: 30-60)",
-        "❌ FALTA H1",
-        "Word count: 924 (ideal: 1200-3000)",
+        "Word count: 935 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (3 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "03_Arriendo_Primera_Vez.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "03_Arriendo_Primera_Vez",
+      "title": "Arrendar Auto por Primera Vez en Chile | Guía Paso a Paso Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 100,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 77.5,
+        "average": 90.0,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "Meta description 163 chars (ideal: 120-155)",
-          "❌ FALTA H1",
-          "Word count: 1064 (ideal: 1200-3000)"
+          "Word count: 1077 (ideal: 1200-3000)"
         ],
-        "word_count": 1064,
+        "word_count": 1077,
         "h2_count": 6,
         "h3_count": 4
       },
@@ -1642,56 +1510,52 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 70
         },
-        "average": 47.0,
+        "average": 67.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 65.3,
+      "composite_score": 76.3,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 163 chars (ideal: 120-155)",
-        "❌ FALTA H1",
-        "Word count: 1064 (ideal: 1200-3000)",
+        "Word count: 1077 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (4 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "04_Seguros_Coberturas.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "04_Seguros_Coberturas",
+      "title": "Seguros de Rent a Car en Chile: CDW, PAI y Deducibles | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 157 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 985 (ideal: 1200-3000)"
+          "Word count: 998 (ideal: 1200-3000)"
         ],
-        "word_count": 985,
+        "word_count": 998,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -1714,57 +1578,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 100,
           "citability": 70
         },
-        "average": 54.0,
+        "average": 74.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 67.0,
+      "composite_score": 78.0,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 157 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 985 (ideal: 1200-3000)",
+        "Word count: 998 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (7 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "05_Devolver_Otra_Ciudad.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "05_Devolver_Otra_Ciudad",
+      "title": "¿Puedo arrendar un auto y devolverlo en otra ciudad de Chile?",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 156 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 952 (ideal: 1200-3000)"
+          "Word count: 963 (ideal: 1200-3000)"
         ],
-        "word_count": 952,
+        "word_count": 963,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -1787,57 +1647,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 100,
           "citability": 100
         },
-        "average": 60.0,
+        "average": 80.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 70.8,
+      "composite_score": 81.8,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 156 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 952 (ideal: 1200-3000)",
+        "Word count: 963 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (7 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "06_Cruzar_Argentina.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "06_Cruzar_Argentina",
+      "title": "Cómo Cruzar a Argentina en un Auto Arrendado desde Chile | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 64 chars (ideal: 30-60)",
           "Meta description 159 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 884 (ideal: 1200-3000)"
+          "Word count: 896 (ideal: 1200-3000)"
         ],
-        "word_count": 884,
+        "word_count": 896,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -1861,60 +1717,56 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 58.9,
+      "composite_score": 69.9,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "Meta description 159 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 884 (ideal: 1200-3000)",
+        "Word count: 896 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (1 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B"
     },
     {
       "file": "07_Carretera_Austral.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "07_Carretera_Austral",
+      "title": "Carretera Austral en Auto Arrendado: Vehículos y Ruta | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 156 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 945 (ideal: 1200-3000)"
+          "Word count: 955 (ideal: 1200-3000)"
         ],
-        "word_count": 945,
+        "word_count": 955,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -1938,57 +1790,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 63.1,
+      "composite_score": 74.1,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 156 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 945 (ideal: 1200-3000)",
+        "Word count: 955 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (4 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "08_San_Pedro_Atacama.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "08_San_Pedro_Atacama",
+      "title": "Arrendar Auto en San Pedro de Atacama: Rutas y Distancias | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 75.6,
+        "average": 88.1,
         "issues": [
           "Title length 65 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 949 (ideal: 1200-3000)"
+          "Word count: 961 (ideal: 1200-3000)"
         ],
-        "word_count": 949,
+        "word_count": 961,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2012,55 +1860,51 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 64.4,
+      "composite_score": 75.4,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 949 (ideal: 1200-3000)",
+        "Word count: 961 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (3 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "09_Top_Roadtrips_Chile.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "09_Top_Roadtrips_Chile",
+      "title": "Los 5 Mejores Roadtrips en Chile en Auto Arrendado | Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 79.4,
+        "average": 91.9,
         "issues": [
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 972 (ideal: 1200-3000)"
+          "Word count: 983 (ideal: 1200-3000)"
         ],
-        "word_count": 972,
+        "word_count": 983,
         "h2_count": 5,
         "h3_count": 5
       },
@@ -2082,55 +1926,51 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 68.0,
+      "composite_score": 79.0,
       "all_issues": [
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 972 (ideal: 1200-3000)",
+        "Word count: 983 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "10_Temporada_Nieve.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "10_Temporada_Nieve",
+      "title": "Arriendo de Autos para la Nieve y Ski en Chile | Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 76.2,
+        "average": 88.8,
         "issues": [
           "Meta description 164 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 942 (ideal: 1200-3000)"
+          "Word count: 954 (ideal: 1200-3000)"
         ],
-        "word_count": 942,
+        "word_count": 954,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2154,55 +1994,51 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 64.6,
+      "composite_score": 75.7,
       "all_issues": [
         "Meta description 164 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 942 (ideal: 1200-3000)",
+        "Word count: 954 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (7 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "11_SUV_vs_Sedan.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "11_SUV_vs_Sedan",
+      "title": "¿SUV, Sedán o Camioneta?: Elige tu Auto de Arriendo | Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 79.4,
+        "average": 91.9,
         "issues": [
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 869 (ideal: 1200-3000)"
+          "Word count: 880 (ideal: 1200-3000)"
         ],
-        "word_count": 869,
+        "word_count": 880,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2225,57 +2061,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 38.0,
+        "average": 58.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 63.4,
+      "composite_score": 74.4,
       "all_issues": [
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 869 (ideal: 1200-3000)",
+        "Word count: 880 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (1 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "12_Camionetas_4x4.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "12_Camionetas_4x4",
+      "title": "Arriendo de Camionetas 4x4 en Chile: Requisitos y Rutas | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "Meta description 157 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 907 (ideal: 1200-3000)"
+          "Word count: 918 (ideal: 1200-3000)"
         ],
-        "word_count": 907,
+        "word_count": 918,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2298,57 +2130,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 65.2,
+      "composite_score": 76.2,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 157 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 907 (ideal: 1200-3000)",
+        "Word count: 918 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (4 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "13_Precios_Arriendo_2026.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "13_Precios_Arriendo_2026",
+      "title": "¿Cuánto Cuesta Arrendar un Auto en Chile? Precios 2026 | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 62 chars (ideal: 30-60)",
           "Meta description 157 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 959 (ideal: 1200-3000)"
+          "Word count: 970 (ideal: 1200-3000)"
         ],
-        "word_count": 959,
+        "word_count": 970,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2368,56 +2196,52 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 68.7,
+      "composite_score": 79.7,
       "all_issues": [
         "Title length 62 chars (ideal: 30-60)",
         "Meta description 157 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 959 (ideal: 1200-3000)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "Word count: 970 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "14_Matrimonios_Eventos.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "14_Matrimonios_Eventos",
+      "title": "Arriendo de Autos para Matrimonios y Eventos en Chile | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 75.6,
+        "average": 88.1,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 950 (ideal: 1200-3000)"
+          "Word count: 961 (ideal: 1200-3000)"
         ],
-        "word_count": 950,
+        "word_count": 961,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2440,55 +2264,51 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 66.4,
+      "composite_score": 77.4,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 950 (ideal: 1200-3000)",
+        "Word count: 961 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (6 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "15_Fin_Semana_Largo.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "15_Fin_Semana_Largo",
+      "title": "Arrendar Auto para un Fin de Semana Largo en Chile | Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 76.2,
+        "average": 88.8,
         "issues": [
           "Meta description 157 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 1011 (ideal: 1200-3000)"
+          "Word count: 1023 (ideal: 1200-3000)"
         ],
-        "word_count": 1011,
+        "word_count": 1023,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2511,55 +2331,51 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 68.1,
+      "composite_score": 79.2,
       "all_issues": [
         "Meta description 157 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 1011 (ideal: 1200-3000)",
+        "Word count: 1023 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (6 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "16_Pana_Accidente.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "16_Pana_Accidente",
+      "title": "¿Qué Hacer en Caso de Pana o Accidente con Auto Arrendado? | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 75.6,
+        "average": 88.1,
         "issues": [
           "Title length 66 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 952 (ideal: 1200-3000)"
+          "Word count: 965 (ideal: 1200-3000)"
         ],
-        "word_count": 952,
+        "word_count": 965,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2583,57 +2399,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 64.4,
+      "composite_score": 75.4,
       "all_issues": [
         "Title length 66 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 952 (ideal: 1200-3000)",
+        "Word count: 965 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (3 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "17_Ninos_Sillas_Infantiles.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "17_Ninos_Sillas_Infantiles",
+      "title": "Arriendo de Autos con Silla de Bebé: Normativa en Chile | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "Meta description 158 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 965 (ideal: 1200-3000)"
+          "Word count: 977 (ideal: 1200-3000)"
         ],
-        "word_count": 965,
+        "word_count": 977,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2655,55 +2467,51 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 100,
           "citability": 100
         },
-        "average": 60.0,
+        "average": 80.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 70.0,
+      "composite_score": 81.0,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 158 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 965 (ideal: 1200-3000)",
+        "Word count: 977 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "18_Viajar_Mascotas.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "18_Viajar_Mascotas",
+      "title": "Viajar con Mascotas en Auto de Arriendo en Chile | Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 76.2,
+        "average": 88.8,
         "issues": [
           "Meta description 162 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 981 (ideal: 1200-3000)"
+          "Word count: 992 (ideal: 1200-3000)"
         ],
-        "word_count": 981,
+        "word_count": 992,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2726,56 +2534,52 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 70
         },
-        "average": 47.0,
+        "average": 67.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 64.8,
+      "composite_score": 75.9,
       "all_issues": [
         "Meta description 162 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 981 (ideal: 1200-3000)",
+        "Word count: 992 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (3 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "19_Multas_TAG.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "19_Multas_TAG",
+      "title": "Multas y TAG en Auto Arrendado en Chile: ¿Quién Paga? | Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 72.5,
+        "average": 85.0,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 166 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 933 (ideal: 1200-3000)"
+          "Word count: 945 (ideal: 1200-3000)"
         ],
-        "word_count": 933,
+        "word_count": 945,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2799,57 +2603,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 100,
           "citability": 100
         },
-        "average": 60.0,
+        "average": 80.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 63.7,
+      "composite_score": 74.7,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 166 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 933 (ideal: 1200-3000)",
+        "Word count: 945 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (2 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "20_Checklist_Retiro.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "20_Checklist_Retiro",
+      "title": "Checklist Obligatorio para Arrendar Auto en Chile | Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 76.2,
+        "average": 88.8,
         "issues": [
           "Meta description 156 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 966 (ideal: 1200-3000)"
+          "Word count: 975 (ideal: 1200-3000)"
         ],
-        "word_count": 966,
+        "word_count": 975,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2872,58 +2672,54 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 33.0,
+        "average": 53.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 59.1,
+      "composite_score": 70.2,
       "all_issues": [
         "Meta description 156 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 966 (ideal: 1200-3000)",
+        "Word count: 975 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B+"
     },
     {
       "file": "21_Leasing_Operativo_vs_Compra_Flotas.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "21_Leasing_Operativo_vs_Compra_Flotas",
+      "title": "Leasing Operativo vs Compra de Flotas | Finanzas Corporativas",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.8,
+        "average": 86.2,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 946 (ideal: 1200-3000)"
+          "Word count: 955 (ideal: 1200-3000)"
         ],
-        "word_count": 946,
+        "word_count": 955,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -2945,58 +2741,54 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 67.2,
+      "composite_score": 78.2,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 946 (ideal: 1200-3000)",
+        "Word count: 955 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "22_Continuidad_Operacional_Mineria.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "22_Continuidad_Operacional_Mineria",
+      "title": "Flotas de Camionetas Mineras en Chile | Continuidad Operativa Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.8,
+        "average": 86.2,
         "issues": [
           "Title length 67 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 900 (ideal: 1200-3000)"
+          "Word count: 910 (ideal: 1200-3000)"
         ],
-        "word_count": 900,
+        "word_count": 910,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3019,59 +2811,55 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 63.0,
+      "composite_score": 73.9,
       "all_issues": [
         "Title length 67 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 900 (ideal: 1200-3000)",
+        "Word count: 910 (ideal: 1200-3000)",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (6 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "23_Beneficios_Tributarios_Leasing_Operativo.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "23_Beneficios_Tributarios_Leasing_Operativo",
+      "title": "Beneficios Tributarios del Leasing Operativo | Contabilidad Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.8,
+        "average": 86.2,
         "issues": [
           "Title length 65 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 941 (ideal: 1200-3000)"
+          "Word count: 949 (ideal: 1200-3000)"
         ],
-        "word_count": 941,
+        "word_count": 949,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3093,58 +2881,54 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 65.7,
+      "composite_score": 76.7,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 941 (ideal: 1200-3000)",
+        "Word count: 949 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "24_Flotas_Corporativas_Sustentables.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "24_Flotas_Corporativas_Sustentables",
+      "title": "Electromovilidad Empresarial en Chile | Flotas Sustentables Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.8,
+        "average": 86.2,
         "issues": [
           "Title length 65 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 918 (ideal: 1200-3000)"
+          "Word count: 926 (ideal: 1200-3000)"
         ],
-        "word_count": 918,
+        "word_count": 926,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3166,58 +2950,54 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 67.2,
+      "composite_score": 78.2,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 918 (ideal: 1200-3000)",
+        "Word count: 926 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "25_Gestion_Flotas_Inteligente.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "25_Gestion_Flotas_Inteligente",
+      "title": "Gestión de Flotas de Vehículos en Chile | Logística Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 74.4,
+        "average": 86.9,
         "issues": [
           "Meta description 157 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 852 (ideal: 1200-3000)"
+          "Word count: 862 (ideal: 1200-3000)"
         ],
-        "word_count": 852,
+        "word_count": 862,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3239,57 +3019,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 66.0,
+      "composite_score": 77.0,
       "all_issues": [
         "Meta description 157 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 852 (ideal: 1200-3000)",
+        "Word count: 862 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "26_Renting_Autos_Pymes.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "26_Renting_Autos_Pymes",
+      "title": "Renting de Autos para Pymes | Movilidad Flexible Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 77.5,
+        "average": 90.0,
         "issues": [
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 903 (ideal: 1200-3000)"
+          "Word count: 912 (ideal: 1200-3000)"
         ],
-        "word_count": 903,
+        "word_count": 912,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3311,57 +3087,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 67.2,
+      "composite_score": 78.2,
       "all_issues": [
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 903 (ideal: 1200-3000)",
+        "Word count: 912 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "27_Arriendo_Mensual_Independientes.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "27_Arriendo_Mensual_Independientes",
+      "title": "Arriendo Mensual de Autos en Chile | Renting Independientes Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.8,
+        "average": 86.2,
         "issues": [
           "Title length 65 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 875 (ideal: 1200-3000)"
+          "Word count: 885 (ideal: 1200-3000)"
         ],
-        "word_count": 875,
+        "word_count": 885,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3383,56 +3155,52 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 100
         },
-        "average": 53.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 69.9,
+      "composite_score": 80.9,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 875 (ideal: 1200-3000)",
+        "Word count: 885 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "A"
     },
     {
       "file": "28_Renting_Flexible_vs_Credito_Automotriz.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "28_Renting_Flexible_vs_Credito_Automotriz",
+      "title": "Renting Flexible vs Crédito Automotriz | Finanzas Corporativas",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.8,
+        "average": 86.2,
         "issues": [
           "Title length 62 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 857 (ideal: 1200-3000)"
+          "Word count: 865 (ideal: 1200-3000)"
         ],
-        "word_count": 857,
+        "word_count": 865,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3454,58 +3222,54 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 67.2,
+      "composite_score": 78.2,
       "all_issues": [
         "Title length 62 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 857 (ideal: 1200-3000)",
+        "Word count: 865 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "29_Movilidad_Temporal_Proyectos.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "29_Movilidad_Temporal_Proyectos",
+      "title": "Arriendo de Autos por Meses para Empresas | Flotas Mitta",
       "seo": {
         "scores": {
           "title_tag": 100,
           "meta_description": 75,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 74.4,
+        "average": 86.9,
         "issues": [
           "Meta description 158 chars (ideal: 120-155)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 902 (ideal: 1200-3000)"
+          "Word count: 912 (ideal: 1200-3000)"
         ],
-        "word_count": 902,
+        "word_count": 912,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3525,57 +3289,53 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 68.0,
+      "composite_score": 79.0,
       "all_issues": [
         "Meta description 158 chars (ideal: 120-155)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 902 (ideal: 1200-3000)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "Word count: 912 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "30_Renting_Flexible_Camionetas.html",
       "category": "Mitta_Rent_a_Car",
-      "title": "30_Renting_Flexible_Camionetas",
+      "title": "Renting Flexible de Camionetas en Chile | Movilidad Pymes Mitta",
       "seo": {
         "scores": {
           "title_tag": 70,
           "meta_description": 100,
-          "h1_tag": 0,
+          "h1_tag": 100,
           "heading_hierarchy": 100,
           "schema_jsonld": 85,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 73.8,
+        "average": 86.2,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
-          "❌ FALTA H1",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 902 (ideal: 1200-3000)"
+          "Word count: 912 (ideal: 1200-3000)"
         ],
-        "word_count": 902,
+        "word_count": 912,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3595,32 +3355,29 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 67.7,
+      "composite_score": 78.7,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
-        "❌ FALTA H1",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 902 (ideal: 1200-3000)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "Word count: 912 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "01_presupuesto-anual-auto-chile.html",
@@ -3666,34 +3423,32 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 70,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 27.0,
+        "average": 47.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Schema FAQPage con solo 2 questions",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 65.1,
+      "composite_score": 71.1,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 180 chars (fuera de rango)",
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 588",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Schema FAQPage con solo 2 questions",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "02_suscripcion-autos-chile.html",
@@ -3742,20 +3497,20 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 0,
           "citability": 45
         },
-        "average": 29.0,
+        "average": 43.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 39 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 46.4,
+      "composite_score": 50.6,
       "all_issues": [
         "Title length 79 chars (fuera de rango)",
         "Meta description 165 chars (ideal: 120-155)",
@@ -3765,10 +3520,10 @@
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Sin listas en contenido",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 39 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "C"
+      "grade": "C+"
     },
     {
       "file": "03_necesito-auto-propio-o-arriendo.html",
@@ -3817,22 +3572,22 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 0,
           "question_headings": 0,
           "citability": 15
         },
-        "average": 3.0,
+        "average": 17.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 33 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "❌ FALTA Schema FAQPage JSON-LD",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 40.6,
+      "composite_score": 44.8,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "❌ Sin encabezados H2",
@@ -3842,7 +3597,7 @@
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Sin listas en contenido",
         "⚠️ Muy baja densidad de datos (1 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 33 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "❌ FALTA Schema FAQPage JSON-LD",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
@@ -3896,22 +3651,22 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 0,
           "question_headings": 0,
           "citability": 15
         },
-        "average": 3.0,
+        "average": 17.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 30 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "❌ FALTA Schema FAQPage JSON-LD",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 40.6,
+      "composite_score": 44.8,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
         "❌ Sin encabezados H2",
@@ -3921,7 +3676,7 @@
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Sin listas en contenido",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 30 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "❌ FALTA Schema FAQPage JSON-LD",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
@@ -3970,25 +3725,25 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 45,
           "citability": 45
         },
-        "average": 38.0,
+        "average": 52.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 27 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 72.9,
+      "composite_score": 77.1,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 627",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 27 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
@@ -4037,29 +3792,27 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 0,
           "question_headings": 0,
           "citability": 15
         },
-        "average": 3.0,
+        "average": 23.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "❌ FALTA Schema FAQPage JSON-LD",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 52.6,
+      "composite_score": 58.6,
       "all_issues": [
         "❌ Sin encabezados H2",
         "Schema faltante: FAQPage",
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 505",
         "⚠️ Sin listas en contenido",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "❌ FALTA Schema FAQPage JSON-LD",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
@@ -4113,22 +3866,22 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 15
         },
-        "average": 27.0,
+        "average": 41.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 31 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 54.4,
+      "composite_score": 58.5,
       "all_issues": [
         "Title length 66 chars (ideal: 30-60)",
         "Meta description 170 chars (ideal: 120-155)",
@@ -4138,7 +3891,7 @@
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 31 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
@@ -4191,21 +3944,21 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 40,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 0,
           "citability": 15
         },
-        "average": 23.0,
+        "average": 31.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary muy corto: 16 words",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 47.2,
+      "composite_score": 49.6,
       "all_issues": [
         "❌ Sin encabezados H2",
         "Solo 1 internal links (recomendado: 3+)",
@@ -4214,7 +3967,7 @@
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Sin listas en contenido",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary muy corto: 16 words",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
       ],
@@ -4266,15 +4019,15 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 70,
           "question_headings": 20,
           "citability": 15
         },
-        "average": 21.0,
+        "average": 35.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 27 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Schema FAQPage con solo 2 questions",
           "Ningún H2 es una pregunta (reduce citabilidad AI)",
@@ -4282,7 +4035,7 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 53.8,
+      "composite_score": 58.0,
       "all_issues": [
         "Title length 68 chars (ideal: 30-60)",
         "Solo 1 internal links (recomendado: 3+)",
@@ -4291,7 +4044,7 @@
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 27 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Schema FAQPage con solo 2 questions",
         "Ningún H2 es una pregunta (reduce citabilidad AI)",
@@ -4344,15 +4097,14 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 0,
           "question_headings": 20,
           "citability": 15
         },
-        "average": 7.0,
+        "average": 27.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "❌ FALTA Schema FAQPage JSON-LD",
           "Ningún H2 es una pregunta (reduce citabilidad AI)",
@@ -4360,7 +4112,7 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 56.3,
+      "composite_score": 62.3,
       "all_issues": [
         "Schema faltante: FAQPage",
         "Solo 1 internal links (recomendado: 3+)",
@@ -4368,13 +4120,12 @@
         "No se detectó slug definido",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "❌ FALTA Schema FAQPage JSON-LD",
         "Ningún H2 es una pregunta (reduce citabilidad AI)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
       ],
-      "grade": "C+"
+      "grade": "B"
     },
     {
       "file": "11_manual-vs-automatico-que-auto-conviene-viaje.html",
@@ -4422,20 +4173,20 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 100,
           "citability": 70
         },
-        "average": 54.0,
+        "average": 68.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 33 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 63.2,
+      "composite_score": 67.4,
       "all_issues": [
         "Title length 66 chars (ideal: 30-60)",
         "Meta description 0 chars (fuera de rango)",
@@ -4444,7 +4195,7 @@
         "No se detectó slug definido",
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 33 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B"
@@ -4494,21 +4245,21 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 38.0,
+        "average": 52.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 35 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 64.9,
+      "composite_score": 69.1,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 0 chars (fuera de rango)",
@@ -4516,7 +4267,7 @@
         "Word count: 1178 (ideal: 1200-3000)",
         "No se detectó slug definido",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 35 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
@@ -4568,21 +4319,21 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 33.0,
+        "average": 47.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 30 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 56.9,
+      "composite_score": 61.1,
       "all_issues": [
         "Title length 68 chars (ideal: 30-60)",
         "Meta description 0 chars (fuera de rango)",
@@ -4591,11 +4342,11 @@
         "No se detectó slug definido",
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 30 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B"
     },
     {
       "file": "14_que-vehiculo-elegir-para-viajar-por-chile-auto-suv-camioneta.html",
@@ -4643,21 +4394,21 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 38.0,
+        "average": 52.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
+          "AEO summary: 30 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 56.4,
+      "composite_score": 60.6,
       "all_issues": [
         "Title length 72 chars (fuera de rango)",
         "Meta description 0 chars (fuera de rango)",
@@ -4666,11 +4417,11 @@
         "No se detectó slug definido",
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
+        "AEO summary: 30 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "C+"
+      "grade": "B"
     },
     {
       "file": "02_Reserva_Cyber_2026.html",
@@ -4715,29 +4466,27 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 45
         },
-        "average": 42.0,
+        "average": 62.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 66.9,
+      "composite_score": 72.9,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 740",
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "02_Suscripcion_Pre_Cyber_2026.html",
@@ -4783,30 +4532,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 45
         },
-        "average": 42.0,
+        "average": 62.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 66.8,
+      "composite_score": 72.8,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 737",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Baja densidad de datos (6 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "03_Arriendo_vs_Suscripcion_Cyber.html",
@@ -4849,24 +4596,22 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 100,
           "citability": 45
         },
-        "average": 49.0,
+        "average": 69.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 73.7,
+      "composite_score": 79.7,
       "all_issues": [
         "Word count bajo: 784",
         "❌ Sin tablas de datos (crítico para GEO)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
@@ -4915,28 +4660,26 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 45
         },
-        "average": 33.0,
+        "average": 53.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 62.2,
+      "composite_score": 68.2,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 663",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (2 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
@@ -4986,32 +4729,30 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 100
         },
-        "average": 44.0,
+        "average": 64.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 66.0,
+      "composite_score": 72.0,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 701",
         "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "05_MittaGO_Stock_SUV_Cyber_2026.html",
@@ -5057,30 +4798,28 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 65,
           "citability": 70
         },
-        "average": 47.0,
+        "average": 67.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 66.4,
+      "composite_score": 72.4,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 691",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (2 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "05_RentACar_Errores_Cyber_2026.html",
@@ -5126,28 +4865,26 @@
       },
       "aeo": {
         "scores": {
-          "aeo_summary": 0,
+          "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
           "question_headings": 20,
           "citability": 70
         },
-        "average": 38.0,
+        "average": 58.0,
         "issues": [
-          "❌ FALTA bloque AEO Summary (crítico)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 63.7,
+      "composite_score": 69.7,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
         "Word count bajo: 740",
         "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (1 puntos)",
-        "❌ FALTA bloque AEO Summary (crítico)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
@@ -5157,36 +4894,36 @@
   "category_stats": {
     "MittaGO": {
       "count": 20,
-      "avg_score": 62.9,
-      "avg_seo": 69.9,
+      "avg_score": 76.2,
+      "avg_seo": 82.4,
       "avg_geo": 63.0,
-      "avg_aeo": 53.6,
-      "grade": "B"
+      "avg_aeo": 81.2,
+      "grade": "B+"
     },
     "Mitta_Rent_a_Car": {
       "count": 30,
-      "avg_score": 66.1,
-      "avg_seo": 75.0,
+      "avg_score": 77.2,
+      "avg_seo": 87.5,
       "avg_geo": 71.9,
-      "avg_aeo": 48.6,
-      "grade": "B"
+      "avg_aeo": 68.6,
+      "grade": "B+"
     },
     "Nuevos_Contenidos_2026": {
       "count": 14,
-      "avg_score": 55.1,
+      "avg_score": 59.5,
       "avg_seo": 72.6,
       "avg_geo": 62.3,
-      "avg_aeo": 24.6,
+      "avg_aeo": 39.4,
       "grade": "C+"
     },
     "Cyber_2026": {
       "count": 7,
-      "avg_score": 66.5,
+      "avg_score": 72.5,
       "avg_seo": 88.4,
       "avg_geo": 61.7,
-      "avg_aeo": 42.1,
-      "grade": "B"
+      "avg_aeo": 62.1,
+      "grade": "B+"
     }
   },
-  "timestamp": "2026-06-25T21:24:07.431238"
+  "timestamp": "2026-06-25T21:32:41.517926"
 }

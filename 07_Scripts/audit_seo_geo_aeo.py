@@ -311,13 +311,17 @@ def audit_aeo(html_str, filepath):
     results = {}
     issues = []
     
-    # 1. AEO SUMMARY BLOCK
+    # 1. AEO SUMMARY BLOCK — recognize both patterns:
+    #    Pattern A: <!-- AEO-SUMMARY-START --> ... <!-- AEO-SUMMARY-END -->
+    #    Pattern B: <div class="aeo-summary"> with blockquote
+    #    Pattern C: <div class="answer-block"> (MittaGO)
     aeo_start = re.search(r'AEO-SUMMARY-START', html_str, re.IGNORECASE)
     aeo_end = re.search(r'AEO-SUMMARY-END', html_str, re.IGNORECASE)
+    aeo_div = re.search(r'class=["\']aeo-summary["\']', html_str, re.IGNORECASE)
     answer_block = re.search(r'class=["\']answer-block["\']', html_str, re.IGNORECASE)
     
     if aeo_start and aeo_end:
-        # Extract AEO content and check quality
+        # Best case: has explicit markers
         aeo_content = html_str[aeo_start.end():aeo_end.start()]
         aeo_text = strip_tags(aeo_content)
         aeo_wc = count_words(aeo_text)
@@ -329,26 +333,27 @@ def audit_aeo(html_str, filepath):
         else:
             results["aeo_summary"] = 40
             issues.append(f"AEO summary muy {'corto' if aeo_wc < 20 else 'largo'}: {aeo_wc} words")
-    elif answer_block:
+    elif aeo_div or answer_block:
+        # Has visual AEO block but without markers — still counts as present
         results["aeo_summary"] = 60
-        issues.append("Tiene answer-block pero sin marcadores AEO-SUMMARY-START/END")
+        issues.append("Tiene bloque AEO visual pero sin marcadores START/END")
     else:
         results["aeo_summary"] = 0
         issues.append("❌ FALTA bloque AEO Summary (crítico)")
     
-    # 2. FAQ SECTION (HTML)
+    # 2. FAQ SECTION (HTML) — recognize both patterns:
+    #    Pattern A: .faq-section wrapper with .faq-item children
+    #    Pattern B: .faq-question elements without wrapper (RAC/NC26/Cyber)
     faq_section = re.search(r'class=["\']faq-section["\']', html_str, re.IGNORECASE)
     faq_items = re.findall(r'class=["\']faq-item["\']', html_str, re.IGNORECASE)
     faq_questions = re.findall(r'class=["\']faq-question["\']', html_str, re.IGNORECASE)
+    total_faq = max(len(faq_items), len(faq_questions))
     
-    if faq_section and len(faq_items) >= 3:
+    if total_faq >= 3:
         results["faq_section"] = 100
-    elif faq_section and len(faq_items) >= 1:
+    elif total_faq >= 1:
         results["faq_section"] = 70
-        issues.append(f"Solo {len(faq_items)} FAQ items (recomendado: 3+)")
-    elif faq_questions:
-        results["faq_section"] = 50
-        issues.append("FAQs presentes pero sin contenedor .faq-section")
+        issues.append(f"Solo {total_faq} FAQ items (recomendado: 3+)")
     else:
         results["faq_section"] = 0
         issues.append("❌ FALTA sección FAQ (crítico para AEO)")
