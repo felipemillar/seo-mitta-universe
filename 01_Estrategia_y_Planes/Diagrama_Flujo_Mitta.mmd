@@ -1,0 +1,64 @@
+flowchart LR
+
+%% Definición de Estilos (Premium & Formal)
+classDef fase fill:#ffffff,stroke:#94a3b8,stroke-width:2px,color:#1e293b,font-weight:bold,font-size:18px,rx:8px,ry:8px
+classDef accion fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,color:#334155,font-size:14px,rx:4px,ry:4px
+classDef neuro fill:#ecfdf5,stroke:#10b981,stroke-width:2px,color:#065f46,font-size:14px,rx:4px,ry:4px
+classDef cliente fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px,color:#0369a1,font-size:14px,rx:4px,ry:4px
+classDef entregable fill:#fffbeb,stroke:#f59e0b,stroke-width:1px,color:#92400e,font-size:13px,stroke-dasharray: 4 4
+
+subgraph F1 ["01. Estrategia y Planificación"]
+    direction TB
+    A1["Definición de Pilares: Rent a Car & MittaGO"]:::accion
+    A2["Arquitectura de Temas y Asignación de Keywords"]:::accion
+    A3(["Entregable: Propuesta de Contenidos"]):::entregable
+    A1 --> A2 --> A3
+end
+
+subgraph F2 ["02. Redacción y Optimización Técnica"]
+    direction TB
+    B1["Redacción Estratégica en 7 Bloques"]:::accion
+    B2["Homologación Estructural Automatizada"]:::accion
+    B3(["Entregable: Artículos Blindados (SEO/AEO/GEO)"]):::entregable
+    B1 --> B2 --> B3
+end
+
+subgraph F3 ["03. Producción de Activos Visuales"]
+    direction TB
+    C1["Diseño de Prompts Visuales"]:::accion
+    C2["Generación: Hero Image + Human Element"]:::accion
+    C3(["Entregable: Activos Visuales Iniciales"]):::entregable
+    C1 --> C2 --> C3
+end
+
+subgraph F4 ["04. Análisis Neurocientífico e Iteración Visual"]
+    direction TB
+    D1["Carga y Análisis en Digital Predict"]:::neuro
+    D2["Traducción de Diagnóstico a Diseño"]:::neuro
+    D3(["Entregable: Activos Visuales v2 Optimizados"]):::entregable
+    D1 --> D2 --> D3
+end
+
+subgraph F5 ["05. Validación de Contenido y Visual"]
+    direction TB
+    E1["Despliegue de Portal de Feedback y Visuales"]:::cliente
+    E2["Recolección de Feedback del Cliente"]:::cliente
+    E3["Última Iteración de Ajustes: Redacción y Visuales"]:::accion
+    E4(["Entregable: Contenidos y Visuales Aprobados"]):::entregable
+    E1 --> E2 --> E3 --> E4
+end
+
+subgraph F6 ["06. Ensamblaje Final y Entrega PDF"]
+    direction TB
+    F1["Composición del PDF Final"]:::accion
+    F2["Revisión de Calidad y Entrega"]:::accion
+    F3(["Entregable: Documentos PDF Publicables"]):::entregable
+    F1 --> F2 --> F3
+end
+
+%% Flujo Principal
+F1 ==> F2
+F2 ==> F3
+F3 ==> F4
+F4 ==> F5
+F5 ==> F6

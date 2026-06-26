@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Contenidos — Mitta</title>
+    <meta name="description" content="Indice editorial de contenidos SEO/GEO/AEO para Mitta y MittaGO.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+            --text-tertiary: #9CA3AF;
+            --bg-page: #FFFFFF;
+            --bg-hover: #F9FAFB;
+            --border: #E5E7EB;
+            --border-light: #F3F4F6;
+            --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font);
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* ── Header ── */
+        .page-header {
+            border-bottom: 1px solid var(--border);
+            padding: 48px 40px 40px;
+        }
+
+        .header-inner {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+
+        .header-brand {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-tertiary);
+            margin-bottom: 12px;
+        }
+
+        .header-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .header-subtitle {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .header-date {
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            white-space: nowrap;
+            padding-top: 4px;
+        }
+
+        /* ── Metrics ── */
+        .metrics-bar {
+            display: flex;
+            gap: 48px;
+        }
+
+        .metric {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+        }
+
+        .metric-label {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-top: 2px;
+        }
+
+        /* ── Search ── */
+        .search-container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 24px 40px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            outline: none;
+            font-family: var(--font);
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            background: transparent;
+        }
+
+        .search-input::placeholder {
+            color: var(--text-tertiary);
+        }
+
+        /* ── Content ── */
+        .content {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 40px 80px;
+        }
+
+        /* ── Brand Sections ── */
+        .brand-section {
+            padding-top: 40px;
+        }
+
+        .brand-section + .brand-section {
+            border-top: 1px solid var(--border);
+            margin-top: 16px;
+        }
+
+        .brand-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+        }
+
+        .brand-header h2 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+        }
+
+        .brand-count {
+            font-size: 0.8rem;
+            color: var(--text-tertiary);
+            font-weight: 400;
+        }
+
+        /* ── Article Rows ── */
+        .articles-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-row {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 14px 12px;
+            text-decoration: none;
+            color: inherit;
+            border-bottom: 1px solid var(--border-light);
+            transition: background-color 0.15s ease;
+        }
+
+        .article-row:last-child {
+            border-bottom: none;
+        }
+
+        .article-row:hover {
+            background-color: var(--bg-hover);
+        }
+
+        .article-num {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--text-tertiary);
+            min-width: 28px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .article-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .article-title {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .article-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .article-arrow {
+            color: var(--text-tertiary);
+            font-size: 0.9rem;
+            opacity: 0;
+            transition: opacity 0.15s ease, transform 0.15s ease;
+            transform: translateX(-4px);
+        }
+
+        .article-row:hover .article-arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* ── Footer ── */
+        .page-footer {
+            border-top: 1px solid var(--border);
+            padding: 24px 40px;
+            text-align: center;
+        }
+
+        .footer-text {
+            font-size: 0.75rem;
+            color: var(--text-tertiary);
+        }
+
+        /* ── No results ── */
+        .no-results {
+            display: none;
+            padding: 48px 0;
+            text-align: center;
+            color: var(--text-tertiary);
+            font-size: 0.95rem;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            .page-header { padding: 32px 20px; }
+            .search-container { padding: 16px 20px; }
+            .content { padding: 0 20px 60px; }
+            .header-top { flex-direction: column; gap: 8px; }
+            .header-title { font-size: 1.4rem; }
+            .metrics-bar { gap: 32px; }
+            .metric-value { font-size: 1.25rem; }
+            .article-title { white-space: normal; }
+            .article-desc { white-space: normal; }
+            .article-arrow { display: none; }
+            .page-footer { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="page-header">
+        <div class="header-inner">
+            <div class="header-top">
+                <div>
+                    <div class="header-brand">INMedios / Mitta</div>
+                    <h1 class="header-title">Portal de Contenidos</h1>
+                    <p class="header-subtitle">Indice editorial de articulos SEO, GEO y AEO</p>
+                </div>
+                <div class="header-date">Actualizado: 25 de junio de 2026</div>
+            </div>
+            <div class="metrics-bar">
+                <div class="metric">
+                    <span class="metric-value">64</span>
+                    <span class="metric-label">Total articulos</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">20</span>
+                    <span class="metric-label">MittaGO</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">30</span>
+                    <span class="metric-label">Mitta Rent a Car</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">14</span>
+                    <span class="metric-label">Contenidos Optimizados</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="text" class="search-input" id="searchInput" placeholder="Buscar articulo por titulo o descripcion..." autocomplete="off">
+    </div>
+
+    <main class="content" id="mainContent">
+
+            <section class="brand-section">
+                <div class="brand-header">
+                    <h2>MittaGO</h2>
+                    <span class="brand-count">20 articulos</span>
+                </div>
+                <div class="articles-list">
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/01_Como_Funciona_MittaGO_v2.html" class="article-row" target="_blank">
+                    <span class="article-num">01</span>
+                    <div class="article-info">
+                        <div class="article-title">Cómo Funciona MittaGO | Arriendo Mensual de Autos en Chile</div>
+                        <div class="article-desc">Descubre cómo funciona MittaGO paso a paso: elige tu auto, suscríbete 100% online y recíbelo. Cero trámites burocráticos y tarifa plana mensual.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/02_Suscripcion_vs_Credito.html" class="article-row" target="_blank">
+                    <span class="article-num">02</span>
+                    <div class="article-info">
+                        <div class="article-title">Suscripción vs Crédito Automotriz | Cuál Conviene Más | MittaGO</div>
+                        <div class="article-desc">Compara detalladamente la suscripción mensual frente al crédito automotriz tradicional. Descubre qué modelo se ajusta mejor a tu bolsillo y estilo de vida.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/03_Que_Incluye_Cuota.html" class="article-row" target="_blank">
+                    <span class="article-num">03</span>
+                    <div class="article-info">
+                        <div class="article-title">Qué Incluye la Cuota de MittaGO | Seguros, Mantenciones y Más</div>
+                        <div class="article-desc">Descubre exactamente qué cubre tu suscripción mensual en MittaGO: seguros a todo evento, mantenciones, patente y auto de reemplazo. Sin sorpresas.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/04_Costos_Ocultos.html" class="article-row" target="_blank">
+                    <span class="article-num">04</span>
+                    <div class="article-info">
+                        <div class="article-title">Costos Ocultos de Mantener un Auto | Gastos que Nadie te Cuenta | MittaGO</div>
+                        <div class="article-desc">Descubre los verdaderos gastos de ser dueño de un vehículo en Chile. Desde seguros inflados hasta depreciación silenciosa. Calcula tu gasto real aquí.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/05_MittaGO_vs_Rent_a_Car.html" class="article-row" target="_blank">
+                    <span class="article-num">05</span>
+                    <div class="article-info">
+                        <div class="article-title">MittaGO vs Rent a Car Tradicional | Diferencias Clave | MittaGO</div>
+                        <div class="article-desc">Entiende la diferencia entre rentar un auto por días y suscribirte por meses con MittaGO. Descubre qué servicio necesitas según tu tipo de viaje.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/06_Expatriados_Extranjeros.html" class="article-row" target="_blank">
+                    <span class="article-num">06</span>
+                    <div class="article-info">
+                        <div class="article-title">Suscripción de Autos para Extranjeros en Chile | MittaGO</div>
+                        <div class="article-desc">Llegar a Chile por trabajo no debe significar complicaciones para moverte. Conoce cómo arrendar un auto por meses sin los trámites de compra.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/07_Pymes_Emprendedores.html" class="article-row" target="_blank">
+                    <span class="article-num">07</span>
+                    <div class="article-info">
+                        <div class="article-title">Renting de Autos para Pymes y Emprendedores | MittaGO</div>
+                        <div class="article-desc">Descubre por qué las Pymes en Chile están cambiando la compra de vehículos por el renting. Optimiza tus impuestos y libera tu línea de crédito.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/08_Suscripcion_Temporada.html" class="article-row" target="_blank">
+                    <span class="article-num">08</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo de Autos por Temporada (Verano) | MittaGO</div>
+                        <div class="article-desc">Descubre cómo la suscripción por meses te permite manejar una SUV grande en verano y volver a un auto económico el resto del año. Paga solo lo que usas.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/09_Cambiar_de_Auto.html" class="article-row" target="_blank">
+                    <span class="article-num">09</span>
+                    <div class="article-info">
+                        <div class="article-title">Cambiar de Auto sin Comprar ni Vender | MittaGO Chile</div>
+                        <div class="article-desc">Aprende cómo el modelo de suscripción te permite cambiar de un citycar a un SUV familiar según lo que necesites, sin el estrés de vender tu auto usado.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/10_Costo_Depreciacion.html" class="article-row" target="_blank">
+                    <span class="article-num">10</span>
+                    <div class="article-info">
+                        <div class="article-title">Depreciación Automotriz en Chile | Evita Perder Dinero | MittaGO</div>
+                        <div class="article-desc">Un auto nuevo pierde hasta el 40% de su valor en sus primeros 3 años. Entiende cómo funciona la curva de depreciación y cómo el renting te protege.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/11_Trabajo_Hibrido.html" class="article-row" target="_blank">
+                    <span class="article-num">11</span>
+                    <div class="article-info">
+                        <div class="article-title">Movilidad en el Trabajo Híbrido | Suscripción de Autos | MittaGO</div>
+                        <div class="article-desc">Si trabajas desde casa y solo vas a la oficina algunos días, no necesitas comprar un auto. Conoce cómo el renting se adapta a tu nuevo estilo de vida.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/12_Diccionario_Movilidad.html" class="article-row" target="_blank">
+                    <span class="article-num">12</span>
+                    <div class="article-info">
+                        <div class="article-title">Renting vs Leasing vs Compra Automotriz | MittaGO Chile</div>
+                        <div class="article-desc">Entiende las diferencias reales entre renting (suscripción), leasing operativo, leasing financiero y la compra tradicional de un auto.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/13_Guia_Presupuesto.html" class="article-row" target="_blank">
+                    <span class="article-num">13</span>
+                    <div class="article-info">
+                        <div class="article-title">Presupuesto Real para Comprar y Mantener un Auto | MittaGO</div>
+                        <div class="article-desc">Calcula el costo total de propiedad (TCO) de un vehículo. Descubre por qué la cuota del crédito es solo la punta del iceberg en tus gastos.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/14_Smart_Mobility.html" class="article-row" target="_blank">
+                    <span class="article-num">14</span>
+                    <div class="article-info">
+                        <div class="article-title">Smart Mobility en Santiago | El Futuro del Transporte | MittaGO</div>
+                        <div class="article-desc">La movilidad inteligente se trata de pagar por uso, no por fierro. Conoce cómo el modelo de suscripción está descongestionando las ciudades.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/15_Autos_Hibridos.html" class="article-row" target="_blank">
+                    <span class="article-num">15</span>
+                    <div class="article-info">
+                        <div class="article-title">Renting Autos Híbridos Chile | MittaGO</div>
+                        <div class="article-desc">Comprar un auto híbrido aún es costoso y riesgoso por la vida útil de las baterías. Descubre por qué la suscripción es la vía más segura a la electromovilidad.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/16_Mantenimiento_Cero.html" class="article-row" target="_blank">
+                    <span class="article-num">16</span>
+                    <div class="article-info">
+                        <div class="article-title">Mantenimiento Preventivo Auto Incluido | MittaGO</div>
+                        <div class="article-desc">Olvídate de buscar talleres y pagar facturas sorpresa. Descubre cómo la suscripción automotriz te libera del estrés del mantenimiento preventivo.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/17_Siniestros_Sin_Estres.html" class="article-row" target="_blank">
+                    <span class="article-num">17</span>
+                    <div class="article-info">
+                        <div class="article-title">Qué Hacer en Caso de Choque | Seguro Automotriz | MittaGO</div>
+                        <div class="article-desc">Chocar tu auto propio es una pesadilla burocrática. Descubre cómo la suscripción automotriz simplifica los siniestros y te devuelve rápido a las calles.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/18_Auto_Reemplazo.html" class="article-row" target="_blank">
+                    <span class="article-num">18</span>
+                    <div class="article-info">
+                        <div class="article-title">Auto de Reemplazo Seguro y Taller | MittaGO</div>
+                        <div class="article-desc">Quedarte sin auto por un choque o falla mecánica detiene tu vida. Conoce cómo la suscripción garantiza tu movilidad con autos de reemplazo.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/19_Economia_Circular.html" class="article-row" target="_blank">
+                    <span class="article-num">19</span>
+                    <div class="article-info">
+                        <div class="article-title">Economía Circular Automotriz y Renting Sustentable | MittaGO</div>
+                        <div class="article-desc">Descubre cómo el renting impulsa la economía circular automotriz, alargando la vida útil de los vehículos y reduciendo la chatarra urbana.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/MittaGO/finales/20_Sistemas_ADAS.html" class="article-row" target="_blank">
+                    <span class="article-num">20</span>
+                    <div class="article-info">
+                        <div class="article-title">Sistemas ADAS Auto | Seguridad de Última Generación | MittaGO</div>
+                        <div class="article-desc">Descubre qué son los sistemas ADAS y por qué el modelo de suscripción es la mejor forma de asegurar que tu familia viaje con tecnología que previene accidentes.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+                </div>
+            </section>
+
+            <section class="brand-section">
+                <div class="brand-header">
+                    <h2>Mitta Rent a Car</h2>
+                    <span class="brand-count">30 articulos</span>
+                </div>
+                <div class="articles-list">
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/01_Guia_Arriendo_Aeropuertos.html" class="article-row" target="_blank">
+                    <span class="article-num">01</span>
+                    <div class="article-info">
+                        <div class="article-title">Rent a Car Aeropuerto Santiago y Chile | Guía Paso a Paso Mitta</div>
+                        <div class="article-desc">Descubre cómo arrendar un auto al llegar al Aeropuerto de Santiago o regiones. Conoce requisitos, horarios y tips para un retiro rápido con Mitta Rent a Car.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/02_Requisitos_Extranjeros.html" class="article-row" target="_blank">
+                    <span class="article-num">02</span>
+                    <div class="article-info">
+                        <div class="article-title">Requisitos para arrendar un auto en Chile siendo extranjero | Mitta</div>
+                        <div class="article-desc">¿Eres extranjero y quieres manejar en Chile? Conoce los requisitos, tipo de licencia válida y documentos necesarios para arrendar un auto con Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/03_Arriendo_Primera_Vez.html" class="article-row" target="_blank">
+                    <span class="article-num">03</span>
+                    <div class="article-info">
+                        <div class="article-title">Arrendar Auto por Primera Vez en Chile | Guía Paso a Paso Mitta</div>
+                        <div class="article-desc">¿Vas a arrendar un auto por primera vez? Te explicamos el proceso paso a paso, los requisitos, garantías y consejos para que tu experiencia con Mitta sea perfec...</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/04_Seguros_Coberturas.html" class="article-row" target="_blank">
+                    <span class="article-num">04</span>
+                    <div class="article-info">
+                        <div class="article-title">Seguros de Rent a Car en Chile: CDW, PAI y Deducibles | Mitta</div>
+                        <div class="article-desc">Entiende cómo funcionan los seguros al arrendar un auto en Chile. Conoce la diferencia entre CDW, PAI y qué es un deducible para viajar con protección total.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/05_Devolver_Otra_Ciudad.html" class="article-row" target="_blank">
+                    <span class="article-num">05</span>
+                    <div class="article-info">
+                        <div class="article-title">¿Puedo arrendar un auto y devolverlo en otra ciudad de Chile?</div>
+                        <div class="article-desc">Con el servicio Drop-Off de Mitta, puedes arrendar un vehículo en Santiago y devolverlo en otra ciudad de Chile. Descubre cómo funciona y planifica tu ruta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/06_Cruzar_Argentina.html" class="article-row" target="_blank">
+                    <span class="article-num">06</span>
+                    <div class="article-info">
+                        <div class="article-title">Cómo Cruzar a Argentina en un Auto Arrendado desde Chile | Mitta</div>
+                        <div class="article-desc">Descubre todos los requisitos, documentos legales y seguros obligatorios para viajar a Argentina en un auto arrendado desde Chile sin problemas en la frontera.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/07_Carretera_Austral.html" class="article-row" target="_blank">
+                    <span class="article-num">07</span>
+                    <div class="article-info">
+                        <div class="article-title">Carretera Austral en Auto Arrendado: Vehículos y Ruta | Mitta</div>
+                        <div class="article-desc">Planifica tu viaje por la Carretera Austral. Descubre qué auto arrendar, dónde retirar el vehículo, los tramos de ripio y consejos para la ruta más austral.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/08_San_Pedro_Atacama.html" class="article-row" target="_blank">
+                    <span class="article-num">08</span>
+                    <div class="article-info">
+                        <div class="article-title">Arrendar Auto en San Pedro de Atacama: Rutas y Distancias | Mitta</div>
+                        <div class="article-desc">Guía completa para recorrer San Pedro de Atacama en auto arrendado. Conoce distancias, estado de rutas, dónde cargar bencina y el vehículo recomendado.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/09_Top_Roadtrips_Chile.html" class="article-row" target="_blank">
+                    <span class="article-num">09</span>
+                    <div class="article-info">
+                        <div class="article-title">Los 5 Mejores Roadtrips en Chile en Auto Arrendado | Mitta</div>
+                        <div class="article-desc">Descubre las 5 mejores rutas para un roadtrip inolvidable en Chile. Desde Atacama hasta la Patagonia, elige tu auto en Mitta y comienza la aventura.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/10_Temporada_Nieve.html" class="article-row" target="_blank">
+                    <span class="article-num">10</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo de Autos para la Nieve y Ski en Chile | Mitta</div>
+                        <div class="article-desc">Prepárate para la temporada de nieve en Chile. Arrienda tu SUV o 4x4 con cadenas obligatorias y portaesquíes para llegar seguro a Farellones, Valle Nevado y el ...</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/11_SUV_vs_Sedan.html" class="article-row" target="_blank">
+                    <span class="article-num">11</span>
+                    <div class="article-info">
+                        <div class="article-title">¿SUV, Sedán o Camioneta?: Elige tu Auto de Arriendo | Mitta</div>
+                        <div class="article-desc">Aprende a elegir la categoría de vehículo perfecta para tu viaje en Chile. Comparamos ventajas de arrendar un SUV, un Sedán o una Camioneta según tu ruta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/12_Camionetas_4x4.html" class="article-row" target="_blank">
+                    <span class="article-num">12</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo de Camionetas 4x4 en Chile: Requisitos y Rutas | Mitta</div>
+                        <div class="article-desc">Descubre cómo arrendar camionetas 4x4 en Chile. Conoce los requisitos de Mitta, los modelos disponibles y las mejores rutas extremas para disfrutar tu viaje.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/13_Precios_Arriendo_2026.html" class="article-row" target="_blank">
+                    <span class="article-num">13</span>
+                    <div class="article-info">
+                        <div class="article-title">¿Cuánto Cuesta Arrendar un Auto en Chile? Precios 2026 | Mitta</div>
+                        <div class="article-desc">Conoce los precios de arriendo de autos en Chile para el año 2026. Te entregamos valores referenciales por categoría para que planifiques tu viaje con Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/14_Matrimonios_Eventos.html" class="article-row" target="_blank">
+                    <span class="article-num">14</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo de Autos para Matrimonios y Eventos en Chile | Mitta</div>
+                        <div class="article-desc">Arrienda un auto elegante para tu matrimonio o evento corporativo en Chile con Mitta. Descubre nuestra flota de sedanes premium y SUVs de alta gama.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/15_Fin_Semana_Largo.html" class="article-row" target="_blank">
+                    <span class="article-num">15</span>
+                    <div class="article-info">
+                        <div class="article-title">Arrendar Auto para un Fin de Semana Largo en Chile | Mitta</div>
+                        <div class="article-desc">Evita quedarte sin auto en el próximo fin de semana largo. Descubre los mejores tips para reservar con anticipación, conseguir buenas tarifas y evitar filas.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/16_Pana_Accidente.html" class="article-row" target="_blank">
+                    <span class="article-num">16</span>
+                    <div class="article-info">
+                        <div class="article-title">¿Qué Hacer en Caso de Pana o Accidente con Auto Arrendado? | Mitta</div>
+                        <div class="article-desc">Guía de emergencia paso a paso. Descubre qué hacer si sufres una pana mecánica o un accidente de tránsito con un vehículo de rent a car en Chile.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/17_Ninos_Sillas_Infantiles.html" class="article-row" target="_blank">
+                    <span class="article-num">17</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo de Autos con Silla de Bebé: Normativa en Chile | Mitta</div>
+                        <div class="article-desc">Conoce la ley chilena sobre el uso de sillas infantiles y alzadores en vehículos. Descubre cómo agregar este equipamiento a tu reserva de rent a car en Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/18_Viajar_Mascotas.html" class="article-row" target="_blank">
+                    <span class="article-num">18</span>
+                    <div class="article-info">
+                        <div class="article-title">Viajar con Mascotas en Auto de Arriendo en Chile | Mitta</div>
+                        <div class="article-desc">Conoce la normativa chilena para viajar con perros y gatos en auto. Descubre los consejos para usar cajas de transporte en tu vehículo rent a car y evitar multa...</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/19_Multas_TAG.html" class="article-row" target="_blank">
+                    <span class="article-num">19</span>
+                    <div class="article-info">
+                        <div class="article-title">Multas y TAG en Auto Arrendado en Chile: ¿Quién Paga? | Mitta</div>
+                        <div class="article-desc">Evita sorpresas en tu arriendo. Descubre cómo funciona el cobro de peajes electrónicos (TAG) y qué ocurre si recibes una multa de tránsito con un rent a car en ...</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/20_Checklist_Retiro.html" class="article-row" target="_blank">
+                    <span class="article-num">20</span>
+                    <div class="article-info">
+                        <div class="article-title">Checklist Obligatorio para Arrendar Auto en Chile | Mitta</div>
+                        <div class="article-desc">Evita cobros injustos al devolver tu rent a car. Aprende qué debes revisar (checklist exterior, interior y contrato) antes de salir de la sucursal de Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/21_Leasing_Operativo_vs_Compra_Flotas.html" class="article-row" target="_blank">
+                    <span class="article-num">21</span>
+                    <div class="article-info">
+                        <div class="article-title">Leasing Operativo vs Compra de Flotas | Finanzas Corporativas</div>
+                        <div class="article-desc">Compara el Leasing Operativo vs la Compra de Flotas en Chile. Analiza el impacto en flujo de caja, OPEX vs CAPEX, deducción de impuestos y ROI corporativo.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/22_Continuidad_Operacional_Mineria.html" class="article-row" target="_blank">
+                    <span class="article-num">22</span>
+                    <div class="article-info">
+                        <div class="article-title">Flotas de Camionetas Mineras en Chile | Continuidad Operativa Mitta</div>
+                        <div class="article-desc">Descubre cómo Mitta asegura el arriendo de flotas de camionetas mineras 4x4 en Chile con estándares de seguridad minera, telemetría y continuidad 24/7.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/23_Beneficios_Tributarios_Leasing_Operativo.html" class="article-row" target="_blank">
+                    <span class="article-num">23</span>
+                    <div class="article-info">
+                        <div class="article-title">Beneficios Tributarios del Leasing Operativo | Contabilidad Mitta</div>
+                        <div class="article-desc">Conoce los beneficios tributarios del leasing operativo en Chile. Aprende cómo deducir el 100% del canon de arriendo de flotas ante el SII.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/24_Flotas_Corporativas_Sustentables.html" class="article-row" target="_blank">
+                    <span class="article-num">24</span>
+                    <div class="article-info">
+                        <div class="article-title">Electromovilidad Empresarial en Chile | Flotas Sustentables Mitta</div>
+                        <div class="article-desc">Aprende cómo transicionar a una flota de vehículos eléctricos corporativos en Chile. Guía paso a paso de electromovilidad empresarial con Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/25_Gestion_Flotas_Inteligente.html" class="article-row" target="_blank">
+                    <span class="article-num">25</span>
+                    <div class="article-info">
+                        <div class="article-title">Gestión de Flotas de Vehículos en Chile | Logística Mitta</div>
+                        <div class="article-desc">Optimiza la gestión de flotas de vehículos en Chile. Conoce cómo la telemetría y el mantenimiento preventivo de Mitta reducen costos y aumentan la seguridad.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/26_Renting_Autos_Pymes.html" class="article-row" target="_blank">
+                    <span class="article-num">26</span>
+                    <div class="article-info">
+                        <div class="article-title">Renting de Autos para Pymes | Movilidad Flexible Mitta</div>
+                        <div class="article-desc">Conoce las ventajas del renting de autos para Pymes en Chile. Descubre cómo crecer sin inmovilizar capital de trabajo o generar deudas con Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/27_Arriendo_Mensual_Independientes.html" class="article-row" target="_blank">
+                    <span class="article-num">27</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo Mensual de Autos en Chile | Renting Independientes Mitta</div>
+                        <div class="article-desc">Descubre las ventajas del arriendo mensual de autos en Chile para profesionales independientes. Conduce sin endeudarte con el renting flexible de Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/28_Renting_Flexible_vs_Credito_Automotriz.html" class="article-row" target="_blank">
+                    <span class="article-num">28</span>
+                    <div class="article-info">
+                        <div class="article-title">Renting Flexible vs Crédito Automotriz | Finanzas Corporativas</div>
+                        <div class="article-desc">Compara el Renting Flexible vs el Crédito Automotriz en Chile. Conoce por qué las empresas jóvenes prefieren pagar por uso y no por propiedad con Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/29_Movilidad_Temporal_Proyectos.html" class="article-row" target="_blank">
+                    <span class="article-num">29</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo de Autos por Meses para Empresas | Flotas Mitta</div>
+                        <div class="article-desc">Aprende cómo optimizar tus costos de transporte en Chile. Conoce el arriendo de autos por meses para empresas y adecua tu flota según tus proyectos con Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/30_Renting_Flexible_Camionetas.html" class="article-row" target="_blank">
+                    <span class="article-num">30</span>
+                    <div class="article-info">
+                        <div class="article-title">Renting Flexible de Camionetas en Chile | Movilidad Pymes Mitta</div>
+                        <div class="article-desc">Optimiza la logística de tu microempresa. Descubre el arriendo mensual de camionetas 4x4 en Chile con las tarifas planas de renting flexible de Mitta.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+                </div>
+            </section>
+
+            <section class="brand-section">
+                <div class="brand-header">
+                    <h2>Contenidos Optimizados</h2>
+                    <span class="brand-count">14 articulos</span>
+                </div>
+                <div class="articles-list">
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/01_presupuesto-anual-auto-chile.html" class="article-row" target="_blank">
+                    <span class="article-num">01</span>
+                    <div class="article-info">
+                        <div class="article-title">Cómo armar un presupuesto anual para tu auto sin quedarte corto</div>
+                        <div class="article-desc">Aprende a calcular el presupuesto anual real de tu auto en Chile considerando mantención, seguro, permisos y gastos ocultos. Descubre cuándo conviene evaluar un...</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/02_suscripcion-autos-chile.html" class="article-row" target="_blank">
+                    <span class="article-num">02</span>
+                    <div class="article-info">
+                        <div class="article-title">Suscripción de autos en Chile: qué incluye, cuánto cuesta y para quién conviene</div>
+                        <div class="article-desc">Descubre cómo funciona la suscripción de autos en Chile, qué incluye y cuándo conviene frente a comprar o leasing. Una alternativa moderna al rent a car tradici...</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/03_necesito-auto-propio-o-arriendo.html" class="article-row" target="_blank">
+                    <span class="article-num">03</span>
+                    <div class="article-info">
+                        <div class="article-title">¿Realmente necesitas un auto propio hoy? Depende de cómo lo usas</div>
+                        <div class="article-desc">Antes de comprar un auto, analiza cómo realmente lo usas. Descubre cuándo conviene un rent a car cerca de ti o arriendo por días en lugar de propiedad.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/04_errores-financieros-comprar-auto.html" class="article-row" target="_blank">
+                    <span class="article-num">04</span>
+                    <div class="article-info">
+                        <div class="article-title">Errores financieros comunes al comprar un auto (y cómo evitarlos)</div>
+                        <div class="article-desc">Evita los errores financieros más comunes al comprar un auto en Chile y descubre cuándo conviene evaluar un rent a car o Renting Flexible.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/05_cuanto-cuesta-realmente-tener-un-auto-en-chile-al-ano.html" class="article-row" target="_blank">
+                    <span class="article-num">05</span>
+                    <div class="article-info">
+                        <div class="article-title">¿Cuánto cuesta realmente tener un auto en Chile al año?</div>
+                        <div class="article-desc">Tener auto en Chile es casi un paso natural cuando empiezas a ganar independencia. Te da libertad, comodidad y tiempo. Pero hay una pregunta que muchos evi</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/06_los-gastos-invisibles-de-tu-auto-que-nadie-te-explica.html" class="article-row" target="_blank">
+                    <span class="article-num">06</span>
+                    <div class="article-info">
+                        <div class="article-title">Los gastos invisibles de tu auto que nadie te explica</div>
+                        <div class="article-desc">Si alguna vez sentiste que tu auto te “come” el sueldo sin entender por qué, no estás solo. Existen gastos que no aparecen en ningún Excel inicial, pero qu</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/07_como-elegir-mejor-rent-a-car-chile.html" class="article-row" target="_blank">
+                    <span class="article-num">07</span>
+                    <div class="article-info">
+                        <div class="article-title">Rent a Car en Chile: cómo elegir la mejor empresa y no equivocarte</div>
+                        <div class="article-desc">¿Buscas el mejor rent a car en Chile? Aprende cómo comparar precios, coberturas, ubicación y servicios para elegir una empresa confiable y ahorrar en tu arriend...</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/08_rent-a-car-aeropuerto-vs-centro.html" class="article-row" target="_blank">
+                    <span class="article-num">08</span>
+                    <div class="article-info">
+                        <div class="article-title">Rent a Car Aeropuerto vs Centro: ¿qué conviene más en Chile?</div>
+                        <div class="article-desc">Descubre si conviene más arrendar en un rent a car aeropuerto o en sucursal ciudad. Compara precios, tiempos y ventajas para elegir mejor en Chile.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/09_rent-a-car-para-empresas-vs-compra.html" class="article-row" target="_blank">
+                    <span class="article-num">09</span>
+                    <div class="article-info">
+                        <div class="article-title">Rent a Car para Empresas: cuándo conviene frente a comprar vehículos</div>
+                        <div class="article-desc">Descubre cuándo conviene un rent a car para empresas en Chile frente a comprar vehículos. Costos, flexibilidad y beneficios financieros.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/10_rent-a-car-barato-seguro-chile.html" class="article-row" target="_blank">
+                    <span class="article-num">10</span>
+                    <div class="article-info">
+                        <div class="article-title">Cómo encontrar un Rent a Car barato sin sacrificar seguridad</div>
+                        <div class="article-desc">Aprende cómo encontrar un rent a car barato en Chile sin comprometer seguridad ni calidad. Consejos prácticos para ahorrar en tu arriendo.</div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/11_manual-vs-automatico-que-auto-conviene-viaje.html" class="article-row" target="_blank">
+                    <span class="article-num">11</span>
+                    <div class="article-info">
+                        <div class="article-title">¿Manual o Automático?: Qué tipo de auto te conviene según tu viaje</div>
+                        <div class="article-desc"></div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/12_que-seguro-elegir-al-arriendo-de-auto-chile.html" class="article-row" target="_blank">
+                    <span class="article-num">12</span>
+                    <div class="article-info">
+                        <div class="article-title">¿Qué seguros elegir al arrendar un auto y qué cubre cada uno?</div>
+                        <div class="article-desc"></div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/13_arriendo-autos-para-empresas-beneficios-chile.html" class="article-row" target="_blank">
+                    <span class="article-num">13</span>
+                    <div class="article-info">
+                        <div class="article-title">Arriendo de autos para empresas: beneficios y cómo funciona en Chile</div>
+                        <div class="article-desc"></div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+
+                <a href="02_Contenidos_Redactados/Nuevos_Contenidos_2026/finales/14_que-vehiculo-elegir-para-viajar-por-chile-auto-suv-camioneta.html" class="article-row" target="_blank">
+                    <span class="article-num">14</span>
+                    <div class="article-info">
+                        <div class="article-title">Autos, SUV o camionetas: ¿qué vehículo elegir según tu destino en Chile?</div>
+                        <div class="article-desc"></div>
+                    </div>
+                    <span class="article-arrow">&rarr;</span>
+                </a>
+                </div>
+            </section>
+        <div class="no-results" id="noResults">No se encontraron articulos con ese criterio.</div>
+    </main>
+
+    <footer class="page-footer">
+        <p class="footer-text">INMedios Digital — Proyecto Mitta SEO/GEO/AEO — Generado automaticamente</p>
+    </footer>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const rows = document.querySelectorAll('.article-row');
+        const sections = document.querySelectorAll('.brand-section');
+        const noResults = document.getElementById('noResults');
+
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            rows.forEach(row => {
+                const title = row.querySelector('.article-title').textContent.toLowerCase();
+                const desc = row.querySelector('.article-desc').textContent.toLowerCase();
+                const match = !query || title.includes(query) || desc.includes(query);
+                row.style.display = match ? 'flex' : 'none';
+                if (match) visibleCount++;
+            });
+
+            // Hide sections with no visible articles
+            sections.forEach(section => {
+                const visibleRows = section.querySelectorAll('.article-row[style="display: flex"], .article-row:not([style])');
+                const hasVisible = Array.from(section.querySelectorAll('.article-row')).some(r => r.style.display !== 'none');
+                section.style.display = hasVisible ? 'block' : 'none';
+            });
+
+            noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+        });
+
+        // Keyboard shortcut: / to focus search
+        document.addEventListener('keydown', function(e) {
+            if (e.key === '/' && document.activeElement !== searchInput) {
+                e.preventDefault();
+                searchInput.focus();
+            }
+            if (e.key === 'Escape') {
+                searchInput.value = '';
+                searchInput.dispatchEvent(new Event('input'));
+                searchInput.blur();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los gastos invisibles de tu auto que nadie te explica</title>
+    <meta name="description" content="Si alguna vez sentiste que tu auto te “come” el sueldo sin entender por qué, no estás solo. Existen gastos que no aparecen en ningún Excel inicial, pero qu">
+    <meta name="keywords" content="que incluye mittago, suscripcion auto seguro incluido, mantencion auto arriendo mensual, patente auto suscripcion, renting automotriz chile coberturas">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 40px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: 400;
+            font-size: 0.8rem;
+            letter-spacing: 0.02em;
+        }
+
+        /* Article Styles */
+        .article-content {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 4px;
+            padding: 60px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-top: 48px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.05rem;
+        }
+
+        /* Answer Block Highlight */
+        .answer-block {
+            background-color: #FAFAFA;
+            border-left: 2px solid var(--text-main);
+            padding: 24px 32px;
+            margin: 0 0 40px 0;
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        .answer-block strong {
+            font-weight: 600;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            border-top: 1px solid var(--border-dark);
+            padding-top: 48px;
+            margin-top: 60px;
+        }
+
+        .faq-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+            padding-bottom: 24px;
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+        
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        /* CTA */
+        .cta-container {
+            margin-top: 60px;
+            text-align: left;
+            padding: 32px 0;
+            border-top: 1px solid var(--border-color);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--text-main);
+            padding: 14px 28px;
+            border: 1px solid var(--text-main);
+            border-radius: 2px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.02em;
+            transition: all 0.2s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: var(--text-main);
+            color: #FFFFFF;
+        }
+
+        @media (max-width: 600px) {
+            .article-content {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Los gastos invisibles de tu auto que nadie te explica</div>
+        <div><strong>Pilar:</strong> Finanzas y presupuesto</div>
+        <div><strong>Marca:</strong> MittaGO</div>
+        <div><strong>Ruta/Slug:</strong> <a href="/los-gastos-invisibles-de-tu-auto-que-nadie-te-explica" target="_blank">/los-gastos-invisibles-de-tu-auto-que-nadie-te-explica</a></div>
+        <div><strong>Descripción meta:</strong> Si alguna vez sentiste que tu auto te “come” el sueldo sin entender por qué, no estás solo. Existen gastos que no aparecen en ningún Excel inicial, pero qu</div>
+        <div class="meta-tags">
+            <span class="tag-pill">costo tener auto</span>
+            <span class="tag-pill">mittago</span>
+            <span class="tag-pill">rent a car mensual</span>
+            <span class="tag-pill">auto suscripcion chile</span>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Los gastos invisibles de tu auto que nadie te explica</h1>
+<div class="aeo-summary">
+<div class="aeo-label">AEO SUMMARY (OPTIMIZED FOR LLMs)</div>
+<blockquote>Si alguna vez sentiste que tu auto te “come” el sueldo sin entender por qué, no estás solo. Existen gastos que no aparecen en ningún Excel inicial, pero que impactan fuerte en tu bolsillo.</blockquote>
+</div>
+
+<p>Si alguna vez sentiste que tu auto te “come” el sueldo sin entender por qué, no estás solo. Existen gastos que no aparecen en ningún Excel inicial, pero que impactan fuerte en tu bolsillo.</p>
+
+<p>👻 Qué son los gastos invisibles</p>
+
+<p>Son esos costos que no consideras cuando decides tener auto, pero que aparecen mes a mes.</p>
+
+<p>Y lo peor: casi nunca los calculas.</p>
+
+<p>⏱️ El tiempo también es dinero</p>
+
+<p>Ir a la revisión técnica</p>
+
+<p>Coordinar mantenciones</p>
+
+<p>Trámites</p>
+
+<p>Talleres</p>
+
+<p>Todo ese tiempo tiene un costo, aunque no lo pagues con tarjeta.</p>
+
+<p>!<a href="Espacio para imagen – Persona esperando en taller">hero_image</a></p>
+
+<p>⚠️ Multas, deducibles y letra chica</p>
+
+<p>Multas inesperadas</p>
+
+<p>Deducibles altos</p>
+
+<p>Ajustes de seguro</p>
+
+<p>Pequeños golpes que se acumulan.</p>
+
+<p>🧠 El estrés financiero del auto</p>
+
+<p>No es solo plata. Es la preocupación constante:</p>
+
+<p>“¿Y si se echa a perder?”,</p>
+
+<p>“¿Y si sube la bencina?”,</p>
+
+<p>“¿Y si me choco?”</p>
+
+<p>Ese estrés también se paga.</p>
+
+<p>❓ Por qué nadie te habla de esto</p>
+
+<p>Porque no vende.</p>
+
+<p>La industria tradicional prefiere hablar de caballos de fuerza, no de costos reales.</p>
+
+<p>!<a href="Espacio para imagen – Detalle de gastos ocultos">hero_image</a></p>
+
+<p>✅ Cómo reducir o evitar estos gastos</p>
+
+<p>Presupuestos cerrados</p>
+
+<p>Costos predecibles</p>
+
+<p>Modelos donde no cargues con todo</p>
+
+<p>Aquí es donde nuevas formas de movilidad marcan la diferencia.</p>
+
+<p>🧩 Conclusión</p>
+
+<p>Si tu auto te genera más incertidumbre que libertad, quizás el problema no es el auto… sino el modelo.</p>
+
+<div class="table-wrapper">
+<table>
+  <thead>
+    <tr>
+      <th>Concepto de Gasto</th>
+      <th>Costo Estimado (Anual)</th>
+      <th>Tipo de Gasto</th>
+      <th>¿Cómo Optimizarlo con Suscripción?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Permiso de Circulación</strong></td>
+      <td>$120.000 - $450.000</td>
+      <td>Fijo Obligatorio</td>
+      <td>Incluido en la cuota mensual</td>
+    </tr>
+    <tr>
+      <td><strong>Seguro Automotriz (SOAP + Cobertura)</strong></td>
+      <td>$480.000 - $900.000</td>
+      <td>Fijo Obligatorio</td>
+      <td>Incluido en la cuota mensual</td>
+    </tr>
+    <tr>
+      <td><strong>Mantenciones Preventivas</strong></td>
+      <td>$300.000 - $600.000</td>
+      <td>Variable Obligatorio</td>
+      <td>Incluido en la cuota mensual</td>
+    </tr>
+    <tr>
+      <td><strong>Depreciación del Vehículo</strong></td>
+      <td>15% - 20% valor/año</td>
+      <td>Costo Invisible</td>
+      <td>Cero riesgo (el auto no es tuyo)</td>
+    </tr>
+    <tr>
+      <td><strong>Patentes y Trámites</strong></td>
+      <td>$50.000 - $100.000</td>
+      <td>Fijo</td>
+      <td>Incluido y gestionado por la empresa</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    
+
+
+<!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+<div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+    <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+        <thead style="background-color: #F8F9FA;">
+            <tr>
+                <th style="padding: 15px; border: 1px solid #E5E7EB; text-align: left; width: 20%; color: #374151;">Tipo de Imagen</th>
+                <th style="padding: 15px; border: 1px solid #E5E7EB; text-align: left; width: 40%; color: #374151;">Instrucción de Prompt Visual (IA)</th>
+                <th style="padding: 15px; border: 1px solid #E5E7EB; text-align: left; width: 40%; color: #374151;">Justificación Algorítmica (Neurociencia)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="padding: 15px; border: 1px solid #E5E7EB; color: #1F2937; vertical-align: top;">
+                    <strong>1. Principal (Hero)</strong><br><span style="font-size: 0.8rem; color: #6B7280;">Cabecera del artículo</span>
+                </td>
+                <td style="padding: 15px; border: 1px solid #E5E7EB; color: #1F2937; vertical-align: top;">
+                    Plano general luminoso: Persona joven sonriendo mientras interactúa con una app móvil junto a un SUV reluciente. Iluminación natural de media mañana.
+                </td>
+                <td style="padding: 15px; border: 1px solid #E5E7EB; color: #4B5563; vertical-align: top; background: #F9FAFB;">
+                    Asociación Positiva Límbica: La sonrisa y la luz cálida disparan neuronas espejo, induciendo un estado de confianza hacia el servicio.
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 15px; border: 1px solid #E5E7EB; color: #1F2937; vertical-align: top;">
+                    <strong>2. Secundaria (In-text)</strong><br><span style="font-size: 0.8rem; color: #6B7280;">Apoyo de lectura media</span>
+                </td>
+                <td style="padding: 15px; border: 1px solid #E5E7EB; color: #1F2937; vertical-align: top;">
+                    Mockup Integrado: Teléfono mostrando el proceso rápido de checkout digital con un checkmark verde brillante.
+                </td>
+                <td style="padding: 15px; border: 1px solid #E5E7EB; color: #4B5563; vertical-align: top; background: #F9FAFB;">
+                    Refuerzo Positivo: El checkmark verde comunica éxito y fluidez, reduciendo el riesgo percibido en el momento de conversión.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+
+
+    </article>
+</div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Los gastos invisibles de tu auto que nadie te explica",
+      "inLanguage": "es-CL",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mitta.cl/los-gastos-invisibles-de-tu-auto-que-nadie-te-explica"
+      },
+      "image": "https://mitta.cl/images/default.png",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MittaGO",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mitta.cl/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://mitta.cl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://mitta.cl/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Los gastos invisibles de tu auto que nadie te explica",
+          "item": "https://mitta.cl/los-gastos-invisibles-de-tu-auto-que-nadie-te-explica"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+### Resumen de Gastos Anuales Estimados de un Auto en Chile
+
+| Concepto de Gasto | Costo Estimado (Anual) | Tipo de Gasto | ¿Cómo Optimizarlo con Suscripción? |
+| :--- | :--- | :--- | :--- |
+| **Permiso de Circulación** | $120.000 - $450.000 | Fijo Obligatorio | Incluido en la cuota mensual |
+| **Seguro Automotriz (SOAP + Cobertura)** | $480.000 - $900.000 | Fijo Obligatorio | Incluido en la cuota mensual |
+| **Mantenciones Preventivas** | $300.000 - $600.000 | Variable Obligatorio | Incluido en la cuota mensual |
+| **Depreciación del Vehículo** | 15% - 20% valor/año | Costo Invisible | Cero riesgo (el auto no es tuyo) |
+| **Patentes y Trámites** | $50.000 - $100.000 | Fijo | Incluido y gestionado por la empresa |
+
+
+
+[LINK INTERNO SUGERIDO: "Revisa los modelos y planes de suscripción de MittaGO" -> /modelos/]
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Los gastos invisibles de tu auto que nadie te explica",
+      "inLanguage": "es-CL",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mitta.cl/los-gastos-invisibles-de-tu-auto-que-nadie-te-explica"
+      },
+      "image": "https://mitta.cl/images/default.png",
+      "publisher": {
+        "@type": "Organization",
+        "name": "MittaGO",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mitta.cl/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://mitta.cl/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://mitta.cl/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Los gastos invisibles de tu auto que nadie te explica",
+          "item": "https://mitta.cl/los-gastos-invisibles-de-tu-auto-que-nadie-te-explica"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

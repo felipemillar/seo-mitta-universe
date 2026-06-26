@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Lectura: Ficha Técnica del Artículo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #FFFFFF;
+            --text-primary: #111827;
+            --text-secondary: #4B5563;
+            --text-muted: #9CA3AF;
+            --border-color: #E5E7EB;
+            --accent-color: #4F46E5;
+            --badge-bg: #F3F4F6;
+            --font-title: 'Outfit', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: var(--font-body);
+            line-height: 1.6;
+            padding: 60px 20px;
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        header.main-header {
+            margin-bottom: 48px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+        }
+
+        h1 {
+            font-family: var(--font-title);
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 12px 0;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        h2 {
+            font-family: var(--font-title);
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            letter-spacing: -0.01em;
+        }
+
+        p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        /* --- FICHA TÉCNICA MUESTRA --- */
+        .preview-card {
+            background: #FFFFFF;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+            position: relative;
+        }
+
+        .preview-card h3 {
+            margin: 0 0 20px 0;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+
+        .field-row {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            position: relative;
+        }
+
+        .field-row strong {
+            color: var(--text-primary);
+            font-weight: 600;
+            width: 140px;
+            flex-shrink: 0;
+        }
+
+        .field-value {
+            flex-grow: 1;
+        }
+
+        .field-value a {
+            color: var(--text-primary);
+            text-decoration: underline;
+        }
+
+        .meta-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag-pill {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        /* --- BADGES Y APUNTADORES --- */
+        .pointer-badge {
+            background: var(--accent-color);
+            color: #FFFFFF;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-left: 12px;
+            vertical-align: middle;
+            flex-shrink: 0;
+        }
+
+        /* --- GUÍA EXPLICATIVA --- */
+        .guide-list {
+            margin-top: 32px;
+        }
+
+        .guide-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .guide-item:last-child {
+            border-bottom: none;
+        }
+
+        .guide-num {
+            background: var(--accent-color);
+            color: #FFFFFF;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-right: 16px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .guide-content {
+            flex-grow: 1;
+        }
+
+        .guide-title {
+            font-family: var(--font-title);
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 4px 0;
+        }
+
+        .guide-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin: 0 0 8px 0;
+        }
+
+        .guide-importance {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .guide-importance strong {
+            color: var(--text-secondary);
+        }
+
+        .note-footer {
+            margin-top: 48px;
+            padding: 24px;
+            background-color: #F9FAFB;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            border-left: 3px solid var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <h1>Guía de Lectura: Ficha Técnica del Artículo</h1>
+            <p class="subtitle">Entiende la configuración SEO de cada documento de forma fácil y rápida.</p>
+        </header>
+
+        <section>
+            <p>La <strong>Ficha Técnica del Artículo</strong> es un panel visible al inicio de cada contenido. Su función es mostrar la configuración técnica y de SEO requerida por los motores de búsqueda para posicionar el artículo.</p>
+            
+            <h2>Ejemplo de Ficha Técnica</h2>
+            <p>Pasa el cursor sobre los números para ver qué representa cada campo en la muestra inferior:</p>
+
+            <!-- Muestra Interactiva de la Ficha -->
+            <div class="preview-card">
+                <h3>Ficha Técnica del Artículo</h3>
+                
+                <div class="field-row">
+                    <strong>Título:</strong>
+                    <div class="field-value">Suscripción vs Crédito Automotriz | Cuál Conviene Más | MittaGO</div>
+                    <span class="pointer-badge" title="Título de la pestaña (Title Tag)">1</span>
+                </div>
+
+                <div class="field-row">
+                    <strong>Pilar:</strong>
+                    <div class="field-value">Presupuestos</div>
+                    <span class="pointer-badge" title="Categoría temática en el Blog">2</span>
+                </div>
+
+                <div class="field-row">
+                    <strong>Marca:</strong>
+                    <div class="field-value">MittaGO</div>
+                    <span class="pointer-badge" title="Producto o Línea de negocio">3</span>
+                </div>
+
+                <div class="field-row">
+                    <strong>Ruta/Slug:</strong>
+                    <div class="field-value"><a href="/suscripcion-vs-credito/" target="_blank">/suscripcion-vs-credito/</a></div>
+                    <span class="pointer-badge" title="Dirección web o URL final">4</span>
+                </div>
+
+                <div class="field-row">
+                    <strong>Descripción meta:</strong>
+                    <div class="field-value">Compara detalladamente la suscripción mensual frente al crédito automotriz tradicional. Descubre qué modelo se ajusta mejor a tu bolsillo y estilo de vida.</div>
+                    <span class="pointer-badge" title="Resumen para Google (Meta Description)">5</span>
+                </div>
+
+                <div class="field-row" style="margin-bottom: 0;">
+                    <strong>Keywords:</strong>
+                    <div class="field-value">
+                        <div class="meta-tags">
+                            <span class="tag-pill">credito automotriz vs suscripcion</span>
+                            <span class="tag-pill">conviene comprar auto credito</span>
+                            <span class="tag-pill">arriendo mensual autos chile</span>
+                            <span class="tag-pill">renting personas chile</span>
+                            <span class="tag-pill">suscripcion de vehiculos mittago</span>
+                        </div>
+                    </div>
+                    <span class="pointer-badge" style="margin-top: 16px;" title="Términos que busca la gente en Google">6</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide-list">
+            <h2>Explicación de cada campo</h2>
+
+            <div class="guide-item">
+                <div class="guide-num">1</div>
+                <div class="guide-content">
+                    <div class="guide-title">Título (Title Tag)</div>
+                    <div class="guide-desc">Es el título oficial del documento optimizado para los motores de búsqueda. Es el enlace azul que la gente hace clic al buscar en Google.</div>
+                    <div class="guide-importance"><strong>Importancia:</strong> Es el factor principal que le dice a Google cuál es el tema del documento.</div>
+                </div>
+            </div>
+
+            <div class="guide-item">
+                <div class="guide-num">2</div>
+                <div class="guide-content">
+                    <div class="guide-title">Pilar (Categoría)</div>
+                    <div class="guide-desc">Es la categoría temática del blog en la que se clasifica el artículo (por ejemplo: Presupuestos, Educación, Suscripciones).</div>
+                    <div class="guide-importance"><strong>Importancia:</strong> Ayuda a organizar y estructurar el blog jerárquicamente.</div>
+                </div>
+            </div>
+
+            <div class="guide-item">
+                <div class="guide-num">3</div>
+                <div class="guide-content">
+                    <div class="guide-title">Marca</div>
+                    <div class="guide-desc">Indica la línea de negocio asociada a este artículo (MittaGO o Mitta Rent a Car).</div>
+                    <div class="guide-importance"><strong>Importancia:</strong> Identifica a qué producto está enfocado el contenido para no mezclar públicos.</div>
+                </div>
+            </div>
+
+            <div class="guide-item">
+                <div class="guide-num">4</div>
+                <div class="guide-content">
+                    <div class="guide-title">Ruta/Slug (URL)</div>
+                    <div class="guide-desc">Es la dirección de internet donde se publicará el artículo dentro del sitio web.</div>
+                    <div class="guide-importance"><strong>Importancia:</strong> Debe ser limpia, descriptiva y amigable para facilitar la lectura del usuario.</div>
+                </div>
+            </div>
+
+            <div class="guide-item">
+                <div class="guide-num">5</div>
+                <div class="guide-content">
+                    <div class="guide-title">Descripción meta (Meta Description)</div>
+                    <div class="guide-desc">Es el párrafo resumen que Google muestra debajo del enlace azul en sus resultados de búsqueda.</div>
+                    <div class="guide-importance"><strong>Importancia:</strong> Su función es comercial: captar la atención del usuario e incentivar el clic.</div>
+                </div>
+            </div>
+
+            <div class="guide-item">
+                <div class="guide-num">6</div>
+                <div class="guide-content">
+                    <div class="guide-title">Palabras clave (Keywords)</div>
+                    <div class="guide-desc">Son los 5 términos de búsqueda específicos que los usuarios de Google escriben y para los cuales este contenido fue desarrollado y optimizado.</div>
+                    <div class="guide-importance"><strong>Importancia:</strong> Garantizan que el artículo responda exactamente a lo que el público objetivo está buscando.</div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="note-footer">
+            Nota: Esta ficha técnica superior es de uso exclusivo para el proceso de revisión y aprobación del contenido. Al publicarse en el sitio web definitivo, esta información se inserta de forma invisible en el código HTML para que Google la lea de manera automática, por lo que no es visible para el público final del blog.
+        </footer>
+    </div>
+</body>
+</html>

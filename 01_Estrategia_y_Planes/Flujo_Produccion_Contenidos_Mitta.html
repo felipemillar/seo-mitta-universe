@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de Producción de Contenidos — Mitta</title>
+    <style>
+        :root {
+            --text-color: #2c3e50;
+            --border-color: #e2e8f0;
+            --accent-color: #34495e;
+            --bg-color: #ffffff;
+            --code-bg: #f8fafc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        .meta span {
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .flow-diagram {
+            background-color: var(--code-bg);
+            padding: 20px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 0.9rem;
+            white-space: pre;
+            overflow-x: auto;
+            margin: 20px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--code-bg);
+            font-weight: 600;
+        }
+
+        .phase-card {
+            margin-bottom: 40px;
+        }
+
+        .phase-header {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .phase-header strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--accent-color);
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Flujo de Producción de Contenidos — Mitta</h1>
+        <div class="meta">
+            <span><strong>Versión:</strong> 1.2</span>
+            <span><strong>Fecha:</strong> Mayo 2026</span>
+            <span><strong>Autor:</strong> INMedios</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Resumen Ejecutivo</h2>
+        <p>Este documento describe el flujo completo de producción de contenidos para los pilares editoriales de Mitta. El proceso está diseñado en 6 fases secuenciales que integran tres capas de trabajo: <strong>producción editorial con optimización técnica</strong> (SEO, AEO, GEO), <strong>producción y análisis neurocientífico</strong> de los activos visuales a través de la herramienta <strong>Digital Predict</strong>, y <strong>validación directa del cliente</strong> del contenido y los visuales. El entregable final de cada artículo es un <strong>documento PDF</strong> listo para publicación.</p>
+    </section>
+
+    <section>
+        <h2>Visión General del Flujo</h2>
+        <div class="flow-diagram">
+FASE 1 ─── Estrategia y Planificación
+   │
+FASE 2 ─── Redacción y Optimización Técnica (SEO / AEO / GEO)
+   │
+FASE 3 ─── Producción de Activos Visuales
+   │
+FASE 4 ─── Análisis Neurocientífico (1ra pasada) e Iteración Visual
+   │
+FASE 5 ─── Validación de Contenido y Visual por el Cliente
+   │        ├── Feedback del cliente
+   │        └── Última Iteración de Ajustes (Redacción y Visuales)
+   │
+FASE 6 ─── Ensamblaje Final y Entrega en Documento PDF</div>
+    </section>
+
+    <section class="phase-card">
+        <h2>Fase 1 — Estrategia y Planificación</h2>
+        <div class="phase-header">
+            <strong>Objetivo:</strong> Definir la arquitectura editorial completa antes de escribir una sola línea.
+        </div>
+        
+        <h3>Actividades</h3>
+        <ul>
+            <li>Definición de los pilares de contenido. En el caso actual: <strong>Mitta Rent a Car</strong> (arriendo tradicional) y <strong>MittaGO</strong> (suscripción vehicular).</li>
+            <li>Selección de temas por pilar, priorizados por volumen de búsqueda, intención del usuario y relevancia comercial.</li>
+            <li>Asignación de una keyword principal y keywords secundarias a cada artículo.</li>
+            <li>Clasificación de cada tema por intención de búsqueda: informacional, transaccional o navegacional.</li>
+            <li>Elaboración del calendario editorial con fechas de entrega por fase.</li>
+        </ul>
+
+        <h3>Entregables</h3>
+        <ul>
+            <li>Documento de Propuesta de Contenidos por pilar.</li>
+            <li>Matriz de keywords asignadas.</li>
+        </ul>
+    </section>
+
+    <section class="phase-card">
+        <h2>Fase 2 — Redacción y Optimización Técnica</h2>
+        <div class="phase-header">
+            <strong>Objetivo:</strong> Producir el contenido editorial y blindarlo estructuralmente para SEO, AEO y GEO.
+        </div>
+        
+        <h3>2.1 Redacción del artículo (versión v1)</h3>
+        <p>Redacción del cuerpo del artículo siguiendo la estructura de 7 bloques definida en la guía maestra:</p>
+        <ol>
+            <li><strong>Frontmatter YAML</strong> — Metadata del artículo.</li>
+            <li><strong>Schema.org @graph (JSON-LD)</strong> — Esquema estructurado.</li>
+            <li><strong>BreadcrumbList</strong> — Navegación jerárquica.</li>
+            <li><strong>Bloque AEO</strong> — Respuesta directa en las primeras 50 palabras.</li>
+            <li><strong>Cuerpo del artículo</strong> — Contenido con jerarquía H2/H3, listas y tablas.</li>
+            <li><strong>Sección FAQ</strong> — Preguntas frecuentes alineadas.</li>
+            <li><strong>Call to Action (CTA)</strong> — Cierre orientado a la conversión.</li>
+        </ol>
+
+        <h3>2.2 Homologación estructural automatizada</h3>
+        <ul>
+            <li>Ejecución de scripts automatizados que procesan los artículos para garantizar paridad técnica entre ambos pilares.</li>
+        </ul>
+
+        <h3>Entregables</h3>
+        <ul>
+            <li>Archivos Markdown (v1) con estructura técnica completa.</li>
+            <li>Reporte de homologación confirmando paridad estructural.</li>
+        </ul>
+    </section>
+
+    <section class="phase-card">
+        <h2>Fase 3 — Producción de Activos Visuales</h2>
+        <div class="phase-header">
+            <strong>Objetivo:</strong> Generar los activos visuales iniciales de cada artículo.
+        </div>
+
+        <h3>3.1 Diseño de prompts visuales</h3>
+        <ul>
+            <li>Se construyen prompts de generación de imagen para cada artículo, considerando el tema, contexto y guías de estilo de la marca Mitta.</li>
+        </ul>
+
+        <h3>3.2 Generación de assets</h3>
+        <p>Por cada artículo se generan como mínimo 2 activos:</p>
+        <ul>
+            <li><strong>Hero Image</strong> (1200×630px) — Imagen principal.</li>
+            <li><strong>Human Element</strong> (800×800px) — Elemento contextual con personas.</li>
+        </ul>
+
+        <h3>Entregables</h3>
+        <ul>
+            <li>Activos visuales iniciales para cada artículo.</li>
+        </ul>
+    </section>
+
+    <section class="phase-card">
+        <h2>Fase 4 — Análisis Neurocientífico e Iteración Visual</h2>
+        <div class="phase-header">
+            <strong>Objetivo:</strong> Evaluar objetivamente el impacto cognitivo y atencional de cada activo visual mediante <strong>Digital Predict</strong>, y aplicar intervenciones de diseño.
+        </div>
+
+        <h3>4.1 Carga y análisis en Digital Predict (Primera Pasada)</h3>
+        <ul>
+            <li>Carga de los activos a Digital Predict para obtener métricas clave: <strong>Puntuación de Impacto</strong>, <strong>Heatmaps de Atención</strong>, <strong>Carga Cognitiva</strong> y <strong>Claridad</strong>.</li>
+            <li>Generación de diagnóstico y registro del puntaje base (baseline).</li>
+        </ul>
+
+        <h3>4.2 Iteración Visual (Traducción de Diagnóstico a Diseño)</h3>
+        <ul>
+            <li>Cada hallazgo del diagnóstico se convierte en una instrucción de diseño accionable (ej. "Aumentar contraste", "Simplificar elementos").</li>
+            <li>Se ajustan los activos visuales (v2) y se someten a una <strong>segunda pasada</strong> en Digital Predict.</li>
+            <li>Se documenta el delta de mejora, buscando un puntaje de impacto igual o superior al objetivo (70+).</li>
+        </ul>
+
+        <h3>Entregables</h3>
+        <ul>
+            <li>Reportes PDF de Digital Predict.</li>
+            <li>Activos visuales v2 optimizados (listos para validación).</li>
+        </ul>
+    </section>
+
+    <section class="phase-card">
+        <h2>Fase 5 — Validación de Contenido y Visual por el Cliente</h2>
+        <div class="phase-header">
+            <strong>Objetivo:</strong> Obtener feedback unificado del cliente sobre el contenido editorial y los activos visuales, y realizar la iteración final de ambos componentes.
+        </div>
+
+        <h3>5.1 Despliegue del Portal de Feedback y Visuales</h3>
+        <ul>
+            <li>Se entrega al cliente el portal interactivo para la validación de texto (tono, claridad, comercial).</li>
+            <li>Se presentan los visuales optimizados (v2) acompañados del reporte simplificado de Digital Predict.</li>
+        </ul>
+
+        <h3>5.2 Recolección de Feedback</h3>
+        <ul>
+            <li>El cliente responde la encuesta de 5 preguntas por artículo para el texto.</li>
+            <li>El cliente aprueba o solicita ajustes sobre los visuales propuestos.</li>
+        </ul>
+
+        <h3>5.3 Última Iteración de Ajustes</h3>
+        <ul>
+            <li><strong>Ajuste de Redacción y Optimización:</strong> Se incorpora el feedback editorial en una versión final del contenido.</li>
+            <li><strong>Ajuste de Activos Visuales:</strong> Se aplican los retoques solicitados a las imágenes (versión final).</li>
+        </ul>
+
+        <h3>Entregables</h3>
+        <ul>
+            <li>Feedback documentado del cliente.</li>
+            <li>Artículos y activos visuales finales y aprobados.</li>
+        </ul>
+    </section>
+
+    <section class="phase-card">
+        <h2>Fase 6 — Ensamblaje Final y Entrega PDF</h2>
+        <div class="phase-header">
+            <strong>Objetivo:</strong> Compilar el contenido aprobado y los visuales optimizados en el documento PDF final de cada artículo.
+        </div>
+
+        <h3>6.1 Composición del PDF</h3>
+        <ul>
+            <li>Cada PDF integra la <em>Hero Image</em>, cuerpo de texto, <em>Human Element</em>, esquemas técnicos, FAQ y CTA.</li>
+        </ul>
+
+        <h3>6.2 Revisión y Entrega</h3>
+        <ul>
+            <li>Revisión de calidad (ortografía, exactitud de datos).</li>
+            <li>Entrega de los documentos PDF.</li>
+        </ul>
+
+        <h3>Entregables</h3>
+        <ul>
+            <li>PDFs finales listos para publicación.</li>
+            <li>Carpeta de activos visuales en alta resolución.</li>
+            <li>Documentación técnica de respaldo.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Resumen de Fases, Responsables y Checkpoints</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fase</th>
+                    <th>Nombre</th>
+                    <th>Responsable</th>
+                    <th>Checkpoint de Salida</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Estrategia y Planificación</td>
+                    <td>INMedios</td>
+                    <td>Propuesta de contenidos y keywords</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Redacción y Optimización Técnica</td>
+                    <td>INMedios</td>
+                    <td>Artículos homologados (v1)</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Producción de Activos Visuales</td>
+                    <td>INMedios</td>
+                    <td>Activos visuales iniciales generados</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Análisis Neurocientífico e Iteración</td>
+                    <td>INMedios + Digital Predict</td>
+                    <td>Activos v2 optimizados con puntaje de impacto validado</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Validación de Cliente + Última Iteración</td>
+                    <td>Cliente / INMedios</td>
+                    <td>Contenido y visuales 100% aprobados</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Ensamblaje Final y Entrega PDF</td>
+                    <td>INMedios</td>
+                    <td>PDFs finales entregados</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Herramientas del Flujo</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Herramienta</th>
+                    <th>Uso en el flujo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Node.js Scripts</td>
+                    <td>Homologación estructural automatizada (Fase 2)</td>
+                </tr>
+                <tr>
+                    <td>Portal Interactivo</td>
+                    <td>Validación del cliente — contenido (Fase 5)</td>
+                </tr>
+                <tr>
+                    <td>Generación IA de imágenes</td>
+                    <td>Producción de Hero Images y Human Elements (Fase 3)</td>
+                </tr>
+                <tr>
+                    <td>Digital Predict</td>
+                    <td>Análisis neuro-biométrico de activos visuales (Fase 4)</td>
+                </tr>
+                <tr>
+                    <td>Protocolo de Intervención</td>
+                    <td>Traducción de diagnóstico Digital Predict a diseño (Fase 4)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Documento generado por INMedios — Estrategia de Contenidos Digitales</p>
+    </footer>
+
+</body>
+</html>

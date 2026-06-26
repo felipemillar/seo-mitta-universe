@@ -1,40 +1,34 @@
 # Flujo de Producción de Contenidos — Mitta
 
-**Versión:** 1.0  
+**Versión:** 1.2  
 **Fecha:** Mayo 2026  
 **Autor:** INMedios — Estrategia de Contenidos  
-**Alcance:** Pilares Mitta Rent a Car y MittaGO (40 artículos)
+**Alcance:** Pilares Mitta Rent a Car y MittaGO
 
 ---
 
 ## Resumen Ejecutivo
 
-Este documento describe el flujo completo de producción de contenidos para los pilares editoriales de Mitta. El proceso está diseñado en 8 fases secuenciales que integran tres capas de trabajo: **producción editorial con optimización técnica** (SEO, AEO, GEO), **validación directa del cliente** mediante un portal interactivo de feedback, y **análisis neurocientífico** de los activos visuales a través de Neurons Predict. El entregable final de cada artículo es un **documento PDF** listo para publicación que combina contenido aprobado, visuales optimizados y estructura técnica validada.
+Este documento describe el flujo completo de producción de contenidos para los pilares editoriales de Mitta. El proceso está diseñado en 6 fases secuenciales que integran tres capas de trabajo: **producción editorial con optimización técnica** (SEO, AEO, GEO), **producción y análisis neurocientífico** de los activos visuales a través de la herramienta **Digital Predict**, y **validación directa del cliente** del contenido y los visuales. El entregable final de cada artículo es un **documento PDF** listo para publicación.
 
 ---
 
 ## Visión General del Flujo
 
-```
+```text
 FASE 1 ─── Estrategia y Planificación
    │
 FASE 2 ─── Redacción y Optimización Técnica (SEO / AEO / GEO)
    │
-FASE 3 ─── Validación de Contenido por el Cliente
+FASE 3 ─── Producción de Activos Visuales
    │
-   ├── (Iteración Editorial si corresponde)
+FASE 4 ─── Análisis Neurocientífico (1ra pasada) e Iteración Visual
    │
-FASE 4 ─── Producción de Activos Visuales
+FASE 5 ─── Validación de Contenido y Visual por el Cliente
+   │        ├── Feedback del cliente
+   │        └── Última Iteración de Ajustes (Redacción y Visuales)
    │
-FASE 5 ─── Análisis Neurocientífico — Primera Pasada
-   │
-FASE 6 ─── Iteración Visual Basada en Neurociencia
-   │
-FASE 7 ─── Validación Visual por el Cliente
-   │
-   ├── (Iteración Visual si corresponde)
-   │
-FASE 8 ─── Ensamblaje Final y Entrega PDF
+FASE 6 ─── Ensamblaje Final y Entrega en Documento PDF
 ```
 
 ---
@@ -46,14 +40,14 @@ FASE 8 ─── Ensamblaje Final y Entrega PDF
 **Actividades:**
 
 - Definición de los pilares de contenido. En el caso actual: **Mitta Rent a Car** (arriendo tradicional) y **MittaGO** (suscripción vehicular).
-- Selección de 20 temas por pilar, priorizados por volumen de búsqueda, intención del usuario y relevancia comercial.
+- Selección de temas por pilar, priorizados por volumen de búsqueda, intención del usuario y relevancia comercial.
 - Asignación de una keyword principal y keywords secundarias a cada artículo.
 - Clasificación de cada tema por intención de búsqueda: informacional, transaccional o navegacional.
 - Elaboración del calendario editorial con fechas de entrega por fase.
 
 **Entregables de esta fase:**
 
-- Documento de Propuesta de Contenidos por pilar (ya existente: `Propuesta_Contenidos_RentACar_2026` y `Propuesta_Contenidos_MittaGO_2026`).
+- Documento de Propuesta de Contenidos por pilar.
 - Matriz de keywords asignadas.
 
 ---
@@ -67,217 +61,119 @@ FASE 8 ─── Ensamblaje Final y Entrega PDF
 ### 2.1 Redacción del artículo (versión v1)
 
 - Redacción del cuerpo del artículo siguiendo la estructura de 7 bloques definida en la guía maestra (`Estructura_Optima_SEO_GEO_AEO.md`):
-  1. **Frontmatter YAML** — Metadata del artículo (título, descripción, keyword, autor, fecha, schema type).
-  2. **Schema.org @graph (JSON-LD)** — Esquema estructurado con Organization, WebSite, WebPage, Article y FAQPage.
-  3. **BreadcrumbList** — Navegación jerárquica para Google.
-  4. **Bloque AEO** — Respuesta directa en las primeras 50 palabras, optimizada para ser citada por motores generativos (ChatGPT, Gemini, Perplexity).
-  5. **Cuerpo del artículo** — Contenido con jerarquía H2/H3, listas, tablas comparativas y datos específicos.
-  6. **Sección FAQ** — Preguntas frecuentes alineadas con el schema FAQPage.
+  1. **Frontmatter YAML** — Metadata del artículo.
+  2. **Schema.org @graph (JSON-LD)** — Esquema estructurado.
+  3. **BreadcrumbList** — Navegación jerárquica.
+  4. **Bloque AEO** — Respuesta directa en las primeras 50 palabras.
+  5. **Cuerpo del artículo** — Contenido con jerarquía H2/H3, listas y tablas.
+  6. **Sección FAQ** — Preguntas frecuentes alineadas.
   7. **Call to Action (CTA)** — Cierre orientado a la conversión.
 
 ### 2.2 Homologación estructural automatizada
 
-- Ejecución de scripts de Node.js (`homologar.js`) que procesan los 40 artículos para garantizar paridad técnica entre ambos pilares.
-- Validación automática de: existencia de Frontmatter, presencia de JSON-LD, formato de bloques AEO, inyección de BreadcrumbList.
+- Ejecución de scripts automatizados (`homologar.js`) que procesan los artículos para garantizar paridad técnica entre ambos pilares.
 
 **Entregables de esta fase:**
 
-- 40 archivos Markdown (v1) con estructura técnica completa.
+- Archivos Markdown (v1) con estructura técnica completa.
 - Reporte de homologación confirmando paridad estructural.
 
 ---
 
-## Fase 3 — Validación de Contenido por el Cliente
+## Fase 3 — Producción de Activos Visuales
 
-**Objetivo:** Obtener feedback directo del cliente sobre tono, claridad, enfoque comercial y preferencias visuales antes de avanzar a producción gráfica.
-
-**Actividades:**
-
-### 3.1 Despliegue del Portal de Feedback
-
-- Se entrega al cliente el archivo `Portal_Feedback_Mitta.html`, un portal interactivo standalone (no requiere servidor) con las siguientes características:
-  - Vista segmentada por pilar (Rent a Car / MittaGO).
-  - Tarjetas resumen por artículo con título y descripción.
-  - Modal de feedback con 5 preguntas de selección múltiple adaptadas al contenido específico de cada artículo.
-
-### 3.2 Estructura de la encuesta por artículo
-
-Cada artículo presenta 5 preguntas personalizadas que incorporan dinámicamente el título, keyword y pilar del artículo:
-
-| Pregunta | Dimensión evaluada | Qué buscamos saber |
-|---|---|---|
-| 1. Impacto Inicial | Enganche | ¿La introducción atrapa al lector objetivo? |
-| 2. Tono y Personalidad | Identidad de marca | ¿El texto suena como Mitta quiere comunicar? |
-| 3. Claridad del Mensaje | Comprensión | ¿Un usuario sin contexto entiende el contenido? |
-| 4. Enfoque Comercial | Conversión | ¿El texto motiva la reserva o suscripción? |
-| 5. Acompañamiento Visual | Dirección de arte | ¿Qué tipo de imagen espera el cliente para este tema? |
-
-Además, cada artículo incluye un campo de texto libre para comentarios adicionales.
-
-### 3.3 Iteración editorial
-
-- Se procesan las respuestas del cliente.
-- Los artículos que recibieron observaciones (alternativas B, C o D en cualquier pregunta) se iteran en una versión v2.
-- Los artículos aprobados (alternativa A en todas las preguntas) pasan directamente a Fase 4.
-
-**Entregables de esta fase:**
-
-- Respuestas consolidadas del cliente.
-- Artículos iterados (v2) con los ajustes incorporados.
-
----
-
-## Fase 4 — Producción de Activos Visuales
-
-**Objetivo:** Generar los activos visuales iniciales de cada artículo, informados por las preferencias del cliente obtenidas en la Fase 3.
+**Objetivo:** Generar los activos visuales iniciales de cada artículo.
 
 **Actividades:**
 
-### 4.1 Diseño de prompts visuales
+### 3.1 Diseño de prompts visuales
 
-- Se construyen prompts de generación de imagen para cada artículo, considerando:
-  - El tema y contexto del artículo.
-  - La respuesta del cliente a la Pregunta 5 (tipo de visual preferido: fotografía de personas, vehículos, infografías o estilo corporativo abstracto).
-  - Las guías de estilo de la marca Mitta (paleta de colores, tipografía, tono visual).
+- Se construyen prompts de generación de imagen para cada artículo, considerando el tema, contexto y guías de estilo de la marca Mitta.
 
-### 4.2 Generación de assets
+### 3.2 Generación de assets
 
 - Por cada artículo se generan como mínimo 2 activos:
-  - **Hero Image** (1200×630px) — Imagen principal del artículo, estilo editorial/cinematográfico.
-  - **Human Element** (800×800px) — Elemento contextual con personas interactuando con el servicio.
-- Los prompts siguen la estructura documentada en `prompts_imagenes_mittago.md` y su equivalente para Rent a Car.
+  - **Hero Image** (1200×630px) — Imagen principal.
+  - **Human Element** (800×800px) — Elemento contextual con personas.
 
 **Entregables de esta fase:**
 
-- 80 activos visuales iniciales (2 por artículo × 40 artículos).
-- Archivo de prompts utilizado para trazabilidad.
+- Activos visuales iniciales para cada artículo.
 
 ---
 
-## Fase 5 — Análisis Neurocientífico — Primera Pasada
+## Fase 4 — Análisis Neurocientífico e Iteración Visual
 
-**Objetivo:** Evaluar objetivamente el impacto cognitivo y atencional de cada activo visual mediante Neurons Predict.
+**Objetivo:** Evaluar objetivamente el impacto cognitivo y atencional de cada activo visual mediante **Digital Predict**, y aplicar intervenciones de diseño.
 
 **Actividades:**
 
-### 5.1 Carga y análisis en Neurons Predict
+### 4.1 Carga y análisis en Digital Predict (Primera Pasada)
 
-- Se suben los activos visuales a la plataforma Neurons Predict.
-- La herramienta evalúa cada imagen y entrega:
-  - **NIS (Neurons Impact Score):** Puntuación general de impacto (escala 0–100).
-  - **Mapa de calor de atención (Attention Heatmap):** Zonas donde el ojo se detiene.
-  - **Mapa de carga cognitiva (Cognitive Load):** Áreas de complejidad visual excesiva.
-  - **Mapa de claridad (Clarity):** Qué tan fácil es procesar la información visual.
-  - **Mapa de enfoque (Focus):** Dónde converge la mirada primero.
+- Carga de los activos a Digital Predict para obtener métricas clave: **Puntuación de Impacto**, **Heatmaps de Atención**, **Carga Cognitiva** y **Claridad**.
+- Generación de diagnóstico y registro del puntaje base (baseline).
 
-### 5.2 Generación del diagnóstico
+### 4.2 Iteración Visual (Traducción de Diagnóstico a Diseño)
 
-- Neurons Predict genera un PDF diagnóstico por activo analizado.
-- Se documenta el NIS de referencia (primera pasada) para cada artículo.
+- Cada hallazgo del diagnóstico se convierte en una instrucción de diseño accionable (ej. "Aumentar contraste", "Simplificar elementos").
+- Se ajustan los activos visuales (v2) y se someten a una **segunda pasada** en Digital Predict.
+- Se documenta el delta de mejora, buscando un puntaje de impacto igual o superior al objetivo (70+).
 
 **Entregables de esta fase:**
 
-- Reporte PDF de Neurons Predict por activo.
-- Tabla comparativa de NIS por artículo (línea base).
+- Reportes PDF de Digital Predict.
+- Activos visuales v2 optimizados (listos para validación).
 
 ---
 
-## Fase 6 — Iteración Visual Basada en Neurociencia
+## Fase 5 — Validación de Contenido y Visual por el Cliente
 
-**Objetivo:** Traducir las recomendaciones de Neurons Predict en intervenciones concretas de diseño y validar la mejora.
+**Objetivo:** Obtener feedback unificado del cliente sobre el contenido editorial y los activos visuales, y realizar la iteración final de ambos componentes.
 
 **Actividades:**
 
-### 6.1 Traducción PDF-to-Prompt
+### 5.1 Despliegue del Portal de Feedback y Visuales
 
-- Se aplica el protocolo documentado de traducción: cada hallazgo del diagnóstico de Neurons se convierte en una instrucción de diseño accionable.
-- Ejemplos de traducciones:
+- Se entrega al cliente el `Portal_Feedback_Mitta.html` para la validación de texto (tono, claridad, comercial).
+- Se presentan los visuales optimizados (v2) acompañados del reporte simplificado de Digital Predict.
 
-| Diagnóstico Neurons | Intervención de Diseño |
-|---|---|
-| Atención dispersa en la zona del CTA | Aumentar contraste del botón, agregar flecha direccional |
-| Carga cognitiva alta en el centro | Simplificar elementos, reducir texto superpuesto |
-| Claridad baja en el headline | Aumentar tamaño tipográfico, agregar fondo sólido detrás del texto |
-| Foco atencional lejos del producto | Reposicionar el vehículo/servicio al punto focal |
+### 5.2 Recolección de Feedback
 
-### 6.2 Regeneración de activos
+- El cliente responde la encuesta de 5 preguntas por artículo para el texto.
+- El cliente aprueba o solicita ajustes sobre los visuales propuestos.
 
-- Se regeneran o ajustan los activos visuales incorporando las intervenciones.
-- Se produce la versión v2 de cada activo.
+### 5.3 Última Iteración de Ajustes
 
-### 6.3 Segunda pasada en Neurons Predict
-
-- Se vuelven a cargar los activos v2 en Neurons Predict.
-- Se compara el NIS de la segunda pasada contra la línea base de la primera.
-- Se documenta el delta de mejora (ej: NIS 62 → NIS 78 = +16 puntos).
-
-**Criterio de aprobación:** Un activo se considera optimizado cuando alcanza un NIS igual o superior a 70, o cuando demuestra una mejora sostenida respecto a la primera pasada.
+- **Ajuste de Redacción y Optimización:** Se incorpora el feedback editorial en una versión final del contenido.
+- **Ajuste de Activos Visuales:** Se aplican los retoques solicitados a las imágenes (versión final).
 
 **Entregables de esta fase:**
 
-- Activos visuales v2 optimizados.
-- Tabla comparativa de NIS (primera pasada vs. segunda pasada).
-- Documentación del protocolo PDF-to-Prompt aplicado.
+- Feedback documentado del cliente.
+- Artículos y activos visuales finales y aprobados.
 
 ---
 
-## Fase 7 — Validación Visual por el Cliente
-
-**Objetivo:** Obtener la aprobación del cliente sobre los activos visuales finales antes del ensamblaje del PDF.
-
-**Actividades:**
-
-### 7.1 Presentación de visuales
-
-- Se presentan al cliente los activos optimizados (v2) junto con un resumen visual del análisis neurocientífico:
-  - Imagen final propuesta.
-  - Heatmap de atención simplificado (para que el cliente entienda dónde mira el usuario).
-  - NIS obtenido y qué significa.
-
-### 7.2 Feedback visual del cliente
-
-- El cliente aprueba, solicita ajustes menores o rechaza el visual.
-- Si se solicitan ajustes, se ejecuta una iteración adicional (v3) y se repasa por Neurons si el cambio es significativo.
-
-**Entregables de esta fase:**
-
-- Aprobación formal del cliente por cada activo visual.
-- Activos finales confirmados.
-
----
-
-## Fase 8 — Ensamblaje Final y Entrega PDF
+## Fase 6 — Ensamblaje Final y Entrega PDF
 
 **Objetivo:** Compilar el contenido aprobado y los visuales optimizados en el documento PDF final de cada artículo.
 
 **Actividades:**
 
-### 8.1 Composición del PDF
+### 6.1 Composición del PDF
 
-- Cada PDF incluye:
-  - Hero image aprobada.
-  - Título y subtítulo del artículo.
-  - Cuerpo del contenido (texto aprobado en Fase 3).
-  - Elementos visuales secundarios (human element, infografías si aplica).
-  - Sección FAQ.
-  - CTA de cierre.
-  - Footer con datos de contacto y branding Mitta.
+- Cada PDF integra la *Hero Image*, cuerpo de texto, *Human Element*, esquemas técnicos, FAQ y CTA.
 
-### 8.2 Revisión de calidad final
+### 6.2 Revisión y Entrega
 
-- Verificación de ortografía y formato.
-- Validación de que todos los datos operativos (precios, políticas, procesos) son correctos.
-- Confirmación de que la estructura técnica (metadata, schemas) está lista para la publicación web posterior.
-
-### 8.3 Entrega
-
-- Se entrega el paquete completo al cliente: 40 documentos PDF finales, organizados por pilar.
+- Revisión de calidad (ortografía, exactitud de datos).
+- Entrega de los documentos PDF.
 
 **Entregables de esta fase:**
 
-- 40 PDFs finales (20 Rent a Car + 20 MittaGO).
+- PDFs finales listos para publicación.
 - Carpeta de activos visuales en alta resolución.
-- Documentación técnica de respaldo (schemas, keywords, NIS scores).
+- Documentación técnica de respaldo.
 
 ---
 
@@ -285,14 +181,12 @@ Además, cada artículo incluye un campo de texto libre para comentarios adicion
 
 | Fase | Nombre | Responsable | Checkpoint de Salida |
 |---|---|---|---|
-| 1 | Estrategia y Planificación | INMedios | Propuesta aprobada por el cliente |
-| 2 | Redacción y Optimización Técnica | INMedios | 40 artículos homologados (v1) |
-| 3 | Validación de Contenido | Cliente | Feedback completado en portal |
-| 4 | Producción Visual | INMedios | 80 activos generados (v1) |
-| 5 | Análisis Neurocientífico (1ra pasada) | INMedios + Neurons | NIS baseline documentado |
-| 6 | Iteración Visual + Neurociencia (2da pasada) | INMedios + Neurons | NIS mejorado, activos v2 listos |
-| 7 | Validación Visual | Cliente | Aprobación visual formal |
-| 8 | Ensamblaje y Entrega PDF | INMedios | 40 PDFs entregados |
+| 1 | Estrategia y Planificación | INMedios | Propuesta de contenidos y keywords |
+| 2 | Redacción y Optimización Técnica | INMedios | Artículos homologados (v1) |
+| 3 | Producción de Activos Visuales | INMedios | Activos visuales iniciales generados |
+| 4 | Análisis Neurocientífico e Iteración | INMedios + Digital Predict | Activos v2 optimizados con puntaje de impacto validado |
+| 5 | Validación de Cliente + Última Iteración | Cliente / INMedios | Contenido y visuales 100% aprobados |
+| 6 | Ensamblaje Final y Entrega PDF | INMedios | PDFs finales entregados |
 
 ---
 
@@ -301,10 +195,10 @@ Además, cada artículo incluye un campo de texto libre para comentarios adicion
 | Herramienta | Uso en el flujo |
 |---|---|
 | Node.js Scripts | Homologación estructural automatizada (Fase 2) |
-| Portal_Feedback_Mitta.html | Validación del cliente — contenido (Fase 3) |
-| Generación IA de imágenes | Producción de Hero Images y Human Elements (Fase 4) |
-| Neurons Predict | Análisis neuro-biométrico de activos visuales (Fases 5 y 6) |
-| Protocolo PDF-to-Prompt | Traducción de diagnóstico Neurons a intervenciones de diseño (Fase 6) |
+| Portal_Feedback_Mitta.html | Validación del cliente — contenido (Fase 5) |
+| Generación IA de imágenes | Producción de Hero Images y Human Elements (Fase 3) |
+| Digital Predict | Análisis neuro-biométrico de activos visuales (Fase 4) |
+| Protocolo de Intervención | Traducción de diagnóstico Digital Predict a diseño (Fase 4) |
 
 ---
 

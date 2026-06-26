@@ -1,0 +1,196 @@
+{
+  "audit_date": "2026-06-18T22:55:00-04:00",
+  "tool": "geo-seo-claude",
+  "targets": ["https://mitta.cl/rent-a-car-personas/", "https://mitta.cl/renting-mittago/"],
+  
+  "robots_txt": {
+    "url": "https://mitta.cl/robots.txt",
+    "exists": true,
+    "managed_by": "Cloudflare",
+    "content_signals": "search=yes,ai-train=no",
+    "ai_crawler_status": {
+      "GPTBot": "BLOCKED",
+      "OAI-SearchBot": "ALLOWED_BY_DEFAULT",
+      "ChatGPT-User": "ALLOWED_BY_DEFAULT",
+      "ClaudeBot": "BLOCKED",
+      "anthropic-ai": "ALLOWED_BY_DEFAULT",
+      "PerplexityBot": "ALLOWED_BY_DEFAULT",
+      "CCBot": "BLOCKED",
+      "Bytespider": "BLOCKED",
+      "cohere-ai": "ALLOWED_BY_DEFAULT",
+      "Google-Extended": "BLOCKED",
+      "GoogleOther": "ALLOWED_BY_DEFAULT",
+      "Applebot-Extended": "BLOCKED",
+      "Amazonbot": "BLOCKED"
+    },
+    "blocked_count": 7,
+    "allowed_count": 6,
+    "sitemaps": ["https://mitta.cl/sitemap.xml"]
+  },
+
+  "llms_txt": {
+    "url": "https://mitta.cl/llms.txt",
+    "exists": true,
+    "format_valid": false,
+    "has_title": true,
+    "has_description": false,
+    "has_sections": false,
+    "has_links": false,
+    "section_count": 0,
+    "link_count": 0,
+    "llms_full_txt_exists": false,
+    "issues": [
+      "Missing description (use '> Brief description')",
+      "No sections found (use '## Section Name')",
+      "No page links found (use '- [Page Title](url): Description')"
+    ]
+  },
+
+  "redirect_chain": {
+    "url": "https://mitta.cl",
+    "chain": [
+      {"step": 1, "code": 307, "from": "https://mitta.cl", "to": "/rent-a-car-personas"},
+      {"step": 2, "code": 308, "from": "/rent-a-car-personas", "to": "/rent-a-car-personas/"},
+      {"step": 3, "code": 200, "url": "https://mitta.cl/rent-a-car-personas/"}
+    ],
+    "total_hops": 2,
+    "severity": "WARNING"
+  },
+
+  "sitemap": {
+    "url": "https://mitta.cl/sitemap.xml",
+    "total_pages_discovered": 50,
+    "pages_sample": [
+      "https://mitta.cl/rent-a-car-personas/",
+      "https://mitta.cl/rent-a-car-empresas/",
+      "https://mitta.cl/leasing-operativo/",
+      "https://mitta.cl/renting-mittago/",
+      "https://mitta.cl/blog/",
+      "https://mitta.cl/rent-a-car-personas/catalogo-de-vehiculos/",
+      "https://mitta.cl/sucursales/"
+    ],
+    "note": "renting-mittago/ NOT found in sitemap"
+  },
+
+  "page_analysis": {
+    "rent_a_car_personas": {
+      "url": "https://mitta.cl/rent-a-car-personas/",
+      "title": "Rent a Car en Chile para Personas | Mitta",
+      "h1": ["Rent a Car en Chile para Personas"],
+      "description": "Arrienda tu auto en Chile con MITTA Rent a Car: flota moderna, beneficios exclusivos como acumulación LATAM Pass y descuentos. Arrienda online ahora.",
+      "canonical": "https://mitta.cl/rent-a-car-personas/",
+      "word_count": 353,
+      "structured_data": [],
+      "structured_data_count": 0,
+      "og_type": "MISSING",
+      "og_title_length": 56,
+      "has_ssr": true,
+      "security_headers": {
+        "HSTS": true,
+        "CSP": true,
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "origin-when-cross-origin",
+        "Permissions-Policy": true
+      },
+      "images_without_alt": 24,
+      "images_with_generic_alt": 24,
+      "total_images": 32,
+      "external_links": [],
+      "internal_links_count": "multiple"
+    },
+    "renting_mittago": {
+      "url": "https://mitta.cl/renting-mittago/",
+      "title": "Suscríbete al Renting Automotriz en Chile Autos 0 KM | Mitta",
+      "h1": ["Suscríbete al Renting Automotriz en Chile Autos 0 KM"],
+      "description": "Descubre MITTA GO: renting automotriz en Chile con planes flexibles, beneficios, autos 0 KM, cobertura nacional y sin trámites. ¡Suscríbete hoy!",
+      "canonical": "https://mitta.cl/renting-mittago/",
+      "word_count": 203,
+      "structured_data": [],
+      "structured_data_count": 0,
+      "og_type": "MISSING",
+      "og_title_length": 51,
+      "has_ssr": true,
+      "security_headers": {
+        "HSTS": true,
+        "CSP": true,
+        "X-Frame-Options": "DENY",
+        "X-Content-Type-Options": "nosniff",
+        "Referrer-Policy": "origin-when-cross-origin",
+        "Permissions-Policy": true
+      },
+      "images_without_alt": 6,
+      "images_with_generic_alt": 6,
+      "total_images": 6,
+      "external_links": [
+        {"url": "https://www.mittago.cl/", "text": "Ir a MittaGo"},
+        {"url": "https://mittago.mitta.cl/", "text": "Ir a MittaGo"}
+      ],
+      "internal_links_count": 0,
+      "note": "CRITICAL: Zero internal links from this page. All CTAs redirect externally."
+    }
+  },
+
+  "citability_analysis": {
+    "rent_a_car_personas": {
+      "url": "https://mitta.cl/rent-a-car-personas/",
+      "total_blocks_analyzed": 7,
+      "average_citability_score": 32.1,
+      "optimal_length_passages": 0,
+      "grade_distribution": {"A": 0, "B": 0, "C": 1, "D": 1, "F": 5},
+      "top_block": {
+        "heading": "Beneficios MITTA Rent a Car para personas",
+        "score": 54,
+        "grade": "C",
+        "word_count": 70
+      },
+      "worst_block": {
+        "heading": "Tu arriendo de auto en Chile, cuando quieras, cada vez que lo necesites",
+        "score": 23,
+        "grade": "F",
+        "word_count": 26
+      }
+    },
+    "renting_mittago": {
+      "url": "https://mitta.cl/renting-mittago/",
+      "total_blocks_analyzed": 0,
+      "average_citability_score": 0,
+      "optimal_length_passages": 0,
+      "grade_distribution": {"A": 0, "B": 0, "C": 0, "D": 0, "F": 0},
+      "note": "CRITICAL: Zero evaluable content blocks. Page is entirely headings and bullet points with no paragraph text for NLP extraction."
+    }
+  },
+
+  "brand_mentions": {
+    "brand_name": "Mitta",
+    "domain": "mitta.cl",
+    "wikipedia": {
+      "has_page": true,
+      "search_results": 10,
+      "wikidata_id": "Q132544705",
+      "wikidata_description": "family name",
+      "note": "Wikidata entry exists but describes 'family name' not the company. May need separate corporate entity."
+    },
+    "youtube": {
+      "has_channel": false,
+      "correlation_with_ai_citations": 0.737,
+      "status": "NOT_VERIFIED_PROGRAMMATICALLY"
+    },
+    "reddit": {
+      "has_subreddit": false,
+      "status": "NOT_VERIFIED_PROGRAMMATICALLY"
+    },
+    "linkedin": {
+      "has_company_page": false,
+      "status": "NOT_VERIFIED_PROGRAMMATICALLY"
+    }
+  },
+
+  "composite_scores": {
+    "security_infrastructure": 100,
+    "structural_integrity": 58,
+    "semantic_quality": 16,
+    "algorithmic_availability": 0,
+    "overall_health": 43.5
+  }
+}

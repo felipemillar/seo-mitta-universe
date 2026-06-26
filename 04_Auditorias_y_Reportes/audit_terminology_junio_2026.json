@@ -1,0 +1,888 @@
+{
+  "generated_at": "2026-06-26",
+  "total_violations": 98,
+  "files_affected": 41,
+  "stats_by_marca": {
+    "MittaGO": 61,
+    "Rent_a_Car": 37
+  },
+  "stats_by_severity": {
+    "HIGH": 37,
+    "CRITICAL": 32,
+    "MEDIUM": 29
+  },
+  "stats_by_rule": {
+    "R1": 37,
+    "R2": 32,
+    "R5": 2,
+    "R4": 27
+  },
+  "violations": {
+    "02_Contenidos_Redactados/MittaGO/borradores/01_Como_Funciona_MittaGO.md": [
+      {
+        "rule": "R1",
+        "line": 113,
+        "term": "arriendo",
+        "context": "\"text\": \"Para acceder a un plan de arriendo mensual necesitas ser mayor de 22 años,",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 165,
+        "term": "arriendo",
+        "context": "\"description\": \"Servicio de arriendo mensual de vehículos en Chile sin pie n",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/01_Como_Funciona_MittaGO_v2.md": [
+      {
+        "rule": "R1",
+        "line": 8,
+        "term": "arriendo",
+        "context": "- arriendo mensual auto chile",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 43,
+        "term": "arriendo",
+        "context": "<h2 id=\"arriendo-mensual-de-autos-en-chile-por-que-crece",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 43,
+        "term": "arriendo",
+        "context": "-en-chile-por-que-crece-la-suscripcion\">Arriendo mensual de autos en Chile: ¿Por qué cre",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 181,
+        "term": "arriendo",
+        "context": "\"description\": \"Servicio de arriendo mensual de vehículos en Chile sin pie n",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/02_Suscripcion_vs_Credito.md": [
+      {
+        "rule": "R1",
+        "line": 105,
+        "term": "arriendo",
+        "context": "el contrato de MittaGO es un acuerdo de arriendo de servicios. No ocupa tu cupo bancario",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/02_Suscripcion_vs_Credito_v2.md": [
+      {
+        "rule": "R1",
+        "line": 111,
+        "term": "arriendo",
+        "context": "el contrato de MittaGO es un acuerdo de arriendo que no se reporta como deuda ni ocupa t",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/03_Que_Incluye_Cuota_v2.md": [
+      {
+        "rule": "R1",
+        "line": 9,
+        "term": "arriendo",
+        "context": "- arriendo mensual incluye mantenciones",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/05_MittaGO_vs_Rent_a_Car_v2.md": [
+      {
+        "rule": "R1",
+        "line": 9,
+        "term": "arriendo",
+        "context": "- arriendo de autos por mes",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 10,
+        "term": "alquilar",
+        "context": "- alquilar auto a largo plazo chile",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"alquilar\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/08_Suscripcion_Temporada.md": [
+      {
+        "rule": "R1",
+        "line": 19,
+        "term": "arriendo",
+        "context": "keyword_principal: \"arriendo de autos por temporada\"",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/08_Suscripcion_Temporada_v2.md": [
+      {
+        "rule": "R1",
+        "line": 6,
+        "term": "arriendo",
+        "context": "keyword_principal: \"arriendo de autos por temporada\"",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 153,
+        "term": "arriendo",
+        "context": "\"@id\": \"https://www.mitta.cl/arriendo-autos-temporada-chile/\"",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 177,
+        "term": "arriendo",
+        "context": "\"item\": \"https://mitta.cl/blog/arriendo-autos-temporada-chile/\"",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/09_Cambiar_de_Auto_v2.md": [
+      {
+        "rule": "R1",
+        "line": 21,
+        "term": "arriendo",
+        "context": "- /arriendo-autos-temporada-chile/",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/11_Trabajo_Hibrido.md": [
+      {
+        "rule": "R1",
+        "line": 102,
+        "term": "arriendo",
+        "context": "ibilidad 24/7 en tu domicilio (no es un arriendo por horas o carsharing). Sin embargo, a",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/11_Trabajo_Hibrido_v2.md": [
+      {
+        "rule": "R1",
+        "line": 9,
+        "term": "arriendo",
+        "context": "- arriendo auto uso esporadico",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 20,
+        "term": "arriendo",
+        "context": "- /arriendo-autos-temporada-chile/",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 105,
+        "term": "arriendo",
+        "context": "ibilidad 24/7 en tu domicilio (no es un arriendo por horas o carsharing). Sin embargo, a",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/12_Diccionario_Movilidad.md": [
+      {
+        "rule": "R2",
+        "line": 5,
+        "term": "Leasing Financiero",
+        "context": "nting (suscripción), leasing operativo, leasing financiero y la compra tradicional de un auto.\"",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 6,
+        "term": "Arriendo Financiero",
+        "context": "asing compra, que es leasing operativo, arriendo financiero auto chile, compra inteligente vs renti",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Arriendo Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 17,
+        "term": "Leasing Financiero",
+        "context": "nting (suscripción), leasing operativo, leasing financiero y la compra tradicional de un auto.\"",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 54,
+        "term": "Leasing Financiero",
+        "context": "### 2. Leasing Financiero",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 91,
+        "term": "Leasing Financiero",
+        "context": "amente un particular puede solicitar un leasing financiero, pero rara vez conviene. Sin un \"giro c",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 91,
+        "term": "Leasing Financiero",
+        "context": "rios para descontar impuestos o IVA, el leasing financiero para una persona natural termina siendo",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 121,
+        "term": "Leasing Financiero",
+        "context": "amente un particular puede solicitar un leasing financiero, pero rara vez conviene. Sin un 'giro c",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 121,
+        "term": "Leasing Financiero",
+        "context": "rios para descontar impuestos o IVA, el leasing financiero para una persona natural termina siendo",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 133,
+        "term": "Leasing Financiero",
+        "context": "nting (suscripción), leasing operativo, leasing financiero y la compra tradicional de un auto.\",",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/12_Diccionario_Movilidad_v2.md": [
+      {
+        "rule": "R2",
+        "line": 40,
+        "term": "Leasing Financiero",
+        "context": "- [2. Leasing Financiero (concepto externo)](#leasing-financiero",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 54,
+        "term": "Leasing Financiero",
+        "context": "<h3 id=\"leasing-financiero\">2. Leasing Financiero (concepto del mercado — NO es un produc",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 56,
+        "term": "Leasing Financiero",
+        "context": "*Nota importante:** Mitta **no ofrece** Leasing Financiero. Se incluye aquí únicamente con fines e",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 62,
+        "term": "Leasing Financiero",
+        "context": "**Diferencia clave con el Renting:** El Leasing Financiero busca que *compres* el auto al final. E",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 95,
+        "term": "Leasing Financiero",
+        "context": "amente un particular puede solicitar un leasing financiero en el mercado bancario, pero rara vez c",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 95,
+        "term": "Leasing Financiero",
+        "context": "rios para descontar impuestos o IVA, el leasing financiero para una persona natural termina siendo",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 132,
+        "term": "Leasing Financiero",
+        "context": "amente un particular puede solicitar un leasing financiero, pero rara vez conviene. Sin un 'giro c",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 132,
+        "term": "Leasing Financiero",
+        "context": "rios para descontar impuestos o IVA, el leasing financiero para una persona natural termina siendo",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/14_Smart_Mobility.md": [
+      {
+        "rule": "R1",
+        "line": 100,
+        "term": "arriendo",
+        "context": "ext\": \"No. A diferencia del carsharing (arriendo por minutos u horas donde compartes el",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/borradores/14_Smart_Mobility_v2.md": [
+      {
+        "rule": "R1",
+        "line": 103,
+        "term": "arriendo",
+        "context": "ext\": \"No. A diferencia del carsharing (arriendo por minutos u horas donde compartes el",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/01_Como_Funciona_MittaGO_v2.html": [
+      {
+        "rule": "R1",
+        "line": 302,
+        "term": "arriendo",
+        "context": "<li><a href=\"#arriendo-mensual\">suscripción mensual de autos e",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 313,
+        "term": "arriendo",
+        "context": "<h2 id=\"arriendo-mensual\">suscripción mensual de autos e",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/02_Suscripcion_vs_Credito.html": [
+      {
+        "rule": "R1",
+        "line": 336,
+        "term": "arriendo",
+        "context": "el contrato de MittaGO es un acuerdo de arriendo de servicios. No ocupa tu cupo bancario",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/05_MittaGO_vs_Rent_a_Car.html": [
+      {
+        "rule": "R1",
+        "line": 212,
+        "term": "arriendo",
+        "context": "<span class=\"tag-pill\">arriendo auto por meses chile</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 224,
+        "term": "arriendo",
+        "context": "á diseñado para turismo de corto plazo (arriendo por días), MittaGO es un modelo de susc",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 246,
+        "term": "arriendo",
+        "context": "édito y mucha burocracia por cada nuevo arriendo.</p>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/06_Expatriados_Extranjeros.html": [
+      {
+        "rule": "R1",
+        "line": 211,
+        "term": "arriendo",
+        "context": "<span class=\"tag-pill\">arriendo auto extranjeros chile</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 214,
+        "term": "arriendo",
+        "context": "<span class=\"tag-pill\">arriendo auto por meses rut</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/08_Suscripcion_Temporada.html": [
+      {
+        "rule": "R1",
+        "line": 211,
+        "term": "arriendo",
+        "context": "<span class=\"tag-pill\">arriendo auto temporada verano</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 214,
+        "term": "arriendo",
+        "context": "<span class=\"tag-pill\">arriendo suv verano santiago</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/12_Diccionario_Movilidad.html": [
+      {
+        "rule": "R1",
+        "line": 233,
+        "term": "arriendo",
+        "context": "<span class=\"tag-pill\">arriendo financiero auto chile</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R2",
+        "line": 7,
+        "term": "Leasing Financiero",
+        "context": "nting (suscripción), leasing operativo, leasing financiero y la compra tradicional de un auto.\">",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 8,
+        "term": "Arriendo Financiero",
+        "context": "asing compra, que es leasing operativo, arriendo financiero auto chile, compra inteligente vs renti",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Arriendo Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 228,
+        "term": "Leasing Financiero",
+        "context": "nting (suscripción), leasing operativo, leasing financiero (concepto del mercado, no ofrecido por",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 233,
+        "term": "Arriendo Financiero",
+        "context": "<span class=\"tag-pill\">arriendo financiero auto chile</span>",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Arriendo Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 260,
+        "term": "Leasing Financiero",
+        "context": "<h3>2. leasing financiero (concepto del mercado, no ofrecido por",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 308,
+        "term": "Leasing Financiero",
+        "context": "amente un particular puede solicitar un leasing financiero (concepto del mercado, no ofrecido por",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 308,
+        "term": "Leasing Financiero",
+        "context": "rios para descontar impuestos o IVA, el leasing financiero (concepto del mercado, no ofrecido por",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/14_Smart_Mobility.html": [
+      {
+        "rule": "R1",
+        "line": 283,
+        "term": "arriendo",
+        "context": "nswer\">No. A diferencia del carsharing (arriendo por minutos u horas donde compartes el",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/18_Auto_Reemplazo.html": [
+      {
+        "rule": "R1",
+        "line": 225,
+        "term": "arriendo",
+        "context": "<span class=\"tag-pill\">arriendo auto taller incluido</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      },
+      {
+        "rule": "R1",
+        "line": 234,
+        "term": "arriendos",
+        "context": "el transporte público o pagues costosos arriendos diarios mientras esperas.",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendos\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/MittaGO/finales/19_Economia_Circular.html": [
+      {
+        "rule": "R1",
+        "line": 224,
+        "term": "arriendo",
+        "context": "an class=\"tag-pill\">huella carbono auto arriendo</span>",
+        "severity": "HIGH",
+        "fix": "Reemplazar \"arriendo\" por \"suscripción\" o \"renting\""
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/14_Matrimonios_Eventos_v2.md": [
+      {
+        "rule": "R5",
+        "line": 45,
+        "term": "Monto garantía posiblemente incorrecto",
+        "context": "Dado que la categoría ejecutiva representa un mayor valor comercial, el cupo retenido en la tarjeta de crédito por conce",
+        "severity": "MEDIUM",
+        "fix": "Garantía mínima: $450.000 (autos), $700.000 (SUV/camionetas), $1.500.000 (4x4 zona norte)"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/21_Leasing_Operativo_vs_Compra_Flotas.md": [
+      {
+        "rule": "R2",
+        "line": 83,
+        "term": "Leasing Financiero",
+        "context": "unidades al finalizar, debes evaluar un leasing financiero (producto bancario externo), el cual tr",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 123,
+        "term": "Leasing Financiero",
+        "context": "unidades al finalizar, debes evaluar un leasing financiero (producto bancario externo), el cual tr",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/23_Beneficios_Tributarios_Leasing_Operativo.md": [
+      {
+        "rule": "R4",
+        "line": 86,
+        "term": "Feature de RAC en artículo de LOP",
+        "context": "Bajo la norma contable IFRS 16, la mayoría de los contratos de arrendamiento deben registrarse en el balance del arrenda",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Rent a Car con Leasing Operativo"
+      },
+      {
+        "rule": "R4",
+        "line": 136,
+        "term": "Feature de RAC en artículo de LOP",
+        "context": "\"text\": \"Bajo la norma contable IFRS 16, la mayoría de los contratos de arrendamiento deben registrarse en el balance de",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Rent a Car con Leasing Operativo"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/25_Gestion_Flotas_Inteligente.md": [
+      {
+        "rule": "R4",
+        "line": 63,
+        "term": "Feature de RAC en artículo de LOP",
+        "context": "La digitalización y el mantenimiento delegado no son gastos operacionales; son inversiones estratégicas con un retorno s",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Rent a Car con Leasing Operativo"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/26_Renting_Autos_Pymes.md": [
+      {
+        "rule": "R4",
+        "line": 9,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "- leasing operativo pymes chile",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 42,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "Fue entonces cuando Carlos evaluó el **Renting Flexible de Mitta**. En lugar de inmovilizar dinero en un pie o firmar un",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 46,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "[LINK INTERNO SUGERIDO: \"Compara detalladamente las ventajas contables del Leasing Operativo vs la Compra Directa\" -> /l",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/28_Renting_Flexible_vs_Credito_Automotriz.md": [
+      {
+        "rule": "R2",
+        "line": 78,
+        "term": "Leasing Financiero",
+        "context": "omparación con los contratos rígidos de leasing financiero (producto bancario externo) de largo pl",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R4",
+        "line": 40,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "Al recurrir a un **crédito automotriz**, una startup debe comprometer liquidez inmediata para pagar un pie de entrada de",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 71,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "[LINK INTERNO SUGERIDO: \"Compara el Leasing Operativo vs la Compra de Flotas en Chile\" -> /leasing-operativo-vs-compra-d",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 78,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "El renting flexible de Mitta está estructurado para adaptarse a las necesidades reales de tu negocio, ofreciendo planes ",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/29_Movilidad_Temporal_Proyectos.md": [
+      {
+        "rule": "R2",
+        "line": 40,
+        "term": "Leasing Financiero",
+        "context": "vehículos o firma contratos rígidos de leasing financiero (producto bancario externo) a 36 meses",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R4",
+        "line": 44,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "El **arriendo de autos por meses empresas** de Mitta soluciona esto de forma directa. Permite a las corporaciones activa",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 58,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "| Variable de Proyecto | Compra / Crédito de Largo Plazo | Arriendo de Autos por Meses Mitta |",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 74,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "[LINK INTERNO SUGERIDO: \"Compara el Leasing Operativo vs la Compra Directa de Flotas\" -> /leasing-operativo-vs-compra-de",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/borradores/30_Renting_Flexible_Camionetas.md": [
+      {
+        "rule": "R4",
+        "line": 90,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "Sí. Permitimos la instalación de logotipos y gráficas corporativas de tipo adhesivo de vinilo (car wrapping) removible e",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/14_Matrimonios_Eventos.html": [
+      {
+        "rule": "R5",
+        "line": 293,
+        "term": "Monto garantía posiblemente incorrecto",
+        "context": "<p>Dado que la categoría ejecutiva representa un mayor valor comercial, el cupo retenido en la tarjeta de crédito por co",
+        "severity": "MEDIUM",
+        "fix": "Garantía mínima: $450.000 (autos), $700.000 (SUV/camionetas), $1.500.000 (4x4 zona norte)"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/21_Leasing_Operativo_vs_Compra_Flotas.html": [
+      {
+        "rule": "R2",
+        "line": 354,
+        "term": "Leasing Financiero",
+        "context": "unidades al finalizar, debes evaluar un leasing financiero (concepto del mercado, no ofrecido por",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R2",
+        "line": 435,
+        "term": "Leasing Financiero",
+        "context": "unidades al finalizar, debes evaluar un leasing financiero, el cual tributa de manera diferente y",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/23_Beneficios_Tributarios_Leasing_Operativo.html": [
+      {
+        "rule": "R4",
+        "line": 349,
+        "term": "Feature de RAC en artículo de LOP",
+        "context": "Bajo la norma contable IFRS 16, la mayoría de los contratos de arrendamiento deben registrarse en el balance del arrenda",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Rent a Car con Leasing Operativo"
+      },
+      {
+        "rule": "R4",
+        "line": 440,
+        "term": "Feature de RAC en artículo de LOP",
+        "context": "\"text\": \"Bajo la norma contable IFRS 16, la mayoría de los contratos de arrendamiento deben registrarse en el balance de",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Rent a Car con Leasing Operativo"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/25_Gestion_Flotas_Inteligente.html": [
+      {
+        "rule": "R4",
+        "line": 299,
+        "term": "Feature de RAC en artículo de LOP",
+        "context": "<p>La digitalización y el mantenimiento delegado no son gastos operacionales; son inversiones estratégicas con un retorn",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Rent a Car con Leasing Operativo"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/26_Renting_Autos_Pymes.html": [
+      {
+        "rule": "R4",
+        "line": 253,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<span class=\"tag-pill\">leasing operativo pymes chile</span>",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 278,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<p>Fue entonces cuando Carlos evaluó el <strong>Renting Flexible de Mitta</strong>. En lugar de inmovilizar dinero en un",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 282,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<p class=\"internal-link\"><strong>Enlace sugerido:</strong> <a href=\"/leasing-operativo-vs-compra-de-flotas/\">Compara det",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/27_Arriendo_Mensual_Independientes.html": [
+      {
+        "rule": "R4",
+        "line": 387,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "Mitigación del Compromiso (FOMO y Flexibilidad): Visualizar la renovación mensual mitiga el miedo al compromiso financie",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/28_Renting_Flexible_vs_Credito_Automotriz.html": [
+      {
+        "rule": "R2",
+        "line": 349,
+        "term": "Leasing Financiero",
+        "context": "omparación con los contratos rígidos de leasing financiero (concepto del mercado, no ofrecido por",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R4",
+        "line": 276,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<p>Al recurrir a un <strong>crédito automotriz</strong>, una startup debe comprometer liquidez inmediata para pagar un p",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 342,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<p class=\"internal-link\"><strong>Enlace sugerido:</strong> <a href=\"/leasing-operativo-vs-compra-de-flotas/\">Compara el ",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 349,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "El renting flexible de Mitta está estructurado para adaptarse a las necesidades reales de tu negocio, ofreciendo planes ",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/29_Movilidad_Temporal_Proyectos.html": [
+      {
+        "rule": "R2",
+        "line": 276,
+        "term": "Leasing Financiero",
+        "context": "vehículos o firma contratos rígidos de leasing financiero (concepto del mercado, no ofrecido por",
+        "severity": "CRITICAL",
+        "fix": "Eliminar referencia a \"Leasing Financiero\" — NO es un producto de Mitta"
+      },
+      {
+        "rule": "R4",
+        "line": 280,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<p>El <strong>arriendo de autos por meses empresas</strong> de Mitta soluciona esto de forma directa. Permite a las corp",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 299,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<th>Compra / Crédito de Largo Plazo</th>",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      },
+      {
+        "rule": "R4",
+        "line": 341,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "<p class=\"internal-link\"><strong>Enlace sugerido:</strong> <a href=\"/leasing-operativo-vs-compra-de-flotas/\">Compara el ",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ],
+    "02_Contenidos_Redactados/Mitta_Rent_a_Car/finales/30_Renting_Flexible_Camionetas.html": [
+      {
+        "rule": "R4",
+        "line": 361,
+        "term": "Feature de LOP en artículo de Renting",
+        "context": "Sí. Permitimos la instalación de logotipos y gráficas corporativas de tipo adhesivo de vinilo (car wrapping) removible e",
+        "severity": "MEDIUM",
+        "fix": "Verificar que no se mezclen features de Leasing Operativo con Renting Flexible"
+      }
+    ]
+  }
+}

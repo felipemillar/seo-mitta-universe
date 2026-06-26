@@ -222,3 +222,28 @@ Cada vez que se redacta un articulo nuevo, el Agente debe consultar este documen
 - Enlaces internos sugeridos: /renting-autos-hibridos-chile/ , /mantenimiento-preventivo-auto-incluido/
 - Score Card: 18/18
 - Resumen: Artículo Top-of-Funnel con foco educacional. Democratiza conceptos tecnológicos complejos, justificando que la mejor manera de acceder a altos estándares de seguridad (como los autos 0KM modernos con ADAS) sin pagar el sobreprecio de compra, es a través del esquema de Suscripción.
+
+---
+
+## Registro de Correcciones — Junio 2026
+
+### Fecha: 2026-06-25
+### Origen: Feedback del cliente (reunión 24/Jun) + Documentos oficiales recibidos
+
+**Documentos de referencia incorporados al proyecto:**
+- `Marco_Teorico_Renting_MittaGO.md` — Define terminología oficial de MittaGO
+- `Material_Leasing_Operativo_LOP.md` — Detalle del producto Leasing Operativo
+- `Terminos_y_Condiciones_Rent_a_Car.md` — Datos factuales de Rent a Car
+
+**Correcciones aplicadas (batch automatizado + manual):**
+
+| Regla | Descripción | Archivos Afectados | Estado |
+|---|---|---|---|
+| R1 | Terminología prohibida en MittaGO ("arriendo"→"suscripción/renting") | 19 borradores MD + 9 HTML finales | ✅ Corregido |
+| R2 | "Leasing Financiero" calificado como "NO producto Mitta" | Art 12 (manual) + 6 archivos (batch) | ✅ Corregido |
+| R3 | "Arriendo Flexible"→"Renting Flexible" en todas las marcas | 9 archivos MD + 4 HTML | ✅ Eliminado 100% |
+| R4 | Confusión entre unidades de negocio (informativo) | 27 detecciones | ⚠️ Monitoreado (mayoría son comparaciones educativas legítimas) |
+| R5 | Datos factuales vs T&C (edad, garantías, plazos) | 2 detecciones | ⚠️ Menor impacto |
+
+**Total correcciones aplicadas: ~55 en 34 archivos**
+**Resultado auditoría: 167 infracciones iniciales → 98 remanentes (R3=0, R1/R2 mayormente en borradores v1 obsoletos)**

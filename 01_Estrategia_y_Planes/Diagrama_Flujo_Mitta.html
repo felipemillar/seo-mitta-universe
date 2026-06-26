@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodología de Producción de Contenidos - Mitta</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        :root {
+            --text-color: #2c3e50;
+            --bg-color: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            background-color: #e2e8f0; /* Fondo gris para resaltar la "diapositiva" */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .slide-container {
+            /* Fija exactamente el ratio 16:9 */
+            aspect-ratio: 16 / 9;
+            max-height: 100%;
+            max-width: 100%;
+            background: #fff;
+            padding: 2.5%; /* Padding proporcional */
+            border-radius: 8px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5vh;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 2%;
+            color: #1a202c;
+            letter-spacing: -0.5px;
+            flex-shrink: 0;
+        }
+
+        .mermaid-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            min-height: 0;
+        }
+        
+        .mermaid {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mermaid svg {
+            max-width: 100% !important;
+            max-height: 100% !important;
+            width: auto;
+            height: auto;
+        }
+
+        .legend {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1%;
+            font-size: 1.5vh;
+            color: #64748b;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .box-inmedios { width: 12px; height: 12px; border: 2px solid #34495e; background: #fff; }
+        .box-neuro { width: 12px; height: 12px; border: 2px solid #10b981; background: #f8fafc; }
+        .box-cliente { width: 12px; height: 12px; border: 2px solid #34495e; background: #34495e; }
+
+    </style>
+</head>
+<body>
+
+    <div class="slide-container">
+        <h1>Metodología de Producción de Contenidos</h1>
+        
+        <div class="mermaid-container">
+            <div class="mermaid">
+                flowchart LR
+                
+                %% Definición de Estilos (Premium & Formal)
+                classDef fase fill:#ffffff,stroke:#94a3b8,stroke-width:2px,color:#1e293b,font-weight:bold,font-size:18px,rx:8px,ry:8px
+                classDef accion fill:#f8fafc,stroke:#cbd5e1,stroke-width:1px,color:#334155,font-size:14px,rx:4px,ry:4px
+                classDef neuro fill:#ecfdf5,stroke:#10b981,stroke-width:2px,color:#065f46,font-size:14px,rx:4px,ry:4px
+                classDef cliente fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px,color:#0369a1,font-size:14px,rx:4px,ry:4px
+                classDef entregable fill:#fffbeb,stroke:#f59e0b,stroke-width:1px,color:#92400e,font-size:13px,stroke-dasharray: 4 4
+
+                subgraph F1 ["01. Estrategia y Planificación"]
+                    direction TB
+                    A1["Definición de Pilares: Rent a Car & MittaGO"]:::accion
+                    A2["Arquitectura de Temas y Asignación de Keywords"]:::accion
+                    A3(["Entregable: Propuesta de Contenidos"]):::entregable
+                    A1 --> A2 --> A3
+                end
+
+                subgraph F2 ["02. Redacción y Optimización Técnica"]
+                    direction TB
+                    B1["Redacción Estratégica en 7 Bloques"]:::accion
+                    B2["Homologación Estructural Automatizada"]:::accion
+                    B3(["Entregable: Artículos Blindados (SEO/AEO/GEO)"]):::entregable
+                    B1 --> B2 --> B3
+                end
+
+                subgraph F3 ["03. Producción de Activos Visuales"]
+                    direction TB
+                    C1["Diseño de Prompts Visuales"]:::accion
+                    C2["Generación: Hero Image + Human Element"]:::accion
+                    C3(["Entregable: Activos Visuales Iniciales"]):::entregable
+                    C1 --> C2 --> C3
+                end
+
+                subgraph F4 ["04. Análisis Neurocientífico e Iteración Visual"]
+                    direction TB
+                    D1["Carga y Análisis en Digital Predict"]:::neuro
+                    D2["Traducción de Diagnóstico a Diseño"]:::neuro
+                    D3(["Entregable: Activos Visuales v2 Optimizados"]):::entregable
+                    D1 --> D2 --> D3
+                end
+
+                subgraph F5 ["05. Validación de Contenido y Visual"]
+                    direction TB
+                    E1["Despliegue de Portal de Feedback y Visuales"]:::cliente
+                    E2["Recolección de Feedback del Cliente"]:::cliente
+                    E3["Última Iteración de Ajustes: Redacción y Visuales"]:::accion
+                    E4(["Entregable: Contenidos y Visuales Aprobados"]):::entregable
+                    E1 --> E2 --> E3 --> E4
+                end
+
+                subgraph F6 ["06. Ensamblaje Final y Entrega PDF"]
+                    direction TB
+                    F1["Composición del PDF Final"]:::accion
+                    F2["Revisión de Calidad y Entrega"]:::accion
+                    F3(["Entregable: Documentos PDF Publicables"]):::entregable
+                    F1 --> F2 --> F3
+                end
+
+                %% Flujo Principal
+                F1 ==> F2
+                F2 ==> F3
+                F3 ==> F4
+                F4 ==> F5
+                F5 ==> F6
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item"><div class="box-inmedios"></div> Producción Interna</div>
+            <div class="legend-item"><div class="box-neuro"></div> Intervención Digital Predict (Neurociencia)</div>
+            <div class="legend-item" style="display:flex; align-items:center; gap:8px;"><div style="width: 12px; height: 12px; border: 2px solid #0ea5e9; background: #f0f9ff;"></div> Interacción del Cliente (Mitta)</div>
+            <div class="legend-item" style="display:flex; align-items:center; gap:8px;"><div style="width: 12px; height: 12px; border: 1px dashed #f59e0b; background: #fffbeb;"></div> Entregables por Fase</div>
+        </div>
+    </div>
+
+    <script>
+        mermaid.initialize({ 
+            startOnLoad: true,
+            theme: 'base',
+            flowchart: {
+                curve: 'basis'
+            },
+            themeVariables: {
+                primaryColor: '#ffffff',
+                lineColor: '#cbd5e1',
+                textColor: '#2c3e50',
+                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto'
+            }
+        });
+    </script>
+</body>
+</html>
