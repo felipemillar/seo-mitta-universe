@@ -135,39 +135,37 @@
           "title_tag": 70,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 60,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 78.8,
+        "average": 83.1,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 767"
+          "Word count: 843 (ideal: 1200-3000)"
         ],
-        "word_count": 767,
-        "h2_count": 4,
+        "word_count": 843,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 55.0,
+        "average": 70.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 1 listas en contenido (recomendado: 3+)",
-          "Baja densidad de datos (5 puntos)"
+          "Solo 1 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 1
       },
       "aeo": {
@@ -175,24 +173,22 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 100,
           "citability": 70
         },
-        "average": 87.0,
+        "average": 94.0,
         "issues": [],
         "faq_count": 3
       },
-      "composite_score": 74.1,
+      "composite_score": 82.7,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 767",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Solo 1 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (5 puntos)"
+        "Word count: 843 (ideal: 1200-3000)",
+        "Solo 1 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "04_Costos_Ocultos.html",
@@ -214,9 +210,9 @@
           "Title length 73 chars (fuera de rango)",
           "8 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 866 (ideal: 1200-3000)"
+          "Word count: 868 (ideal: 1200-3000)"
         ],
-        "word_count": 866,
+        "word_count": 868,
         "h2_count": 8,
         "h3_count": 2
       },
@@ -241,23 +237,20 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 45,
           "citability": 70
         },
-        "average": 78.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 83.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 74.9,
+      "composite_score": 76.4,
       "all_issues": [
         "Title length 73 chars (fuera de rango)",
         "8 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 866 (ideal: 1200-3000)",
-        "⚠️ Sin listas en contenido",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 868 (ideal: 1200-3000)",
+        "⚠️ Sin listas en contenido"
       ],
       "grade": "B+"
     },
@@ -270,39 +263,37 @@
           "title_tag": 70,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 78.8,
+        "average": 83.4,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 798"
+          "Word count: 875 (ideal: 1200-3000)"
         ],
-        "word_count": 798,
-        "h2_count": 3,
+        "word_count": 875,
+        "h2_count": 4,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 20,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 48.3,
+        "average": 64.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "⚠️ Sin listas en contenido",
-          "Baja densidad de datos (6 puntos)"
+          "⚠️ Sin listas en contenido"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 0
       },
       "aeo": {
@@ -310,27 +301,22 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 100
         },
-        "average": 84.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 93.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 71.2,
+      "composite_score": 80.5,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 798",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "⚠️ Sin listas en contenido",
-        "Baja densidad de datos (6 puntos)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 875 (ideal: 1200-3000)",
+        "⚠️ Sin listas en contenido"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "06_Expatriados_Extranjeros.html",
@@ -341,38 +327,36 @@
           "title_tag": 100,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 85.6,
+        "average": 87.1,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 808 (ideal: 1200-3000)"
+          "Word count: 866 (ideal: 1200-3000)"
         ],
-        "word_count": 808,
-        "h2_count": 3,
+        "word_count": 866,
+        "h2_count": 4,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 55.0,
+        "average": 70.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 2 listas en contenido (recomendado: 3+)",
-          "Baja densidad de datos (5 puntos)"
+          "Solo 2 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -380,23 +364,21 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 100,
           "citability": 70
         },
-        "average": 87.0,
+        "average": 94.0,
         "issues": [],
         "faq_count": 3
       },
-      "composite_score": 76.8,
+      "composite_score": 84.3,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 808 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Solo 2 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (5 puntos)"
+        "Word count: 866 (ideal: 1200-3000)",
+        "Solo 2 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "07_Pymes_Emprendedores.html",
@@ -417,9 +399,9 @@
         "issues": [
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 833 (ideal: 1200-3000)"
+          "Word count: 835 (ideal: 1200-3000)"
         ],
-        "word_count": 833,
+        "word_count": 835,
         "h2_count": 4,
         "h3_count": 3
       },
@@ -444,22 +426,19 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 70
         },
-        "average": 78.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 87.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 76.9,
+      "composite_score": 79.6,
       "all_issues": [
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 833 (ideal: 1200-3000)",
-        "⚠️ Sin listas en contenido",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 835 (ideal: 1200-3000)",
+        "⚠️ Sin listas en contenido"
       ],
       "grade": "B+"
     },
@@ -472,37 +451,36 @@
           "title_tag": 100,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 82.5,
+        "average": 87.1,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 781"
+          "Word count: 834 (ideal: 1200-3000)"
         ],
-        "word_count": 781,
-        "h2_count": 3,
+        "word_count": 834,
+        "h2_count": 4,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
           "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 64.2,
+        "average": 75.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 2 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -510,25 +488,21 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 70
         },
-        "average": 78.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 87.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 75.7,
+      "composite_score": 83.7,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 781",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Solo 2 listas en contenido (recomendado: 3+)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 834 (ideal: 1200-3000)",
+        "Solo 2 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "09_Cambiar_de_Auto.html",
@@ -539,38 +513,36 @@
           "title_tag": 100,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 82.5,
+        "average": 87.1,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 771"
+          "Word count: 836 (ideal: 1200-3000)"
         ],
-        "word_count": 771,
-        "h2_count": 3,
+        "word_count": 836,
+        "h2_count": 4,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 45,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 55.0,
+        "average": 75.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 1 listas en contenido (recomendado: 3+)",
-          "Baja densidad de datos (6 puntos)"
+          "Solo 1 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 1
       },
       "aeo": {
@@ -578,26 +550,21 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 70
         },
-        "average": 78.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 87.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 72.9,
+      "composite_score": 83.7,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 771",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Solo 1 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (6 puntos)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 836 (ideal: 1200-3000)",
+        "Solo 1 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "10_Costo_Depreciacion.html",
@@ -619,9 +586,9 @@
           "Title length 64 chars (ideal: 30-60)",
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 790"
+          "Word count bajo: 794"
         ],
-        "word_count": 790,
+        "word_count": 794,
         "h2_count": 4,
         "h3_count": 2
       },
@@ -646,25 +613,22 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 100,
           "citability": 45
         },
-        "average": 73.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 89.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 76.2,
+      "composite_score": 81.0,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 790",
-        "Solo 1 listas en contenido (recomendado: 3+)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count bajo: 794",
+        "Solo 1 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "11_Trabajo_Hibrido.html",
@@ -675,38 +639,37 @@
           "title_tag": 70,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 78.8,
+        "average": 83.4,
         "issues": [
           "Title length 64 chars (ideal: 30-60)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 790"
+          "Word count: 844 (ideal: 1200-3000)"
         ],
-        "word_count": 790,
-        "h2_count": 3,
+        "word_count": 844,
+        "h2_count": 4,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 70,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 59.2,
+        "average": 75.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 1 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 1
       },
       "aeo": {
@@ -714,26 +677,22 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 100,
           "citability": 70
         },
-        "average": 78.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 94.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 72.7,
+      "composite_score": 84.3,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 790",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Solo 1 listas en contenido (recomendado: 3+)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 844 (ideal: 1200-3000)",
+        "Solo 1 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "12_Diccionario_Movilidad.html",
@@ -744,36 +703,34 @@
           "title_tag": 100,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 85.6,
+        "average": 87.1,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 902 (ideal: 1200-3000)"
+          "Word count: 992 (ideal: 1200-3000)"
         ],
-        "word_count": 902,
-        "h2_count": 3,
+        "word_count": 992,
+        "h2_count": 4,
         "h3_count": 7
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 65.8,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)"
-        ],
-        "tables": 0,
+        "average": 77.5,
+        "issues": [],
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -781,24 +738,20 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 70
         },
-        "average": 78.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 87.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 77.4,
+      "composite_score": 84.2,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 902 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 992 (ideal: 1200-3000)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "13_Guia_Presupuesto.html",
@@ -819,9 +772,9 @@
         "issues": [
           "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 850 (ideal: 1200-3000)"
+          "Word count: 852 (ideal: 1200-3000)"
         ],
-        "word_count": 850,
+        "word_count": 852,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -844,21 +797,18 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 70
         },
-        "average": 78.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 87.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 82.4,
+      "composite_score": 85.1,
       "all_issues": [
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 850 (ideal: 1200-3000)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 852 (ideal: 1200-3000)"
       ],
       "grade": "A"
     },
@@ -871,39 +821,38 @@
           "title_tag": 70,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 81.9,
+        "average": 83.4,
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 876 (ideal: 1200-3000)"
+          "Word count: 930 (ideal: 1200-3000)"
         ],
-        "word_count": 876,
-        "h2_count": 3,
+        "word_count": 930,
+        "h2_count": 4,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
           "data_density": 45,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 55.0,
+        "average": 66.7,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 1 listas en contenido (recomendado: 3+)",
           "Baja densidad de datos (4 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 1
       },
       "aeo": {
@@ -911,27 +860,23 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 100,
           "citability": 100
         },
-        "average": 84.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 100.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 74.5,
+      "composite_score": 83.4,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 876 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 930 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (4 puntos)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Baja densidad de datos (4 puntos)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "15_Autos_Hibridos.html",
@@ -942,37 +887,35 @@
           "title_tag": 100,
           "meta_description": 75,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 82.5,
+        "average": 84.0,
         "issues": [
           "Meta description 159 chars (ideal: 120-155)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 854 (ideal: 1200-3000)"
+          "Word count: 906 (ideal: 1200-3000)"
         ],
-        "word_count": 854,
-        "h2_count": 3,
+        "word_count": 906,
+        "h2_count": 4,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 70,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 65.8,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)"
-        ],
-        "tables": 0,
+        "average": 82.5,
+        "issues": [],
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -980,25 +923,21 @@
           "aeo_summary": 100,
           "faq_section": 100,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 100
         },
-        "average": 84.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
+        "average": 93.0,
+        "issues": [],
         "faq_count": 3
       },
-      "composite_score": 77.9,
+      "composite_score": 86.2,
       "all_issues": [
         "Meta description 159 chars (ideal: 120-155)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 854 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 906 (ideal: 1200-3000)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "16_Mantenimiento_Cero.html",
@@ -1009,170 +948,35 @@
           "title_tag": 100,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 50,
           "url_slug": 100
         },
-        "average": 82.5,
+        "average": 84.0,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 737"
+          "Word count bajo: 784"
         ],
-        "word_count": 737,
-        "h2_count": 3,
+        "word_count": 784,
+        "h2_count": 4,
         "h3_count": 7
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 70,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
-        },
-        "average": 65.8,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)"
-        ],
-        "tables": 0,
-        "lists": 5
-      },
-      "aeo": {
-        "scores": {
-          "aeo_summary": 100,
-          "faq_section": 100,
-          "faq_schema": 100,
-          "question_headings": 20,
-          "citability": 45
-        },
-        "average": 73.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
-        "faq_count": 3
-      },
-      "composite_score": 74.6,
-      "all_issues": [
-        "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 737",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
-      ],
-      "grade": "B+"
-    },
-    {
-      "file": "17_Siniestros_Sin_Estres.html",
-      "category": "MittaGO",
-      "title": "Siniestros sin estrés: Qué hacer en caso de choque cuando tienes una suscripción",
-      "seo": {
-        "scores": {
-          "title_tag": 100,
-          "meta_description": 100,
-          "h1_tag": 100,
-          "heading_hierarchy": 50,
-          "schema_jsonld": 100,
-          "internal_links": 60,
-          "word_count": 75,
-          "url_slug": 100
-        },
-        "average": 85.6,
-        "issues": [
-          "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 859 (ideal: 1200-3000)"
-        ],
-        "word_count": 859,
-        "h2_count": 3,
-        "h3_count": 6
-      },
-      "geo": {
-        "scores": {
-          "tables": 0,
-          "lists": 100,
-          "data_density": 45,
-          "blockquotes": 60,
-          "cross_linking": 65,
-          "formatting": 100
-        },
-        "average": 61.7,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (3 puntos)"
-        ],
-        "tables": 0,
-        "lists": 4
-      },
-      "aeo": {
-        "scores": {
-          "aeo_summary": 100,
-          "faq_section": 100,
-          "faq_schema": 100,
-          "question_headings": 20,
-          "citability": 45
-        },
-        "average": 73.0,
-        "issues": [
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
-        "faq_count": 3
-      },
-      "composite_score": 74.7,
-      "all_issues": [
-        "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
-        "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 859 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (3 puntos)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
-      ],
-      "grade": "B+"
-    },
-    {
-      "file": "18_Auto_Reemplazo.html",
-      "category": "MittaGO",
-      "title": "El salvavidas del Auto de Reemplazo: Sobreviviendo a la larga estadía en el taller",
-      "seo": {
-        "scores": {
-          "title_tag": 100,
-          "meta_description": 100,
-          "h1_tag": 100,
-          "heading_hierarchy": 50,
-          "schema_jsonld": 100,
-          "internal_links": 60,
-          "word_count": 50,
-          "url_slug": 100
         },
         "average": 82.5,
-        "issues": [
-          "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
-          "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 761"
-        ],
-        "word_count": 761,
-        "h2_count": 4,
-        "h3_count": 2
-      },
-      "geo": {
-        "scores": {
-          "tables": 0,
-          "lists": 60,
-          "data_density": 70,
-          "blockquotes": 60,
-          "cross_linking": 65,
-          "formatting": 100
-        },
-        "average": 59.2,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 1 listas en contenido (recomendado: 3+)"
-        ],
-        "tables": 0,
-        "lists": 1
+        "issues": [],
+        "tables": 1,
+        "lists": 5
       },
       "aeo": {
         "scores": {
@@ -1186,15 +990,137 @@
         "issues": [],
         "faq_count": 3
       },
-      "composite_score": 75.4,
+      "composite_score": 83.0,
+      "all_issues": [
+        "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
+        "Solo 1 internal links (recomendado: 3+)",
+        "Word count bajo: 784"
+      ],
+      "grade": "A"
+    },
+    {
+      "file": "17_Siniestros_Sin_Estres.html",
+      "category": "MittaGO",
+      "title": "Siniestros sin estrés: Qué hacer en caso de choque cuando tienes una suscripción",
+      "seo": {
+        "scores": {
+          "title_tag": 100,
+          "meta_description": 100,
+          "h1_tag": 100,
+          "heading_hierarchy": 62,
+          "schema_jsonld": 100,
+          "internal_links": 60,
+          "word_count": 75,
+          "url_slug": 100
+        },
+        "average": 87.1,
+        "issues": [
+          "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
+          "Solo 1 internal links (recomendado: 3+)",
+          "Word count: 932 (ideal: 1200-3000)"
+        ],
+        "word_count": 932,
+        "h2_count": 4,
+        "h3_count": 6
+      },
+      "geo": {
+        "scores": {
+          "tables": 70,
+          "lists": 100,
+          "data_density": 70,
+          "blockquotes": 60,
+          "cross_linking": 65,
+          "formatting": 100
+        },
+        "average": 77.5,
+        "issues": [],
+        "tables": 1,
+        "lists": 4
+      },
+      "aeo": {
+        "scores": {
+          "aeo_summary": 100,
+          "faq_section": 100,
+          "faq_schema": 100,
+          "question_headings": 20,
+          "citability": 45
+        },
+        "average": 73.0,
+        "issues": [
+          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        ],
+        "faq_count": 3
+      },
+      "composite_score": 80.0,
+      "all_issues": [
+        "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
+        "Solo 1 internal links (recomendado: 3+)",
+        "Word count: 932 (ideal: 1200-3000)",
+        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+      ],
+      "grade": "B+"
+    },
+    {
+      "file": "18_Auto_Reemplazo.html",
+      "category": "MittaGO",
+      "title": "El salvavidas del Auto de Reemplazo: Sobreviviendo a la larga estadía en el taller",
+      "seo": {
+        "scores": {
+          "title_tag": 100,
+          "meta_description": 100,
+          "h1_tag": 100,
+          "heading_hierarchy": 60,
+          "schema_jsonld": 100,
+          "internal_links": 60,
+          "word_count": 75,
+          "url_slug": 100
+        },
+        "average": 86.9,
+        "issues": [
+          "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
+          "Solo 1 internal links (recomendado: 3+)",
+          "Word count: 808 (ideal: 1200-3000)"
+        ],
+        "word_count": 808,
+        "h2_count": 5,
+        "h3_count": 2
+      },
+      "geo": {
+        "scores": {
+          "tables": 70,
+          "lists": 60,
+          "data_density": 100,
+          "blockquotes": 60,
+          "cross_linking": 65,
+          "formatting": 100
+        },
+        "average": 75.8,
+        "issues": [
+          "Solo 1 listas en contenido (recomendado: 3+)"
+        ],
+        "tables": 1,
+        "lists": 1
+      },
+      "aeo": {
+        "scores": {
+          "aeo_summary": 100,
+          "faq_section": 100,
+          "faq_schema": 100,
+          "question_headings": 100,
+          "citability": 45
+        },
+        "average": 89.0,
+        "issues": [],
+        "faq_count": 3
+      },
+      "composite_score": 84.2,
       "all_issues": [
         "4 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 761",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 808 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "19_Economia_Circular.html",
@@ -1205,37 +1131,34 @@
           "title_tag": 100,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 82.5,
+        "average": 87.1,
         "issues": [
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count bajo: 773"
+          "Word count: 861 (ideal: 1200-3000)"
         ],
-        "word_count": 773,
-        "h2_count": 3,
+        "word_count": 861,
+        "h2_count": 4,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 61.7,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (6 puntos)"
-        ],
-        "tables": 0,
+        "average": 77.5,
+        "issues": [],
+        "tables": 1,
         "lists": 4
       },
       "aeo": {
@@ -1252,16 +1175,14 @@
         ],
         "faq_count": 3
       },
-      "composite_score": 74.9,
+      "composite_score": 81.5,
       "all_issues": [
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count bajo: 773",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (6 puntos)",
+        "Word count: 861 (ideal: 1200-3000)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "20_Sistemas_ADAS.html",
@@ -1272,39 +1193,36 @@
           "title_tag": 70,
           "meta_description": 75,
           "h1_tag": 100,
-          "heading_hierarchy": 50,
+          "heading_hierarchy": 62,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 75,
           "url_slug": 100
         },
-        "average": 78.8,
+        "average": 80.2,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 160 chars (ideal: 120-155)",
           "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 880 (ideal: 1200-3000)"
+          "Word count: 958 (ideal: 1200-3000)"
         ],
-        "word_count": 880,
-        "h2_count": 3,
+        "word_count": 958,
+        "h2_count": 4,
         "h3_count": 7
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 65,
           "formatting": 100
         },
-        "average": 61.7,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (6 puntos)"
-        ],
-        "tables": 0,
+        "average": 77.5,
+        "issues": [],
+        "tables": 1,
         "lists": 5
       },
       "aeo": {
@@ -1321,15 +1239,13 @@
         ],
         "faq_count": 3
       },
-      "composite_score": 71.9,
+      "composite_score": 77.2,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 160 chars (ideal: 120-155)",
         "3 H2s sin atributo id= (necesario para TOC/sitelinks)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 880 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (6 puntos)",
+        "Word count: 958 (ideal: 1200-3000)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
       "grade": "B+"
@@ -1353,27 +1269,24 @@
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "Meta description 157 chars (ideal: 120-155)",
-          "Word count: 899 (ideal: 1200-3000)"
+          "Word count: 949 (ideal: 1200-3000)"
         ],
-        "word_count": 899,
-        "h2_count": 5,
+        "word_count": 949,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 45,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 67.5,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (4 puntos)"
-        ],
-        "tables": 0,
+        "average": 88.3,
+        "issues": [],
+        "tables": 1,
         "lists": 5
       },
       "aeo": {
@@ -1381,25 +1294,23 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 100,
           "citability": 100
         },
-        "average": 73.0,
+        "average": 80.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 78.2,
+      "composite_score": 86.5,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 157 chars (ideal: 120-155)",
-        "Word count: 899 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (4 puntos)",
+        "Word count: 949 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "02_Requisitos_Extranjeros.html",
@@ -1485,27 +1396,24 @@
         "issues": [
           "Title length 63 chars (ideal: 30-60)",
           "Meta description 163 chars (ideal: 120-155)",
-          "Word count: 1077 (ideal: 1200-3000)"
+          "Word count: 1131 (ideal: 1200-3000)"
         ],
-        "word_count": 1077,
-        "h2_count": 6,
+        "word_count": 1131,
+        "h2_count": 7,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 67.5,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (4 puntos)"
-        ],
-        "tables": 0,
+        "average": 83.3,
+        "issues": [],
+        "tables": 1,
         "lists": 5
       },
       "aeo": {
@@ -1513,25 +1421,23 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 100,
           "citability": 70
         },
-        "average": 67.0,
+        "average": 74.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 76.3,
+      "composite_score": 83.2,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 163 chars (ideal: 120-155)",
-        "Word count: 1077 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (4 puntos)",
+        "Word count: 1131 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "04_Seguros_Coberturas.html",
@@ -1691,28 +1597,26 @@
           "Title length 64 chars (ideal: 30-60)",
           "Meta description 159 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 896 (ideal: 1200-3000)"
+          "Word count: 962 (ideal: 1200-3000)"
         ],
-        "word_count": 896,
-        "h2_count": 5,
+        "word_count": 962,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 15,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 55.8,
+        "average": 81.7,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 1 listas en contenido (recomendado: 3+)",
-          "⚠️ Muy baja densidad de datos (1 puntos)"
+          "Solo 1 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 1
       },
       "aeo": {
@@ -1720,29 +1624,25 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 69.9,
+      "composite_score": 80.4,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "Meta description 159 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 896 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 962 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "⚠️ Muy baja densidad de datos (1 puntos)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "A"
     },
     {
       "file": "07_Carretera_Austral.html",
@@ -1764,28 +1664,26 @@
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 156 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 955 (ideal: 1200-3000)"
+          "Word count: 1027 (ideal: 1200-3000)"
         ],
-        "word_count": 955,
-        "h2_count": 5,
+        "word_count": 1027,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 60.8,
+        "average": 76.7,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 2 listas en contenido (recomendado: 3+)",
-          "Baja densidad de datos (4 puntos)"
+          "Solo 2 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -1793,24 +1691,22 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 45,
           "citability": 100
         },
-        "average": 73.0,
+        "average": 69.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 74.1,
+      "composite_score": 77.7,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 156 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 955 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 1027 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (4 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
@@ -1834,28 +1730,27 @@
         "issues": [
           "Title length 65 chars (ideal: 30-60)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 961 (ideal: 1200-3000)"
+          "Word count: 1030 (ideal: 1200-3000)"
         ],
-        "word_count": 961,
-        "h2_count": 5,
+        "word_count": 1030,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
           "data_density": 45,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 60.8,
+        "average": 72.5,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 2 listas en contenido (recomendado: 3+)",
           "Baja densidad de datos (3 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -1863,21 +1758,20 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 45,
           "citability": 100
         },
-        "average": 73.0,
+        "average": 69.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 75.4,
+      "composite_score": 77.7,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 961 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 1030 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (3 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
@@ -1968,28 +1862,26 @@
         "issues": [
           "Meta description 164 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 954 (ideal: 1200-3000)"
+          "Word count: 1028 (ideal: 1200-3000)"
         ],
-        "word_count": 954,
-        "h2_count": 5,
+        "word_count": 1028,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 45,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 60.8,
+        "average": 81.7,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 2 listas en contenido (recomendado: 3+)",
-          "Baja densidad de datos (7 puntos)"
+          "Solo 2 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -2006,17 +1898,15 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 75.7,
+      "composite_score": 81.9,
       "all_issues": [
         "Meta description 164 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 954 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 1028 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (7 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "11_SUV_vs_Sedan.html",
@@ -2036,9 +1926,9 @@
         "average": 91.9,
         "issues": [
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 880 (ideal: 1200-3000)"
+          "Word count: 884 (ideal: 1200-3000)"
         ],
-        "word_count": 880,
+        "word_count": 884,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2064,24 +1954,22 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 100,
           "citability": 70
         },
-        "average": 58.0,
+        "average": 74.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 74.4,
+      "composite_score": 79.2,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 880 (ideal: 1200-3000)",
+        "Word count: 884 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "⚠️ Muy baja densidad de datos (1 puntos)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
     },
@@ -2105,27 +1993,24 @@
           "Title length 63 chars (ideal: 30-60)",
           "Meta description 157 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 918 (ideal: 1200-3000)"
+          "Word count: 992 (ideal: 1200-3000)"
         ],
-        "word_count": 918,
-        "h2_count": 5,
+        "word_count": 992,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 67.5,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (4 puntos)"
-        ],
-        "tables": 0,
+        "average": 83.3,
+        "issues": [],
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -2142,17 +2027,15 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 76.2,
+      "composite_score": 80.9,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Meta description 157 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 918 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (4 puntos)",
+        "Word count: 992 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "13_Precios_Arriendo_2026.html",
@@ -2174,9 +2057,9 @@
           "Title length 62 chars (ideal: 30-60)",
           "Meta description 157 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 970 (ideal: 1200-3000)"
+          "Word count: 973 (ideal: 1200-3000)"
         ],
-        "word_count": 970,
+        "word_count": 973,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2199,26 +2082,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 100,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 80.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 79.7,
+      "composite_score": 84.5,
       "all_issues": [
         "Title length 62 chars (ideal: 30-60)",
         "Meta description 157 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 970 (ideal: 1200-3000)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 973 (ideal: 1200-3000)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "14_Matrimonios_Eventos.html",
@@ -2239,27 +2120,24 @@
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 961 (ideal: 1200-3000)"
+          "Word count: 1013 (ideal: 1200-3000)"
         ],
-        "word_count": 961,
-        "h2_count": 5,
+        "word_count": 1013,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 67.5,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (6 puntos)"
-        ],
-        "tables": 0,
+        "average": 83.3,
+        "issues": [],
+        "tables": 1,
         "lists": 4
       },
       "aeo": {
@@ -2276,16 +2154,14 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 77.4,
+      "composite_score": 82.1,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 961 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (6 puntos)",
+        "Word count: 1013 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "15_Fin_Semana_Largo.html",
@@ -2306,9 +2182,9 @@
         "issues": [
           "Meta description 157 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 1023 (ideal: 1200-3000)"
+          "Word count: 1025 (ideal: 1200-3000)"
         ],
-        "word_count": 1023,
+        "word_count": 1025,
         "h2_count": 5,
         "h3_count": 4
       },
@@ -2334,25 +2210,25 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 100,
           "citability": 100
         },
-        "average": 73.0,
+        "average": 80.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 79.2,
+      "composite_score": 81.3,
       "all_issues": [
         "Meta description 157 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 1023 (ideal: 1200-3000)",
+        "Word count: 1025 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
         "Baja densidad de datos (6 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "16_Pana_Accidente.html",
@@ -2373,28 +2249,26 @@
         "issues": [
           "Title length 66 chars (ideal: 30-60)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 965 (ideal: 1200-3000)"
+          "Word count: 1017 (ideal: 1200-3000)"
         ],
-        "word_count": 965,
-        "h2_count": 5,
+        "word_count": 1017,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 45,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 60.8,
+        "average": 81.7,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 2 listas en contenido (recomendado: 3+)",
-          "Baja densidad de datos (3 puntos)"
+          "Solo 2 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -2402,26 +2276,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 100,
           "citability": 100
         },
-        "average": 73.0,
+        "average": 80.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 75.4,
+      "composite_score": 83.8,
       "all_issues": [
         "Title length 66 chars (ideal: 30-60)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 965 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 1017 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "Baja densidad de datos (3 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "17_Ninos_Sillas_Infantiles.html",
@@ -2509,27 +2381,26 @@
         "issues": [
           "Meta description 162 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 992 (ideal: 1200-3000)"
+          "Word count: 1066 (ideal: 1200-3000)"
         ],
-        "word_count": 992,
-        "h2_count": 5,
+        "word_count": 1066,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 45,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 67.5,
+        "average": 79.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (3 puntos)"
+          "Baja densidad de datos (4 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -2537,22 +2408,21 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 45,
           "citability": 70
         },
-        "average": 67.0,
+        "average": 63.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 75.9,
+      "composite_score": 78.2,
       "all_issues": [
         "Meta description 162 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 992 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (3 puntos)",
+        "Word count: 1066 (ideal: 1200-3000)",
+        "Baja densidad de datos (4 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
@@ -2577,28 +2447,26 @@
           "Title length 61 chars (ideal: 30-60)",
           "Meta description 166 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 945 (ideal: 1200-3000)"
+          "Word count: 996 (ideal: 1200-3000)"
         ],
-        "word_count": 945,
-        "h2_count": 5,
+        "word_count": 996,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 15,
+          "data_density": 100,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 55.8,
+        "average": 81.7,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 2 listas en contenido (recomendado: 3+)",
-          "⚠️ Muy baja densidad de datos (2 puntos)"
+          "Solo 2 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -2615,18 +2483,16 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 74.7,
+      "composite_score": 82.5,
       "all_issues": [
         "Title length 61 chars (ideal: 30-60)",
         "Meta description 166 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 945 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 996 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "⚠️ Muy baja densidad de datos (2 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "20_Checklist_Retiro.html",
@@ -2647,27 +2513,26 @@
         "issues": [
           "Meta description 156 chars (ideal: 120-155)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 975 (ideal: 1200-3000)"
+          "Word count: 1038 (ideal: 1200-3000)"
         ],
-        "word_count": 975,
-        "h2_count": 5,
+        "word_count": 1038,
+        "h2_count": 6,
         "h3_count": 4
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 62.5,
+        "average": 74.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "⚠️ Muy baja densidad de datos (1 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 5
       },
       "aeo": {
@@ -2675,25 +2540,22 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 45
         },
-        "average": 53.0,
+        "average": 62.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 70.2,
+      "composite_score": 76.4,
       "all_issues": [
         "Meta description 156 chars (ideal: 120-155)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 975 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 1038 (ideal: 1200-3000)",
+        "⚠️ Muy baja densidad de datos (1 puntos)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
     },
@@ -2786,27 +2648,24 @@
           "Title length 67 chars (ideal: 30-60)",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 910 (ideal: 1200-3000)"
+          "Word count: 989 (ideal: 1200-3000)"
         ],
-        "word_count": 910,
-        "h2_count": 4,
+        "word_count": 989,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 45,
+          "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 67.5,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (6 puntos)"
-        ],
-        "tables": 0,
+        "average": 83.3,
+        "issues": [],
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -2814,28 +2673,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 73.9,
+      "composite_score": 81.4,
       "all_issues": [
         "Title length 67 chars (ideal: 30-60)",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 910 (ideal: 1200-3000)",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (6 puntos)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 989 (ideal: 1200-3000)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "23_Beneficios_Tributarios_Leasing_Operativo.html",
@@ -2857,9 +2712,9 @@
           "Title length 65 chars (ideal: 30-60)",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 949 (ideal: 1200-3000)"
+          "Word count: 951 (ideal: 1200-3000)"
         ],
-        "word_count": 949,
+        "word_count": 951,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -2884,25 +2739,23 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 76.7,
+      "composite_score": 79.4,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 949 (ideal: 1200-3000)",
+        "Word count: 951 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
     },
@@ -3063,9 +2916,9 @@
         "issues": [
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 912 (ideal: 1200-3000)"
+          "Word count: 917 (ideal: 1200-3000)"
         ],
-        "word_count": 912,
+        "word_count": 917,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3090,26 +2943,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 100,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 80.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 78.2,
+      "composite_score": 83.0,
       "all_issues": [
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 912 (ideal: 1200-3000)",
+        "Word count: 917 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "27_Arriendo_Mensual_Independientes.html",
@@ -3131,9 +2982,76 @@
           "Title length 65 chars (ideal: 30-60)",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 885 (ideal: 1200-3000)"
+          "Word count: 887 (ideal: 1200-3000)"
         ],
-        "word_count": 885,
+        "word_count": 887,
+        "h2_count": 4,
+        "h3_count": 6
+      },
+      "geo": {
+        "scores": {
+          "tables": 70,
+          "lists": 60,
+          "data_density": 100,
+          "blockquotes": 60,
+          "cross_linking": 100,
+          "formatting": 100
+        },
+        "average": 81.7,
+        "issues": [
+          "Solo 1 listas en contenido (recomendado: 3+)"
+        ],
+        "tables": 1,
+        "lists": 1
+      },
+      "aeo": {
+        "scores": {
+          "aeo_summary": 100,
+          "faq_section": 0,
+          "faq_schema": 100,
+          "question_headings": 100,
+          "citability": 100
+        },
+        "average": 80.0,
+        "issues": [
+          "❌ FALTA sección FAQ (crítico para AEO)"
+        ],
+        "faq_count": 0
+      },
+      "composite_score": 83.0,
+      "all_issues": [
+        "Title length 65 chars (ideal: 30-60)",
+        "Schema faltante: BreadcrumbList",
+        "Solo 2 internal links (recomendado: 3+)",
+        "Word count: 887 (ideal: 1200-3000)",
+        "Solo 1 listas en contenido (recomendado: 3+)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
+      ],
+      "grade": "A"
+    },
+    {
+      "file": "28_Renting_Flexible_vs_Credito_Automotriz.html",
+      "category": "Mitta_Rent_a_Car",
+      "title": "Renting Flexible vs Crédito Automotriz | Finanzas Corporativas",
+      "seo": {
+        "scores": {
+          "title_tag": 70,
+          "meta_description": 100,
+          "h1_tag": 100,
+          "heading_hierarchy": 100,
+          "schema_jsonld": 85,
+          "internal_links": 60,
+          "word_count": 75,
+          "url_slug": 100
+        },
+        "average": 86.2,
+        "issues": [
+          "Title length 62 chars (ideal: 30-60)",
+          "Schema faltante: BreadcrumbList",
+          "Solo 2 internal links (recomendado: 3+)",
+          "Word count: 867 (ideal: 1200-3000)"
+        ],
+        "word_count": 867,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3169,83 +3087,14 @@
       },
       "composite_score": 80.9,
       "all_issues": [
-        "Title length 65 chars (ideal: 30-60)",
+        "Title length 62 chars (ideal: 30-60)",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 885 (ideal: 1200-3000)",
+        "Word count: 867 (ideal: 1200-3000)",
         "Solo 1 listas en contenido (recomendado: 3+)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "A"
-    },
-    {
-      "file": "28_Renting_Flexible_vs_Credito_Automotriz.html",
-      "category": "Mitta_Rent_a_Car",
-      "title": "Renting Flexible vs Crédito Automotriz | Finanzas Corporativas",
-      "seo": {
-        "scores": {
-          "title_tag": 70,
-          "meta_description": 100,
-          "h1_tag": 100,
-          "heading_hierarchy": 100,
-          "schema_jsonld": 85,
-          "internal_links": 60,
-          "word_count": 75,
-          "url_slug": 100
-        },
-        "average": 86.2,
-        "issues": [
-          "Title length 62 chars (ideal: 30-60)",
-          "Schema faltante: BreadcrumbList",
-          "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 865 (ideal: 1200-3000)"
-        ],
-        "word_count": 865,
-        "h2_count": 4,
-        "h3_count": 6
-      },
-      "geo": {
-        "scores": {
-          "tables": 70,
-          "lists": 60,
-          "data_density": 100,
-          "blockquotes": 60,
-          "cross_linking": 100,
-          "formatting": 100
-        },
-        "average": 81.7,
-        "issues": [
-          "Solo 1 listas en contenido (recomendado: 3+)"
-        ],
-        "tables": 1,
-        "lists": 1
-      },
-      "aeo": {
-        "scores": {
-          "aeo_summary": 100,
-          "faq_section": 0,
-          "faq_schema": 100,
-          "question_headings": 20,
-          "citability": 100
-        },
-        "average": 64.0,
-        "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
-        ],
-        "faq_count": 0
-      },
-      "composite_score": 78.2,
-      "all_issues": [
-        "Title length 62 chars (ideal: 30-60)",
-        "Schema faltante: BreadcrumbList",
-        "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 865 (ideal: 1200-3000)",
-        "Solo 1 listas en contenido (recomendado: 3+)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
-      ],
-      "grade": "B+"
     },
     {
       "file": "29_Movilidad_Temporal_Proyectos.html",
@@ -3267,9 +3116,9 @@
           "Meta description 158 chars (ideal: 120-155)",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 912 (ideal: 1200-3000)"
+          "Word count: 914 (ideal: 1200-3000)"
         ],
-        "word_count": 912,
+        "word_count": 914,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3292,26 +3141,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 79.0,
+      "composite_score": 81.7,
       "all_issues": [
         "Meta description 158 chars (ideal: 120-155)",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 912 (ideal: 1200-3000)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 914 (ideal: 1200-3000)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "30_Renting_Flexible_Camionetas.html",
@@ -3333,9 +3180,9 @@
           "Title length 63 chars (ideal: 30-60)",
           "Schema faltante: BreadcrumbList",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count: 912 (ideal: 1200-3000)"
+          "Word count: 914 (ideal: 1200-3000)"
         ],
-        "word_count": 912,
+        "word_count": 914,
         "h2_count": 4,
         "h3_count": 6
       },
@@ -3358,26 +3205,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 73.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 78.7,
+      "composite_score": 81.4,
       "all_issues": [
         "Title length 63 chars (ideal: 30-60)",
         "Schema faltante: BreadcrumbList",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count: 912 (ideal: 1200-3000)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count: 914 (ideal: 1200-3000)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "01_presupuesto-anual-auto-chile.html",
@@ -3459,40 +3304,39 @@
           "title_tag": 30,
           "meta_description": 75,
           "h1_tag": 100,
-          "heading_hierarchy": 0,
+          "heading_hierarchy": 60,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 25,
           "url_slug": 100
         },
-        "average": 61.2,
+        "average": 68.8,
         "issues": [
           "Title length 79 chars (fuera de rango)",
           "Meta description 165 chars (ideal: 120-155)",
-          "❌ Sin encabezados H2",
+          "Solo 1 H2s (mínimo recomendado: 3+)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count muy bajo: 283"
+          "Word count muy bajo: 333"
         ],
-        "word_count": 283,
-        "h2_count": 0,
+        "word_count": 333,
+        "h2_count": 1,
         "h3_count": 2
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 20,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 44.2,
+        "average": 55.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "⚠️ Sin listas en contenido",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "⚠️ Muy baja densidad de datos (1 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 0
       },
       "aeo": {
@@ -3500,28 +3344,29 @@
           "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 0,
+          "question_headings": 20,
           "citability": 45
         },
-        "average": 43.0,
+        "average": 47.0,
         "issues": [
           "AEO summary: 39 words (ideal: 40-180)",
-          "❌ FALTA sección FAQ (crítico para AEO)"
+          "❌ FALTA sección FAQ (crítico para AEO)",
+          "Ningún H2 es una pregunta (reduce citabilidad AI)"
         ],
         "faq_count": 0
       },
-      "composite_score": 50.6,
+      "composite_score": 58.4,
       "all_issues": [
         "Title length 79 chars (fuera de rango)",
         "Meta description 165 chars (ideal: 120-155)",
-        "❌ Sin encabezados H2",
+        "Solo 1 H2s (mínimo recomendado: 3+)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count muy bajo: 283",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count muy bajo: 333",
         "⚠️ Sin listas en contenido",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
+        "⚠️ Muy baja densidad de datos (1 puntos)",
         "AEO summary: 39 words (ideal: 40-180)",
-        "❌ FALTA sección FAQ (crítico para AEO)"
+        "❌ FALTA sección FAQ (crítico para AEO)",
+        "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
       "grade": "C+"
     },
@@ -3534,40 +3379,39 @@
           "title_tag": 70,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 0,
+          "heading_hierarchy": 60,
           "schema_jsonld": 75,
           "internal_links": 60,
           "word_count": 25,
           "url_slug": 100
         },
-        "average": 66.2,
+        "average": 73.8,
         "issues": [
           "Title length 64 chars (ideal: 30-60)",
-          "❌ Sin encabezados H2",
+          "Solo 1 H2s (mínimo recomendado: 3+)",
           "Schema faltante: FAQPage",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count muy bajo: 251"
+          "Word count muy bajo: 308"
         ],
-        "word_count": 251,
-        "h2_count": 0,
+        "word_count": 308,
+        "h2_count": 1,
         "h3_count": 2
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 20,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 44.2,
+        "average": 55.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "⚠️ Sin listas en contenido",
-          "⚠️ Muy baja densidad de datos (1 puntos)"
+          "⚠️ Muy baja densidad de datos (2 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 0
       },
       "aeo": {
@@ -3575,34 +3419,35 @@
           "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 0,
-          "question_headings": 0,
+          "question_headings": 20,
           "citability": 15
         },
-        "average": 17.0,
+        "average": 21.0,
         "issues": [
           "AEO summary: 33 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "❌ FALTA Schema FAQPage JSON-LD",
+          "Ningún H2 es una pregunta (reduce citabilidad AI)",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 44.8,
+      "composite_score": 52.6,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
-        "❌ Sin encabezados H2",
+        "Solo 1 H2s (mínimo recomendado: 3+)",
         "Schema faltante: FAQPage",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count muy bajo: 251",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count muy bajo: 308",
         "⚠️ Sin listas en contenido",
-        "⚠️ Muy baja densidad de datos (1 puntos)",
+        "⚠️ Muy baja densidad de datos (2 puntos)",
         "AEO summary: 33 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "❌ FALTA Schema FAQPage JSON-LD",
+        "Ningún H2 es una pregunta (reduce citabilidad AI)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
       ],
-      "grade": "C"
+      "grade": "C+"
     },
     {
       "file": "04_errores-financieros-comprar-auto.html",
@@ -3613,40 +3458,39 @@
           "title_tag": 70,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 0,
+          "heading_hierarchy": 60,
           "schema_jsonld": 75,
           "internal_links": 60,
           "word_count": 25,
           "url_slug": 100
         },
-        "average": 66.2,
+        "average": 73.8,
         "issues": [
           "Title length 65 chars (ideal: 30-60)",
-          "❌ Sin encabezados H2",
+          "Solo 1 H2s (mínimo recomendado: 3+)",
           "Schema faltante: FAQPage",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count muy bajo: 219"
+          "Word count muy bajo: 269"
         ],
-        "word_count": 219,
-        "h2_count": 0,
+        "word_count": 269,
+        "h2_count": 1,
         "h3_count": 2
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 20,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 44.2,
+        "average": 55.8,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "⚠️ Sin listas en contenido",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "⚠️ Muy baja densidad de datos (1 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 0
       },
       "aeo": {
@@ -3654,34 +3498,35 @@
           "aeo_summary": 70,
           "faq_section": 0,
           "faq_schema": 0,
-          "question_headings": 0,
+          "question_headings": 20,
           "citability": 15
         },
-        "average": 17.0,
+        "average": 21.0,
         "issues": [
           "AEO summary: 30 words (ideal: 40-180)",
           "❌ FALTA sección FAQ (crítico para AEO)",
           "❌ FALTA Schema FAQPage JSON-LD",
+          "Ningún H2 es una pregunta (reduce citabilidad AI)",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 44.8,
+      "composite_score": 52.6,
       "all_issues": [
         "Title length 65 chars (ideal: 30-60)",
-        "❌ Sin encabezados H2",
+        "Solo 1 H2s (mínimo recomendado: 3+)",
         "Schema faltante: FAQPage",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count muy bajo: 219",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count muy bajo: 269",
         "⚠️ Sin listas en contenido",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
+        "⚠️ Muy baja densidad de datos (1 puntos)",
         "AEO summary: 30 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "❌ FALTA Schema FAQPage JSON-LD",
+        "Ningún H2 es una pregunta (reduce citabilidad AI)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
       ],
-      "grade": "C"
+      "grade": "C+"
     },
     {
       "file": "05_cuanto-cuesta-realmente-tener-un-auto-en-chile-al-ano.html",
@@ -3839,29 +3684,27 @@
           "Title length 66 chars (ideal: 30-60)",
           "Meta description 170 chars (ideal: 120-155)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count muy bajo: 392",
+          "Word count muy bajo: 454",
           "No se detectó slug definido"
         ],
-        "word_count": 392,
-        "h2_count": 6,
+        "word_count": 454,
+        "h2_count": 7,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 15,
+          "data_density": 100,
           "blockquotes": 100,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 57.5,
+        "average": 83.3,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Solo 1 listas en contenido (recomendado: 3+)",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "Solo 1 listas en contenido (recomendado: 3+)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 1
       },
       "aeo": {
@@ -3881,22 +3724,20 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 58.5,
+      "composite_score": 66.3,
       "all_issues": [
         "Title length 66 chars (ideal: 30-60)",
         "Meta description 170 chars (ideal: 120-155)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count muy bajo: 392",
+        "Word count muy bajo: 454",
         "No se detectó slug definido",
-        "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
         "AEO summary: 31 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
       ],
-      "grade": "C+"
+      "grade": "B"
     },
     {
       "file": "08_rent-a-car-aeropuerto-vs-centro.html",
@@ -3907,39 +3748,38 @@
           "title_tag": 100,
           "meta_description": 100,
           "h1_tag": 100,
-          "heading_hierarchy": 0,
+          "heading_hierarchy": 60,
           "schema_jsonld": 100,
           "internal_links": 60,
           "word_count": 25,
           "url_slug": 50
         },
-        "average": 66.9,
+        "average": 74.4,
         "issues": [
-          "❌ Sin encabezados H2",
+          "Solo 1 H2s (mínimo recomendado: 3+)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count muy bajo: 230",
+          "Word count muy bajo: 299",
           "No se detectó slug definido"
         ],
-        "word_count": 230,
-        "h2_count": 0,
+        "word_count": 299,
+        "h2_count": 1,
         "h3_count": 2
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 20,
           "data_density": 15,
           "blockquotes": 100,
           "cross_linking": 65,
           "formatting": 70
         },
-        "average": 45.0,
+        "average": 56.7,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "⚠️ Sin listas en contenido",
           "⚠️ Muy baja densidad de datos (0 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 0
       },
       "aeo": {
@@ -3947,31 +3787,32 @@
           "aeo_summary": 40,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 0,
+          "question_headings": 20,
           "citability": 15
         },
-        "average": 31.0,
+        "average": 35.0,
         "issues": [
           "AEO summary muy corto: 16 words",
           "❌ FALTA sección FAQ (crítico para AEO)",
+          "Ningún H2 es una pregunta (reduce citabilidad AI)",
           "Baja citabilidad: pocos párrafos auto-contenidos con datos"
         ],
         "faq_count": 0
       },
-      "composite_score": 49.6,
+      "composite_score": 57.3,
       "all_issues": [
-        "❌ Sin encabezados H2",
+        "Solo 1 H2s (mínimo recomendado: 3+)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count muy bajo: 230",
+        "Word count muy bajo: 299",
         "No se detectó slug definido",
-        "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Sin listas en contenido",
         "⚠️ Muy baja densidad de datos (0 puntos)",
         "AEO summary muy corto: 16 words",
         "❌ FALTA sección FAQ (crítico para AEO)",
+        "Ningún H2 es una pregunta (reduce citabilidad AI)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
       ],
-      "grade": "C"
+      "grade": "C+"
     },
     {
       "file": "09_rent-a-car-para-empresas-vs-compra.html",
@@ -3992,29 +3833,28 @@
         "issues": [
           "Title length 68 chars (ideal: 30-60)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count muy bajo: 226",
+          "Word count muy bajo: 275",
           "No se detectó slug definido"
         ],
-        "word_count": 226,
-        "h2_count": 5,
+        "word_count": 275,
+        "h2_count": 6,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 15,
+          "data_density": 45,
           "blockquotes": 100,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 57.5,
+        "average": 74.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 1 listas en contenido (recomendado: 3+)",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "Baja densidad de datos (3 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 1
       },
       "aeo": {
@@ -4035,22 +3875,21 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 58.0,
+      "composite_score": 63.0,
       "all_issues": [
         "Title length 68 chars (ideal: 30-60)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count muy bajo: 226",
+        "Word count muy bajo: 275",
         "No se detectó slug definido",
-        "❌ Sin tablas de datos (crítico para GEO)",
         "Solo 1 listas en contenido (recomendado: 3+)",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
+        "Baja densidad de datos (3 puntos)",
         "AEO summary: 27 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Schema FAQPage con solo 2 questions",
         "Ningún H2 es una pregunta (reduce citabilidad AI)",
         "Baja citabilidad: pocos párrafos auto-contenidos con datos"
       ],
-      "grade": "C+"
+      "grade": "B"
     },
     {
       "file": "10_rent-a-car-barato-seguro-chile.html",
@@ -4147,28 +3986,27 @@
           "Title length 66 chars (ideal: 30-60)",
           "Meta description 0 chars (fuera de rango)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 1009 (ideal: 1200-3000)",
+          "Word count: 1059 (ideal: 1200-3000)",
           "No se detectó slug definido"
         ],
-        "word_count": 1009,
-        "h2_count": 4,
+        "word_count": 1059,
+        "h2_count": 5,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 57.5,
+        "average": 69.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "⚠️ Muy baja densidad de datos (1 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 6
       },
       "aeo": {
@@ -4186,19 +4024,18 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 67.4,
+      "composite_score": 70.9,
       "all_issues": [
         "Title length 66 chars (ideal: 30-60)",
         "Meta description 0 chars (fuera de rango)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 1009 (ideal: 1200-3000)",
+        "Word count: 1059 (ideal: 1200-3000)",
         "No se detectó slug definido",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
+        "⚠️ Muy baja densidad de datos (1 puntos)",
         "AEO summary: 33 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "12_que-seguro-elegir-al-arriendo-de-auto-chile.html",
@@ -4293,28 +4130,27 @@
           "Title length 68 chars (ideal: 30-60)",
           "Meta description 0 chars (fuera de rango)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 858 (ideal: 1200-3000)",
+          "Word count: 907 (ideal: 1200-3000)",
           "No se detectó slug definido"
         ],
-        "word_count": 858,
-        "h2_count": 5,
+        "word_count": 907,
+        "h2_count": 6,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
-          "data_density": 15,
+          "data_density": 45,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 57.5,
+        "average": 74.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "Baja densidad de datos (3 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 4
       },
       "aeo": {
@@ -4333,15 +4169,14 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 61.1,
+      "composite_score": 66.1,
       "all_issues": [
         "Title length 68 chars (ideal: 30-60)",
         "Meta description 0 chars (fuera de rango)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 858 (ideal: 1200-3000)",
+        "Word count: 907 (ideal: 1200-3000)",
         "No se detectó slug definido",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
+        "Baja densidad de datos (3 puntos)",
         "AEO summary: 30 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
@@ -4368,28 +4203,27 @@
           "Title length 72 chars (fuera de rango)",
           "Meta description 0 chars (fuera de rango)",
           "Solo 1 internal links (recomendado: 3+)",
-          "Word count: 853 (ideal: 1200-3000)",
+          "Word count: 911 (ideal: 1200-3000)",
           "No se detectó slug definido"
         ],
-        "word_count": 853,
-        "h2_count": 5,
+        "word_count": 911,
+        "h2_count": 6,
         "h3_count": 3
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 70
         },
-        "average": 57.5,
+        "average": 69.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "⚠️ Muy baja densidad de datos (0 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -4408,14 +4242,13 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 60.6,
+      "composite_score": 64.1,
       "all_issues": [
         "Title length 72 chars (fuera de rango)",
         "Meta description 0 chars (fuera de rango)",
         "Solo 1 internal links (recomendado: 3+)",
-        "Word count: 853 (ideal: 1200-3000)",
+        "Word count: 911 (ideal: 1200-3000)",
         "No se detectó slug definido",
-        "❌ Sin tablas de datos (crítico para GEO)",
         "⚠️ Muy baja densidad de datos (0 puntos)",
         "AEO summary: 30 words (ideal: 40-180)",
         "❌ FALTA sección FAQ (crítico para AEO)",
@@ -4435,33 +4268,32 @@
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 88.8,
+        "average": 91.9,
         "issues": [
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count bajo: 740"
+          "Word count: 817 (ideal: 1200-3000)"
         ],
-        "word_count": 740,
-        "h2_count": 4,
+        "word_count": 817,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 62.5,
+        "average": 74.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "⚠️ Muy baja densidad de datos (1 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -4478,12 +4310,11 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 72.9,
+      "composite_score": 77.6,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count bajo: 740",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
+        "Word count: 817 (ideal: 1200-3000)",
+        "⚠️ Muy baja densidad de datos (1 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
@@ -4500,98 +4331,31 @@
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 85.0,
+        "average": 88.1,
         "issues": [
           "Title length 61 chars (ideal: 30-60)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count bajo: 737"
+          "Word count: 817 (ideal: 1200-3000)"
         ],
-        "word_count": 737,
-        "h2_count": 4,
+        "word_count": 817,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
-          "lists": 100,
-          "data_density": 45,
-          "blockquotes": 60,
-          "cross_linking": 100,
-          "formatting": 100
-        },
-        "average": 67.5,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "Baja densidad de datos (6 puntos)"
-        ],
-        "tables": 0,
-        "lists": 3
-      },
-      "aeo": {
-        "scores": {
-          "aeo_summary": 100,
-          "faq_section": 0,
-          "faq_schema": 100,
-          "question_headings": 65,
-          "citability": 45
-        },
-        "average": 62.0,
-        "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)"
-        ],
-        "faq_count": 0
-      },
-      "composite_score": 72.8,
-      "all_issues": [
-        "Title length 61 chars (ideal: 30-60)",
-        "Solo 2 internal links (recomendado: 3+)",
-        "Word count bajo: 737",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "Baja densidad de datos (6 puntos)",
-        "❌ FALTA sección FAQ (crítico para AEO)"
-      ],
-      "grade": "B+"
-    },
-    {
-      "file": "03_Arriendo_vs_Suscripcion_Cyber.html",
-      "category": "Cyber_2026",
-      "title": "Movilidad para empresas y personas: Cuándo conviene arrendar y cuándo suscribir",
-      "seo": {
-        "scores": {
-          "title_tag": 100,
-          "meta_description": 100,
-          "h1_tag": 100,
-          "heading_hierarchy": 100,
-          "schema_jsonld": 100,
-          "internal_links": 100,
-          "word_count": 50,
-          "url_slug": 100
-        },
-        "average": 93.8,
-        "issues": [
-          "Word count bajo: 784"
-        ],
-        "word_count": 784,
-        "h2_count": 4,
-        "h3_count": 6
-      },
-      "geo": {
-        "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 70,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 71.7,
-        "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)"
-        ],
-        "tables": 0,
+        "average": 83.3,
+        "issues": [],
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -4608,13 +4372,72 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 79.7,
+      "composite_score": 80.9,
       "all_issues": [
-        "Word count bajo: 784",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Title length 61 chars (ideal: 30-60)",
+        "Solo 2 internal links (recomendado: 3+)",
+        "Word count: 817 (ideal: 1200-3000)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
+    },
+    {
+      "file": "03_Arriendo_vs_Suscripcion_Cyber.html",
+      "category": "Cyber_2026",
+      "title": "Movilidad para empresas y personas: Cuándo conviene arrendar y cuándo suscribir",
+      "seo": {
+        "scores": {
+          "title_tag": 100,
+          "meta_description": 100,
+          "h1_tag": 100,
+          "heading_hierarchy": 100,
+          "schema_jsonld": 100,
+          "internal_links": 100,
+          "word_count": 75,
+          "url_slug": 100
+        },
+        "average": 96.9,
+        "issues": [
+          "Word count: 861 (ideal: 1200-3000)"
+        ],
+        "word_count": 861,
+        "h2_count": 5,
+        "h3_count": 6
+      },
+      "geo": {
+        "scores": {
+          "tables": 70,
+          "lists": 100,
+          "data_density": 70,
+          "blockquotes": 60,
+          "cross_linking": 100,
+          "formatting": 100
+        },
+        "average": 83.3,
+        "issues": [],
+        "tables": 1,
+        "lists": 3
+      },
+      "aeo": {
+        "scores": {
+          "aeo_summary": 100,
+          "faq_section": 0,
+          "faq_schema": 100,
+          "question_headings": 100,
+          "citability": 45
+        },
+        "average": 69.0,
+        "issues": [
+          "❌ FALTA sección FAQ (crítico para AEO)"
+        ],
+        "faq_count": 0
+      },
+      "composite_score": 84.5,
+      "all_issues": [
+        "Word count: 861 (ideal: 1200-3000)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
+      ],
+      "grade": "A"
     },
     {
       "file": "04_MittaGO_Pymes_Cyber_2026.html",
@@ -4634,28 +4457,27 @@
         "average": 88.8,
         "issues": [
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count bajo: 663"
+          "Word count bajo: 742"
         ],
-        "word_count": 663,
-        "h2_count": 4,
+        "word_count": 742,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 15,
+          "data_density": 45,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 55.8,
+        "average": 72.5,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 2 listas en contenido (recomendado: 3+)",
-          "⚠️ Muy baja densidad de datos (2 puntos)"
+          "Baja densidad de datos (3 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -4663,27 +4485,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 65,
           "citability": 45
         },
-        "average": 53.0,
+        "average": 62.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 68.2,
+      "composite_score": 75.9,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count bajo: 663",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count bajo: 742",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "⚠️ Muy baja densidad de datos (2 puntos)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Baja densidad de datos (3 puntos)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B"
+      "grade": "B+"
     },
     {
       "file": "04_RentACar_Invierno_Cyber_2026.html",
@@ -4704,27 +4523,26 @@
         "issues": [
           "Title length 64 chars (ideal: 30-60)",
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count bajo: 701"
+          "Word count bajo: 782"
         ],
-        "word_count": 701,
-        "h2_count": 4,
+        "word_count": 782,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 100,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 62.5,
+        "average": 74.2,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
-          "⚠️ Muy baja densidad de datos (0 puntos)"
+          "⚠️ Muy baja densidad de datos (1 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 3
       },
       "aeo": {
@@ -4732,27 +4550,24 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 20,
+          "question_headings": 100,
           "citability": 100
         },
-        "average": 64.0,
+        "average": 80.0,
         "issues": [
-          "❌ FALTA sección FAQ (crítico para AEO)",
-          "Ningún H2 es una pregunta (reduce citabilidad AI)"
+          "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 72.0,
+      "composite_score": 80.3,
       "all_issues": [
         "Title length 64 chars (ideal: 30-60)",
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count bajo: 701",
-        "❌ Sin tablas de datos (crítico para GEO)",
-        "⚠️ Muy baja densidad de datos (0 puntos)",
-        "❌ FALTA sección FAQ (crítico para AEO)",
-        "Ningún H2 es una pregunta (reduce citabilidad AI)"
+        "Word count bajo: 782",
+        "⚠️ Muy baja densidad de datos (1 puntos)",
+        "❌ FALTA sección FAQ (crítico para AEO)"
       ],
-      "grade": "B+"
+      "grade": "A"
     },
     {
       "file": "05_MittaGO_Stock_SUV_Cyber_2026.html",
@@ -4772,28 +4587,27 @@
         "average": 88.8,
         "issues": [
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count bajo: 691"
+          "Word count bajo: 770"
         ],
-        "word_count": 691,
-        "h2_count": 4,
+        "word_count": 770,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
-          "data_density": 15,
+          "data_density": 45,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 55.8,
+        "average": 72.5,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 2 listas en contenido (recomendado: 3+)",
-          "⚠️ Muy baja densidad de datos (2 puntos)"
+          "Baja densidad de datos (3 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -4801,22 +4615,21 @@
           "aeo_summary": 100,
           "faq_section": 0,
           "faq_schema": 100,
-          "question_headings": 65,
+          "question_headings": 100,
           "citability": 70
         },
-        "average": 67.0,
+        "average": 74.0,
         "issues": [
           "❌ FALTA sección FAQ (crítico para AEO)"
         ],
         "faq_count": 0
       },
-      "composite_score": 72.4,
+      "composite_score": 79.5,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count bajo: 691",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count bajo: 770",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "⚠️ Muy baja densidad de datos (2 puntos)",
+        "Baja densidad de datos (3 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)"
       ],
       "grade": "B+"
@@ -4833,34 +4646,33 @@
           "heading_hierarchy": 100,
           "schema_jsonld": 100,
           "internal_links": 60,
-          "word_count": 50,
+          "word_count": 75,
           "url_slug": 100
         },
-        "average": 88.8,
+        "average": 91.9,
         "issues": [
           "Solo 2 internal links (recomendado: 3+)",
-          "Word count bajo: 740"
+          "Word count: 817 (ideal: 1200-3000)"
         ],
-        "word_count": 740,
-        "h2_count": 4,
+        "word_count": 817,
+        "h2_count": 5,
         "h3_count": 6
       },
       "geo": {
         "scores": {
-          "tables": 0,
+          "tables": 70,
           "lists": 60,
           "data_density": 15,
           "blockquotes": 60,
           "cross_linking": 100,
           "formatting": 100
         },
-        "average": 55.8,
+        "average": 67.5,
         "issues": [
-          "❌ Sin tablas de datos (crítico para GEO)",
           "Solo 2 listas en contenido (recomendado: 3+)",
-          "⚠️ Muy baja densidad de datos (1 puntos)"
+          "⚠️ Muy baja densidad de datos (2 puntos)"
         ],
-        "tables": 0,
+        "tables": 1,
         "lists": 2
       },
       "aeo": {
@@ -4878,52 +4690,51 @@
         ],
         "faq_count": 0
       },
-      "composite_score": 69.7,
+      "composite_score": 74.4,
       "all_issues": [
         "Solo 2 internal links (recomendado: 3+)",
-        "Word count bajo: 740",
-        "❌ Sin tablas de datos (crítico para GEO)",
+        "Word count: 817 (ideal: 1200-3000)",
         "Solo 2 listas en contenido (recomendado: 3+)",
-        "⚠️ Muy baja densidad de datos (1 puntos)",
+        "⚠️ Muy baja densidad de datos (2 puntos)",
         "❌ FALTA sección FAQ (crítico para AEO)",
         "Ningún H2 es una pregunta (reduce citabilidad AI)"
       ],
-      "grade": "B"
+      "grade": "B+"
     }
   ],
   "category_stats": {
     "MittaGO": {
       "count": 20,
-      "avg_score": 76.2,
-      "avg_seo": 82.4,
-      "avg_geo": 63.0,
-      "avg_aeo": 81.2,
-      "grade": "B+"
+      "avg_score": 82.5,
+      "avg_seo": 84.5,
+      "avg_geo": 73.8,
+      "avg_aeo": 88.5,
+      "grade": "A"
     },
     "Mitta_Rent_a_Car": {
       "count": 30,
-      "avg_score": 77.2,
+      "avg_score": 80.8,
       "avg_seo": 87.5,
-      "avg_geo": 71.9,
-      "avg_aeo": 68.6,
-      "grade": "B+"
+      "avg_geo": 79.6,
+      "avg_aeo": 73.1,
+      "grade": "A"
     },
     "Nuevos_Contenidos_2026": {
       "count": 14,
-      "avg_score": 59.5,
-      "avg_seo": 72.6,
-      "avg_geo": 62.3,
-      "avg_aeo": 39.4,
-      "grade": "C+"
+      "avg_score": 63.5,
+      "avg_seo": 74.8,
+      "avg_geo": 71.5,
+      "avg_aeo": 40.6,
+      "grade": "B"
     },
     "Cyber_2026": {
       "count": 7,
-      "avg_score": 72.5,
-      "avg_seo": 88.4,
-      "avg_geo": 61.7,
-      "avg_aeo": 62.1,
+      "avg_score": 79.0,
+      "avg_seo": 90.2,
+      "avg_geo": 75.4,
+      "avg_aeo": 67.7,
       "grade": "B+"
     }
   },
-  "timestamp": "2026-06-25T21:32:41.517926"
+  "timestamp": "2026-06-25T22:17:10.852392"
 }
