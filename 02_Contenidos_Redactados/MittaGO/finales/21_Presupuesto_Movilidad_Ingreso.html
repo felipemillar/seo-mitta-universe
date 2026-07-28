@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto de Movilidad según Ingreso: Opciones de Suscripción | MittaGO</title>
+    <meta name="description" content="Aprende a estructurar tu presupuesto de movilidad mensual en Chile. Compara opciones de suscripción en MittaGO por categoría (Citycar, Sedán, SUV) con tarifa plana todo incluido.">
+    <meta name="keywords" content="presupuesto movilidad chile, cuota mensual auto suscripcion, renting por categoria vehiculo, suscripcion citycar sedan suv, mittago presupuesto auto">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Meta Data Header */
+        .meta-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background: #F3F4F6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Breadcrumbs */
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        /* Article Content */
+        .article-content h1 {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .answer-block {
+            background-color: #F0FDF4;
+            border-left: 4px solid #16A34A;
+            padding: 20px;
+            margin-bottom: 32px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #166534;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        /* Table Design */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-dark);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #F8F9FA;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* CTA Container */
+        .cta-container {
+            background: #1A1A1A;
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .cta-container p {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F3F4F6;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            margin-top: 48px;
+            border-top: 2px solid var(--border-dark);
+            padding-top: 32px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+        }
+    </style>
+    <!-- YML-FRONTMATTER-START
+    title: "Presupuesto de Movilidad según Ingreso: Opciones de Suscripción | MittaGO"
+    description: "Aprende a estructurar tu presupuesto de movilidad mensual en Chile. Compara opciones de suscripción en MittaGO por categoría (Citycar, Sedán, SUV) con tarifa plana todo incluido."
+    keywords: "presupuesto movilidad chile, cuota mensual auto suscripcion, renting por categoria vehiculo, suscripcion citycar sedan suv, mittago presupuesto auto"
+    pilar: "Presupuestos"
+    brand: "MittaGO"
+    slug: "/presupuesto-movilidad-suscripcion-ingreso/"
+    YML-FRONTMATTER-END -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.mittago.cl/presupuesto-movilidad-suscripcion-ingreso/#article",
+          "headline": "Presupuesto de Movilidad según Ingreso: Opciones de Suscripción en MittaGO",
+          "description": "Guía práctica para estructurar tu presupuesto mensual de transporte y seleccionar la categoría de suscripción ideal en MittaGO sin endeudamiento bancario.",
+          "inLanguage": "es-CL",
+          "mainEntityOfPage": "https://www.mittago.cl/presupuesto-movilidad-suscripcion-ingreso/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MittaGO",
+            "url": "https://www.mittago.cl"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.mittago.cl/presupuesto-movilidad-suscripcion-ingreso/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿La tarifa mensual de MittaGO incluye todos los costos de mantenimiento?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. La cuota plana mensual de MittaGO incluye mantenciones preventivas de pauta oficial, permiso de circulación, seguro a todo evento con deducible y recambio de neumáticos por desgaste al alcanzar los 60.000 KM."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Puedo ejercer la Opción de Compra en cualquier categoría de vehículo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Al finalizar el plazo contratado (1 a 24 meses), el suscriptor de cualquier categoría (Citycar, Sedán o SUV) puede elegir entre renovar por un 0km, devolver la unidad o comprarla por el valor residual previo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué porcentaje del ingreso personal o familiar se recomienda destinar a movilidad?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En educación financiera se aconseja que el presupuesto de transporte no supere el 15% al 20% de los ingresos líquidos mensuales. Al contar con una tarifa fija en MittaGO, evitas desviaciones imprevistas por repuestos o patentes."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Presupuesto de Movilidad según Ingreso: Opciones de Suscripción | MittaGO</div>
+        <div><strong>Pilar:</strong> Presupuestos</div>
+        <div><strong>Marca:</strong> MittaGO</div>
+        <div><strong>Ruta/Slug:</strong> <a href="https://www.mittago.cl/presupuesto-movilidad-suscripcion-ingreso/" target="_blank">/presupuesto-movilidad-suscripcion-ingreso/</a></div>
+        <div><strong>Descripción meta:</strong> Aprende a estructurar tu presupuesto de movilidad mensual en Chile. Compara opciones de suscripción en MittaGO por categoría (Citycar, Sedán, SUV) con tarifa plana todo incluido.</div>
+        <div class="meta-tags">
+            <span class="tag-pill">presupuesto movilidad chile</span>
+            <span class="tag-pill">cuota mensual auto suscripcion</span>
+            <span class="tag-pill">renting por categoria vehiculo</span>
+            <span class="tag-pill">suscripcion citycar sedan suv</span>
+            <span class="tag-pill">mittago presupuesto auto</span>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb">
+        <a href="https://www.mittago.cl/">Inicio</a> &gt; 
+        <a href="https://www.mittago.cl/blog/">Blog</a> &gt; 
+        <a href="https://www.mittago.cl/blog/presupuestos/">Presupuestos</a> &gt; 
+        <span>Presupuesto de Movilidad según Ingreso</span>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Presupuesto de Movilidad según Ingreso: Opciones de Suscripción en MittaGO</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>Un presupuesto de movilidad eficiente</strong> requiere previsibilidad total. En MittaGO puedes seleccionar categorías desde Citycars hasta SUVs con cuota plana todo incluido que integra patente, mantenimientos y seguro, protegiendo tu liquidez.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>Al planificar los gastos mensuales de un hogar o emprendimiento, la movilidad suele ser una de las partidas más difíciles de controlar cuando se opta por un vehículo propio. Los costos ocultos de patentes, seguros, imprevistos de taller y la devaluación continua distorsionan la planificación financiera familiar.</p>
+
+        <p>Frente a las alternativas de endeudamiento tradicional con créditos bancarios o compras directas que inmovilizan capital, la suscripción automotriz permite acceder a vehículos 0km o seminuevos en ciclos de 1 a 24 meses, ajustando el tipo de vehículo al perfil de ingreso real del conductor.</p>
+
+        <h2>Estructuración del Presupuesto de Transporte</h2>
+
+        <p>Los analistas financieros recomiendan destinar un rango máximo del 15% al 20% de los ingresos líquidos mensuales a la solución de transporte. Al evaluar las opciones del mercado chileno, es fundamental comparar el Costo Total de Propiedad (TCO) frente a la modalidad de cuota fija:</p>
+
+        <ul>
+            <li><strong>Compra Tradicional o Crédito:</strong> Requiere un pie inicial (generalmente del 20%), el pago de cuotas con tasas de interés bancario acumuladas, pago anual de patente, seguro a todo evento y costos impredecibles de repuestos.</li>
+            <li><strong>Suscripción Mensual MittaGO:</strong> No exige pie ni endeudamiento en el sistema financiero. La tarifa fija abarca todos los ítems operativos, permitiendo conocer con exactitud el gasto mensual desde el día uno.</li>
+        </ul>
+
+        <h2 id="tabla-comparativa">Tabla Comparativa: Opciones de Suscripción por Categoría de Vehículo</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoría de Vehículo</th>
+                    <th>Perfil Recomendado</th>
+                    <th>Componentes Incluidos en Tarifa Plana</th>
+                    <th>Flexibilidad Contractual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Citycar / Hatchback</strong></td>
+                    <td>Estudiantes, ejecutivos urbanos y solteros</td>
+                    <td>Seguro full, mantenciones oficiales, patente y asistencia 24/7</td>
+                    <td>Suscripción de 1 a 24 meses con Opción de Compra a valor residual</td>
+                </tr>
+                <tr>
+                    <td><strong>Sedán Ejecutivo</strong></td>
+                    <td>Profesionales, independientes y parejas</td>
+                    <td>Cobertura completa a todo evento, patente e imprevistos de pauta</td>
+                    <td>Recambio de unidad según plazo acordado con ejecutivo comercial</td>
+                </tr>
+                <tr>
+                    <td><strong>SUV Familiar / Crossover</strong></td>
+                    <td>Familias, viajes regionales y grupos de trabajo</td>
+                    <td>Seguro integrativo, mantención de fábrica y recambio de neumáticos a los 60.000 KM</td>
+                    <td>Opción de renovación por 0km, devolución o compra final pactada</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Ventajas Financieras de la Tarifa Fija por Categoría</h2>
+
+        <p>Al seleccionar una unidad según tu presupuesto disponible en MittaGO, obtienes tres garantías financieras clave:</p>
+
+        <ol>
+            <li><strong>Protección del Flujo de Caja:</strong> Conservas tu liquidez para inversiones personales o de negocio, sin destinar millones de pesos en un pie inicial.</li>
+            <li><strong>Cero Riesgo de Reventa:</strong> Te despreocupas de la depreciación del activo. Al finalizar tu contrato de 1 a 24 meses, puedes devolver el vehículo, renovarlo por otro modelo o comprarlo por su valor residual previamente estipulado.</li>
+            <li><strong>Evaluación Comercial Directa:</strong> El trámite de suscripción se realiza a través de una evaluación comercial personalizada con un ejecutivo asignado, asegurando transparencia en las condiciones contratadas.</li>
+        </ol>
+
+        <div class="cta-container">
+            <p><em>¿Quieres armar tu presupuesto de movilidad con una cuota plana fija y transparente?</em></p>
+            <a href="https://www.mittago.cl/" class="cta-button" target="_blank">Explora el catálogo de vehículos y cotiza tu suscripción en MittaGO</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ Presupuesto de Movilidad)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">¿La tarifa mensual de MittaGO incluye todos los costos de mantenimiento?</div>
+                <div class="faq-answer">Sí. La cuota plana mensual de MittaGO incluye mantenciones preventivas de pauta oficial, permiso de circulación, seguro a todo evento con deducible y recambio de neumáticos por desgaste al alcanzar los 60.000 KM.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo ejercer la Opción de Compra en cualquier categoría de vehículo?</div>
+                <div class="faq-answer">Sí. Al finalizar el plazo contratado (1 a 24 meses), el suscriptor de cualquier categoría (Citycar, Sedán o SUV) puede elegir entre renovar por un 0km, devolver la unidad o comprarla por el valor residual previo.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué porcentaje del ingreso personal o familiar se recomienda destinar a movilidad?</div>
+                <div class="faq-answer">En educación financiera se aconseja que el presupuesto de transporte no supere el 15% al 20% de los ingresos líquidos mensuales. Al contar con una tarifa fija en MittaGO, evitas desviaciones imprevistas por repuestos o patentes.</div>
+            </div>
+        </div>
+
+        <!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+        <div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+                <thead style="background-color: #F8F9FA;">
+                    <tr>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Tipo de Activo</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Prompt Visual Recomendado (AI Generator)</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Justificación Neurocientífica & Atencional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>Hero Image</strong><br>(1200x630px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Modern urban professional checking a clean financial dashboard on a smartphone tablet while standing next to a pristine SUV in Santiago, soft sunlight, warm tones, high detail --ar 16:9</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Anclaje de control financiero y tranquilidad mental. La presencia humana equilibrada estimula el procesamiento dopaminérgico positivo de previsibilidad.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>In-Text Image</strong><br>(800x800px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Comparison layout vector infographic showing three car silhouettes (Citycar, Sedan, SUV) with clean icons of insurance, maintenance, and flat fee, minimalist style --ar 1:1</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Sintetización visual rápida que disminuye la carga cognitiva en la etapa intermedia de consideración de categorías.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+    </article>
+</div>
+
+</body>
+</html>

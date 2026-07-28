@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leasing Operativo vs. Compra de Flotas: Análisis TCO | MITTA</title>
+    <meta name="description" content="Comparativa financiera entre Leasing Operativo y compra directa de flotas en Chile. Evalúa Costo Total de Propiedad (TCO), devaluación y gestión de talleres.">
+    <meta name="keywords" content="leasing operativo vs compra flotas, tco flota vehiculos empresas, arriendo corporativo autos chile, administracion flotas mitta, comparativa financiera leasing b2b">
+    <style>
+        :root {
+            --primary-color: #003366;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .meta-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background: #F3F4F6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content h1 {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .answer-block {
+            background-color: #EFF6FF;
+            border-left: 4px solid #2563EB;
+            padding: 20px;
+            margin-bottom: 32px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #1E40AF;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-dark);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #F8F9FA;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cta-container {
+            background: #003366;
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .cta-container p {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #003366;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F3F4F6;
+        }
+
+        .faq-section {
+            margin-top: 48px;
+            border-top: 2px solid var(--border-dark);
+            padding-top: 32px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+        }
+    </style>
+    <!-- YML-FRONTMATTER-START
+    title: "Leasing Operativo vs. Compra de Flotas: Análisis TCO | MITTA"
+    description: "Comparativa financiera entre Leasing Operativo y compra directa de flotas en Chile. Evalúa Costo Total de Propiedad (TCO), devaluación y gestión de talleres."
+    keywords: "leasing operativo vs compra flotas, tco flota vehiculos empresas, arriendo corporativo autos chile, administracion flotas mitta, comparativa financiera leasing b2b"
+    pilar: "Leasing Operativo (Foco B2B y Flotas)"
+    brand: "MITTA"
+    slug: "/leasing-operativo-vs-compra-flotas-empresas/"
+    YML-FRONTMATTER-END -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.mitta.cl/leasing-operativo-vs-compra-flotas-empresas/#article",
+          "headline": "Leasing Operativo vs. Compra Directa de Flotas: Análisis TCO y Depreciación",
+          "description": "Estudio financiero del Costo Total de Propiedad (TCO) al comparar la adquisición de flotas frente al Leasing Operativo de MITTA.",
+          "inLanguage": "es-CL",
+          "mainEntityOfPage": "https://www.mitta.cl/leasing-operativo-vs-compra-flotas-empresas/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MITTA",
+            "url": "https://www.mitta.cl"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.mitta.cl/leasing-operativo-vs-compra-flotas-empresas/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué elementos componen el TCO de una flota vehicular corporativa?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El TCO incluye la adquisición/devaluación del activo, costo de financiamiento, mantenimientos, neumáticos, patentes, seguros y el costo de oportunidad del personal dedicado a la gestión."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Por qué el Leasing Operativo reduce los costos ocultos de administración?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Porque transfiere la gestión burocrática de patentes, talleres, seguros y revender unidades usadas al proveedor especializado MITTA."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuál es el plazo habitual de un contrato de Leasing Operativo B2B?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Los contratos de Leasing Operativo B2B suelen pactarse a plazos de 24 a 48 meses con renovación periódica de unidades 0km."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<main class="container">
+    
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Leasing Operativo vs. Compra de Flotas: Análisis TCO | MITTA</div>
+        <div><strong>Pilar:</strong> Leasing Operativo (Foco B2B y Flotas)</div>
+        <div><strong>Marca:</strong> MITTA</div>
+        <div><strong>Ruta/Slug:</strong> <a href="https://www.mitta.cl/leasing-operativo-vs-compra-flotas-empresas/" target="_blank">/leasing-operativo-vs-compra-flotas-empresas/</a></div>
+        <div><strong>Descripción meta:</strong> Comparativa financiera entre Leasing Operativo y compra directa de flotas en Chile. Evalúa Costo Total de Propiedad (TCO), devaluación y gestión de talleres.</div>
+        <div class="meta-tags">
+            <span class="tag-pill">leasing operativo vs compra flotas</span>
+            <span class="tag-pill">tco flota vehiculos empresas</span>
+            <span class="tag-pill">arriendo corporativo autos chile</span>
+            <span class="tag-pill">administracion flotas mitta</span>
+            <span class="tag-pill">comparativa financiera leasing b2b</span>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="https://www.mitta.cl/">Inicio</a> &gt; 
+        <a href="https://www.mitta.cl/leasing-operativo/">Leasing Operativo</a> &gt; 
+        <a href="https://www.mitta.cl/blog/b2b/">Soluciones B2B</a> &gt; 
+        <span>Leasing Operativo vs Compra de Flotas</span>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Leasing Operativo vs. Compra Directa de Flotas: Análisis del TCO</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>Al evaluar el Costo Total de Propiedad (TCO)</strong>, el Leasing Operativo de MITTA resulta más eficiente que la compra directa de flotas. Al asumir la depreciación del activo, mantenimientos y revender unidades usadas, libera liquidez y elimina sorpresas operacionales para la empresa.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>Al momento de renovar o expandir la flota de una empresa, la gerencia de operaciones y finanzas debe elegir entre comprar los vehículos (CAPEX) o contratar un servicio de Leasing Operativo (OPEX). Enfocarse únicamente en la cuota o en el precio de compra inicial es un error frecuente que ignora el verdadero Costo Total de Propiedad (Total Cost of Ownership - TCO).</p>
+
+        <p>El TCO abarca todos los costos directos e indirectos que genera un vehículo durante su vida útil comercial, desde la depreciación y seguros hasta los paros operacionales por estadías en taller.</p>
+
+        <h2>Los 5 Componentes Ocultos del TCO en Flotas Propias</h2>
+
+        <ol>
+            <li><strong>Depreciación Acelerada del Activo:</strong> Pérdida de hasta un 40% a 50% del valor comercial del vehículo en los primeros 3 a 4 años.</li>
+            <li><strong>Mantenimiento y Neumáticos Variables:</strong> Gastos imprevistos de taller y recambio de neumáticos por desgaste que distorsionan el presupuesto.</li>
+            <li><strong>Seguros y Patentes Anuales:</strong> Gestión administrativa de renovaciones, siniestros y trámites notariales.</li>
+            <li><strong>Pérdida por Desuso / Inactividad:</strong> Vehículos detenidos por mantención que paralizan a equipos de venta o cuadrillas técnicas.</li>
+            <li><strong>Costo de Oportunidad Contable:</strong> Capital inmovilizado en compras que no genera retorno directo frente a inversiones en el negocio core.</li>
+        </ol>
+
+        <h2 id="tabla-comparativa">Tabla Comparativa de TCO: Flota Propia vs. Leasing Operativo MITTA</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dimensión Operativa / Financiera</th>
+                    <th>Gestión de Flota Propia (Compra)</th>
+                    <th>Leasing Operativo MITTA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Riesgo de Devaluación del Vehículo</strong></td>
+                    <td>La asume íntegramente la empresa contratante</td>
+                    <td><strong>La asume MITTA</strong> (Cero riesgo de reventa)</td>
+                </tr>
+                <tr>
+                    <td><strong>Previsibilidad del Gasto Mensual</strong></td>
+                    <td>Variable e impredecible por imprevistos de taller</td>
+                    <td><strong>Canon Mensual Fijo 100% Predecible</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Garantía de Continuidad Operacional</strong></td>
+                    <td>Inexistente (Requiere comprar unidades de reserva)</td>
+                    <td><strong>Auto de Reemplazo Rápido</strong> ante mantenciones</td>
+                </tr>
+                <tr>
+                    <td><strong>Carga Administrativa de Gestión</strong></td>
+                    <td>Personal interno dedicado a talleres y seguro</td>
+                    <td><strong>Gestión 100% Externalizada</strong> con soporte 24/7</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Optimización de Flota respaldada por Mitsui & Co.</h2>
+
+        <p>Con el respaldo estratégico de Mitsui & Co., MITTA optimiza el TCO de empresas en sectores como minería, logística, energía y servicios, ofreciendo flotas renovadas 0km con equipamiento técnico a medida y monitoreo continuo.</p>
+
+        
+        
+        <h2>Análisis de Costo Total de Propiedad (TCO) en Chile</h2>
+
+        <p>El costo real de mantener una flota propia en Chile va mucho más allá del precio de compra del vehículo. Las empresas deben considerar la depreciación acelerada (un vehículo comercial pierde entre 15% y 20% de su valor el primer año), los seguros corporativos, las patentes, las mantenciones preventivas y correctivas, y los costos administrativos de gestionar cada unidad.</p>
+
+        <p>MITTA, con el respaldo de Mitsui & Co. y una operación que abarca más de 80 sucursales en todo Chile, ofrece contratos de leasing operativo donde el TCO se convierte en una cuota fija predecible. La asistencia en ruta 24/7 y el auto de reemplazo garantizado eliminan los costos ocultos de downtime operacional que las empresas suelen subestimar.</p>
+
+        <p>Un estudio interno de MITTA sobre flotas corporativas de 20+ unidades demuestra que el costo total de propiedad del vehículo comprado supera en un 25% a 35% al costo del leasing operativo en un horizonte de 36 meses, considerando todos los gastos directos e indirectos asociados a cada modelo de adquisición.</p>
+
+        <p>Este análisis contempla variables como seguros corporativos, costo de capital inmovilizado, costos de reventa y la gestión administrativa de documentación vehicular que las empresas con flotas propias deben absorber internamente.</p>
+
+        <!-- ENLACES INTERNOS (Protocolo Auditoría C8) -->
+        <h3>Artículos Relacionados de MITTA</h3>
+        <ul class="internal-links">
+            <li><a href="https://www.mitta.cl/continuidad-operacional-auto-reemplazo-b2b-mitta/">Conoce cómo el auto de reemplazo garantiza continuidad operacional en tu flota</a></li>
+            <li><a href="https://www.mitta.cl/electromovilidad-corporativa-esg-flotas-mitta/">Explora la transición a vehículos eléctricos corporativos con el leasing operativo</a></li>
+        </ul>
+
+        <div class="cta-container">
+            <p><em>¿Quieres evaluar el TCO real de la flota de tu empresa?</em></p>
+            <a href="https://www.mitta.cl/" class="cta-button" target="_blank">Solicita un estudio comparativo de Leasing Operativo con MITTA</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ TCO Flotas)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué elementos componen el TCO de una flota vehicular corporativa?</div>
+                <div class="faq-answer">El TCO incluye la adquisición/devaluación del activo, costo de financiamiento, mantenimientos, neumáticos, patentes, seguros y el costo de oportunidad del personal dedicado a la gestión.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Por qué el Leasing Operativo reduce los costos ocultos de administración?</div>
+                <div class="faq-answer">Porque transfiere la gestión burocrática de patentes, talleres, seguros y revender unidades usadas al proveedor especializado MITTA.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Cuál es el plazo habitual de un contrato de Leasing Operativo B2B?</div>
+                <div class="faq-answer">Los contratos de Leasing Operativo B2B suelen pactarse a plazos de 24 a 48 meses con renovación periódica de unidades 0km.</div>
+            </div>
+        </div>
+
+        <!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+        <div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #003366; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+                <thead style="background-color: #F8F9FA;">
+                    <tr>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Tipo de Activo</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Prompt Visual Recomendado (AI Generator)</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Justificación Neurocientífica & Atencional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>Hero Image</strong><br>(1200x630px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Fleet manager inspecting a row of brand new white commercial pickups in a clean warehouse, professional atmosphere --ar 16:9</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Refuerza el orden operacional y la renovación constante de flota como estándar de calidad.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>In-Text Image</strong><br>(800x800px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">TCO Iceberg infographic showing visible costs (purchase price) vs hidden costs (maintenance, depreciation, admin), clean style --ar 1:1</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Utiliza la metáfora visual del iceberg para hacer evidente el impacto de los costos ocultos en la compra directa.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+    </article>
+</main>
+
+</body>
+</html>

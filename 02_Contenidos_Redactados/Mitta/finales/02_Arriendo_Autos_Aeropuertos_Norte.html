@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arriendo de Autos en Aeropuertos del Norte (Calama y Antofagasta) | MITTA</title>
+    <meta name="description" content="Guía para arrendar vehículos en los aeropuertos de Calama (CJC) y Antofagasta (ANF) con MITTA. Pickups 4x4, SUVs para San Pedro de Atacama y asistencia 24/7.">
+    <meta name="keywords" content="arriendo de autos aeropuerto calama, rent a car antofagasta, arriendo camionetas 4x4 calama, auto para san pedro de atacama, mitta rent a car norte chile">
+    <style>
+        :root {
+            --primary-color: #003366;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .meta-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background: #F3F4F6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content h1 {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .answer-block {
+            background-color: #EFF6FF;
+            border-left: 4px solid #2563EB;
+            padding: 20px;
+            margin-bottom: 32px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #1E40AF;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-dark);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #F8F9FA;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cta-container {
+            background: #003366;
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .cta-container p {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #003366;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F3F4F6;
+        }
+
+        .faq-section {
+            margin-top: 48px;
+            border-top: 2px solid var(--border-dark);
+            padding-top: 32px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+        }
+    </style>
+    <!-- YML-FRONTMATTER-START
+    title: "Arriendo de Autos en Aeropuertos del Norte (Calama y Antofagasta) | MITTA"
+    description: "Guía para arrendar vehículos en los aeropuertos de Calama (CJC) y Antofagasta (ANF) con MITTA. Pickups 4x4, SUVs para San Pedro de Atacama y asistencia 24/7."
+    keywords: "arriendo de autos aeropuerto calama, rent a car antofagasta, arriendo camionetas 4x4 calama, auto para san pedro de atacama, mitta rent a car norte chile"
+    pilar: "Rent a Car (Foco B2C y Turismo)"
+    brand: "MITTA"
+    slug: "/arriendo-autos-aeropuertos-calama-antofagasta/"
+    YML-FRONTMATTER-END -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.mitta.cl/arriendo-autos-aeropuertos-calama-antofagasta/#article",
+          "headline": "Arriendo de Autos en Aeropuertos del Norte (Calama y Antofagasta)",
+          "description": "Guía sobre servicios de arriendo de vehículos en los aeropuertos El Loa de Calama y Andrés Sabella de Antofagasta con MITTA.",
+          "inLanguage": "es-CL",
+          "mainEntityOfPage": "https://www.mitta.cl/arriendo-autos-aeropuertos-calama-antofagasta/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MITTA",
+            "url": "https://www.mitta.cl"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.mitta.cl/arriendo-autos-aeropuertos-calama-antofagasta/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué vehículo se recomienda para viajar desde Calama hacia San Pedro de Atacama?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Se recomienda una SUV o una Camioneta 4x4 debido a la altitud, presencia de caminos desérticos y trayectos hacia salares y geysers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Puedo retirar un vehículo en Calama y devolverlo en el Aeropuerto de Antofagasta?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. MITTA permite coordinar el servicio Drop-Off entre sus distintas sucursales del Norte Grande previa reserva y confirmación de condiciones."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Las camionetas arrendadas en Antofagasta cuentan con equipamiento de seguridad?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. La flota de Pickups 4x2 y 4x4 incluye aire acondicionado, frenos ABS, tracción reforzada y elementos de seguridad estándar para caminos del desierto."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<main class="container">
+    
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Arriendo de Autos en Aeropuertos del Norte (Calama y Antofagasta) | MITTA</div>
+        <div><strong>Pilar:</strong> Rent a Car (Foco B2C y Turismo)</div>
+        <div><strong>Marca:</strong> MITTA</div>
+        <div><strong>Ruta/Slug:</strong> <a href="https://www.mitta.cl/arriendo-autos-aeropuertos-calama-antofagasta/" target="_blank">/arriendo-autos-aeropuertos-calama-antofagasta/</a></div>
+        <div><strong>Descripción meta:</strong> Guía para arrendar vehículos en los aeropuertos de Calama (CJC) y Antofagasta (ANF) con MITTA. Pickups 4x4, SUVs para San Pedro de Atacama y asistencia 24/7.</div>
+        <div class="meta-tags">
+            <span class="tag-pill">arriendo de autos aeropuerto calama</span>
+            <span class="tag-pill">rent a car antofagasta</span>
+            <span class="tag-pill">arriendo camionetas 4x4 calama</span>
+            <span class="tag-pill">auto para san pedro de atacama</span>
+            <span class="tag-pill">mitta rent a car norte chile</span>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="https://www.mitta.cl/">Inicio</a> &gt; 
+        <a href="https://www.mitta.cl/rent-a-car-personas/">Rent a Car</a> &gt; 
+        <a href="https://www.mitta.cl/sucursales/">Sucursales Norte</a> &gt; 
+        <span>Aeropuertos Calama y Antofagasta</span>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Arriendo de Autos en Aeropuertos del Norte Grande: Calama y Antofagasta</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>El arriendo de vehículos en los aeropuertos de Calama y Antofagasta con MITTA</strong> proporciona movilidad directa hacia destinos como San Pedro de Atacama y rutas costeras. Con flota de Pickups 4x4 y SUVs, incluye asistencia 24/7 y cancelación flexible 48 horas antes.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>El Norte Grande de Chile alberga algunos de los paisajes desérticos y focos turísticos más imponentes de Sudamérica. Al aterrizar en el Aeropuerto El Loa de Calama (CJC) o en el Aeropuerto Andrés Sabella de Antofagasta (ANF), disponer de un vehículo adecuado es esencial para trasladarse con libertad por carreteras altiplánicas y rutas interurbanas.</p>
+
+        <p>MITTA Rent a Car cuenta con presencia operativa en ambas terminales aéreas, ofreciendo una flota especialmente seleccionada de Pickups, SUVs y Sedanes preparados para la geografía y condiciones climáticas del desierto.</p>
+
+        <h2>Recorridos Recomendados desde Calama y Antofagasta</h2>
+
+        <ul>
+            <li><strong>Ruta Calama a San Pedro de Atacama:</strong> Trayecto pavimentado de aproximadamente 100 km, ideal para recorrer en SUV o Camioneta 4x4 para explorar el Valle de la Luna y los Geysers del Tatio.</li>
+            <li><strong>Ruta Antofagasta Costera:</strong> Desplazamiento urbano y costero hacia La Portada o rutas hacia la zona industrial y minera de la Región de Antofagasta.</li>
+        </ul>
+
+        <h2 id="tabla-comparativa">Tabla de Flota Recomendada para el Norte Grande</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoría de Vehículo</th>
+                    <th>Terreno Recomendado</th>
+                    <th>Equipamiento y Atributos</th>
+                    <th>Garantía en Tarjeta de Crédito</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>SUV Compacta / Crossover</strong></td>
+                    <td>Ruta pavimentada Calama - San Pedro</td>
+                    <td>Climatizador, suspensión confortable, excelente consumo</td>
+                    <td>Garantía desde $700.000</td>
+                </tr>
+                <tr>
+                    <td><strong>Pick Up 4x4 doble cabina</strong></td>
+                    <td>Caminos altiplánicos y rutas de tierra</td>
+                    <td>Tracción 4WD, despeje elevado, capacidad de carga para equipaje técnico</td>
+                    <td>Garantía de $1.500.000</td>
+                </tr>
+                <tr>
+                    <td><strong>Sedán Ejecutivo</strong></td>
+                    <td>Desplazamientos urbanos en Antofagasta</td>
+                    <td>Maletero amplio, gran autonomía y confort en carretera asfaltada</td>
+                    <td>Garantía de $450.000 a $700.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Requisitos Comerciales para el Arriendo en el Norte</h2>
+
+        <p>Para concretar el arriendo en los módulos del aeropuerto, el titular de la reserva debe ser mayor de 22 años, contar con al menos 2 años de antigüedad en su licencia de conducir física vigente, cédula de identidad o pasaporte al día, y presentar una tarjeta de crédito para la retención del cupo de garantía comercial según la categoría seleccionada.</p>
+
+        
+        
+        <h2>MITTA en la Zona Minera del Norte de Chile</h2>
+
+        <p>La macrozona norte concentra la actividad minera y energética más importante de Sudamérica. Profesionales, técnicos e ingenieros que aterrizan en Calama o Antofagasta necesitan un vehículo inmediato para trasladarse a faenas, oficinas corporativas o alojamientos en ciudades como San Pedro de Atacama.</p>
+
+        <p>La disponibilidad de flota en estos aeropuertos es crítica para la continuidad operacional. Además, la cercanía a centros turísticos como el Valle de la Luna, los Géiseres del Tatio y las playas de Antofagasta hace de estos aeropuertos puntos de partida ideales para recorridos de turismo aventura con vehículos todo terreno.</p>
+
+        <p>Con el respaldo corporativo de Mitsui & Co. y más de 65 años en la industria, MITTA mantiene sucursales operativas directamente en los terminales de Calama y Antofagasta, garantizando disponibilidad de camionetas 4x4, SUVs y sedanes adaptados a las condiciones extremas del desierto de Atacama. La asistencia en ruta 24/7 cubre desde pannes mecánicos hasta traslados de emergencia.</p>
+
+        <p>Los vehículos asignados a la zona norte cuentan con revisiones técnicas reforzadas considerando la altitud, la radiación solar intensa y los caminos de ripio. MITTA aplica pautas de mantención aceleradas que incluyen cambio de filtros de aire cada 5.000 km y revisión de sistema de refrigeración antes de cada entrega al cliente.</p>
+
+        <!-- ENLACES INTERNOS (Protocolo Auditoría C8) -->
+        <h3>Artículos Relacionados de MITTA</h3>
+        <ul class="internal-links">
+            <li><a href="https://www.mitta.cl/arriendo-autos-aeropuerto-santiago-amb/">Consulta también la guía de arriendo en el Aeropuerto de Santiago AMB</a></li>
+            <li><a href="https://www.mitta.cl/tips-conduccion-eficiente-ahorro-combustible-mitta/">Descubre consejos de conducción eficiente para ahorrar combustible en trayectos largos</a></li>
+        </ul>
+
+        <div class="cta-container">
+            <p><em>¿Viajas al desierto de Atacama o al norte de Chile y necesitas una camioneta o SUV?</em></p>
+            <a href="https://www.mitta.cl/" class="cta-button" target="_blank">Reserva tu auto en los aeropuertos de Calama o Antofagasta con MITTA</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ Aeropuertos Norte Grande)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué vehículo se recomienda para viajar desde Calama hacia San Pedro de Atacama?</div>
+                <div class="faq-answer">Se recomienda una SUV o una Camioneta 4x4 debido a la altitud, presencia de caminos desérticos y trayectos hacia salares y geysers.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo retirar un vehículo en Calama y devolverlo en el Aeropuerto de Antofagasta?</div>
+                <div class="faq-answer">Sí. MITTA permite coordinar el servicio Drop-Off entre sus distintas sucursales del Norte Grande previa reserva y confirmación de condiciones.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Las camionetas arrendadas en Antofagasta cuentan con equipamiento de seguridad?</div>
+                <div class="faq-answer">Sí. La flota de Pickups 4x2 y 4x4 incluye aire acondicionado, frenos ABS, tracción reinforced y elementos de seguridad estándar para caminos del desierto.</div>
+            </div>
+        </div>
+
+        <!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+        <div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #003366; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+                <thead style="background-color: #F8F9FA;">
+                    <tr>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Tipo de Activo</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Prompt Visual Recomendado (AI Generator)</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Justificación Neurocientífica & Atencional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>Hero Image</strong><br>(1200x630px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Modern 4x4 Pickup truck driving along a scenic desert highway near San Pedro de Atacama under clear blue sky, warm tones, high detail --ar 16:9</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Conecta con el deseo de aventura y exploración segura en el desierto, activando motivación intrínseca de viaje.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>In-Text Image</strong><br>(800x800px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Map vector infographic of Northern Chile routes (Calama, Antofagasta, San Pedro) with vehicle category icons, minimalist design --ar 1:1</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Facilita la orientación geográfica y la planificación logística del lector.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+    </article>
+</main>
+
+</body>
+</html>

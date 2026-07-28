@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opción de Compra y Valor Residual en Suscripción | MittaGO</title>
+    <meta name="description" content="Descubre cómo funciona la Opción de Compra al término de tu suscripción en MittaGO. Elige entre renovar por un 0km, devolver el vehículo o adquirirlo por su valor residual.">
+    <meta name="keywords" content="opcion de compra renting mittago, valor residual suscripcion auto, comprar auto al finalizar contrato, renovar auto suscrito, beneficio valor residual chile">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .meta-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background: #F3F4F6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content h1 {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .answer-block {
+            background-color: #F0FDF4;
+            border-left: 4px solid #16A34A;
+            padding: 20px;
+            margin-bottom: 32px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #166534;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-dark);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #F8F9FA;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cta-container {
+            background: #1A1A1A;
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .cta-container p {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F3F4F6;
+        }
+
+        .faq-section {
+            margin-top: 48px;
+            border-top: 2px solid var(--border-dark);
+            padding-top: 32px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+        }
+    </style>
+    <!-- YML-FRONTMATTER-START
+    title: "Opción de Compra y Valor Residual en Suscripción | MittaGO"
+    description: "Descubre cómo funciona la Opción de Compra al término de tu suscripción en MittaGO. Elige entre renovar por un 0km, devolver el vehículo o adquirirlo por su valor residual."
+    keywords: "opcion de compra renting mittago, valor residual suscripcion auto, comprar auto al finalizar contrato, renovar auto suscrito, beneficio valor residual chile"
+    pilar: "Suscripciones"
+    brand: "MittaGO"
+    slug: "/opcion-de-compra-valor-residual/"
+    YML-FRONTMATTER-END -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.mittago.cl/opcion-de-compra-valor-residual/#article",
+          "headline": "Opción de Compra al Finalizar la Suscripción: Cómo Funciona el Valor Residual en MittaGO",
+          "description": "Explicación contractual del beneficio de Opción de Compra al término del contrato de suscripción (1 a 24 meses) en MittaGO a un valor residual previamente pactado.",
+          "inLanguage": "es-CL",
+          "mainEntityOfPage": "https://www.mittago.cl/opcion-de-compra-valor-residual/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MittaGO",
+            "url": "https://www.mittago.cl"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.mittago.cl/opcion-de-compra-valor-residual/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Es obligatorio comprar el vehículo al finalizar el contrato de suscripción?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. La Opción de Compra es 100% voluntaria. Al terminar el período contratado (1 a 24 meses), el suscriptor puede elegir libremente entre devolver el auto, renovarlo por una unidad 0km o comprarlo por su valor residual."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo se calcula el valor residual para la compra del auto suscrito?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El valor residual se establece en las condiciones comerciales de MittaGO al inicio del contrato, considerando el plazo de suscripción y la depreciación estimada de la unidad."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué ventajas tiene comprar un auto al finalizar su suscripción en lugar de un usado particular?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La ventaja principal es la trazabilidad absoluta: el suscriptor ha conducido la unidad y sabe que todas sus mantenciones preventivas fueron realizadas en talleres oficiales bajo los estándares de fábrica de MittaGO."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Opción de Compra y Valor Residual en Suscripción | MittaGO</div>
+        <div><strong>Pilar:</strong> Suscripciones</div>
+        <div><strong>Marca:</strong> MittaGO</div>
+        <div><strong>Ruta/Slug:</strong> <a href="https://www.mittago.cl/opcion-de-compra-valor-residual/" target="_blank">/opcion-de-compra-valor-residual/</a></div>
+        <div><strong>Descripción meta:</strong> Descubre cómo funciona la Opción de Compra al término de tu suscripción en MittaGO. Elige entre renovar por un 0km, devolver el vehículo o adquirirlo por su valor residual.</div>
+        <div class="meta-tags">
+            <span class="tag-pill">opcion de compra renting mittago</span>
+            <span class="tag-pill">valor residual suscripcion auto</span>
+            <span class="tag-pill">comprar auto al finalizar contrato</span>
+            <span class="tag-pill">renovar auto suscrito</span>
+            <span class="tag-pill">beneficio valor residual chile</span>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb">
+        <a href="https://www.mittago.cl/">Inicio</a> &gt; 
+        <a href="https://www.mittago.cl/blog/">Blog</a> &gt; 
+        <a href="https://www.mittago.cl/blog/suscripciones/">Suscripciones</a> &gt; 
+        <span>Opción de Compra y Valor Residual</span>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Opción de Compra al Finalizar la Suscripción: Cómo Funciona el Valor Residual</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>La Opción de Compra en MittaGO</strong> es la alternativa contractual que permite al suscriptor adquirir el vehículo conducido al término de su contrato (1 a 24 meses) por un valor residual fijado previamente, otorgando flexibilidad total entre devolver, renovar por un 0km o comprar el auto.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>Una de las mayores ventajas del modelo de suscripción frente a la compra tradicional o el arriendo convencional es la libertad de decisión al término del período contratado. En MittaGO, el suscriptor no queda amarrado a un activo en desvalorización ni obligado a desprenderse de un vehículo que satisfizo plenamente sus necesidades.</p>
+
+        <p>Al concluir el plazo de suscripción (que varía entre 1 y 24 meses según las condiciones pactadas), se activan tres caminos comerciales estructurados para responder al momento de vida o de negocio del cliente.</p>
+
+        <h2>Las 3 Alternativas al Finalizar tu Contrato de Suscripción</h2>
+
+        <ol>
+            <li><strong>Renovación por un Vehículo 0km:</strong> Entregas la unidad actual y suscribes un modelo del año de última generación, conservando la tarifa plana y la cobertura todo incluido sin asumir la devaluación inicial del mercado.</li>
+            <li><strong>Devolución de la Unidad:</strong> Cierras tu contrato de suscripción sin cargos por reventa ni depreciación acumulada. Simplemente devuelves el vehículo en la sucursal acordada.</li>
+            <li><strong>Ejecución de la Opción de Compra:</strong> Adquieres la propiedad definitiva del vehículo pagando su <strong>valor residual</strong> estipulado comercialmente.</li>
+        </ol>
+
+        <h2 id="tabla-comparativa">Tabla Comparativa: Comprar Auto Usado Particular vs. Opción de Compra en MittaGO</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Factor de Comparación</th>
+                    <th>Compra de Usado a Particular</th>
+                    <th>Opción de Compra en MittaGO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Historial de Mantenciones</strong></td>
+                    <td>Incierto, sujeto a comprobantes informales</td>
+                    <td><strong>100% Trazable:</strong> Realizado en red de talleres oficiales de la marca</td>
+                </tr>
+                <tr>
+                    <td><strong>Uso y Desgaste Previo</strong></td>
+                    <td>Desconocido (potenciales fallas ocultas)</td>
+                    <td><strong>Conocido al 100%:</strong> Conducido exclusivamente por el suscriptor</td>
+                </tr>
+                <tr>
+                    <td><strong>Certidumbre del Precio</strong></td>
+                    <td>Sujeto a negociación de mercado secundario</td>
+                    <td><strong>Valor Residual Fijo:</strong> Definido en el contrato desde el inicio</td>
+                </tr>
+                <tr>
+                    <td><strong>Flexibilidad Financiera</strong></td>
+                    <td>Requiere desembolso total inmediato o crédito usado caro</td>
+                    <td>Se decide al final de 1 a 24 meses de suscripción plana</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Transparencia Financiera con el Valor Residual</h2>
+
+        <p>La inclusión de la Opción de Compra elimina la incertidumbre del conductor. Durante el tiempo que dura la suscripción, disfrutaste de mantenimientos pagados, patentes al día y seguro a todo evento (con recambio de neumáticos por desgaste a los 60.000 KM incluidos). Si al finalizar te enamoraste del vehículo, el valor residual previamente pactado te permite quedártelo con absoluta tranquilidad técnica.</p>
+
+        <div class="cta-container">
+            <p><em>¿Quieres disfrutar de tu auto con la opción de comprarlo o renovarlo al finalizar?</em></p>
+            <a href="https://www.mittago.cl/" class="cta-button" target="_blank">Cotiza tu suscripción con Opción de Compra en MittaGO</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ Opción de Compra)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Es obligatorio comprar el vehículo al finalizar el contrato de suscripción?</div>
+                <div class="faq-answer">No. La Opción de Compra es 100% voluntaria. Al terminar el período contratado (1 a 24 meses), el suscriptor puede elegir libremente entre devolver el auto, renovarlo por una unidad 0km o comprarlo por su valor residual.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo se calcula el valor residual para la compra del auto suscrito?</div>
+                <div class="faq-answer">El valor residual se establece en las condiciones comerciales de MittaGO al inicio del contrato, considerando el plazo de suscripción y la depreciación estimada de la unidad.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué ventajas tiene comprar un auto al finalizar su suscripción en lugar de un usado particular?</div>
+                <div class="faq-answer">La ventaja principal es la trazabilidad absoluta: el suscriptor ha conducido la unidad y sabe que todas sus mantenciones preventivas fueron realizadas en talleres oficiales bajo los estándares de fábrica de MittaGO.</div>
+            </div>
+        </div>
+
+        <!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+        <div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+                <thead style="background-color: #F8F9FA;">
+                    <tr>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Tipo de Activo</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Prompt Visual Recomendado (AI Generator)</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Justificación Neurocientífica & Atencional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>Hero Image</strong><br>(1200x630px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Driver holding car key in front of a modern shiny SUV at sunset, decision concept illustration with three options icons (Renew, Return, Buy) overlay, premium feel --ar 16:9</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Transmite libertad de elección y empoderamiento del usuario, activando el sesgo de autonomía en la toma de decisiones.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>In-Text Image</strong><br>(800x800px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Infographic schema showing residual value curve vs market value depreciation over 24 months, clean financial design --ar 1:1</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Facilita la comprensión lógica del valor residual frente a la devaluación tradicional del mercado usado.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+    </article>
+</div>
+
+</body>
+</html>

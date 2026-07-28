@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Contenidos Offline — Mitta</title>
+    <meta name="description" content="Portal offline autocontenido con todos los articulos SEO/GEO/AEO de Mitta y MittaGO.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --text-primary: #111827;
+            --text-secondary: #6B7280;
+            --text-tertiary: #9CA3AF;
+            --bg-page: #FFFFFF;
+            --bg-hover: #F9FAFB;
+            --border: #E5E7EB;
+            --border-light: #F3F4F6;
+            --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font);
+            background-color: var(--bg-page);
+            color: var(--text-primary);
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── INDEX VIEW ── */
+        .page-header {
+            border-bottom: 1px solid var(--border);
+            padding: 48px 40px 40px;
+        }
+        .header-inner { max-width: 960px; margin: 0 auto; }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 32px;
+        }
+        .header-brand {
+            font-size: 0.75rem; font-weight: 500;
+            letter-spacing: 0.12em; text-transform: uppercase;
+            color: var(--text-tertiary); margin-bottom: 12px;
+        }
+        .header-title {
+            font-size: 1.75rem; font-weight: 600;
+            letter-spacing: -0.025em; margin-bottom: 8px;
+        }
+        .header-subtitle { font-size: 0.95rem; color: var(--text-secondary); }
+        .header-date { font-size: 0.8rem; color: var(--text-tertiary); white-space: nowrap; padding-top: 4px; }
+        .metrics-bar { display: flex; gap: 48px; }
+        .metric { display: flex; flex-direction: column; }
+        .metric-value { font-size: 1.5rem; font-weight: 600; letter-spacing: -0.02em; }
+        .metric-label { font-size: 0.75rem; color: var(--text-tertiary); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 2px; }
+
+        .search-container { max-width: 960px; margin: 0 auto; padding: 24px 40px; border-bottom: 1px solid var(--border-light); }
+        .search-input {
+            width: 100%; padding: 12px 0; border: none; outline: none;
+            font-family: var(--font); font-size: 0.95rem; background: transparent;
+        }
+        .search-input::placeholder { color: var(--text-tertiary); }
+
+        .content { max-width: 960px; margin: 0 auto; padding: 0 40px 80px; }
+        .brand-section { padding-top: 24px; }
+        .brand-section + .brand-section { border-top: 1px solid var(--border); margin-top: 24px; }
+        .brand-header { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; background: #F9FAFB; border-radius: 8px; margin-bottom: 16px; transition: background 0.2s ease; border: 1px solid var(--border-light); }
+        .brand-header:hover { background: #F3F4F6; }
+        .brand-header h2 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+        .brand-metrics { display: flex; align-items: center; gap: 12px; }
+        .brand-count { font-size: 0.85rem; color: var(--text-secondary); background: white; padding: 4px 10px; border-radius: 20px; border: 1px solid var(--border); }
+        .toggle-icon { font-size: 0.75rem; color: var(--text-tertiary); transition: transform 0.2s ease; display: inline-block; }
+        
+        .brand-pillars { display: flex; flex-direction: column; gap: 12px; padding-left: 24px; margin-bottom: 24px; }
+        .pillar-section { border: 1px solid var(--border-light); border-radius: 6px; overflow: hidden; }
+        .pillar-header { display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; background: white; transition: background 0.2s ease; }
+        .pillar-header:hover { background: #F9FAFB; }
+        .pillar-header h3 { font-size: 0.95rem; font-weight: 500; margin: 0; color: var(--text-primary); display: flex; align-items: center; gap: 8px; }
+        .pillar-metrics { display: flex; align-items: center; gap: 12px; }
+        .pillar-count { font-size: 0.8rem; color: var(--text-secondary); background: #F3F4F6; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 12px; }
+        
+        .articles-list { display: flex; flex-direction: column; border-top: 1px solid var(--border-light); }
+        .pillar-info {
+            padding: 16px 20px;
+            background-color: var(--bg-hover);
+            border-bottom: 1px solid var(--border-light);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        .pillar-info p {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .pillar-info p:last-child {
+            margin-bottom: 0;
+        }
+        .pillar-info li {
+            margin-bottom: 4px;
+            line-height: 1.4;
+        }
+        .pillar-info li:last-child {
+            margin-bottom: 0;
+        }
+        .pillar-info strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .article-row {
+            display: flex; align-items: center; gap: 16px;
+            padding: 14px 12px; text-decoration: none; color: inherit;
+            border-bottom: 1px solid var(--border-light);
+            transition: background-color 0.15s ease;
+        }
+        .article-row:last-child { border-bottom: none; }
+        .article-row:hover { background-color: var(--bg-hover); }
+        .article-num { font-size: 0.8rem; font-weight: 500; color: var(--text-tertiary); min-width: 28px; font-variant-numeric: tabular-nums; }
+        .article-info { flex: 1; min-width: 0; }
+        .article-title { font-size: 0.95rem; font-weight: 500; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .article-desc { font-size: 0.8rem; color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .article-arrow { color: var(--text-tertiary); font-size: 0.9rem; opacity: 0; transition: opacity 0.15s ease, transform 0.15s ease; transform: translateX(-4px); }
+        .article-row:hover .article-arrow { opacity: 1; transform: translateX(0); }
+
+        .no-results { display: none; padding: 48px 0; text-align: center; color: var(--text-tertiary); font-size: 0.95rem; }
+        .page-footer { border-top: 1px solid var(--border); padding: 24px 40px; text-align: center; }
+        .footer-text { font-size: 0.75rem; color: var(--text-tertiary); }
+
+        /* ── ARTICLE VIEW ── */
+        #articleView { display: none; }
+
+        .article-nav {
+            border-bottom: 1px solid var(--border);
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: var(--bg-page);
+            z-index: 100;
+        }
+        .back-link {
+            font-size: 0.85rem; font-weight: 500; color: var(--text-secondary);
+            text-decoration: none; cursor: pointer;
+            transition: color 0.15s ease;
+        }
+        .back-link:hover { color: var(--text-primary); }
+        .article-nav-title {
+            font-size: 0.8rem; color: var(--text-tertiary);
+            max-width: 500px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            text-align: right;
+        }
+        .article-nav-brand {
+            font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
+            color: var(--text-tertiary); margin-bottom: 2px;
+        }
+
+        .article-viewport {
+            max-width: 800px; margin: 0 auto; padding: 40px;
+        }
+
+        /* ── Embedded article styles (from article template) ── */
+        .article-viewport .meta-header {
+            background-color: var(--bg-page); border: 1px solid var(--border-light);
+            border-radius: 8px; padding: 20px; margin-bottom: 40px;
+            font-size: 0.85rem; color: var(--text-secondary);
+        }
+        .article-viewport .meta-header h3 {
+            margin-top: 0; font-size: 0.75rem; color: var(--text-secondary);
+            text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 16px;
+        }
+        .article-viewport .meta-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+        .article-viewport .tag-pill {
+            background-color: transparent; border: 1px solid var(--border-light);
+            color: var(--text-secondary); padding: 4px 12px; border-radius: 4px;
+            font-weight: 400; font-size: 0.8rem;
+        }
+        .article-viewport .article-content, .article-viewport article {
+            background-color: var(--bg-page); border: 1px solid var(--border);
+            border-radius: 4px; padding: 60px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+        .article-viewport h1 { font-size: 2.2rem; line-height: 1.2; margin-top: 0; margin-bottom: 24px; letter-spacing: -0.02em; }
+        .article-viewport h2 { font-size: 1.6rem; margin-top: 48px; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid var(--border-light); }
+        .article-viewport h3 { font-size: 1.2rem; margin-top: 32px; margin-bottom: 12px; }
+        .article-viewport p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.7; }
+        .article-viewport ul, .article-viewport ol { padding-left: 24px; margin-bottom: 20px; }
+        .article-viewport li { margin-bottom: 8px; font-size: 1.05rem; }
+        .article-viewport a { color: var(--text-primary); text-decoration: underline; text-underline-offset: 3px; }
+        .article-viewport blockquote, .article-viewport .answer-block, .article-viewport .aeo-summary {
+            background-color: #F9FAFB; border-left: 2px solid var(--text-primary);
+            padding: 24px 32px; margin: 0 0 40px 0; font-size: 1.1rem; line-height: 1.7;
+        }
+        .article-viewport .aeo-label {
+            font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.15em;
+            color: var(--text-secondary); margin-bottom: 12px; font-weight: 600;
+        }
+        .article-viewport .faq-section { border-top: 1px solid var(--border); padding-top: 48px; margin-top: 60px; }
+        .article-viewport .faq-section h2 { margin-top: 0; border-bottom: none; padding-bottom: 24px; font-size: 1.5rem; }
+        .article-viewport .faq-item { margin-bottom: 24px; }
+        .article-viewport .faq-question { font-weight: 600; font-size: 1.1rem; margin-bottom: 8px; }
+        .article-viewport .faq-answer { color: var(--text-secondary); }
+        .article-viewport .cta-container { margin-top: 60px; padding: 32px 0; border-top: 1px solid var(--border-light); }
+        .article-viewport .cta-button {
+            display: inline-block; background: transparent; color: var(--text-primary);
+            padding: 14px 28px; border: 1px solid var(--text-primary); border-radius: 2px;
+            text-decoration: none; font-weight: 500; font-size: 0.95rem;
+            transition: all 0.2s ease;
+        }
+        .article-viewport .cta-button:hover { background: var(--text-primary); color: #fff; }
+        .article-viewport .internal-link {
+            background: #F9FAFB; padding: 12px 16px; border-radius: 4px;
+            border: 1px dashed var(--border); font-size: 0.9rem;
+        }
+        .article-viewport hr { border: none; border-top: 1px solid var(--border-light); margin: 40px 0; }
+        .article-viewport .container { max-width: 100%; padding: 0; }
+
+        /* ── Tables ── */
+        .article-viewport table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            font-size: 0.95rem;
+        }
+        .article-viewport th, .article-viewport td {
+            padding: 16px 8px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .article-viewport th {
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+        }
+        .article-viewport td strong { font-weight: 600; }
+        .article-viewport tr:last-child td {
+            border-bottom: 1px solid var(--border-light);
+        }
+        .article-viewport td:nth-child(2), .article-viewport td:nth-child(3),
+        .article-viewport th:nth-child(2), .article-viewport th:nth-child(3) {
+            text-align: center;
+        }
+        .article-viewport .table-wrapper {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .article-viewport .toc {
+            background: #F9FAFB;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            padding: 24px 32px;
+            margin: 24px 0 40px;
+        }
+        .article-viewport .toc h2 {
+            font-size: 1rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        .article-viewport .toc ul { margin-bottom: 0; }
+        .article-viewport .toc li { font-size: 0.95rem; margin-bottom: 6px; }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            .page-header, .article-nav { padding-left: 20px; padding-right: 20px; }
+            .search-container, .content { padding-left: 20px; padding-right: 20px; }
+            .article-viewport { padding: 20px; }
+            .article-viewport .article-content, .article-viewport article { padding: 30px 20px; }
+            .header-top { flex-direction: column; gap: 8px; }
+            .header-title { font-size: 1.4rem; }
+            .metrics-bar { gap: 32px; }
+            .article-title, .article-desc { white-space: normal; }
+            .article-arrow { display: none; }
+            .article-viewport h1 { font-size: 1.8rem; }
+        }
+    </style>
+    <style>
+        .view-tabs {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 12px;
+        }
+        .tab-button {
+            background: none;
+            border: none;
+            font-family: var(--font);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            padding: 8px 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .tab-button:hover {
+            color: var(--text-primary);
+            background-color: var(--bg-hover);
+        }
+        .tab-button.active {
+            color: var(--text-primary);
+            background-color: var(--bg-hover);
+            font-weight: 600;
+        }
+        .gallery-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ══════ INDEX VIEW ══════ -->
+    <div id="indexView">
+        <header class="page-header">
+            <div class="header-inner">
+                <div class="header-top">
+                    <div>
+                        <div class="header-brand">INMedios / Mitta</div>
+                        <h1 class="header-title">Portal de Contenidos</h1>
+                        <p class="header-subtitle">Indice editorial de articulos SEO, GEO y AEO — Version offline</p>
+                    </div>
+                    <div class="header-date">Actualizado: 25 de junio de 2026</div>
+                </div>
+                <div class="metrics-bar">
+                    <div class="metric">
+                        <span class="metric-value">71</span>
+                        <span class="metric-label">Total articulos</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">20</span>
+                        <span class="metric-label">MittaGO</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">30</span>
+                        <span class="metric-label">Mitta Rent a Car</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-value">14</span>
+                        <span class="metric-label">Contenidos Optimizados</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Buscar articulo por titulo o descripcion..." autocomplete="off">
+        </div>
+
+        <div class="view-tabs" style="max-width: 960px; margin: 24px auto 0; padding: 0 40px 12px;">
+            <button class="tab-button active" id="tab-articles" onclick="switchTab('articles')">📚 Artículos</button>
+            <button class="tab-button" id="tab-gallery" onclick="switchTab('gallery')">🖼️ Galería de Imágenes IA</button>
+        </div>
+
+        <main class="content" id="mainContent">
+            

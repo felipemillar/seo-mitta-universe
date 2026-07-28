@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Evaluación Comercial y Onboarding paso a paso | MittaGO</title>
+    <meta name="description" content="Conoce el proceso transparente de evaluación comercial y entrega de tu vehículo suscrito en MittaGO. Solicitud en línea, evaluación directa con ejecutivo asignado y retiro.">
+    <meta name="keywords" content="como funciona mittago, evaluacion comercial suscripcion auto, onboarding renting mittago, requisitos arriendo mensual auto, ejecutivo comercial mittago">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .meta-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background: #F3F4F6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content h1 {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .answer-block {
+            background-color: #F0FDF4;
+            border-left: 4px solid #16A34A;
+            padding: 20px;
+            margin-bottom: 32px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #166534;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-dark);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #F8F9FA;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cta-container {
+            background: #1A1A1A;
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .cta-container p {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F3F4F6;
+        }
+
+        .faq-section {
+            margin-top: 48px;
+            border-top: 2px solid var(--border-dark);
+            padding-top: 32px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+        }
+    </style>
+    <!-- YML-FRONTMATTER-START
+    title: "Proceso de Evaluación Comercial y Onboarding paso a paso | MittaGO"
+    description: "Conoce el proceso transparente de evaluación comercial y entrega de tu vehículo suscrito en MittaGO. Solicitud en línea, evaluación directa con ejecutivo asignado y retiro."
+    keywords: "como funciona mittago, evaluacion comercial suscripcion auto, onboarding renting mittago, requisitos arriendo mensual auto, ejecutivo comercial mittago"
+    pilar: "Suscripciones"
+    brand: "MittaGO"
+    slug: "/proceso-evaluacion-onboarding-mittago/"
+    YML-FRONTMATTER-END -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.mittago.cl/proceso-evaluacion-onboarding-mittago/#article",
+          "headline": "Guía Paso a Paso: Proceso de Evaluación Comercial y Onboarding en MittaGO",
+          "description": "Explicación detallada de las etapas de evaluación comercial, revisión de antecedentes y entrega personalizada del vehículo en el modelo de suscripción MittaGO.",
+          "inLanguage": "es-CL",
+          "mainEntityOfPage": "https://www.mittago.cl/proceso-evaluacion-onboarding-mittago/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MittaGO",
+            "url": "https://www.mittago.cl"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.mittago.cl/proceso-evaluacion-onboarding-mittago/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿El proceso de contratación en MittaGO es 100% automatizado?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. La solicitud inicial se ingresa a través de la web, pero cada solicitud requiere una evaluación comercial directa realizada por un ejecutivo asignado que acompaña al cliente en la validación de antecedentes y entrega."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué documentos se solicitan para la evaluación comercial de personas naturales?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Se requiere cédula de identidad vigente, licencia de conducir física homologada, acreditación de ingresos de los últimos meses y la aprobación de la evaluación de comportamiento crediticio comercial."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo toma el onboarding desde la solicitud hasta la entrega del auto?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Una vez completada la evaluación comercial y aprobados los antecedentes, la coordinación de entrega se realiza de forma ágil según la disponibilidad del modelo seleccionado en la flota oficial."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Proceso de Evaluación Comercial y Onboarding paso a paso | MittaGO</div>
+        <div><strong>Pilar:</strong> Suscripciones</div>
+        <div><strong>Marca:</strong> MittaGO</div>
+        <div><strong>Ruta/Slug:</strong> <a href="https://www.mittago.cl/proceso-evaluacion-onboarding-mittago/" target="_blank">/proceso-evaluacion-onboarding-mittago/</a></div>
+        <div><strong>Descripción meta:</strong> Conoce el proceso transparente de evaluación comercial y entrega de tu vehículo suscrito en MittaGO. Solicitud en línea, evaluación directa con ejecutivo asignado y retiro.</div>
+        <div class="meta-tags">
+            <span class="tag-pill">como funciona mittago</span>
+            <span class="tag-pill">evaluacion comercial suscripcion auto</span>
+            <span class="tag-pill">onboarding renting mittago</span>
+            <span class="tag-pill">requisitos arriendo mensual auto</span>
+            <span class="tag-pill">ejecutivo comercial mittago</span>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb">
+        <a href="https://www.mittago.cl/">Inicio</a> &gt; 
+        <a href="https://www.mittago.cl/blog/">Blog</a> &gt; 
+        <a href="https://www.mittago.cl/blog/suscripciones/">Suscripciones</a> &gt; 
+        <span>Evaluación Comercial y Onboarding</span>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Proceso de Evaluación Comercial y Onboarding en MittaGO: Paso a Paso</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>El onboarding en MittaGO</strong> combina una solicitud digital ágil con una evaluación comercial personalizada. Un ejecutivo asignado valida tus antecedentes, formaliza el contrato de 1 a 24 meses y coordina la entrega presencial.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>Suscribir un vehículo para el uso particular o empresarial no debe ser un trámite burocrático engorroso ni tampoco un proceso automatizado sin respaldo humano. En MittaGO se ha estructurado un modelo de onboarding transparente que garantiza la correcta revisión comercial de cada caso.</p>
+
+        <p>A diferencia del arriendo diario tradicional o del crédito automotriz bancario que exige extensas garantías prendarias, la suscripción mensual evalúa la capacidad operativa y comercial del suscriptor con reglas claras y acompañamiento directo.</p>
+
+        <h2>Las 4 Etapas del Flujo de Onboarding</h2>
+
+        <ol>
+            <li><strong>Selección del Vehículo y Período en Web:</strong> Eliges la categoría (Citycar, Sedán, SUV o Comercial) y el plazo contratado (de 1 a 24 meses) en la plataforma oficial.</li>
+            <li><strong>Evaluación Comercial Directa:</strong> Un ejecutivo comercial es asignado a tu solicitud para revisar tus antecedentes de identidad, licencia de conducir física vigente y capacidad de pago.</li>
+            <li><strong>Firma y Confirmación Contractual:</strong> Se formaliza el contrato de suscripción con la tarifa fija plana acordada, detallando los servicios incluidos (patentes, seguro todo evento y mantenciones de pauta).</li>
+            <li><strong>Entrega y Recepción del Vehículo:</strong> Te presentas en la sucursal asignada o punto de entrega para inspeccionar la unidad junto a tu ejecutivo y recibir las llaves.</li>
+        </ol>
+
+        <h2 id="tabla-comparativa">Tabla de Requisitos para la Evaluación Comercial</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Perfil de Suscriptor</th>
+                    <th>Documentación de Evaluación</th>
+                    <th>Medio de Pago Acreditado</th>
+                    <th>Beneficio del Onboarding</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Persona Natural (Nacional)</strong></td>
+                    <td>Cédula vigente, licencia física y acreditación de ingresos líquidos</td>
+                    <td>Tarjeta de crédito bancaria para facturación periódica</td>
+                    <td>Atención personalizada por un ejecutivo asignado</td>
+                </tr>
+                <tr>
+                    <td><strong>Persona Natural Extranjera</strong></td>
+                    <td>Visa, Pasaporte, CI provisorio en trámite, contrato de trabajo y liquidaciones</td>
+                    <td>Tarjeta habilitada para pagos de suscripción recurrente</td>
+                    <td>Acceso a movilidad sin necesidad de RUT definitivo consolidado</td>
+                </tr>
+                <tr>
+                    <td><strong>Pyme / Independiente</strong></td>
+                    <td>Carpeta tributaria, RUT empresa y antecedentes del representante legal</td>
+                    <td>Facturación corporativa directa para imputar gasto a resultado (OPEX)</td>
+                    <td>Preservación de la línea de crédito bancario empresarial</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Transparencia y Seguridad desde el Día Uno</h2>
+
+        <p>Durante todo el período de suscripción, el suscriptor cuenta con el respaldo de la red de infraestructura de Mitta a lo largo del país. La mantención preventiva oficial (incluyendo el cambio de neumáticos por desgaste a los 60.000 KM) y la cobertura ante imprevistos mecánicos forman parte del compromiso contractual revisado durante el onboarding.</p>
+
+        <div class="cta-container">
+            <p><em>¿Listo para comenzar tu evaluación comercial y suscribir tu próximo auto en MittaGO?</em></p>
+            <a href="https://www.mittago.cl/" class="cta-button" target="_blank">Inicia tu solicitud en el catálogo oficial de MittaGO</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ Onboarding MittaGO)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">¿El proceso de contratación en MittaGO es 100% automatizado?</div>
+                <div class="faq-answer">No. La solicitud inicial se ingresa a través de la web, pero cada solicitud requiere una evaluación comercial directa realizada por un ejecutivo asignado que acompaña al cliente en la validación de antecedentes y entrega.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué documentos se solicitan para la evaluación comercial de personas naturales?</div>
+                <div class="faq-answer">Se requiere cédula de identidad vigente, licencia de conducir física homologada, acreditación de ingresos de los últimos meses y la aprobación de la evaluación de comportamiento crediticio comercial.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Cuánto tiempo toma el onboarding desde la solicitud hasta la entrega del auto?</div>
+                <div class="faq-answer">Una vez completada la evaluación comercial y aprobados los antecedentes, la coordinación de entrega se realiza de forma ágil según la disponibilidad del modelo seleccionado en la flota oficial.</div>
+            </div>
+        </div>
+
+        <!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+        <div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+                <thead style="background-color: #F8F9FA;">
+                    <tr>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Tipo de Activo</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Prompt Visual Recomendado (AI Generator)</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Justificación Neurocientífica & Atencional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>Hero Image</strong><br>(1200x630px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Friendly commercial executive handing vehicle keys to a smiling customer in a modern clean MittaGO branch showroom, natural lighting, professional atmosphere --ar 16:9</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Refuerza el contacto humano y la atención personalizada, contrarrestando la frialdad de procesos digitales automatizados y elevando la confianza de marca.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>In-Text Image</strong><br>(800x800px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Step-by-step numbered flowchart graphic showing 4 icons: Web Request, Commercial Review, Contract Signature, Key Handover, clean flat design --ar 1:1</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Organización secuencial visual que reduce la fricción percibida y mejora la comprensión del procedimiento onboarding.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+    </article>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo de Siniestros y Cobertura de Deducibles | MittaGO</title>
+    <meta name="description" content="Conoce la guía paso a paso en caso de colisión o siniestro en MittaGO. Cobertura del seguro a todo evento, declaración simplificada y gestión de deducibles.">
+    <meta name="keywords" content="protocolo siniestros mittago, seguro todo evento suscripcion auto, deducible seguro renting, declaracion choque auto arriendo, asistencia siniestros mittago">
+    <style>
+        :root {
+            --primary-color: #1A1A1A;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .meta-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background: #F3F4F6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content h1 {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .answer-block {
+            background-color: #F0FDF4;
+            border-left: 4px solid #16A34A;
+            padding: 20px;
+            margin-bottom: 32px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #166534;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-dark);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #F8F9FA;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cta-container {
+            background: #1A1A1A;
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .cta-container p {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #1A1A1A;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F3F4F6;
+        }
+
+        .faq-section {
+            margin-top: 48px;
+            border-top: 2px solid var(--border-dark);
+            padding-top: 32px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+        }
+    </style>
+    <!-- YML-FRONTMATTER-START
+    title: "Protocolo de Siniestros y Cobertura de Deducibles | MittaGO"
+    description: "Conoce la guía paso a paso en caso de colisión o siniestro en MittaGO. Cobertura del seguro a todo evento, declaración simplificada y gestión de deducibles."
+    keywords: "protocolo siniestros mittago, seguro todo evento suscripcion auto, deducible seguro renting, declaracion choque auto arriendo, asistencia siniestros mittago"
+    pilar: "Educación"
+    brand: "MittaGO"
+    slug: "/protocolo-siniestros-deducibles-mittago/"
+    YML-FRONTMATTER-END -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.mittago.cl/protocolo-siniestros-deducibles-mittago/#article",
+          "headline": "Protocolo de Declaración de Siniestros y Cobro de Deducibles en la Flota MittaGO",
+          "description": "Guía paso a paso para el suscriptor de MittaGO ante incidentes viales o siniestros, detallando la declaración del evento y la aplicación transparente de deducibles.",
+          "inLanguage": "es-CL",
+          "mainEntityOfPage": "https://www.mittago.cl/protocolo-siniestros-deducibles-mittago/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MittaGO",
+            "url": "https://www.mittago.cl"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.mittago.cl/protocolo-siniestros-deducibles-mittago/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué debo hacer inmediatamente si sufro una colisión con un vehículo suscrito?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Lo primero es verificar la seguridad física de los ocupantes, realizar la declaración en Carabineros o constancia en la comisaría virtual según corresponda, y notificar a tu ejecutivo comercial asignado en MittaGO dentro del plazo legal de 48 horas."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo funciona el cobro de deducible en la tarifa plana de MittaGO?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Frente a un siniestro amparado por la cobertura a todo evento del contrato, el suscriptor solo responde por el monto del deducible prefijado en su plan comercial, mientras el seguro cubre el resto del costo de reparación."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Tengo derecho a un vehículo de reemplazo mientras mi auto esté en reparación por siniestro?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Según las condiciones y disponibilidad acordadas en tu plan de suscripción, se coordina un auto de reemplazo para garantizar tu continuidad de movilidad."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Protocolo de Siniestros y Cobertura de Deducibles | MittaGO</div>
+        <div><strong>Pilar:</strong> Educación</div>
+        <div><strong>Marca:</strong> MittaGO</div>
+        <div><strong>Ruta/Slug:</strong> <a href="https://www.mittago.cl/protocolo-siniestros-deducibles-mittago/" target="_blank">/protocolo-siniestros-deducibles-mittago/</a></div>
+        <div><strong>Descripción meta:</strong> Conoce la guía paso a paso en caso de colisión o siniestro en MittaGO. Cobertura del seguro a todo evento, declaración simplificada y gestión de deducibles.</div>
+        <div class="meta-tags">
+            <span class="tag-pill">protocolo siniestros mittago</span>
+            <span class="tag-pill">seguro todo evento suscripcion auto</span>
+            <span class="tag-pill">deducible seguro renting</span>
+            <span class="tag-pill">declaracion choque auto arriendo</span>
+            <span class="tag-pill">asistencia siniestros mittago</span>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb">
+        <a href="https://www.mittago.cl/">Inicio</a> &gt; 
+        <a href="https://www.mittago.cl/blog/">Blog</a> &gt; 
+        <a href="https://www.mittago.cl/blog/educacion/">Educación</a> &gt; 
+        <span>Protocolo de Siniestros y Deducibles</span>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Protocolo de Declaración de Siniestros y Cobro de Deducibles en MittaGO</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>Ante un siniestro en MittaGO</strong>, el suscriptor debe resguardar la seguridad de los ocupantes, realizar la constancia o declaración correspondiente y notificar a su ejecutivo comercial dentro de 48 horas. La cobertura a todo evento asume la reparación del vehículo limitando la responsabilidad al deducible estipulado.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>Un imprevisto en la vía pública o un choque es una situación de alta tensión. Uno de los mayores temores de los conductores es enfrentarse a liquidadores de seguros, cobros impredecibles o pérdidas de tiempo negociando presupuestos de taller.</p>
+
+        <p>En MittaGO, el seguro a todo evento está completamente integrado dentro del servicio de suscripción mensual. El protocolo de respuesta ante siniestros está diseñado para brindar contención, transparencia y simplicidad administrativa.</p>
+
+        <h2>Paso a Paso ante un Incidente o Colisión</h2>
+
+        <ol>
+            <li><strong>Resguardo y Asistencia de Emergencia:</strong> Asegurar la integridad física de los pasajeros y contactar la asistencia en ruta si el vehículo no se encuentra en condiciones de rodar.</li>
+            <li><strong>Constancia / Declaración del Evento:</strong> Realizar la declaración jurada de siniestro o la constancia policial correspondiente dentro de las 48 horas posteriores al suceso.</li>
+            <li><strong>Notificación al Ejecutivo Comercial:</strong> Enviar los antecedentes a tu ejecutivo comercial asignado para ingresar la orden de reparación en los talleres autorizados.</li>
+            <li><strong>Asignación de Auto de Reemplazo:</strong> Se coordina la entrega de una unidad de reemplazo conforme a las condiciones de tu plan de suscripción.</li>
+        </ol>
+
+        <h2 id="tabla-comparativa">Tabla de Cobertura y Aplicación de Deducible</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Evento</th>
+                    <th>Acción Requerida del Suscriptor</th>
+                    <th>Responsabilidad Financiera (MittaGO)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Colisión con Terceros</strong></td>
+                    <td>Declaración de siniestro + Datos de terceros involucrados</td>
+                    <td>Cobro exclusivo del deducible pactado en el contrato</td>
+                </tr>
+                <tr>
+                    <td><strong>Daños Estacionados / Desconocidos</strong></td>
+                    <td>Constancia policial o declaración jurada del evento</td>
+                    <td>Cobertura a todo evento sujetándose al deducible comercial</td>
+                </tr>
+                <tr>
+                    <td><strong>Robo o Pérdida Total</strong></td>
+                    <td>Denuncia inmediata en Carabineros y entrega de llaves</td>
+                    <td>Cierre del contrato o reasignación de unidad según póliza</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Tranquilidad Operativa sin Fricciones</h2>
+
+        <p>Al contar con una red propia de talleres a lo largo del país y ejecutivos dedicados, MittaGO gestiona íntegramente las reparaciones con las compañías aseguradoras, permitiendo que el suscriptor continúe con sus actividades diarias sin trámites adicionales.</p>
+
+        <div class="cta-container">
+            <p><em>¿Quieres conducir protegido con seguro a todo evento y respaldo profesional?</em></p>
+            <a href="https://www.mittago.cl/" class="cta-button" target="_blank">Suscríbete con seguro a todo evento en MittaGO</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ Siniestros y Deducibles)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Qué debo hacer inmediatamente si sufro una colisión con un vehículo suscrito?</div>
+                <div class="faq-answer">Lo primero es verificar la seguridad física de los ocupantes, realizar la declaración en Carabineros o constancia en la comisaría virtual según corresponda, y notificar a tu ejecutivo comercial asignado en MittaGO dentro del plazo legal de 48 horas.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Cómo funciona el cobro de deducible en la tarifa plana de MittaGO?</div>
+                <div class="faq-answer">Frente a un siniestro amparado por la cobertura a todo evento del contrato, el suscriptor solo responde por el monto del deducible prefijado en su plan comercial, mientras el seguro cubre el resto del costo de reparación.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Tengo derecho a un vehículo de reemplazo mientras mi auto esté en reparación por siniestro?</div>
+                <div class="faq-answer">Sí. Según las condiciones y disponibilidad acordadas en tu plan de suscripción, se coordina un auto de reemplazo para garantizar tu continuidad de movilidad.</div>
+            </div>
+        </div>
+
+        <!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+        <div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #1A1A1A; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+                <thead style="background-color: #F8F9FA;">
+                    <tr>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Tipo de Activo</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Prompt Visual Recomendado (AI Generator)</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Justificación Neurocientífica & Atencional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>Hero Image</strong><br>(1200x630px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Reassuring customer service manager assisting a driver with paperwork next to a pristine car, calm blue and green lighting tones, professional care --ar 16:9</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Transforma la percepción de estrés de un choque en una experiencia de soporte y solución rápida.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>In-Text Image</strong><br>(800x800px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Step-by-step vector process: 1. Safety Check, 2. Report Incident, 3. Executive Review, 4. Replacement Car Handover --ar 1:1</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Estructura claramente el protocolo de reacción rápida en situaciones de emergencia.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+    </article>
+</div>
+
+</body>
+</html>

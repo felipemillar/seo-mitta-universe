@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo elegir la Categoría de Vehículo según tu Destino | MITTA</title>
+    <meta name="description" content="Guía práctica para elegir la categoría de auto ideal en MITTA Rent a Car. Compara Citycars, Sedanes, SUVs y Camionetas 4x4 según la geografía de Chile.">
+    <meta name="keywords" content="categoria vehiculo rent a car, elegir auto arriendo chile, diferencia citycar sedan suv 4x4, arriendo autos por tipo terreno, mitta categorias flota">
+    <style>
+        :root {
+            --primary-color: #003366;
+            --text-main: #2D2D2D;
+            --text-secondary: #6B7280;
+            --bg-body: #FAFAFA;
+            --bg-card: #FFFFFF;
+            --border-color: #F3F4F6;
+            --border-dark: #E5E7EB;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .meta-header {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 40px;
+            font-size: 0.9rem;
+        }
+
+        .meta-header h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .meta-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+
+        .tag-pill {
+            background: #F3F4F6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .breadcrumb a {
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .article-content h1 {
+            font-size: 2.2rem;
+            line-height: 1.25;
+            color: var(--primary-color);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .answer-block {
+            background-color: #EFF6FF;
+            border-left: 4px solid #2563EB;
+            padding: 20px;
+            margin-bottom: 32px;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            color: #1E40AF;
+        }
+
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 8px;
+        }
+
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .article-content ul, .article-content ol {
+            margin-bottom: 24px;
+            padding-left: 24px;
+        }
+
+        .article-content li {
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 32px 0;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-dark);
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: #F8F9FA;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cta-container {
+            background: #003366;
+            color: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            text-align: center;
+            margin: 48px 0;
+        }
+
+        .cta-container p {
+            color: #E5E7EB;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FFFFFF;
+            color: #003366;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F3F4F6;
+        }
+
+        .faq-section {
+            margin-top: 48px;
+            border-top: 2px solid var(--border-dark);
+            padding-top: 32px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: var(--text-main);
+        }
+    </style>
+    <!-- YML-FRONTMATTER-START
+    title: "Cómo elegir la Categoría de Vehículo según tu Destino | MITTA"
+    description: "Guía práctica para elegir la categoría de auto ideal en MITTA Rent a Car. Compara Citycars, Sedanes, SUVs y Camionetas 4x4 según la geografía de Chile."
+    keywords: "categoria vehiculo rent a car, elegir auto arriendo chile, diferencia citycar sedan suv 4x4, arriendo autos por tipo terreno, mitta categorias flota"
+    pilar: "Rent a Car (Foco B2C y Turismo)"
+    brand: "MITTA"
+    slug: "/categoria-vehiculo-segun-destino-chile/"
+    YML-FRONTMATTER-END -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.mitta.cl/categoria-vehiculo-segun-destino-chile/#article",
+          "headline": "Cómo elegir la Categoría de Vehículo según tu Destino en Chile",
+          "description": "Análisis de las distintas categorías de la flota MITTA para optimizar el arriendo según terreno, pasajeros y presupuesto.",
+          "inLanguage": "es-CL",
+          "mainEntityOfPage": "https://www.mitta.cl/categoria-vehiculo-segun-destino-chile/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "MITTA",
+            "url": "https://www.mitta.cl"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.mitta.cl/categoria-vehiculo-segun-destino-chile/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Varía el monto de garantía retenido en la tarjeta de crédito según la categoría elegida?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Las categorías compactas y sedanes requieren garantías de $450.000 a $700.000, mientras que las camionetas Pickups 4x4 requieren $1.500.000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuándo es indispensable arrendar una camioneta 4x4 en lugar de una SUV?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "La tracción 4x4 es indispensable para caminos de alta montaña, senderos no pavimentados de tierra profunda, nieve o faenas técnicas que exigen tracción reducida."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Puedo cambiar de categoría de vehículo si mis necesidades de viaje cambian?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Puedes gestionar modificaciones en tu reserva a través del sitio web de MITTA o contactando a servicio al cliente con hasta 48 horas de anticipación."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+<main class="container">
+    
+    <!-- Meta Data Header -->
+    <header class="meta-header">
+        <h3>Ficha Técnica del Artículo</h3>
+        <div><strong>Título:</strong> Cómo elegir la Categoría de Vehículo según tu Destino | MITTA</div>
+        <div><strong>Pilar:</strong> Rent a Car (Foco B2C y Turismo)</div>
+        <div><strong>Marca:</strong> MITTA</div>
+        <div><strong>Ruta/Slug:</strong> <a href="https://www.mitta.cl/categoria-vehiculo-segun-destino-chile/" target="_blank">/categoria-vehiculo-segun-destino-chile/</a></div>
+        <div><strong>Descripción meta:</strong> Guía práctica para elegir la categoría de auto ideal en MITTA Rent a Car. Compara Citycars, Sedanes, SUVs y Camionetas 4x4 según la geografía de Chile.</div>
+        <div class="meta-tags">
+            <span class="tag-pill">categoria vehiculo rent a car</span>
+            <span class="tag-pill">elegir auto arriendo chile</span>
+            <span class="tag-pill">diferencia citycar sedan suv 4x4</span>
+            <span class="tag-pill">arriendo autos por tipo terreno</span>
+            <span class="tag-pill">mitta categorias flota</span>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <a href="https://www.mitta.cl/">Inicio</a> &gt; 
+        <a href="https://www.mitta.cl/rent-a-car-personas/">Rent a Car</a> &gt; 
+        <a href="https://www.mitta.cl/flota/">Flota de Vehículos</a> &gt; 
+        <span>Categoría según Destino</span>
+    </nav>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <h1>Cómo elegir la Categoría de Vehículo según tu Destino en Chile</h1>
+
+        <!-- AEO-SUMMARY-START -->
+        <div class="answer-block">
+            <strong>Para elegir la categoría de auto ideal en MITTA</strong>, evalúa el tipo de terreno y pasajeros: Citycars y Sedanes son idóneos para zonas urbanas y autopistas; SUVs ofrecen confort en carreteras regionales; y Pickups 4x4 son indispensables para alta montaña y ripio desértico.
+        </div>
+        <!-- AEO-SUMMARY-END -->
+
+        <p>Chile destaca por una geografía extremadamente variada: desde autopistas urbanas de alta velocidad en Santiago hasta pasos cordilleranos, caminos costeros y rutas de ripio en la Patagonia o el Desierto de Atacama. Seleccionar la categoría de vehículo adecuada en Rent a Car es clave para garantizar seguridad, confort y eficiencia de combustible durante el viaje.</p>
+
+        <p>MITTA dispone de una flota diversa con mantenimientos de fábrica al día, permitiendo al conductor encontrar el modelo exacto que responda al tipo de ruta y al número de acompañantes.</p>
+
+        <h2>Factores Clave para Seleccionar tu Vehículo</h2>
+
+        <ul>
+            <li><strong>Tipo de Terreno y Clima:</strong> Evalúa si conducirás por asfalto urbano, carreteras pavimentadas de alta velocidad o caminos secundarios de ripio y tierra.</li>
+            <li><strong>Número de Pasajeros y Equipaje:</strong> Considera el volumen de maletas. Un grupo de 4 adultos con maletas grandes requiere espacio de baúl que solo ofrece un Sedán mediano o una SUV.</li>
+            <li><strong>Garantía Comercial Retenida:</strong> Revisa el monto de retención en tarjeta de crédito exigido según el segmento ($450.000, $700.000 o $1.500.000).</li>
+        </ul>
+
+        <h2 id="tabla-comparativa">Tabla Matriz de Categorías vs. Destinos en Chile</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoría de Flota</th>
+                    <th>Destinos Recomendados</th>
+                    <th>Pasajeros & Equipaje</th>
+                    <th>Monto de Garantía Tarjeta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Citycar / Compacto</strong></td>
+                    <td>Santiago urbano, Valparaíso, Viña del Mar</td>
+                    <td>2 a 4 personas / 2 maletas pequeñas</td>
+                    <td>$450.000</td>
+                </tr>
+                <tr>
+                    <td><strong>Sedán Ejecutivo</strong></td>
+                    <td>Ruta 5, Valle del Elqui, Concepción, Talca</td>
+                    <td>4 a 5 personas / 3 a 4 maletas medianas</td>
+                    <td>$450.000 - $700.000</td>
+                </tr>
+                <tr>
+                    <td><strong>SUV Crossover / Familiar</strong></td>
+                    <td>Pucón, Puerto Varas, Chiloé, La Serena</td>
+                    <td>5 a 7 personas / Equipaje amplio + ISOFIX</td>
+                    <td>$700.000</td>
+                </tr>
+                <tr>
+                    <td><strong>Pickup Camioneta 4x4</strong></td>
+                    <td>San Pedro de Atacama, Carretera Austral, Cordillera</td>
+                    <td>5 personas / Carga trasera pesada o equipo técnico</td>
+                    <td>$1.500.000</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Tranquilidad y Flexibilidad al Reservar</h2>
+
+        <p>Todos los automóviles de la flota MITTA cuentan con cobertura de seguro CDW, dispositivo TAG para autopistas y asistencia 24/7 en ruta. Recuerda que puedes modificar o cancelar tu reserva sin cobros hasta 48 horas antes de la fecha programada.</p>
+
+        
+        
+        <h2>Cómo MITTA Adapta su Flota al Territorio Chileno</h2>
+
+        <p>La geografía de Chile, con más de 4.300 km de extensión y terrenos que van desde el desierto más árido hasta glaciares patagónicos, exige una flota diversificada. No es lo mismo recorrer las autopistas urbanas de Santiago en un Citycar que enfrentar los caminos cordilleranos hacia centros de ski o las rutas de ripio del norte minero en una camioneta 4x4.</p>
+
+        <p>Con el respaldo de Mitsui & Co. y una red de más de 80 sucursales distribuidas en todo el territorio nacional, MITTA ha desarrollado durante más de 65 años un conocimiento profundo de las necesidades vehiculares por zona geográfica. Cada sucursal mantiene un mix de categorías calibrado según la demanda local y las condiciones de terreno predominantes.</p>
+
+        <p>La recomendación de categoría no es arbitraria: el equipo de MITTA evalúa factores como la altitud del destino, el tipo de pavimento predominante, la cantidad de pasajeros y el volumen de equipaje para sugerir la opción más segura y eficiente. Para destinos cordilleranos sobre 2.500 metros, por ejemplo, se recomienda tracción 4x4 obligatoria por las condiciones de nieve y hielo estacionales.</p>
+
+        <!-- ENLACES INTERNOS (Protocolo Auditoría C8) -->
+        <h3>Artículos Relacionados de MITTA</h3>
+        <ul class="internal-links">
+            <li><a href="https://www.mitta.cl/guia-cruce-argentina-auto-arrendado-mitta/">Si tu destino incluye Argentina, consulta la guía de cruce internacional con auto arrendado</a></li>
+            <li><a href="https://www.mitta.cl/viajar-con-mascotas-auto-arrendado-mitta/">Planifica tu viaje pet-friendly con las políticas de MITTA para mascotas</a></li>
+        </ul>
+
+        <div class="cta-container">
+            <p><em>¿Sabes ya cuál es tu próximo destino en Chile?</em></p>
+            <a href="https://www.mitta.cl/" class="cta-button" target="_blank">Explora el catálogo de vehículos y cotiza en MITTA</a>
+        </div>
+
+        <div class="faq-section">
+            <h2>Preguntas Frecuentes (FAQ Categorías de Vehículo)</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Varía el monto de garantía retenido en la tarjeta de crédito según la categoría elegida?</div>
+                <div class="faq-answer">Sí. Las categorías compactas y sedanes requieren garantías de $450.000 a $700.000, mientras que las camionetas Pickups 4x4 requieren $1.500.000.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Cuándo es indispensable arrendar una camioneta 4x4 en lugar de una SUV?</div>
+                <div class="faq-answer">La tracción 4x4 es indispensable para caminos de alta montaña, senderos no pavimentados de tierra profunda, nieve o faenas técnicas que exigen tracción reducida.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo cambiar de categoría de vehículo si mis necesidades de viaje cambian?</div>
+                <div class="faq-answer">Sí. Puedes gestionar modificaciones en tu reserva a través del sitio web de MITTA o contactando a servicio al cliente con hasta 48 horas de anticipación.</div>
+            </div>
+        </div>
+
+        <!-- INICIO MATRIZ VISUAL NEUROCIENCIA -->
+        <div class="visual-prompt-matrix" style="margin-top: 50px; border-top: 2px solid #E5E7EB; padding-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #003366; margin-bottom: 15px;">Matriz de Producción Visual (Digital Predict)</h3>
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; background: #FFFFFF; border: 1px solid #E5E7EB;">
+                <thead style="background-color: #F8F9FA;">
+                    <tr>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Tipo de Activo</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Prompt Visual Recomendado (AI Generator)</th>
+                        <th style="padding: 10px; border: 1px solid #E5E7EB;">Justificación Neurocientífica & Atencional</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>Hero Image</strong><br>(1200x630px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Grid showing four vehicle categories (Citycar, Sedan, SUV, 4x4 Pickup) in distinct Chilean landscapes (City, Highway, Lake, Desert), modern clean design --ar 16:9</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Facilita el contraste inmediato de escenarios geográficos con el tipo de auto adecuado.</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;"><strong>In-Text Image</strong><br>(800x800px)</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Decision tree flowchart graphic: Choose your destination -> Recommended Vehicle Category & Warranty amount, minimalist vector --ar 1:1</td>
+                        <td style="padding: 10px; border: 1px solid #E5E7EB;">Estructura la toma de decisión secuencial reduciendo la vacilación del usuario.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- FIN MATRIZ VISUAL NEUROCIENCIA -->
+
+    </article>
+</main>
+
+</body>
+</html>
