@@ -208,11 +208,14 @@ template = template.replace(/<span class="metric-value">50<\/span>\s*<span class
 template = template.replace(/<span class="metric-value">30<\/span>\s*<span class="metric-label">Mitta Rent a Car<\/span>/, '<span class="metric-value">20</span>\n                        <span class="metric-label">Mitta Rent a Car</span>');
 template = template.replace(/<span class="metric-value">14<\/span>\s*<span class="metric-label">Contenidos Optimizados<\/span>/, '<span class="metric-value">40</span>\n                        <span class="metric-label">Contenidos Optimizados</span>');
 
-// 1.5 Update Date
+// 1.5 Update Date and Subtitle
 const today = new Date();
 const months = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 const dateString = `Actualizado: ${today.getDate()} de ${months[today.getMonth()]} de ${today.getFullYear()}`;
 template = template.replace(/<div class="header-date">[^<]*<\/div>/, `<div class="header-date">${dateString}</div>`);
+// Remove " — Version offline"
+template = template.replace(/<p class="header-subtitle">Indice editorial de articulos SEO, GEO y AEO — Version offline<\/p>/, '<p class="header-subtitle">Índice editorial de artículos SEO, GEO y AEO</p>');
+
 
 // 2. Hide view-tabs (Gallery tab) without deleting the div completely to avoid structural changes
 template = template.replace(/<div class="view-tabs"([^>]*)>[\s\S]*?<\/div>/, '<div class="view-tabs" style="display: none;" $1></div>');
